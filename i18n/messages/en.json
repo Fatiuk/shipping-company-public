@@ -1,0 +1,79 @@
+{
+  "localeSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {fr} en {en} other {unknown}}",
+    "en": "English",
+    "fr": "Français",
+    "abbr": {
+      "en": "Eng",
+      "fr": "Fr"
+    },
+    "languageLabel": "Toggle language"
+  },
+  "navbar": {
+    "videoReviews": "Video Reviews",
+    "yelpReviews": "Yelp Reviews",
+    "howItWorks": "How It Works",
+    "team": "Our Team",
+    "company": "Our Company",
+    "blog": "Blog",
+    "about": "About Us",
+    "faq": "FAQ",
+    "quote": "Get a Quote",
+    "themeLabel": "Toggle theme"
+  },
+  "footer": {
+    "companyDesc": "Diminoble is a licensed shipping company that is fully insured and bonded. We operate across the country to make the relocation of all kinds of auto easier for our clients.",
+    "company": "Company",
+    "features": "Features",
+    "blog": "Blog",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact Us",
+    "team": "Our Team",
+    "testimonials": "Video Testimonials",
+    "termsAndConditions": "Terms & Conditions",
+    "accessibilityStatement": "Accessibility Statement",
+    "orgPolicy": "Organizational Policy",
+    "privacyPolicy": "Privacy Policy",
+    "rightsReserved": {
+      "year": "© 2025 ",
+      "clicks": "Diminoble Auto Transportation",
+      "allRights": ". All Rights Reserved."
+    },
+    "poweredBy": "Powered by"
+  },
+  "notFound": {
+    "error": "Error",
+    "message": "This page could not be found"
+  },
+  "home": {
+    "title": "Reliable Car Shipping Across the Nation",
+    "description": "At Diminoble transportations, we stand out in the vehicle relocation sector. We believe in showcasing our excellence, not just making promises. Our services cover the entire country, providing our customers with the transportation of any type of vehicle.",
+    "whyUs": {
+      "title": "Why Diminoble?",
+      "description": "Many things make us stand out in our industry. These are the reasons why we are the go-to company for many in need of vehicle shipment.",
+      "benefits": [
+        {
+          "src": "/benefits/fitness.svg",
+          "title": "Excellent Customer Service",
+          "description": "Our customer care team is always on deck to be of service to you. We'd like to know how we can help. Do you need professional assistance on your car shipping project? We are readily available and always attentive to your questions. It is our point of duty and one we are committed to as we aim to provide you solutions."
+        },
+        {
+          "src": "/benefits/gi.svg",
+          "title": "Affordable Prices",
+          "description": "We try as much as possible to work within your budget. When you contact us, we let you know our fees and any other charges that may be involved. There are no hidden fees after delivery. When compared to the industry standard, our rates are relatively low. With us, there's no choosing between quality service and affordable price. We give you both."
+        },
+        {
+          "src": "/benefits/gi.svg",
+          "title": "We are Highly Professional",
+          "description": "All our drivers and other staff members are qualified professionals who have been in the industry long enough. With us, you can be rest assured your vehicle, motorbike, boat, tractor, or any auto are in safe and capable hands. The mix of our professionalism and wide experience in this industry is what you need to get your vehicle delivered to your preferred location."
+        }
+      ],
+      "howItWorks": "How It Works"
+    },
+    "quote": "Start your free quote",
+    "callUs": "Call Us Now",
+    "contactUs": "Contact Us"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "localeSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, fr {fr} en {en} other {inconnu}}",
+    "en": "English",
+    "fr": "Français",
+    "abbr": {
+      "en": "Eng",
+      "fr": "Fr"
+    },
+    "languageLabel": "Changer de langue"
+  },
+  "navbar": {
+    "videoReviews": "Avis vidéo",
+    "yelpReviews": "Avis Yelp",
+    "howItWorks": "Comment ça marche",
+    "team": "Notre équipe",
+    "company": "Notre entreprise",
+    "blog": "Blog",
+    "about": "À propos de nous",
+    "faq": "FAQ",
+    "quote": "Obtenir un devis",
+    "themeLabel": "Changer de thème"
+  },
+  "footer": {
+    "companyDesc": "Diminoble est une entreprise de transport agréée, entièrement assurée et cautionnée. Nous opérons à travers tout le pays pour faciliter la relocalisation de tous types de véhicules pour nos clients.",
+    "company": "Entreprise",
+    "features": "Caractéristiques",
+    "blog": "Blog",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contactez-nous",
+    "team": "Notre équipe",
+    "testimonials": "Témoignages vidéo",
+    "termsAndConditions": "Conditions générales",
+    "accessibilityStatement": "Déclaration d'accessibilité",
+    "orgPolicy": "Politique organisationnelle",
+    "privacyPolicy": "Politique de confidentialité",
+    "rightsReserved": {
+      "year": "© 2025 ",
+      "clicks": "Diminoble Auto Transportation",
+      "allRights": ". Tous droits réservés."
+    },
+    "poweredBy": "Propulsé par"
+  },
+  "notFound": {
+    "error": "Erreur",
+    "message": "Cette page est introuvable"
+  },
+  "home": {
+    "title": "Transport fiable de voitures à travers le pays",
+    "description": "Chez Diminoble Transportations, nous nous distinguons dans le secteur du transport de véhicules. Nous croyons en la démonstration de notre excellence, et pas seulement en des promesses. Nos services couvrent tout le pays, offrant à nos clients le transport de tout type de véhicule.",
+    "whyUs": {
+      "title": "Pourquoi choisir Diminoble ?",
+      "description": "De nombreux éléments nous distinguent dans notre secteur. Voici pourquoi nous sommes l'entreprise de référence pour ceux qui ont besoin d'expédier leur véhicule.",
+      "benefits": [
+        {
+          "src": "/benefits/fitness.svg",
+          "title": "Un service client exceptionnel",
+          "description": "Notre équipe du service client est toujours prête à vous aider. Nous aimerions savoir comment nous pouvons vous assister. Besoin d'une aide professionnelle pour votre projet de transport de véhicule ? Nous sommes disponibles et attentifs à vos questions. C’est notre mission, et nous nous engageons à vous fournir des solutions adaptées."
+        },
+        {
+          "src": "/benefits/gi.svg",
+          "title": "Des prix abordables",
+          "description": "Nous faisons de notre mieux pour respecter votre budget. Lorsque vous nous contactez, nous vous communiquons nos tarifs ainsi que tous les frais éventuels. Il n’y a pas de coûts cachés après la livraison. Comparés aux standards du secteur, nos tarifs sont relativement bas. Avec nous, vous n'avez pas à choisir entre un service de qualité et un prix abordable – nous vous offrons les deux."
+        },
+        {
+          "src": "/benefits/gi.svg",
+          "title": "Un professionnalisme exemplaire",
+          "description": "Tous nos chauffeurs et membres du personnel sont des professionnels qualifiés qui possèdent une longue expérience dans le secteur. Avec nous, vous pouvez être certain que votre véhicule, moto, bateau, tracteur ou tout autre type de véhicule est entre de bonnes mains. La combinaison de notre professionnalisme et de notre expertise dans cette industrie est ce qu'il vous faut pour assurer la livraison de votre véhicule à l’endroit souhaité."
+        }
+      ],
+      "howItWorks": "Comment ça marche"
+    },
+    "quote": "Obtenez votre devis gratuit",
+    "callUs": "Appelez-nous maintenant",
+    "contactUs": "Contactez-nous"
+  }
+}
