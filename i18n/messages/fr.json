@@ -4,6 +4,8 @@
     "locale": "{locale, select, fr {fr} en {en} other {inconnu}}",
     "en": "English",
     "fr": "Français",
+    "noten": "Français",
+    "notfr": "English",
     "abbr": {
       "en": "Eng",
       "fr": "Fr"
@@ -45,7 +47,9 @@
   },
   "notFound": {
     "error": "Erreur",
-    "message": "Cette page est introuvable"
+    "title": "Il semble que cette page n'existe pas encore !",
+    "message": "Vous pouvez retourner à l'accueil ou nous contacter pour trouver l'information que vous recherchez.",
+    "back": "Retour à l'accueil"
   },
   "home": {
     "title": "Transport fiable de voitures à travers le pays",
@@ -75,5 +79,18 @@
     "quote": "Obtenez votre devis gratuit",
     "callUs": "Appelez-nous maintenant",
     "contactUs": "Contactez-nous"
+  },
+  "videoReviews": { "title": "", "description": "" },
+  "yelpReviews": { "title": "", "description": "" },
+  "howItWorks": { "title": "", "description": "" },
+  "team": { "title": "", "description": "" },
+  "blog": { "title": "", "description": "", "tags": { "all": "Tout" } },
+  "about": { "title": "", "description": "" },
+  "faq": { "title": "", "description": "" },
+  "pagination": {
+    "first": "Première",
+    "previous": "Précédente",
+    "next": "Suivante",
+    "last": "Dernière"
   }
 }

@@ -1,28 +1,49 @@
-"use client";
+import { FC, ReactElement, useEffect, useState } from "react";
+import { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import HeroCTA from "@/components/HeroCTA";
 import Instructors from "@/components/Instructors";
-import React, { FC, ReactElement } from "react";
 import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
-import { useGlobalContext } from "@/context/context";
 import { instructors } from "@/app/data";
 import GroupNinja from "@/assets/img/group-ninjas.jpg";
 
-const AboutInstructors: FC = (): ReactElement => {
-  const { lang } = useGlobalContext();
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const resolvedParams = await Promise.resolve(params);
+
+  const t = await getTranslations({
+    locale: resolvedParams.locale,
+    namespace: "team",
+  });
+
+  return {
+    title: t("title") || "Team",
+    description: t("description") || "Team",
+  };
+}
+
+// const Team: FC = (): ReactElement => {
+const Team = async ({ params }: { params: { locale: string } }) => {
+  const resolvedParams = await Promise.resolve(params);
+
+  setRequestLocale(resolvedParams.locale);
+  const t = await getTranslations({
+    locale: resolvedParams.locale,
+    namespace: "team",
+  });
 
   return (
     <>
       <SectionFullWidth bgImage={GroupNinja.src}>
         <div className="flex flex-col px-4 items-center text-center justify-center h-full px-8 text-black dark:text-white">
           <h1 className="text-7xl font-header pb-4 text-oblue-700 dark:text-white">
-            {lang === "fr" ? "Nos instructeurs" : "Our Instructors"}
+            {t("title")}
           </h1>
-          <p className="text-xl">
-            {lang === "fr"
-              ? "Transformez votre potentiel avec Otoshi Judo Club !"
-              : "Transform your potential with Otoshi Judo Club!"}
-          </p>
+          <p className="text-xl">{t("description")}</p>
         </div>
         <HeroCTA />
       </SectionFullWidth>
@@ -48,13 +69,11 @@ const AboutInstructors: FC = (): ReactElement => {
         </p>
       </Section>
 
-      <Section
-        title={lang === "fr" ? "Instructeurs et instructrices" : "Instructors"}
-      >
+      <Section title={t("title")}>
         <Instructors instructors={instructors} />
       </Section>
     </>
   );
 };
 
-export default AboutInstructors;
+export default Team;

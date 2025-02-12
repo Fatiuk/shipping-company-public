@@ -2,14 +2,11 @@
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import Image from "next/image";
 import Address from "@/components/Address";
-import AddressI from "@/types/address";
-import { Lang } from "@/types/lang";
-import { NavigationItemI } from "@/types/navigation";
 import Promotion from "@/components/Promotion";
-import { useGlobalContext } from "@/context/context";
 import Logo from "@/components/shared/Logo";
+import AddressI from "@/types/address";
+import { NavigationItemI } from "@/types/navigation";
 
 interface FooterI {
   navigation: NavigationItemI[];

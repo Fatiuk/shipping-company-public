@@ -1,4 +1,4 @@
-import { useGlobalContext } from "@/context/context";
+import { useTranslations } from "next-intl";
 import React, { ReactNode } from "react";
 
 interface PaginatorPropsI {
@@ -16,8 +16,7 @@ const Paginator = ({
   onPageChange,
   children,
 }: PaginatorPropsI) => {
-  const { lang } = useGlobalContext();
-
+  const t = useTranslations("pagination");
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   const currentPageButtonStyle =
@@ -61,14 +60,14 @@ const Paginator = ({
               disabled={currentPage === 1}
               className={otherPageButtonStyle}
             >
-              &laquo; {lang === "fr" ? "Première" : "First"}
+              &laquo; {t("first")}
             </button>
             <button
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
               className={otherPageButtonStyle}
             >
-              &lsaquo; {lang === "fr" ? "Précédente" : "Previous"}
+              &lsaquo; {t("previous")}
             </button>
             {renderPageNumbers(currentPage, totalPages, handlePageChange)}
             <button
@@ -76,14 +75,14 @@ const Paginator = ({
               disabled={currentPage === totalPages}
               className={otherPageButtonStyle}
             >
-              {lang === "fr" ? "Suivante" : "Next"} &raquo;
+              {t("next")} &raquo;
             </button>
             <button
               onClick={() => handlePageChange(totalPages)}
               disabled={currentPage === totalPages}
               className={otherPageButtonStyle}
             >
-              {lang === "fr" ? "Dernière" : "Last"} &rsaquo;
+              {t("last")} &rsaquo;
             </button>
           </div>
         </div>

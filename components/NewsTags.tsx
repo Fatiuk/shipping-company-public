@@ -1,22 +1,19 @@
-import { generateNewsTags } from "@/components/utils";
-import { Lang } from "@/types/lang";
-import NewsItemI from "@/types/newsItem";
 import React, { FC } from "react";
+import { generateNewsTags } from "@/lib/utils";
+import NewsItemI from "@/types/newsItem";
 
 interface NewsTagsI {
   newsItems: NewsItemI[];
-  lang: Lang;
   newsTagSelected: string;
   onNewsTagSelect: (tag: string) => void;
 }
 
 const NewsTags: FC<NewsTagsI> = ({
   newsItems,
-  lang,
   newsTagSelected,
   onNewsTagSelect,
 }) => {
-  const tagsWithAll = generateNewsTags(newsItems, lang);
+  const tagsWithAll = generateNewsTags(newsItems);
   return (
     <>
       {tagsWithAll.map((tag) => (

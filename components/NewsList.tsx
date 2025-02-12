@@ -1,21 +1,20 @@
+"use client";
+import React, { FC, useEffect, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { formatDate } from "@/components/utils";
-import { Lang } from "@/types/lang";
 import NewsItemI from "@/types/newsItem";
 import NewsTags from "@/components/NewsTags";
-import Paginator from "./Paginator";
-import React, { FC } from "react";
+import Paginator from "@/components/Paginator";
 
 interface NewsListI {
   newsItems: NewsItemI[];
-  lang: string;
 }
 
-const NewsList: FC<NewsListI> = ({ newsItems, lang }) => {
-  const [selectedTag, setSelectedTag] = useState<string>(
-    lang === "fr" ? "Tout" : "All"
-  );
+const NewsList: FC<NewsListI> = ({ newsItems }) => {
+  const t = useTranslations("blog");
+  const locale = useLocale();
+  const [selectedTag, setSelectedTag] = useState<string>("all");
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const itemsPerPage = 5;
@@ -25,21 +24,14 @@ const NewsList: FC<NewsListI> = ({ newsItems, lang }) => {
   });
 
   const filteredNews = newsSorted.filter((item) => {
-    const tags = item[lang as Lang].tags;
-    return (
-      selectedTag === (lang === "fr" ? "Tout" : "All") ||
-      tags.includes(selectedTag)
-    );
+    const tags = item.tags;
+    return selectedTag === "all" || tags.includes(selectedTag);
   });
 
   const paginatedNews = filteredNews.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
-
-  useEffect(() => {
-    setSelectedTag(lang === "fr" ? "Tout" : "All");
-  }, [lang]);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -52,7 +44,6 @@ const NewsList: FC<NewsListI> = ({ newsItems, lang }) => {
           <div className="flex flex-wrap gap-x-2 ml-[-8px]">
             <NewsTags
               newsItems={newsItems}
-              lang={lang as Lang}
               newsTagSelected={selectedTag}
               onNewsTagSelect={setSelectedTag}
             />
@@ -70,13 +61,13 @@ const NewsList: FC<NewsListI> = ({ newsItems, lang }) => {
           {paginatedNews.map((news) => (
             <div key={news.id} className="pb-4 last:pb-0">
               <p className="text-oblue-600 dark:text-oaccent-700 text-md">
-                {formatDate(news.date, lang)}
+                {formatDate(news.date, locale)}
               </p>
               <Link
                 className="font-bold text-lg hover:underline hover:text-oaccent-900"
                 href={`/news/${news.slug}`}
               >
-                {news[lang as Lang].title}
+                {news.title}
               </Link>
             </div>
           ))}

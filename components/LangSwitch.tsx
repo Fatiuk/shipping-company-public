@@ -26,7 +26,7 @@ const LangToggle: FC = () => {
       className="text-oblue-400 dark:text-oblue-200 font-sans font-bold tracking-wider"
       aria-label={t("languageLabel")}
     >
-      {t(locale)}
+      {t(`not${locale}`)}
     </button>
   );
 };

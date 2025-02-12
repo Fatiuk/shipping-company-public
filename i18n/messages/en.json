@@ -4,6 +4,8 @@
     "locale": "{locale, select, fr {fr} en {en} other {unknown}}",
     "en": "English",
     "fr": "Français",
+    "noten": "Français",
+    "notfr": "English",
     "abbr": {
       "en": "Eng",
       "fr": "Fr"
@@ -45,7 +47,9 @@
   },
   "notFound": {
     "error": "Error",
-    "message": "This page could not be found"
+    "title": "Looks like this page doesn't exist yet!",
+    "message": "You can go back home or contact us to find the info you’ve been looking for.",
+    "back": "Back home"
   },
   "home": {
     "title": "Reliable Car Shipping Across the Nation",
@@ -75,5 +79,18 @@
     "quote": "Start your free quote",
     "callUs": "Call Us Now",
     "contactUs": "Contact Us"
+  },
+  "videoReviews": { "title": "", "description": "" },
+  "yelpReviews": { "title": "", "description": "" },
+  "howItWorks": { "title": "", "description": "" },
+  "team": { "title": "", "description": "" },
+  "blog": { "title": "", "description": "", "tags": { "all": "All" } },
+  "about": { "title": "", "description": "" },
+  "faq": { "title": "", "description": "" },
+  "pagination": {
+    "first": "First",
+    "previous": "Previous",
+    "next": "Next",
+    "last": "Last"
   }
 }

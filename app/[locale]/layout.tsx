@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
 import { NavigationItemI } from "@/types/navigation";
 import "../globals.css";
+import NotFound from "./not-found";
 
 const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
@@ -54,27 +55,62 @@ const navigation: NavigationItemI[] = [
       { label: "faq", href: "/faq" },
     ],
   },
+  {
+    label: "quote",
+    href: "/contact-us",
+    cta: "primary",
+  },
 ];
 
 export const metadata: Metadata = {
   title: "Reliable Car Shipping Across the Nation",
   description:
     "At Diminoble transportations, we stand out in the vehicle relocation sector. We believe in showcasing our excellence, not just making promises. Our services cover the entire country, providing our customers with the transportation of any type of vehicle.",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: [
+      {
+        url: "/favicon/apple-touch-icon-120x120.png",
+        sizes: "120x120",
+        type: "image/png",
+      },
+      {
+        url: "/favicon/apple-touch-icon-152x152.png",
+        sizes: "152x152",
+        type: "image/png",
+      },
+      {
+        url: "/favicon/apple-touch-icon-167x167.png",
+        sizes: "167x167",
+        type: "image/png",
+      },
+      {
+        url: "/favicon/apple-touch-icon-180x180.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    shortcut: [{ url: "/favicon.ico" }], // fallback
+  },
 };
 
 export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
+
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
   setRequestLocale(locale);
-
-  if (!routing.locales.includes(locale as any)) return notFound();
-
   const messages = await getMessages();
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+      <head></head>
       <body
         className={`${robotoCondensed.variable} ${nunitoSans.variable} antialiased flex flex-col min-h-screen font-sans text-sm bg-owhite dark:bg-oblue-900`}
         suppressHydrationWarning
@@ -86,10 +122,9 @@ export default async function RootLayout({ children, params }: Props) {
           disableTransitionOnChange
           storageKey="theme-preference"
         >
-          console.log("Debug - Messages loaded successfully");
           <NextIntlClientProvider messages={messages} locale={locale}>
             <Navigation navigation={navigation} />
-            <main className="w-full flex flex-wrap flex-grow mt-[64px] mx-auto px-0">
+            <main className="w-full max-w-xxl flex flex-wrap flex-grow mt-[64px] mx-auto px-0">
               {children}
             </main>
             <Footer

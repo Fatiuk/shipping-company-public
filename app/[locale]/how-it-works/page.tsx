@@ -1,14 +1,39 @@
-"use client";
+import { FC, ReactElement, useEffect, useState } from "react";
+import { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-import React, { FC, ReactElement, useEffect, useState } from "react";
-import { useGlobalContext } from "@/context/context";
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const resolvedParams = await Promise.resolve(params);
 
-const VideoReviews: FC = (): ReactElement => {
-  const { lang } = useGlobalContext();
+  const t = await getTranslations({
+    locale: resolvedParams.locale,
+    namespace: "howItWorks",
+  });
 
-  useEffect(() => {}, []);
+  return {
+    title: t("title") || "How it works",
+    description: t("description") || "How it works",
+  };
+}
 
-  return <div>How it works</div>;
+const HowItWorks = async ({ params }: { params: { locale: string } }) => {
+  const resolvedParams = await Promise.resolve(params);
+
+  setRequestLocale(resolvedParams.locale);
+  const t = await getTranslations({
+    locale: resolvedParams.locale,
+    namespace: "howItWorks",
+  });
+
+  return (
+    <div className="m-8">
+      <p>How it works</p>
+    </div>
+  );
 };
 
-export default VideoReviews;
+export default HowItWorks;

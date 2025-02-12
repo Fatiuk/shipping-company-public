@@ -2,7 +2,6 @@
 
 import React, { FC, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { useTheme } from "next-themes";
 import LangSwitch from "@/components/LangSwitch";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ActiveLink from "@/components/shared/ActiveLink";
@@ -27,9 +26,6 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
     );
   };
 
-  const { theme, resolvedTheme } = useTheme();
-  const colorSandwichMenu = resolvedTheme === "dark" ? "#F4F4F2" : "#004EA7";
-
   const handleClickOutsideMobile = (e: MouseEvent) => {
     if (
       menuMobileRef.current &&
@@ -48,7 +44,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
 
   return (
     <>
-      <div className="fixed py-2 top-0 z-50 w-full bg-oblue-50 dark:bg-oblue-800 shadow-md">
+      <div className="fixed py-2 top-0 z-50 w-full bg-[--color-b50-b950] shadow-md">
         <div className="flex justify-between mx-auto sm:max-w-full md:max-w-7xl px-8">
           <div className="min-w-12 min-h-12 self-center">
             <Logo />
@@ -61,17 +57,18 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                     <>
                       <ActiveLink
                         href={nav.href ?? "#"}
-                        className="flex items-center text-oblue-900 dark:text-white hover:dark:text-oaccent-700"
+                        activeClassName="text-[--color-a-b200]"
+                        className="flex items-center text-[--color-b900-w]"
                       >
                         {t(nav.label)}
                         <span className="ml-2 w-2.5 h-2.5 border-t-2 border-l-2 border-oblue-200 relative -top-1 transform -rotate-135 transition-transform group-hover:rotate-45 group-hover:mt-3"></span>
                       </ActiveLink>
-                      <ul className="absolute w-max left-0 pt-2 text-black bg-oblue-200 dark:bg-owhite rounded-xl drop-shadow-xl p-2 space-y-2 hidden group-hover:block z-10">
+                      <ul className="absolute w-max left-0 pt-2 bg-[--color-b50-b900] rounded-xl drop-shadow-xl dark:shadow-light-lg p-2 space-y-2 hidden group-hover:block z-10">
                         {nav.submenu.map((sub) => (
                           <li key={sub.label} className="text-left">
                             <ActiveLink
-                              href={nav.href ?? "#"}
-                              className="block px-4 py-2 hover:bg-oaccent-900 hover:text-white hover:rounded-xl"
+                              href={`${nav.label}/${sub.href}`}
+                              className="block px-4 py-2 hover:bg-oaccent-900 hover:text-white hover:rounded-lg text-[--color-black-w]"
                             >
                               {t(sub.label)}
                             </ActiveLink>
@@ -83,15 +80,17 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                     <ActiveLink
                       href={nav.href ?? "#"}
                       className={`flex justify-center py-2 self-center rounded-xl hover:rounded-xl transition-colors
-										relative after:absolute after:left-0 after:bottom-2 after:origin-right after:scale-x-0 after:w-full after:h-[1px] after:-mb-1 after:dark:bg-white after:transition-transform after:duration-300 hover:after:bg-oaccent-900 hover:after:dark:bg-oaccent-700
+										relative after:absolute after:left-0 after:bottom-2 after:origin-right after:scale-x-0 after:w-full after:h-[1px] after:-mb-1 
+                    after:dark:bg-white after:transition-transform after:duration-300 hover:after:bg-[--color-a900-b200]
 										hover:after:origin-left hover:after:scale-x-100 
 										${
                       nav.cta === "primary"
-                        ? "px-3 rounded-xl font-bold text-black hover:text-white dark:text-white hover:dark:text-black bg-oaccent-700 dark:bg-oaccent-900 hover:bg-oaccent-900 hover:dark:bg-oaccent-700 after:content-none"
+                        ? "ml-6 px-6 py-3 rounded-xl font-bold text-white bg-[--color-a700-a900] hover:bg-[--color-a900-a700] after:content-none"
                         : nav.cta === "secondary"
-                        ? "px-3 rounded-xl font-bold text-black hover:text-white bg-oblue-200 hover:bg-oblue-700 dark:text-oblue-50 dark:bg-oblue-600 hover:dark:text-black hover:dark:bg-oblue-400 after:content-none"
-                        : "text-black dark:text-white hover:dark:text-oaccent-700"
+                        ? "px-3 rounded-xl font-bold text-[--color-black-b50]  hover:text-[--color-w-black] bg-[--color-b200-b600] hover:bg-[--color-b700-b400] after:content-none"
+                        : "text-[--color-b900-w]"
                     }`}
+                      activeClassName="!text-[--color-a900-b200]"
                     >
                       {t(nav.label)}
                     </ActiveLink>
@@ -124,8 +123,8 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                stroke={colorSandwichMenu}
-                className="size-6"
+                stroke="var(--color-b500-w)"
+                className="size-8"
               >
                 <path
                   strokeLinecap="round"
@@ -145,7 +144,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                stroke={colorSandwichMenu}
+                stroke="var(--color-b500-w)"
                 className="size-6"
               >
                 <path
@@ -159,13 +158,13 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 right-0 z-50 mt-[64px]
+        className={`fixed top-0 left-0 right-0 z-50 mt-[84px]
 			lg:hidden
 			overflow-hidden
 			shadow-mobmenu
 			border-t-1 border-gray-600
-			bg-owhite dark:bg-oblue-700
-			text-black dark:text-white
+			bg-[--color-w-b700]
+			text-[--color-black-w]
 			transition-[max-height] duration-500 ease-in-out
 			${isMenuOpen ? "max-h-[2000px]" : "max-h-0"}`}
       >
@@ -182,7 +181,9 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                       <ActiveLink
                         href={nav.href ?? "#"}
                         className="flex justify-center py-2"
+                        activeClassName="text-[--color-a900-b200]"
                         onClick={() => setMenuOpen(false)}
+                        // onMouseEnter={() => toggleMobileSubmenu(index)}
                       >
                         {t(nav.label)}
                       </ActiveLink>
@@ -203,11 +204,15 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                         {nav.submenu.map((sub) => (
                           <li key={sub.label} className="text-sm text-center">
                             <ActiveLink
-                              href={nav.href ?? "#"}
-                              className="inline-block py-2 relative after:absolute after:left-0 after:bottom-2 after:origin-right after:scale-x-0 after:w-full after:h-[1px] after:-mb-1 after:dark:bg-white after:transition-transform after:duration-300 hover:after:bg-oaccent-900 hover:after:dark:bg-oaccent-700 hover:after:origin-left hover:after:scale-x-100 text-black dark:text-white hover:dark:text-oaccent-700"
+                              href={`${nav.label}/${sub.href}`}
+                              className="inline-block py-2 relative 
+                              after:absolute after:left-0 after:bottom-2 after:origin-right after:scale-x-0 after:w-full 
+                              after:h-[1px] after:-mb-1 after:dark:bg-white after:transition-transform after:duration-300 
+                              hover:after:bg-[--color-a900-b100] hover:after:origin-left hover:after:scale-x-100"
+                              activeClassName="text-[--color-a900-b200]"
                               onClick={() => setMenuOpen(false)}
                             >
-                              {sub.label}
+                              {t(sub.label)}
                             </ActiveLink>
                           </li>
                         ))}
@@ -217,15 +222,16 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                 ) : (
                   <ActiveLink
                     href={nav.href ?? "#"}
-                    className={`flex justify-center py-2 self-center rounded-xl hover:rounded-xl transition-colors
-											relative after:absolute after:left-0 after:bottom-2 after:origin-right after:scale-x-0 after:w-full after:h-[1px] after:-mb-1 after:dark:bg-white after:transition-transform after:duration-300 hover:after:bg-oaccent-900 hover:after:dark:bg-oaccent-700
-											hover:after:origin-left hover:after:scale-x-100 
+                    className={`flex justify-center py-2 self-center rounded-xl hover:rounded-xl transition-colors relative 
+                      after:absolute after:left-0 after:bottom-2 after:origin-right after:scale-x-0 after:w-full 
+                      after:h-[1px] after:-mb-1 after:dark:bg-white after:transition-transform after:duration-300 
+                      hover:after:bg-[--color-a900-b100] hover:after:origin-left hover:after:scale-x-100 
 											${
                         nav.cta === "primary"
-                          ? "w-full px-4 rounded-xl font-bold text-black hover:text-white dark:text-white hover:dark:text-black bg-oaccent-700 dark:bg-oaccent-900 hover:bg-oaccent-900 hover:dark:bg-oaccent-700 after:content-none"
+                          ? "w-full px-4 rounded-lg font-bold text-[--color-black-w] hover:text-[--color-w-black] bg-[--color-a700-a900] hover:bg-[--color-a900-a700] after:content-none"
                           : nav.cta === "secondary"
-                          ? "w-full px-4 rounded-xl font-bold text-black hover:text-white bg-oblue-200 hover:bg-oblue-700 dark:text-oblue-50 dark:bg-oblue-600 hover:dark:text-black hover:dark:bg-oblue-400 after:content-none"
-                          : "text-black dark:text-white hover:dark:text-oaccent-700"
+                          ? "w-full px-4 rounded-xl font-bold text-[--color-black-b50] hover:text-[--color-w-black] bg-[--color-b200-b600] hover:bg-[--color-b700-b400] after:content-none"
+                          : "text-[--color-black-w]"
                       }`}
                     onClick={() => setMenuOpen(false)}
                   >

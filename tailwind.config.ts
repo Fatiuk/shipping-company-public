@@ -9,6 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
+        "light-sm": "0 1px 2px rgba(255, 255, 255, 0.15)",
+        "light-md": "0 2px 4px rgba(255, 255, 255, 0.2)",
+        "light-lg": "0 4px 6px rgba(255, 255, 255, 0.25)",
+        "light-xl": "0 8px 10px rgba(255, 255, 255, 0.3)",
+        "light-2xl": "0 12px 15px rgba(255, 255, 255, 0.35)",
+        "light-inner": "inset 0 2px 4px rgba(255, 255, 255, 0.25)",
+        "light-glow": "0 0 15px rgba(255, 255, 255, 0.5)",
+        "owhite-glow": "0 0 15px rgba(244, 244, 242, 0.3)",
         mobmenu: "0 3px 3px rgb(0 0 0 / 0.25)",
       },
       colors: {
@@ -49,6 +57,7 @@ const config: Config = {
       },
       screens: {
         xs: "320px",
+        xxl: "1400px",
       },
     },
   },
