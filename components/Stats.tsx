@@ -12,7 +12,7 @@ const Stats: FC<{ data: StatsI[] }> = ({ data }) => {
       {data.map((stat) => (
         <StatsItem
           key={stat.id}
-          targetNumber={stat.targetNumber}
+          targetNumberStr={stat.targetNumberStr}
           increment={stat.increment}
           suffix={stat.suffix}
           text={stat.text}

@@ -17,7 +17,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
   const t = useTranslations("footer");
   return (
     <>
-      <Promotion />
+      {/* <Promotion /> */}
       <div className="bg-oblue-50 dark:bg-oblue-800 py-9">
         <div className="mx-auto sm:max-w-full md:max-w-7xl text-sm text-black flex flex-row flex-wrap sm:flex-nowrap gap-x-8 px-8">
           <div className="flex h-24 mb-8 shrink-0">

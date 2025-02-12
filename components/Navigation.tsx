@@ -45,12 +45,12 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
   return (
     <>
       <div className="fixed py-2 top-0 z-50 w-full bg-[--color-b50-b950] shadow-md">
-        <div className="flex justify-between mx-auto sm:max-w-full md:max-w-7xl px-8">
+        <div className="flex justify-between mx-auto sm:max-w-full md:max-w-[2000px] px-8 2xl:px-20">
           <div className="min-w-12 min-h-12 self-center">
             <Logo />
           </div>
           <nav className={`hidden lg:flex self-center text-center`}>
-            <ul className="flex items-center gap-x-6">
+            <ul className="flex items-center gap-x-6 lg:gap-x-4">
               {navigation.map((nav) => (
                 <li key={t(nav.label)} className="relative group">
                   {nav.submenu ? (
@@ -109,50 +109,80 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
               </div>
             </button>
           </nav>
-          <div className={`hidden lg:flex gap-x-8 ms-6`}>
-            <ThemeSwitch />
-            <LangSwitch />
+
+          <div className={`hidden lg:flex items-center gap-10`}>
+            <ActiveLink
+              href="/contact-us"
+              className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
+            >
+              {t("quote")}
+            </ActiveLink>
+            <div className="flex items-center gap-x-8 ms-6">
+              <ThemeSwitch />
+              <LangSwitch />
+            </div>
           </div>
           {!isMenuOpen && (
             <div
-              className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
-              onClick={toggleMenuOpen}
+              className={`flex lg:hidden justify-center items-center gap-x-8 ms-6`}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="var(--color-b500-w)"
-                className="size-8"
+              <ActiveLink
+                href="/contact-us"
+                className="h-fit py-3 px-8 lg:px-4 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
+                {t("quote")}
+              </ActiveLink>
+              <div
+                className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
+                onClick={toggleMenuOpen}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="var(--color-b500-w)"
+                  className="size-8"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
             </div>
           )}
           {isMenuOpen && (
             <div
-              className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
-              onClick={toggleMenuOpen}
+              className={`flex lg:hidden justify-center items-center gap-x-8 ms-6`}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="var(--color-b500-w)"
-                className="size-6"
+              <ActiveLink
+                href="/contact-us"
+                className="h-fit py-3 px-8 lg:px-4 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
+                {t("quote")}
+              </ActiveLink>
+
+              <div
+                className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
+                onClick={toggleMenuOpen}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="var(--color-b500-w)"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
             </div>
           )}
         </div>

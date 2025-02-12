@@ -6,7 +6,7 @@ const HeroCTA: FC = () => {
   const t = useTranslations("home");
 
   return (
-    <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-6 relative z-10">
+    <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-6 relative z-10">
       <button className="w-full sm:w-auto mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-900 text-white hover:text-black hover:bg-oaccent-700 hover:cursor-pointer transition-colors duration-200 rounded-xl">
         {t("quote")}
       </button>

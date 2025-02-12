@@ -5,7 +5,7 @@ import { it } from "node:test";
 
 const Features: FC<{ data: FeatureI[] }> = ({ data }) => {
   return (
-    <div className="flex flex-wrap flex-col sm:flex-row justify-center items-start">
+    <div className="flex flex-col sm:flex-row justify-center items-start">
       {data.map((item) => (
         <Feature
           key={item.title}

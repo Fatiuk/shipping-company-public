@@ -59,26 +59,61 @@
       "description": "De nombreux éléments nous distinguent dans notre secteur. Voici pourquoi nous sommes l'entreprise de référence pour ceux qui ont besoin d'expédier leur véhicule.",
       "benefits": [
         {
-          "src": "/benefits/fitness.svg",
-          "title": "Un service client exceptionnel",
-          "description": "Notre équipe du service client est toujours prête à vous aider. Nous aimerions savoir comment nous pouvons vous assister. Besoin d'une aide professionnelle pour votre projet de transport de véhicule ? Nous sommes disponibles et attentifs à vos questions. C’est notre mission, et nous nous engageons à vous fournir des solutions adaptées."
+          "src": "/benefits/map.svg",
+          "title": "Couverture nationale",
+          "description": "Diminoble Transportations propose des services de relocalisation de véhicules dans les 50 États, garantissant que votre véhicule atteint sa destination efficacement, quel que soit l'endroit."
         },
         {
-          "src": "/benefits/gi.svg",
-          "title": "Des prix abordables",
-          "description": "Nous faisons de notre mieux pour respecter votre budget. Lorsque vous nous contactez, nous vous communiquons nos tarifs ainsi que tous les frais éventuels. Il n’y a pas de coûts cachés après la livraison. Comparés aux standards du secteur, nos tarifs sont relativement bas. Avec nous, vous n'avez pas à choisir entre un service de qualité et un prix abordable – nous vous offrons les deux."
+          "src": "/benefits/team.svg",
+          "title": "Équipe expérimentée",
+          "description": "Avec plus de 5 ans d'expérience dans l'industrie de la relocalisation, nos spécialistes offrent un service exceptionnel aux entreprises, agents et particuliers, assurant une expérience fluide et professionnelle."
         },
         {
-          "src": "/benefits/gi.svg",
-          "title": "Un professionnalisme exemplaire",
-          "description": "Tous nos chauffeurs et membres du personnel sont des professionnels qualifiés qui possèdent une longue expérience dans le secteur. Avec nous, vous pouvez être certain que votre véhicule, moto, bateau, tracteur ou tout autre type de véhicule est entre de bonnes mains. La combinaison de notre professionnalisme et de notre expertise dans cette industrie est ce qu'il vous faut pour assurer la livraison de votre véhicule à l’endroit souhaité."
+          "src": "/benefits/car-insurance.svg",
+          "title": "Partenaires entièrement assurés et cautionnés",
+          "description": "Nous collaborons avec des partenaires entièrement assurés et cautionnés, garantissant la sécurité et la protection de votre véhicule tout au long du processus de transport."
+        },
+        {
+          "src": "/benefits/shield-eye.svg",
+          "title": "Processus transparent",
+          "description": "Nous nous engageons à informer nos clients à chaque étape, vous assurant ainsi une compréhension claire du processus de transport pour une expérience sans souci."
+        }
+      ],
+      "achievments": [
+        {
+          "count": "15000",
+          "suffix": "",
+          "title": "Clients expédiés"
+        },
+        {
+          "count": "40000",
+          "suffix": "",
+          "title": "Véhicules expédiés"
+        },
+        {
+          "count": "1000",
+          "suffix": "+",
+          "title": "Avis positifs"
         }
       ],
       "howItWorks": "Comment ça marche"
     },
     "quote": "Obtenez votre devis gratuit",
     "callUs": "Appelez-nous maintenant",
-    "contactUs": "Contactez-nous"
+    "contactUs": "Contactez-nous",
+    "about": {
+      "sectionTitle": "À propos de nous",
+      "title": "Diminoble Transportations est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés",
+      "description": "Nous opérons à l'échelle nationale, simplifiant le processus de relocalisation de divers types de véhicules pour nos clients. Avec plus de 5 ans d'expertise dans l'industrie de la relocalisation, nos spécialistes ont fourni un excellent service aux entreprises, aux agents contractuels et aux particuliers. Notre transport fluide de véhicules couvre les 50 États. Si vous entreprenez un projet de relocalisation, nous savons que de nombreuses options s'offrent à vous. Cependant, aucune ne se compare à NFS Transportations. Nous sommes fiers de notre engagement envers la qualité du service et la satisfaction des clients. En nous choisissant, nous nous assurons que vous comprenez les processus impliqués, car nous croyons en une communication transparente avec nos clients. Offrir un excellent rapport qualité-prix est notre priorité.",
+      "highlights": {
+        "years": "Années d'expérience",
+        "states": "États couverts"
+      },
+      "badge": {
+        "years": "Entièrement agréé",
+        "states": "& Service assuré"
+      }
+    }
   },
   "videoReviews": { "title": "", "description": "" },
   "yelpReviews": { "title": "", "description": "" },

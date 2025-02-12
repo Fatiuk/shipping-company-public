@@ -1,5 +1,5 @@
 "use client";
-import Cards from "@/components/Cards";
+import About from "@/components/About";
 import FaqItem from "@/components/FaqItem";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
@@ -11,16 +11,27 @@ import Stats from "@/components/Stats";
 import { FC, useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { quotations } from "@/app/data";
-import { stats } from "@/app/data";
-import imgHero from "@/assets/img/hero.webp";
-import imgHero2 from "@/assets/img/blue-truck-dniprollc.png";
-import QuoteBg from "@/assets/img/bg-punch.jpg";
+import imgHero from "@/assets/img/blue-truck-dniprollc.png";
 import en from "@/i18n/messages/en.json";
 
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
   src: en.home.whyUs.benefits[index].src,
   title: `home.whyUs.benefits.${index}.title`,
   description: `home.whyUs.benefits.${index}.description`,
+}));
+
+const achievments = en.home.whyUs.achievments.map((_, index) => ({
+  count: `whyUs.achievments.${index}.count`,
+  suffix: `whyUs.achievments.${index}.suffix`,
+  title: `whyUs.achievments.${index}.title`,
+}));
+
+const stats = en.home.whyUs.achievments.map((_, index) => ({
+  id: index + 1,
+  targetNumberStr: `home.whyUs.achievments.${index}.count`,
+  increment: 100,
+  suffix: `home.whyUs.achievments.${index}.suffix`,
+  text: `home.whyUs.achievments.${index}.title`,
 }));
 
 const Home: FC = () => {
@@ -33,37 +44,49 @@ const Home: FC = () => {
 
   return (
     <>
-      <SectionFullWidth image={imgHero2.src}>
+      <SectionFullWidth image={imgHero.src}>
         <Hero />
       </SectionFullWidth>
 
-      <Section title="home.title">
-        <p className="font-sans text-lg">{t("description")}</p>
+      <Section className="!bg-[--color-b900-b200]">
+        <div className="font-bold flex justify-between text-[--color-w-b900]">
+          {achievments.map((a, i) => (
+            <div key={a.title} className="flex items-center gap-3">
+              <span className="text-4xl">
+                {parseInt(t(a.count)).toLocaleString()} {t(a.suffix)}
+              </span>
+              <span className="text-2xl flex flex-col">
+                {t(a.title)
+                  .split(" ")
+                  .map((word, index) => (
+                    <span key={index} className="leading-tight uppercase">
+                      {word}
+                    </span>
+                  ))}
+              </span>
+            </div>
+          ))}
+        </div>
       </Section>
 
+      <SectionFullWidth bgClass="!bg-[--color-b50-b700]">
+        <Stats data={stats} />
+      </SectionFullWidth>
+
       <SectionFullWidth
-        bgClass="bg-oblue-100 dark:bg-owhite"
-        title="home.title"
+        bgClass="!bg-[--color-b100-b200]"
+        title="home.whyUs.title"
       >
         <Features data={benefits} />
       </SectionFullWidth>
 
-      {/* <Section title="home.">
-        <Cards data={classesInfo} />
-      </Section> */}
-
-      {/* <SectionFullWidth hasOverlay={true} style={{"--quote-bg": `url(${QuoteBg.src})`} as React.CSSProperties} className="bg-[image:var(--quote-bg)] bg-opacity-90 bg-cover bg-center bg-fixed opacity-90"> */}
-      <SectionFullWidth bgImage={QuoteBg.src}>
-        <Quotation quote={quote} />
+      <SectionFullWidth bgClass="!bg-[--color-w-b700]">
+        <About />
       </SectionFullWidth>
 
       {/* <Section title="home.">
         <Instructors instructors={instructors} />
       </Section> */}
-
-      <SectionFullWidth bgClass="bg-oblue-100 dark:bg-owhite">
-        <Stats data={stats} />
-      </SectionFullWidth>
 
       {/* <Section title="FAQ">
         <FaqItem />

@@ -55,11 +55,11 @@ const navigation: NavigationItemI[] = [
       { label: "faq", href: "/faq" },
     ],
   },
-  {
-    label: "quote",
-    href: "/contact-us",
-    cta: "primary",
-  },
+  // {
+  //   label: "quote",
+  //   href: "/contact-us",
+  //   cta: "primary",
+  // },
 ];
 
 export const metadata: Metadata = {
@@ -124,7 +124,7 @@ export default async function RootLayout({ children, params }: Props) {
         >
           <NextIntlClientProvider messages={messages} locale={locale}>
             <Navigation navigation={navigation} />
-            <main className="w-full max-w-xxl flex flex-wrap flex-grow mt-[64px] mx-auto px-0">
+            <main className="w-full flex flex-wrap flex-grow mt-[64px] mx-auto px-0">
               {children}
             </main>
             <Footer

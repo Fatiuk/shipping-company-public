@@ -35,6 +35,8 @@
   /* light theme colors*/
   --color-a700-a900: var(--accent-700);
   --color-a700-b200: var(--accent-700);
+  --color-a900-a400: var(--accent-900);
+  --color-a900-a500: var(--accent-900);
   --color-a900-b100: var(--accent-900);
   --color-a900-b200: var(--accent-900);
   --color-a900-a700: var(--accent-900);
@@ -43,16 +45,27 @@
   --color-b50-b900: var(--blue-50);
   --color-b50-b800: var(--blue-50);
   --color-b50-b700: var(--blue-50);
+  --color-b100-b200: var(--blue-100);
+  --color-b100-w: var(--blue-100);
   --color-b200-b600: var(--blue-200);
   --color-b500-w: var(--blue-500);
-  --color-b900-w: var(--blue-900);
+  --color-b700-w: var(--blue-700);
+  --color-b700-b50: var(--blue-700);
+  --color-b700-b100: var(--blue-700);
+  --color-b700-b200: var(--blue-700);
   --color-b700-b400: var(--blue-700);
+  --color-b900-b100: var(--blue-900);
+  --color-b900-b200: var(--blue-900);
+  --color-b900-w: var(--blue-900);
 
   --color-black-b50: black;
   --color-black-w: black;
 
   --color-w-black: var(--white);
+  --color-w-b100: var(--white);
+  --color-w-b200: var(--white);
   --color-w-b700: var(--white);
+  --color-w-b900: var(--white);
 }
 
 .dark {
@@ -61,6 +74,8 @@
 
   --color-a700-a900: var(--accent-900);
   --color-a700-b200: var(--blue-200);
+  --color-a900-a400: var(--accent-400);
+  --color-a900-a500: var(--accent-500);
   --color-a900-b100: var(--blue-100);
   --color-a900-b200: var(--blue-200);
   --color-a900-a700: var(--accent-700);
@@ -68,17 +83,28 @@
   --color-b50-b950: var(--blue-950);
   --color-b50-b900: var(--blue-900);
   --color-b50-b800: var(--blue-800);
-  --color-b50-b700: var(--blue-7000);
+  --color-b50-b700: var(--blue-700);
+  --color-b100-b200: var(--blue-200);
+  --color-b100-w: var(--white);
   --color-b200-b600: var(--blue-600);
   --color-b500-w: var(--white);
+  --color-b700-b50: var(--blue-50);
+  --color-b700-b100: var(--blue-100);
+  --color-b700-b200: var(--blue-200);
   --color-b700-b400: var(--blue-400);
+  --color-b700-w: var(--white);
+  --color-b900-b100: var(--blue-100);
+  --color-b900-b200: var(--blue-200);
   --color-b900-w: var(--white);
 
   --color-black-b50: var(--blue-50);
   --color-black-w: var(--white);
 
   --color-w-black: black;
+  --color-w-b100: var(--blue-100);
+  --color-w-b200: var(--blue-200);
   --color-w-b700: var(--blue-700);
+  --color-w-b900: var(--blue-900);
 }
 
 @media (prefers-color-scheme: dark) {

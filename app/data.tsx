@@ -148,30 +148,6 @@ export const faq = [
   },
 ];
 
-export const stats: StatsI[] = [
-  {
-    id: 1,
-    targetNumber: 10,
-    increment: 1,
-    suffix: " years",
-    text: "Serving the community with high-quality judo training",
-  },
-  {
-    id: 2,
-    targetNumber: 30,
-    increment: 1,
-    suffix: "+",
-    text: "Medals won by Otoshi students in regional competitions in the past 5 years",
-  },
-  {
-    id: 3,
-    targetNumber: 80,
-    increment: 10,
-    suffix: "%",
-    text: "Member retention rate, reflecting a positive training experience",
-  },
-];
-
 export const groups: GroupsI[] = [
   {
     city: {

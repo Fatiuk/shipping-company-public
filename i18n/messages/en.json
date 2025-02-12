@@ -59,26 +59,61 @@
       "description": "Many things make us stand out in our industry. These are the reasons why we are the go-to company for many in need of vehicle shipment.",
       "benefits": [
         {
-          "src": "/benefits/fitness.svg",
-          "title": "Excellent Customer Service",
-          "description": "Our customer care team is always on deck to be of service to you. We'd like to know how we can help. Do you need professional assistance on your car shipping project? We are readily available and always attentive to your questions. It is our point of duty and one we are committed to as we aim to provide you solutions."
+          "src": "/benefits/map.svg",
+          "title": "Nationwide Coverage",
+          "description": "Diminoble Transportations offers seamless vehicle relocation services across all 50 states, ensuring your vehicle reaches its destination efficiently, regardless of location."
         },
         {
-          "src": "/benefits/gi.svg",
-          "title": "Affordable Prices",
-          "description": "We try as much as possible to work within your budget. When you contact us, we let you know our fees and any other charges that may be involved. There are no hidden fees after delivery. When compared to the industry standard, our rates are relatively low. With us, there's no choosing between quality service and affordable price. We give you both."
+          "src": "/benefits/team.svg",
+          "title": "Experienced Team",
+          "description": "With over 5 years in the relocation industry, our specialists provide exceptional service to companies, agents, and individuals, ensuring a smooth and professional experience."
         },
         {
-          "src": "/benefits/gi.svg",
-          "title": "We are Highly Professional",
-          "description": "All our drivers and other staff members are qualified professionals who have been in the industry long enough. With us, you can be rest assured your vehicle, motorbike, boat, tractor, or any auto are in safe and capable hands. The mix of our professionalism and wide experience in this industry is what you need to get your vehicle delivered to your preferred location."
+          "src": "/benefits/car-insurance.svg",
+          "title": "Fully Insured and Bonded Partners",
+          "description": "We collaborate with fully insured and bonded partners, guaranteeing the safety and security of your vehicle throughout the transportation process."
+        },
+        {
+          "src": "/benefits/shield-eye.svg",
+          "title": "Transparent Process",
+          "description": "We pride ourselves on keeping clients informed, ensuring you understand every step of the transportation process for a hassle-free experience."
+        }
+      ],
+      "achievments": [
+        {
+          "count": "15000",
+          "suffix": "",
+          "title": "Shipping Customers"
+        },
+        {
+          "count": "40000",
+          "suffix": "",
+          "title": "Vehicles Shipped"
+        },
+        {
+          "count": "1000",
+          "suffix": "+",
+          "title": "Positive Reviews"
         }
       ],
       "howItWorks": "How It Works"
     },
     "quote": "Start your free quote",
     "callUs": "Call Us Now",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "about": {
+      "sectionTitle": "About us",
+      "title": "Diminoble ransportations is a licensed shipping company that works with fully insured and bonded partners",
+      "description": "We operate nationwide, simplifying the process of relocating various types of vehicles for our clients. With over 5 years of expertise in the relocation industry, our specialists have provided excellent service to companies, contractual agents, and private individuals. Our seamless transportation of vehicles spans all 50 states. If you're embarking on a relocation project, we recognize that numerous options are available. However, none compare to NFS transportation. We take pride in our commitment to quality service delivery and customer satisfaction. When you choose us, we ensure you comprehend the involved processes because we believe in keeping our clients informed. Providing value for money is our forte.",
+      "highlights": {
+        "years": "Years of Experience",
+        "states": "States Covered"
+      },
+      "badge": {
+        "years": "Fully Licensed",
+        "states": "& Insured Service"
+      }
+    }
   },
   "videoReviews": { "title": "", "description": "" },
   "yelpReviews": { "title": "", "description": "" },
