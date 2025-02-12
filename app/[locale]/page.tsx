@@ -13,6 +13,7 @@ import { useTranslations } from "next-intl";
 import { quotations } from "@/app/data";
 import { stats } from "@/app/data";
 import imgHero from "@/assets/img/hero.webp";
+import imgHero2 from "@/assets/img/blue-truck-dniprollc.png";
 import QuoteBg from "@/assets/img/bg-punch.jpg";
 import en from "@/i18n/messages/en.json";
 
@@ -32,7 +33,7 @@ const Home: FC = () => {
 
   return (
     <>
-      <SectionFullWidth bgImage={imgHero.src}>
+      <SectionFullWidth image={imgHero2.src}>
         <Hero />
       </SectionFullWidth>
 
