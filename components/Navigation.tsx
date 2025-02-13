@@ -45,7 +45,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
   return (
     <>
       <div className="fixed py-2 top-0 z-50 w-full bg-[--color-b50-b950] shadow-md">
-        <div className="flex justify-between mx-auto sm:max-w-full md:max-w-[2000px] px-8 2xl:px-20">
+        <div className="flex justify-between mx-auto sm:max-w-full md:max-w-[1600px] px-8 2xl:px-20">
           <div className="min-w-12 min-h-12 self-center">
             <Logo />
           </div>

@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { Nunito_Sans, Roboto_Condensed } from "next/font/google";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
-import { groups } from "@/app/data";
+import { location } from "@/app/data";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
@@ -55,11 +55,28 @@ const navigation: NavigationItemI[] = [
       { label: "faq", href: "/faq" },
     ],
   },
-  // {
-  //   label: "quote",
-  //   href: "/contact-us",
-  //   cta: "primary",
-  // },
+];
+
+const footerNavigation: NavigationItemI[] = [
+  {
+    label: "company",
+    submenu: [
+      { label: "about", href: "/about" },
+      { label: "team", href: "/team" },
+      { label: "blog", href: "/blog" },
+      { label: "testimonials", href: "/video-reviews" },
+    ],
+  },
+  {
+    label: "features",
+    submenu: [
+      { label: "faq", href: "/faq" },
+      { label: "termsAndConditions", href: "/terms-conditions" },
+      { label: "accessibilityStatement", href: "/accessibility-statement" },
+      { label: "orgPolicy", href: "/organizational-policy" },
+      { label: "privacyPolicy", href: "/privacy-policy" },
+    ],
+  },
 ];
 
 export const metadata: Metadata = {
@@ -128,12 +145,19 @@ export default async function RootLayout({ children, params }: Props) {
               {children}
             </main>
             <Footer
-              navigation={navigation}
-              address={groups.map((group) => ({
-                city: group.city.label,
-                address: group.location.address,
-                mapLink: group.location.mapLink,
-              }))}
+              navigation={footerNavigation}
+              // address={groups.map((group) => ({
+              //   city: group.city.label,
+              //   address: group.location.address,
+              //   mapLink: group.location.mapLink,
+              // }))}
+              address={[
+                {
+                  city: location.city.label,
+                  address: location.address,
+                  mapLink: location.mapLink,
+                },
+              ]}
             />
           </NextIntlClientProvider>
         </ThemeProvider>

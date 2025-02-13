@@ -13,9 +13,6 @@ const StatsItem: FC<{
   const targetNumber = parseFloat(t(targetNumberStr));
   const duration = targetNumber / (increment * 10);
 
-  console.log("targetNumberStr", t(targetNumberStr));
-  console.log("targetNumber", parseFloat(targetNumberStr));
-
   useEffect(() => {
     if (currentNumber >= targetNumber) return;
 

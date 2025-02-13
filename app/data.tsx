@@ -2,16 +2,14 @@ import AddressI from "@/types/address";
 import CardI from "@/types/card";
 import ColorI from "@/types/color";
 import FeatureI from "@/types/feature";
-import GenderI from "@/types/gender";
-import GroupsI from "@/types/groups";
 import InstructorI from "@/types/instructor";
 import Link from "next/link";
 import PrintLocationI from "@/types/printLocation";
 import QuotationI from "@/types/quotation";
 import React from "react";
-import SizeI from "@/types/size";
 import StatsI from "@/types/stats";
 import StoreItemI from "@/types/storeItem";
+import LocationI from "@/types/location";
 
 export const address: AddressI[] = [
   {
@@ -147,249 +145,13 @@ export const faq = [
     ),
   },
 ];
-
-export const groups: GroupsI[] = [
-  {
-    city: {
-      value: "dieppe",
-      label: "Dieppe",
-    },
-    location: {
-      address: "1571 Chemin Melanson Greater Lakeburn",
-      postalCode: "E1H 2B9",
-      mapLink:
-        "!1m18!1m12!1m3!1d2767.7235260250486!2d-64.68603492336719!3d46.07655369237333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca0bb7f221012a9%3A0x7d25b701b5060ad4!2s1571%20Melanson%20Rd%2C%20Greater%20Lakeburn%2C%20NB%20E1H%202B8!5e0!3m2!1sen!2sca!4v1730758297318!5m2!1sen!2sca",
-    },
-    groups: [
-      {
-        id: "ninjas",
-        name: {
-          en: "Ninjas",
-          fr: "Ninjas",
-        },
-        age: { min: 4, max: 6 },
-        cost: 50,
-        schedule: [
-          {
-            day: { en: "Saturday", fr: "Samedi" },
-            timeStart: "09:00",
-            timeEnd: "09:45",
-          },
-        ],
-      },
-      {
-        id: "beginners",
-        name: {
-          en: "Beginners",
-          fr: "Débutants",
-        },
-        age: { min: 6, max: 10 },
-        cost: 80,
-        schedule: [
-          {
-            day: { en: "Tuesday", fr: "Mardi" },
-            timeStart: "17:00",
-            timeEnd: "18:00",
-          },
-          {
-            day: { en: "Tuesday", fr: "Mardi" },
-            timeStart: "18:00",
-            timeEnd: "19:00",
-          },
-          {
-            day: { en: "Thursday", fr: "Jeudi" },
-            timeStart: "17:00",
-            timeEnd: "18:00",
-          },
-          {
-            day: { en: "Thursday", fr: "Jeudi" },
-            timeStart: "18:00",
-            timeEnd: "19:00",
-          },
-        ],
-      },
-      {
-        id: "intermediates-regular",
-        name: {
-          en: "Regular Intermediates",
-          fr: "Intermédiaires réguliers",
-        },
-        age: { min: 10, max: 14 },
-        cost: 90,
-        schedule: [
-          {
-            day: { en: "Monday", fr: "Lundi" },
-            timeStart: "18:00",
-            timeEnd: "19:30",
-          },
-          {
-            day: { en: "Friday", fr: "Vendredi" },
-            timeStart: "18:00",
-            timeEnd: "19:30",
-          },
-        ],
-      },
-      {
-        id: "intermediates-competitive",
-        name: {
-          en: "Competitive Intermediates",
-          fr: "Intermédiaires compétitifs",
-        },
-        age: { min: 10, max: 14 },
-        cost: 135,
-        schedule: [
-          {
-            day: { en: "Monday", fr: "Lundi" },
-            timeStart: "18:00",
-            timeEnd: "19:30",
-          },
-          {
-            day: { en: "Wednesday", fr: "Mercredi" },
-            timeStart: "18:00",
-            timeEnd: "19:30",
-          },
-          {
-            day: { en: "Friday", fr: "Vendredi" },
-            timeStart: "18:00",
-            timeEnd: "19:30",
-          },
-        ],
-      },
-      {
-        id: "adults-and-teens",
-        name: {
-          en: "Adults & Teens",
-          fr: "Adultes & Ados",
-        },
-        age: { min: 14, max: null },
-        cost: 90,
-        schedule: [
-          {
-            day: { en: "Monday", fr: "Lundi" },
-            timeStart: "19:30",
-            timeEnd: "21:00",
-          },
-          {
-            day: { en: "Wednesday", fr: "Mercredi" },
-            timeStart: "19:30",
-            timeEnd: "21:00",
-          },
-        ],
-      },
-      {
-        id: "elites",
-        name: {
-          en: "Elites",
-          fr: "Elites",
-        },
-        age: null,
-        cost: 195,
-        schedule: [
-          {
-            day: { en: "Tuesday", fr: "Mardi" },
-            timeStart: "19:00",
-            timeEnd: "21:00",
-          },
-          {
-            day: { en: "Thursday", fr: "Jeudi" },
-            timeStart: "19:00",
-            timeEnd: "21:00",
-          },
-          {
-            day: { en: "Friday", fr: "Vendredi" },
-            timeStart: "19:30",
-            timeEnd: "21:00",
-          },
-          {
-            day: { en: "Saturday", fr: "Samedi" },
-            timeStart: "10:00",
-            timeEnd: "12:00",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    city: {
-      value: "riverview",
-      label: "Riverview",
-    },
-    location: {
-      address: "567 Coverdale Road Riverview",
-      postalCode: "E1B 3K7",
-      mapLink:
-        "!1m18!1m12!1m3!1d2768.4143490760275!2d-64.80955742017466!3d46.06277865069441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca0b9067be4069f%3A0x7500516d1b918399!2s567%20Coverdale%20Rd%2C%20Riverview%2C%20NB%20E1B%203K7!5e0!3m2!1sen!2sca!4v1730758794768!5m2!1sen!2sca",
-    },
-    groups: [
-      {
-        id: "beginners",
-        name: {
-          en: "Beginners",
-          fr: "Débutants",
-        },
-        age: { min: 6, max: 10 },
-        cost: 80,
-        schedule: [
-          {
-            day: { en: "Monday", fr: "Lundi" },
-            timeStart: "18:00",
-            timeEnd: "19:00",
-          },
-          {
-            day: { en: "Wednesday", fr: "Mercredi" },
-            timeStart: "18:00",
-            timeEnd: "19:00",
-          },
-        ],
-      },
-      {
-        id: "intermediates-regular",
-        name: {
-          en: "Regular Intermediates",
-          fr: "Intermédiaires réguliers",
-        },
-        age: { min: 11, max: null },
-        cost: 85,
-        schedule: [
-          {
-            day: { en: "Monday", fr: "Lundi" },
-            timeStart: "19:15",
-            timeEnd: "20:30",
-          },
-          {
-            day: { en: "Wednesday", fr: "Mercredi" },
-            timeStart: "19:15",
-            timeEnd: "20:30",
-          },
-        ],
-      },
-    ],
-  },
-];
-
-export const genders: GenderI[] = [
-  {
-    value: "male",
-    label: {
-      en: "male",
-      fr: "masculin",
-    },
-  },
-  {
-    value: "female",
-    label: {
-      en: "female",
-      fr: "femelle",
-    },
-  },
-  {
-    value: "nonbinary",
-    label: {
-      en: "non-binary",
-      fr: "non binaire",
-    },
-  },
-];
+export const location: LocationI = {
+  city: { value: "buford", label: "Buford" },
+  address: "6005 Chimney Springs Rd",
+  zip: "30518",
+  mapLink:
+    "!1m18!1m12!1m3!1d3301.6505654960797!2d-84.0110305882497!3d34.15528101216963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59224f0b5cfa9%3A0xca2a62d0db8eb0b4!2s6005%20Chimney%20Springs%20Rd%2C%20Buford%2C%20GA%2030518%2C%20USA!5e0!3m2!1sen!2sca!4v1739399333884!5m2!1sen!2sca",
+};
 
 export const instructors: InstructorI[] = [
   {
@@ -575,30 +337,6 @@ export const classesInfo: CardI[] = [
     description:
       "The customer is very important, the customer will be followed by the customer. But there is no makeup that does not support the policy.",
     alt: "",
-  },
-];
-
-export const achievements: StatsI[] = [
-  {
-    id: 1,
-    targetNumber: 10,
-    increment: 1,
-    suffix: " champs",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum nulla non aliquet lobortis. Nullam eget ligula magna.",
-  },
-  {
-    id: 2,
-    targetNumber: 20,
-    increment: 1,
-    suffix: " medals",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum nulla non aliquet lobortis. Nullam eget ligula magna.",
-  },
-  {
-    id: 3,
-    targetNumber: 300,
-    increment: 10,
-    suffix: " judokas",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum nulla non aliquet lobortis. Nullam eget ligula magna.",
   },
 ];
 
@@ -1161,8 +899,6 @@ export const itemColors: ColorI[] = [
     fr: "Jaune",
   },
 ];
-
-export const itemSizes: SizeI[] = ["S", "M", "L", "XL", "2XL", "3XL"];
 
 export const itemPrintLocations: PrintLocationI[] = [
   {

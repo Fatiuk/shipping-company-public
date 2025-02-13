@@ -46,6 +46,8 @@
   --color-b50-b800: var(--blue-50);
   --color-b50-b700: var(--blue-50);
   --color-b100-b200: var(--blue-100);
+  --color-b100-b700: var(--blue-100);
+  --color-b100-b900: var(--blue-100);
   --color-b100-w: var(--blue-100);
   --color-b200-b600: var(--blue-200);
   --color-b500-w: var(--blue-500);
@@ -85,6 +87,8 @@
   --color-b50-b800: var(--blue-800);
   --color-b50-b700: var(--blue-700);
   --color-b100-b200: var(--blue-200);
+  --color-b100-b700: var(--blue-700);
+  --color-b100-b900: var(--blue-900);
   --color-b100-w: var(--white);
   --color-b200-b600: var(--blue-600);
   --color-b500-w: var(--white);

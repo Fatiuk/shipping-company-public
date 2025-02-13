@@ -1,4 +1,10 @@
 {
+  "location": {
+    "city": "Buford",
+    "address": "6005 Chimney Springs Rd",
+    "zip": "30518 ",
+    "mapLink": "!1m18!1m12!1m3!1d3301.6505654960797!2d-84.0110305882497!3d34.15528101216963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59224f0b5cfa9%3A0xca2a62d0db8eb0b4!2s6005%20Chimney%20Springs%20Rd%2C%20Buford%2C%20GA%2030518%2C%20USA!5e0!3m2!1sen!2sca!4v1739399333884!5m2!1sen!2sca"
+  },
   "localeSwitcher": {
     "label": "Changer de langue",
     "locale": "{locale, select, fr {fr} en {en} other {inconnu}}",
