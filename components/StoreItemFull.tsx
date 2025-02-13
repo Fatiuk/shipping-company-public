@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Input from "@/components/form/Input";
+import Input from "@/components/ui/form/Input";
 import Link from "next/link";
 import React, { FC, useState } from "react";
 import { useGlobalContext } from "@/context/context";

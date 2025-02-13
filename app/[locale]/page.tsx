@@ -1,6 +1,6 @@
 "use client";
 import About from "@/components/About";
-import FaqItem from "@/components/FaqItem";
+import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Quotation from "@/components/Quotation";
@@ -12,7 +12,9 @@ import { FC, useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { quotations } from "@/app/data";
 import imgHero from "@/assets/img/blue-truck-dniprollc.png";
+import imgQuoteForm from "@/assets/img/black_truck.webp";
 import en from "@/i18n/messages/en.json";
+import QuoteForm from "@/components/QuoteForm";
 
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
   src: en.home.whyUs.benefits[index].src,
@@ -69,8 +71,12 @@ const Home: FC = () => {
         </div>
       </Section>
 
-      <SectionFullWidth bgClass="!bg-[--color-b50-b700]">
+      {/* <SectionFullWidth bgClass="!bg-[--color-b50-b700]">
         <Stats data={stats} />
+      </SectionFullWidth> */}
+
+      <SectionFullWidth bgClass="!bg-[--color-w-b700]">
+        <About />
       </SectionFullWidth>
 
       <SectionFullWidth
@@ -80,16 +86,19 @@ const Home: FC = () => {
         <Features data={benefits} />
       </SectionFullWidth>
 
-      <SectionFullWidth bgClass="!bg-[--color-w-b700]">
-        <About />
+      <SectionFullWidth
+        bgImage={imgQuoteForm.src}
+        bgClass="bg-gradient-to-b from-oblue-200/65 to-oblue-50 dark:from-oblue-600/75 dark:to-oblue-900/75"
+      >
+        <QuoteForm />
       </SectionFullWidth>
 
       {/* <Section title="home.">
         <Instructors instructors={instructors} />
       </Section> */}
 
-      {/* <Section title="FAQ">
-        <FaqItem />
+      {/* <Section title="home.faq.title">
+        <Faq />
       </Section> */}
     </>
   );

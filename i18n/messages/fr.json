@@ -5,6 +5,10 @@
     "zip": "30518 ",
     "mapLink": "!1m18!1m12!1m3!1d3301.6505654960797!2d-84.0110305882497!3d34.15528101216963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59224f0b5cfa9%3A0xca2a62d0db8eb0b4!2s6005%20Chimney%20Springs%20Rd%2C%20Buford%2C%20GA%2030518%2C%20USA!5e0!3m2!1sen!2sca!4v1739399333884!5m2!1sen!2sca"
   },
+  "contactData": {
+    "email": { "title": "Email", "value": "teamlead@diminoble.com" },
+    "phone": { "title": "Phone", "value": "(561) 894-5331" }
+  },
   "localeSwitcher": {
     "label": "Changer de langue",
     "locale": "{locale, select, fr {fr} en {en} other {inconnu}}",
@@ -38,6 +42,9 @@
     "about": "À propos",
     "faq": "FAQ",
     "contact": "Contactez-nous",
+    "quote": "Obtenez votre prix",
+    "quote2": "Obtenez votre devis gratuit",
+    "quote3": "Obtenez un devis",
     "team": "Notre équipe",
     "testimonials": "Témoignages vidéo",
     "termsAndConditions": "Conditions générales",
@@ -119,7 +126,79 @@
         "years": "Entièrement agréé",
         "states": "& Service assuré"
       }
+    },
+    "faq": {
+      "title": "Foire aux questions",
+      "items": [
+        {
+          "question": "Quels services propose Diminoble Transportations ?",
+          "answer": "Diminoble Transportations offre des services de relocalisation de véhicules à l'échelle nationale, couvrant tous types de véhicules dans les 50 États."
+        },
+        {
+          "question": "Comment puis-je obtenir un devis pour expédier mon véhicule ?",
+          "answer": "Vous pouvez demander un devis en visitant notre site Web et en remplissant le formulaire 'Obtenez votre prix' avec votre lieu de départ, destination, date de déménagement et numéro de téléphone."
+        },
+        {
+          "question": "Diminoble Transportations est-elle une entreprise agréée et assurée ?",
+          "answer": "Oui, Diminoble Transportations est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés."
+        },
+        {
+          "question": "Depuis combien de temps Diminoble Transportations est-elle dans l'industrie de la relocalisation de véhicules ?",
+          "answer": "Nous avons plus de 5 ans d'expérience dans l'industrie de la relocalisation de véhicules, au service des entreprises, agents contractuels et particuliers."
+        },
+        {
+          "question": "Quels types de véhicules Diminoble Transportations peut-elle relocaliser ?",
+          "answer": "Nous assurons le transport de tous types de véhicules, garantissant une livraison sûre et fiable à travers le pays."
+        },
+        {
+          "question": "Comment fonctionne le processus de relocalisation des véhicules ?",
+          "answer": "Notre processus comprend la soumission d'une demande client, l'estimation du coût, la sélection du service et l'accord du contrat, la prise en charge du véhicule et la livraison. Pour plus de détails, veuillez consulter la section 'Comment ça marche' sur notre site Web."
+        },
+        {
+          "question": "Comment puis-je contacter Diminoble Transportations pour plus d'informations ?",
+          "answer": "Vous pouvez nous joindre par e-mail à teamlead@diminoble.com ou par téléphone au (561) 894-5331."
+        }
+      ]
     }
+  },
+  "quoteForm": {
+    "formTitle": "Obtenez votre prix",
+    "content": {
+      "title": "Obtenez votre devis gratuit dès aujourd'hui",
+      "description": "Services professionnels de transport de véhicules dans les 50 États. Rapide, fiable et entièrement assuré.",
+      "licensed": "Agréé",
+      "certified": "Entièrement certifié",
+      "insured": "Assuré",
+      "coverage": "Couverture à 100%"
+    },
+    "fields": {
+      "originZip": {
+        "name": "Code postal",
+        "label": "Code postal d'origine",
+        "placeholder": "Code postal d'origine"
+      },
+      "destinationZip": {
+        "name": "Code postal",
+        "label": "Code postal de destination",
+        "placeholder": "Code postal de destination"
+      },
+      "movingDate": {
+        "name": "date",
+        "label": "Date de déménagement",
+        "placeholder": "Date de déménagement"
+      },
+      "phone": {
+        "name": "numéro de téléphone",
+        "label": "Numéro de téléphone",
+        "placeholder": "Numéro de téléphone"
+      }
+    },
+    "validation": {
+      "required": "{field} est requis",
+      "mustBeValid": "Doit être un(e) {field} valide",
+      "pastDate": "La date ne peut pas être dans le passé"
+    },
+    "cta": "Obtenir un devis gratuit"
   },
   "videoReviews": { "title": "", "description": "" },
   "yelpReviews": { "title": "", "description": "" },

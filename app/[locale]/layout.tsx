@@ -50,9 +50,9 @@ const navigation: NavigationItemI[] = [
   {
     label: "company",
     submenu: [
-      { label: "blog", href: "/blog" },
-      { label: "about", href: "/about" },
-      { label: "faq", href: "/faq" },
+      { label: "blog", href: "/company/blog" },
+      { label: "about", href: "/company/about" },
+      { label: "faq", href: "/company/faq" },
     ],
   },
 ];
@@ -61,16 +61,16 @@ const footerNavigation: NavigationItemI[] = [
   {
     label: "company",
     submenu: [
-      { label: "about", href: "/about" },
+      { label: "about", href: "/company/about" },
       { label: "team", href: "/team" },
-      { label: "blog", href: "/blog" },
       { label: "testimonials", href: "/video-reviews" },
+      { label: "blog", href: "/company/blog" },
     ],
   },
   {
     label: "features",
     submenu: [
-      { label: "faq", href: "/faq" },
+      { label: "faq", href: "/company/faq" },
       { label: "termsAndConditions", href: "/terms-conditions" },
       { label: "accessibilityStatement", href: "/accessibility-statement" },
       { label: "orgPolicy", href: "/organizational-policy" },

@@ -5,6 +5,10 @@
     "zip": "30518 ",
     "mapLink": "!1m18!1m12!1m3!1d3301.6505654960797!2d-84.0110305882497!3d34.15528101216963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59224f0b5cfa9%3A0xca2a62d0db8eb0b4!2s6005%20Chimney%20Springs%20Rd%2C%20Buford%2C%20GA%2030518%2C%20USA!5e0!3m2!1sen!2sca!4v1739399333884!5m2!1sen!2sca"
   },
+  "contactData": {
+    "email": { "title": "Email", "value": "teamlead@diminoble.com" },
+    "phone": { "title": "Phone", "value": "(561) 894-5331" }
+  },
   "localeSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, fr {fr} en {en} other {unknown}}",
@@ -38,6 +42,9 @@
     "about": "About",
     "faq": "FAQ",
     "contact": "Contact Us",
+    "quote": "Get Your Price",
+    "quote2": "Get Your Free Quote",
+    "quote3": "Get a Quote",
     "team": "Our Team",
     "testimonials": "Video Testimonials",
     "termsAndConditions": "Terms & Conditions",
@@ -119,7 +126,79 @@
         "years": "Fully Licensed",
         "states": "& Insured Service"
       }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What services does Diminoble Transportations offer?",
+          "answer": "Diminoble Transportations provides nationwide vehicle relocation services, handling all types of vehicles across all 50 states."
+        },
+        {
+          "question": "How can I request a quote for shipping my vehicle?",
+          "answer": "You can request a quote by visiting our website and filling out the 'Get Your Price' form with your origin, destination, moving date, and phone number."
+        },
+        {
+          "question": "Is Diminoble Transportations a licensed and insured company?",
+          "answer": "Yes, Diminoble Transportations is a licensed shipping company that collaborates with fully insured and bonded partners."
+        },
+        {
+          "question": "How long has Diminoble Transportations been in the vehicle relocation industry?",
+          "answer": "We have over 5 years of experience in the vehicle relocation industry, serving companies, contractual agents, and private individuals."
+        },
+        {
+          "question": "What types of vehicles can Diminoble Transportations relocate?",
+          "answer": "We handle the transportation of all types of vehicles, ensuring safe and reliable delivery across the nation."
+        },
+        {
+          "question": "How does the vehicle relocation process work?",
+          "answer": "Our process involves the submission of a client request, providing an estimate, service selection and contract agreement, vehicle pickup, and delivery. For detailed information, please visit the 'How It Works' section on our website."
+        },
+        {
+          "question": "How can I contact Diminoble Transportations for more information?",
+          "answer": "You can reach us via email at teamlead@diminoble.com or by phone at (561) 894-5331."
+        }
+      ]
     }
+  },
+  "quoteForm": {
+    "formTitle": "Get Your Price",
+    "content": {
+      "title": "Get Your Free Moving Quote Today",
+      "description": "Professional vehicle transportation services across all 50 states. Fast, reliable, and fully insured.",
+      "licensed": "Licensed",
+      "certified": "Fully Certified",
+      "insured": "Insured",
+      "coverage": "100% Coverage"
+    },
+    "fields": {
+      "originZip": {
+        "name": "ZIP code",
+        "label": "Origin ZIP",
+        "placeholder": "Origin ZIP Code"
+      },
+      "destinationZip": {
+        "name": "ZIP code",
+        "label": "Destination ZIP",
+        "placeholder": "Destination ZIP Code"
+      },
+      "movingDate": {
+        "name": "date",
+        "label": "Moving date",
+        "placeholder": "Moving date"
+      },
+      "phone": {
+        "name": "phone number",
+        "label": "Phone number",
+        "placeholder": "Phone Number"
+      }
+    },
+    "validation": {
+      "required": "{field} is required",
+      "mustBeValid": "Must be a valid {field}",
+      "pastDate": "Date cannot be in the past"
+    },
+    "cta": "Get Free Quote"
   },
   "videoReviews": { "title": "", "description": "" },
   "yelpReviews": { "title": "", "description": "" },

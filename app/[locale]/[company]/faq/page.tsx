@@ -1,24 +1,40 @@
-"use client";
-import { faq } from "@/app/data";
-import FAQItem from "@/components/FaqItem";
-import React, { FC } from "react";
-import { useGlobalContext } from "@/context/context";
+import { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import Section from "@/components/Section";
+import Faq from "@/components/Faq";
 
-const Faq: FC = () => {
-  const { lang } = useGlobalContext();
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const resolvedParams = await Promise.resolve(params);
+
+  const t = await getTranslations({
+    locale: resolvedParams.locale,
+    namespace: "home.faq",
+  });
+
+  return {
+    title: t("title") || "FAQ",
+    description: t("title") || "Frequently Asked Questions",
+  };
+}
+
+const FaqPage = async ({ params }: { params: { locale: string } }) => {
+  // const resolvedParams = await Promise.resolve(params);
+
+  // setRequestLocale(resolvedParams.locale);
+  // const t = await getTranslations({
+  //   locale: resolvedParams.locale,
+  //   namespace: "home.faq",
+  // });
 
   return (
-    <>
-      {faq.map((item) => (
-        <FAQItem
-          key={item.id}
-          id={item.id}
-          title={item[lang].title}
-          description={item[lang].description()}
-        />
-      ))}
-    </>
+    <Section title="home.faq.title">
+      <Faq />
+    </Section>
   );
 };
 
-export default Faq;
+export default FaqPage;

@@ -56,7 +56,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                   {nav.submenu ? (
                     <>
                       <ActiveLink
-                        href={nav.href ?? "#"}
+                        href={nav.href ?? ""}
                         activeClassName="text-[--color-a-b200]"
                         className="flex items-center text-[--color-b900-w]"
                       >
@@ -67,7 +67,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                         {nav.submenu.map((sub) => (
                           <li key={sub.label} className="text-left">
                             <ActiveLink
-                              href={`${nav.label}/${sub.href}`}
+                              href={sub.href ?? ""}
                               className="block px-4 py-2 hover:bg-oaccent-900 hover:text-white hover:rounded-lg text-[--color-black-w]"
                             >
                               {t(sub.label)}
@@ -112,7 +112,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
 
           <div className={`hidden lg:flex items-center gap-10`}>
             <ActiveLink
-              href="/contact-us"
+              href="/#contact-us"
               className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
             >
               {t("quote")}
@@ -127,7 +127,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
               className={`flex lg:hidden justify-center items-center gap-x-8 ms-6`}
             >
               <ActiveLink
-                href="/contact-us"
+                href="/#contact-us"
                 className="h-fit py-3 px-8 lg:px-4 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
               >
                 {t("quote")}
@@ -234,7 +234,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                         {nav.submenu.map((sub) => (
                           <li key={sub.label} className="text-sm text-center">
                             <ActiveLink
-                              href={`${nav.label}/${sub.href}`}
+                              href={sub.href ?? ""}
                               className="inline-block py-2 relative 
                               after:absolute after:left-0 after:bottom-2 after:origin-right after:scale-x-0 after:w-full 
                               after:h-[1px] after:-mb-1 after:dark:bg-white after:transition-transform after:duration-300 
