@@ -113,7 +113,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
           <div className={`hidden lg:flex items-center gap-10`}>
             <ActiveLink
               href="/#contact-us"
-              className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
+              className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-owhite transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
             >
               {t("quote")}
             </ActiveLink>

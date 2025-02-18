@@ -96,7 +96,7 @@ export const VideoReviewsSection: React.FC = () => {
             <div className="flex transition-transform duration-500">
               {videoData.map((video, index) => (
                 <div
-                  key={video.id}
+                  key={`${video.id}_${video.videoId}`}
                   className="flex-none w-full md:w-1/2 lg:w-1/4 p-2"
                   style={{
                     transform: `translateX(-${currentIndex * 100}%)`,

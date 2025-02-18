@@ -1,13 +1,11 @@
 "use client";
 import About from "@/components/About";
-import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Quotation from "@/components/Quotation";
 import QuotationI from "@/types/quotation";
 import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
-import Stats from "@/components/Stats";
 import { FC, useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { quotations } from "@/app/data";
@@ -16,6 +14,7 @@ import imgQuoteForm from "@/assets/img/black_truck.webp";
 import en from "@/i18n/messages/en.json";
 import QuoteForm from "@/components/QuoteForm";
 import VideoReviewsSection from "@/components/VideoReviewsSection";
+import StatsItem from "@/components/StatsItem";
 
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
   src: en.home.whyUs.benefits[index].src,
@@ -24,16 +23,9 @@ const benefits = en.home.whyUs.benefits.map((_, index) => ({
 }));
 
 const achievments = en.home.whyUs.achievments.map((_, index) => ({
-  count: `whyUs.achievments.${index}.count`,
-  suffix: `whyUs.achievments.${index}.suffix`,
-  title: `whyUs.achievments.${index}.title`,
-}));
-
-const stats = en.home.whyUs.achievments.map((_, index) => ({
-  id: index + 1,
   targetNumberStr: `home.whyUs.achievments.${index}.count`,
-  increment: 100,
   suffix: `home.whyUs.achievments.${index}.suffix`,
+  incrementStr: `home.whyUs.achievments.${index}.increment`,
   text: `home.whyUs.achievments.${index}.title`,
 }));
 
@@ -52,29 +44,18 @@ const Home: FC = () => {
       </SectionFullWidth>
 
       <Section className="!bg-[--color-b900-b200]">
-        <div className="font-bold flex justify-between text-[--color-w-b900]">
+        <div className="flex justify-between text-[--color-w-b900]">
           {achievments.map((a, i) => (
-            <div key={a.title} className="flex items-center gap-3">
-              <span className="text-4xl">
-                {parseInt(t(a.count)).toLocaleString()} {t(a.suffix)}
-              </span>
-              <span className="text-2xl flex flex-col">
-                {t(a.title)
-                  .split(" ")
-                  .map((word, index) => (
-                    <span key={index} className="leading-tight uppercase">
-                      {word}
-                    </span>
-                  ))}
-              </span>
-            </div>
+            <StatsItem
+              key={a.text}
+              targetNumberStr={a.targetNumberStr}
+              incrementStr={a.incrementStr}
+              suffix={a.suffix}
+              text={a.text}
+            />
           ))}
         </div>
       </Section>
-
-      {/* <SectionFullWidth bgClass="!bg-[--color-b50-b700]">
-        <Stats data={stats} />
-      </SectionFullWidth> */}
 
       <SectionFullWidth bgClass="!bg-[--color-w-b700]">
         <About />
@@ -100,10 +81,6 @@ const Home: FC = () => {
 
       {/* <Section title="home.">
         <Instructors instructors={instructors} />
-      </Section> */}
-
-      {/* <Section title="home.faq.title">
-        <Faq />
       </Section> */}
     </>
   );

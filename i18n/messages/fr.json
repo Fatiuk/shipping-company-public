@@ -96,16 +96,19 @@
         {
           "count": "15000",
           "suffix": "",
+          "increment": "100",
           "title": "Clients expédiés"
         },
         {
-          "count": "40000",
+          "count": "30000",
           "suffix": "",
+          "increment": "100",
           "title": "Véhicules expédiés"
         },
         {
           "count": "1000",
           "suffix": "+",
+          "increment": "10",
           "title": "Avis positifs"
         }
       ],
@@ -200,9 +203,44 @@
     },
     "cta": "Obtenir un devis gratuit"
   },
-  "videoReviews": { "title": "", "description": "" },
+  "videoReviews": {
+    "title": "Avis Vidéo des Clients",
+    "description": "Découvrez ce que nos clients disent de leur expérience avec notre service d'expédition de voitures",
+    "close": "Fermer",
+    "viewAll": "Voir Tous les Avis",
+    "previous": "Diapositive précédente",
+    "next": "Diapositive suivante",
+    "goTo": "Aller à la diapositive {slideNumber}"
+  },
   "yelpReviews": { "title": "", "description": "" },
-  "howItWorks": { "title": "", "description": "" },
+  "howItWorks": {
+    "sectionTitle": "Comment ça marche",
+    "title": "",
+    "description": "Suivez notre processus simple pour faire transporter votre véhicule en toute sécurité et efficacité.",
+    "step": "Étape",
+    "steps": [
+      {
+        "title": "Soumission de la demande du client",
+        "description": "La première étape que nous demandons à nos clients est la soumission de leur demande, qui peut être effectuée facilement via notre site Web, par téléphone ou par e-mail. Nous recueillons les informations essentielles pour déterminer la meilleure option disponible pour vous, en suivant ces étapes :\n- La première page vous invite à saisir l'année, la marque et le modèle de votre véhicule. Si votre véhicule ne figure pas dans la liste, veuillez nous contacter par e-mail.\n- Ensuite, vous devez indiquer si le véhicule à déplacer est opérationnel. Il est important de noter que la capacité de démarrer ne signifie pas nécessairement que le véhicule est entièrement fonctionnel. Un véhicule considéré comme opérationnel est un véhicule qui démarre, se déplace par ses propres moyens et possède des freins fonctionnels.\n- À l'étape suivante, nous vous demandons des informations sur l'emplacement actuel et la destination de votre véhicule, indiquées par les codes postaux des deux endroits.\n- Nous vous demandons également votre préférence quant à la date du projet et votre flexibilité. Vous pouvez choisir un déménagement immédiat ou spécifier une date particulière.\n- Enfin, nous avons besoin de vos coordonnées (nom, e-mail et numéro de téléphone) pour enregistrer votre devis à votre nom."
+      },
+      {
+        "title": "Fourniture d'estimations",
+        "description": "Le processus d'estimation prend en compte de nombreux facteurs, et bien que cela puisse prendre un certain temps, nous visons à minimiser la durée. Conformément à notre engagement à offrir un service de transport abordable, nos agents commerciaux certifiés traitent une demande en votre nom. Nous évaluons soigneusement toutes les variables pour vous fournir le prix le plus précis et économique.\nLa distance est un facteur important qui influence le prix, mais il est important de noter que plus la distance est grande, plus le coût n'est pas nécessairement élevé. Si nos chauffeurs sont déjà en route vers ou depuis votre emplacement, votre coût de transport peut être réduit.\nD'autres facteurs influençant l'estimation incluent la longueur du véhicule, son état, son type, sa hauteur, sa garde au sol, son poids à vide et son état de fonctionnement. Chaque devis offre le choix entre un transport ouvert ou fermé. Bien que la couverture d'assurance soit la même pour les deux, certains clients préfèrent un transport fermé, tandis que d'autres optent pour un transport ouvert."
+      },
+      {
+        "title": "Sélection du service et accord du contrat",
+        "description": "Après avoir examiné toutes les options disponibles, nous vous donnons la possibilité de choisir une offre. Une fois votre choix fait, nous procédons à la collecte des informations nécessaires pour le transfert de votre véhicule. Ces informations incluent :\n- La date et l'heure de notre rendez-vous.\n- L'emplacement de prise en charge du véhicule.\n- La confirmation de l'état du véhicule, et d'autres détails.\n\nToutes ces informations sont intégrées dans le contrat, qui vous est ensuite envoyé. Nous veillons à documenter chaque détail afin d'éviter toute erreur, incompréhension ou malentendu futur. Nous assurons une transparence totale dans nos opérations, garantissant qu'aucun changement ne sera apporté après l'accord et qu'aucun frais caché ne sera ajouté.\nNos agents certifiés sont toujours disponibles pour vous aider. Si vous avez des questions ou des préoccupations, ils sont prêts à vous assister. Pour votre commodité, vous pouvez signer le contrat soit manuellement, soit électroniquement. Une fois le contrat signé, nous programmons immédiatement une date pour le projet."
+      },
+      {
+        "title": "Ramassage du véhicule",
+        "description": "À la date et à l'heure convenues, un transporteur arrivera à l'emplacement désigné. Avant de charger le véhicule, le chauffeur effectue une inspection approfondie. Tous les défauts constatés sont documentés et vous en êtes informé. De plus, le plancher du transporteur est inspecté pour s'assurer qu'aucun élément détaché ne pourrait endommager votre véhicule.\nLa sécurité de votre véhicule, du début du transport jusqu'à sa livraison, est notre priorité. Nous prenons toutes les précautions nécessaires pour garantir son transport en parfait état.\nAprès l'inspection, le chauffeur positionne soigneusement votre véhicule sur le transporteur en suivant un ordre précis pour le chargement et le déchargement. Des barres stabilisatrices sont abaissées pour assurer un poids équilibré et une sécurité maximale. Ensuite, des sangles sont ajoutées à l'avant et à l'arrière du véhicule pour garantir sa stabilité. À chaque arrêt pendant le transport, le chauffeur vérifie la tension des sangles pour maintenir la sécurité."
+      },
+      {
+        "title": "Processus de livraison",
+        "description": "Le jour de la livraison de votre véhicule, veuillez noter que notre chauffeur peut avoir d'autres enlèvements et livraisons programmés. L'itinéraire de livraison commence généralement par l'endroit le plus éloigné, ce qui signifie que les clients plus proches peuvent recevoir leur véhicule plus tôt. Bien que votre véhicule puisse être transporté vers différents endroits pour des livraisons et des ramassages, il est peu probable qu'il soit déplacé avant d'atteindre sa destination finale.\nPour votre confort, le chauffeur coordonnera avec vous un lieu de dépôt adapté. Il sélectionnera un espace ouvert qui permet les manœuvres nécessaires au chargement et au déchargement des autres véhicules transportés. Lors de la livraison, les sangles retenant votre véhicule seront retirées, un rapport de livraison sera finalisé, et le chauffeur effectuera les étapes suivantes :\n- Inspection du véhicule et remise du rapport de livraison au client.\n- Déchargement du véhicule et remise des clés.\n- Si le véhicule a été récupéré dans une installation commerciale, toutes les informations pertinentes seront communiquées.\n\nNous vous demandons de prévoir environ une heure pour le processus de livraison afin d'assurer une réception en toute sérénité."
+      }
+    ]
+  },
   "team": { "title": "", "description": "" },
   "blog": { "title": "", "description": "", "tags": { "all": "Tout" } },
   "about": { "title": "", "description": "" },

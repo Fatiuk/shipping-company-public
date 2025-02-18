@@ -1,6 +1,6 @@
-import { FC, ReactElement, useEffect, useState } from "react";
 import { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+import HowItWorks from "@/components/HowItWorks";
 
 export async function generateMetadata({
   params,
@@ -15,25 +15,17 @@ export async function generateMetadata({
   });
 
   return {
-    title: t("title") || "How it works",
-    description: t("description") || "How it works",
+    title: t("title") || "How It Works",
+    description: t("description") || "How It Works",
   };
 }
 
-const HowItWorks = async ({ params }: { params: { locale: string } }) => {
-  const resolvedParams = await Promise.resolve(params);
-
-  setRequestLocale(resolvedParams.locale);
-  const t = await getTranslations({
-    locale: resolvedParams.locale,
-    namespace: "howItWorks",
-  });
-
+const HowItWorksPage = async ({ params }: { params: { locale: string } }) => {
   return (
-    <div className="m-8">
-      <p>How it works</p>
+    <div className="container mx-auto py-16 max-w-[1200px]">
+      <HowItWorks />
     </div>
   );
 };
 
-export default HowItWorks;
+export default HowItWorksPage;

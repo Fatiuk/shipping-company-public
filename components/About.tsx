@@ -1,3 +1,4 @@
+"use client";
 import { FC, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";

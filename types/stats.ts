@@ -1,7 +1,7 @@
 export default interface StatsI {
   id: number;
   targetNumberStr: string;
-  increment: number;
+  incrementStr: string;
   suffix: string;
   text: string;
 }

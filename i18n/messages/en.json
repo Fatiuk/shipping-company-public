@@ -96,16 +96,19 @@
         {
           "count": "15000",
           "suffix": "",
+          "increment": "100",
           "title": "Shipping Customers"
         },
         {
-          "count": "40000",
+          "count": "30000",
           "suffix": "",
+          "increment": "200",
           "title": "Vehicles Shipped"
         },
         {
           "count": "1000",
           "suffix": "+",
+          "increment": "10",
           "title": "Positive Reviews"
         }
       ],
@@ -210,7 +213,34 @@
     "goTo": "Go to slide {slideNumber}"
   },
   "yelpReviews": { "title": "", "description": "" },
-  "howItWorks": { "title": "", "description": "" },
+  "howItWorks": {
+    "sectionTitle": "How It Works",
+    "title": "",
+    "description": "Follow our simple process to get your vehicle transported safely and efficiently",
+    "step": "Step",
+    "steps": [
+      {
+        "title": "Client Request Submission",
+        "description": "The initial step we require from our clients is the submission of their request, which can be conveniently done through our integrated website, phone, or email. We seek the essential information to determine the best available option for you, following these steps:\n- The first screen prompts you to input the year, make, and model of your vehicle. In case your vehicle is not listed, please contact us via email.\n- Subsequently, you indicate whether the vehicle to be relocated is operational. It's crucial to note that the ability to start does not necessarily imply full functionality. A vehicle considered operational is one that starts, moves under its own power, and has functional brakes.\n- On the next screen, we request information about the current location and destination of your vehicle, indicated by the zip codes of both locations.\n- We also ask for your preferred timing for the project and your flexibility. You can choose immediate relocation or specify a particular date.\n- In the following step, we need your contact details (name, email, and phone number) to save your quote under your name."
+      },
+      {
+        "title": "Providing Estimates",
+        "description": "The estimation process involves careful consideration of numerous factors, and although this may take some time, we aim to minimize the duration. In line with our commitment to delivering an affordable vehicle relocation service, our certified sales agents will internally process an application on your behalf. We meticulously assess all variables to furnish you with the most precise and economical pricing.\nDistance stands out as a significant factor influencing the quoted price. However, the conventional notion that greater distance equates to higher transport costs isn't always accurate. If our drivers are already en route to or from your location, your transport expense may be only a fraction of the full price.\nSeveral other factors contribute to the estimation, including the vehicle's length, condition, type, height, ground clearance, curb weight, and operational status. Each quote we present offers the choice between open transport or enclosed transport. Although the insurance coverage remains the same for both, some clients prefer closed transport, while others opt for open transport."
+      },
+      {
+        "title": "Service Selection and Contract Agreement",
+        "description": "Upon reviewing all the available options, we empower you to choose an offer. After your selection, we proceed to gather all the necessary information required for the transfer of your vehicle. The information crucial at this stage includes:\n-The timing of our appointment.\n-Your preferred location for the vehicle.-Confirmation of the vehicle's condition, and more.\n-All this precise information is incorporated into the contract, which is then sent to you. We take extra care to document everything to prevent any misleading errors, miscommunication, or future misunderstandings. Our commitment is to ensure our customers feel secure in their dealings with us. We maintain transparency in business, assuring you that we don't make changes after an agreement, nor do we introduce hidden fees.\n\nOur certified agents are always available to assist you. If you have any questions, or concerns, or need clarification, they are ready to help. For your convenience, you can choose to sign the contract either manually or electronically. Whatever suits you is suitable for us. Once the contract is signed, we promptly schedule a date for the project."
+      },
+      {
+        "title": "Pick Up",
+        "description": "On the agreed date and time, a vehicle will arrive at the specified location. Before commencing the loading procedure, the driver conducts a thorough inspection of the vehicle designated for transport. Every imperfection observed is documented, and you are promptly informed of any findings. Additionally, the floor of the hauler, responsible for transporting your vehicle, undergoes inspection to ensure there are no loose elements that could potentially harm your vehicle.\nThe safety of your vehicle, from the initiation of the transportation process to its delivery at the designated location, remains our top priority. Hence, we take measures to ensure the transportation of the vehicle in optimal condition.\nFollowing the inspection, the driver carefully positions your vehicle in the dedicated space on the hauler, adhering to a specific order for loading and unloading. Stabilizer bars are then lowered to guarantee balanced weight for maximum reinforcement and security. Once your vehicle is securely on the hauler, the driver further ensures its stability by adding straps to both the front and rear of the vehicle. At each stop made during transport, the driver tests the load on the straps to maintain security."
+      },
+      {
+        "title": "Delivery Process",
+        "description": "On the day of your vehicle's delivery, it's important to note that our driver may have additional pickups and deliveries scheduled. The delivery route typically extends to the farthest location first, which means customers in closer proximity may receive their vehicles earlier. While your vehicle may be transported to various locations for pickups and deliveries along the way, it's unlikely to be moved again until it reaches your final destination.\nFor your convenience, the driver will coordinate with you to determine a suitable location for the drop-off. The driver will choose an open space that allows for turning around and facilitates the loading and unloading of other vehicles on board. During this phase, the strap securing your vehicle will be removed, the delivery report will be finalized, and the driver will perform the following actions:\n-Inspect the vehicle and provide a detailed delivery report to the customer.\n-Unload the vehicle and hand over the keys to the final destination.\n-If the vehicle was initially picked up from a commercial facility and there is pertinent information to convey, our driver will share all relevant details about the vehicle.\n\nWe kindly request that you allocate approximately an hour of your time for the post-delivery process. This time is essential to ensure the careful and safe delivery of your vehicle"
+      }
+    ]
+  },
   "team": { "title": "", "description": "" },
   "blog": { "title": "", "description": "", "tags": { "all": "All" } },
   "about": { "title": "", "description": "" },
