@@ -1,6 +1,7 @@
-import { FC, ReactElement, useEffect, useState } from "react";
+import { FC } from "react";
 import { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import VideoReviewsPage from "@/components/VideoReviewsPage";
 
 export async function generateMetadata({
   params,
@@ -21,20 +22,8 @@ export async function generateMetadata({
 }
 
 // const VideoReviews = async ({ params }: { params: { locale: string } }) => {
-const VideoReviews: FC<{ params: { locale: string } }> = async ({ params }) => {
-  const resolvedParams = await Promise.resolve(params);
-
-  setRequestLocale(resolvedParams.locale);
-  const t = await getTranslations({
-    locale: resolvedParams.locale,
-    namespace: "videoReviews",
-  });
-
-  return (
-    <div className="m-8">
-      <p>Video Reviews</p>
-    </div>
-  );
+const VideoReviews: FC = () => {
+  return <VideoReviewsPage />;
 };
 
 export default VideoReviews;

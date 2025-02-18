@@ -15,6 +15,7 @@ import imgHero from "@/assets/img/blue-truck-dniprollc.png";
 import imgQuoteForm from "@/assets/img/black_truck.webp";
 import en from "@/i18n/messages/en.json";
 import QuoteForm from "@/components/QuoteForm";
+import VideoReviewsSection from "@/components/VideoReviewsSection";
 
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
   src: en.home.whyUs.benefits[index].src,
@@ -91,6 +92,10 @@ const Home: FC = () => {
         bgClass="bg-gradient-to-b from-oblue-200/65 to-oblue-50 dark:from-oblue-600/75 dark:to-oblue-900/75"
       >
         <QuoteForm />
+      </SectionFullWidth>
+
+      <SectionFullWidth bgClass="!bg-[--color-w-b700]">
+        <VideoReviewsSection />
       </SectionFullWidth>
 
       {/* <Section title="home.">

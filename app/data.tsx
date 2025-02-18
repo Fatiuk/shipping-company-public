@@ -1,15 +1,12 @@
-import AddressI from "@/types/address";
 import CardI from "@/types/card";
-import ColorI from "@/types/color";
-import FeatureI from "@/types/feature";
 import InstructorI from "@/types/instructor";
 import Link from "next/link";
 import PrintLocationI from "@/types/printLocation";
 import QuotationI from "@/types/quotation";
 import React from "react";
 import StatsI from "@/types/stats";
-import StoreItemI from "@/types/storeItem";
 import LocationI from "@/types/location";
+import VideoData from "@/types/videoReview";
 
 export const location: LocationI = {
   city: { value: "buford", label: "Buford" },
@@ -715,5 +712,104 @@ export const newsItems = [
         </p>
       </div>
     ),
+  },
+];
+
+export const videoData: VideoData[] = [
+  {
+    id: 1,
+    videoId: "Q5N920yviZY",
+    title: "Great car shipping experience!",
+    author: "John D.",
+    rating: 5,
+    date: "2024-02-15",
+  },
+  {
+    id: 2,
+    videoId: "CR6M_sqTVqE",
+    title: "Fast and reliable service",
+    author: "Sarah M.",
+    rating: 5,
+    date: "2024-08-07",
+  },
+  {
+    id: 3,
+    videoId: "-_3dc6X-Iwo",
+    title: "Excellent communication",
+    author: "Mike R.",
+    rating: 4,
+    date: "2024-05-23",
+  },
+  {
+    id: 4,
+    videoId: "lYfrKmEYpdA",
+    title: "Great car shipping experience!",
+    author: "Yael N.",
+    rating: 5,
+    date: "2024-07-11",
+  },
+  {
+    id: 5,
+    videoId: "gCYcHz2k5x0",
+    title: "Fast and reliable service",
+    author: "David K.",
+    rating: 5,
+    date: "2024-06-09",
+  },
+  {
+    id: 6,
+    videoId: "NpDAFKqeUDw",
+    title: "Excellent communication",
+    author: "Shahar A.",
+    rating: 4,
+    date: "2024-011-18",
+  },
+  {
+    id: 1,
+    videoId: "Q5N920yviZY",
+    title: "Great car shipping experience!",
+    author: "John D.",
+    rating: 5,
+    date: "2024-02-15",
+  },
+  {
+    id: 2,
+    videoId: "CR6M_sqTVqE",
+    title: "Fast and reliable service",
+    author: "Sarah M.",
+    rating: 5,
+    date: "2024-08-07",
+  },
+  {
+    id: 3,
+    videoId: "-_3dc6X-Iwo",
+    title: "Excellent communication",
+    author: "Mike R.",
+    rating: 4,
+    date: "2024-05-23",
+  },
+  {
+    id: 4,
+    videoId: "lYfrKmEYpdA",
+    title: "Great car shipping experience!",
+    author: "Yael N.",
+    rating: 5,
+    date: "2024-07-11",
+  },
+  {
+    id: 5,
+    videoId: "gCYcHz2k5x0",
+    title: "Fast and reliable service",
+    author: "David K.",
+    rating: 5,
+    date: "2024-06-09",
+  },
+  {
+    id: 6,
+    videoId: "NpDAFKqeUDw",
+    title: "Excellent communication",
+    author: "Shahar A.",
+    rating: 4,
+    date: "2024-011-18",
   },
 ];

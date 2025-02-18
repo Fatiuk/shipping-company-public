@@ -200,7 +200,15 @@
     },
     "cta": "Get Free Quote"
   },
-  "videoReviews": { "title": "", "description": "" },
+  "videoReviews": {
+    "title": "Customer Video Reviews",
+    "description": "See what our customers have to say about their experience with our car shipping service",
+    "close": "Close",
+    "viewAll": "View All Reviews",
+    "previous": "Previous slide",
+    "next": "Next slide",
+    "goTo": "Go to slide {slideNumber}"
+  },
   "yelpReviews": { "title": "", "description": "" },
   "howItWorks": { "title": "", "description": "" },
   "team": { "title": "", "description": "" },
