@@ -36,7 +36,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
                     <ActiveLink
                       key={sub.label}
                       href={sub.href ?? "#"}
-                      className="pt-2 font-sans hover:underline underline-offset-4 text-blank dark:text-owhite pl-4"
+                      className="pt-2 font-sans hover:underline underline-offset-4 text-blank dark:text-owhite pl-2"
                     >
                       {t(sub.label)}
                     </ActiveLink>
@@ -47,7 +47,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
               <h4 className="font-bold text-lg text-[--color-a700-b200]">
                 {t("contact")}
               </h4>
-              <p className="pt-2 pl-4">
+              <p className="pt-2 pl-2">
                 <span>{`${c("email.title")}: `}</span>
                 <Link
                   href={`mailto:${c("email.value")}`}
@@ -57,7 +57,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
                 </Link>
               </p>
 
-              <p className="pt-2 pl-4">
+              <p className="pt-2 pl-2">
                 <span>{`${c("phone.title")}: `}</span>
                 <Link
                   href={`tel:${c("phone.value")}`}
@@ -66,7 +66,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
                   {` ${c("phone.value")}`}
                 </Link>
               </p>
-              <div className="pt-8 pl-4">
+              <div className="pt-8 pl-2">
                 <ActiveLink
                   href="/#contact-us"
                   className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
