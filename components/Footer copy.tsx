@@ -19,14 +19,14 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
   const c = useTranslations("contactData");
   return (
     <>
-      <div className="bg-oblue-50 dark:bg-oblue-800 py-6 md:py-9">
-        <div className="sm:max-w-full lg:max-w-[1600px] px-8 2xl:px-20 mx-auto flex flex-col lg:flex-row flex-wrap sm:flex-nowrap justify-between gap-8">
+      <div className="bg-oblue-50 dark:bg-oblue-800 py-6 md:py-9 items-center">
+        <div className="sm:max-w-full lg:max-w-[1600px] px-8 2xl:px-20 mx-auto flex flex-row flex-wrap sm:flex-nowrap justify-between">
           <div className="flex flex-col gap-6 h-24 mb-8 max-w-[300px] xl:max-w-[400px]">
             <Logo />
             {t("companyDesc")}
             <SocialLinks />
           </div>
-          <div className="flex flex-col lg:flex-row gap-4 justify-between w-full xl:max-w-[560px] 2xl:max-w-[700px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-4 justify-between w-full lg:max-w-[560px] xl:max-w-[700px] mx-auto">
             {navigation.map((section) => (
               <div key={section.label} className="flex flex-col mx-auto">
                 <h4 className="font-bold text-lg text-[--color-a700-b200]">
@@ -44,7 +44,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
                   ))}
               </div>
             ))}
-            <div className="flex flex-col">
+            <div className="flex flex-col mx-auto">
               <h4 className="font-bold text-lg text-[--color-a700-b200]">
                 {t("contact")}
               </h4>
@@ -80,16 +80,11 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
               </div>
             </div>
           </div>
-          <div className="hidden xl:flex flex-col xs:flex-row flex-wrap gap-8">
+          <div className="flex flex-col xs:flex-row flex-wrap gap-8">
             {address.map((info) => (
               <Address address={info} key={info.city} />
             ))}
           </div>
-        </div>
-        <div className="xl:hidden flex items-center justify-center">
-          {address.map((info) => (
-            <Address address={info} key={info.city} />
-          ))}
         </div>
       </div>
       <div className="bg-oblue-700 py-2 px-8">
