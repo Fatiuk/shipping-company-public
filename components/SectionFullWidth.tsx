@@ -44,8 +44,8 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
           {image && (
             <div className="w-3/5 lg:w-1/3 lg:mr-20">
               <Image
-                width={0}
-                height={0}
+                width={640}
+                height={360}
                 src={image}
                 alt="Section image"
                 className="w-full h-auto"
