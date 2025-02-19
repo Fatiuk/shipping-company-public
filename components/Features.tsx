@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import Feature from "@/components/Feature";
 import FeatureI from "@/types/feature";
-import { it } from "node:test";
 
 const Features: FC<{ data: FeatureI[] }> = ({ data }) => {
   return (

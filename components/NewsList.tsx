@@ -1,8 +1,8 @@
 "use client";
 import React, { FC, useEffect, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import Link from "next/link";
-import { formatDate } from "@/components/utils";
+import { formatDate } from "@/lib/utils";
 import NewsItemI from "@/types/newsItem";
 import NewsTags from "@/components/NewsTags";
 import Paginator from "@/components/Paginator";
@@ -12,7 +12,7 @@ interface NewsListI {
 }
 
 const NewsList: FC<NewsListI> = ({ newsItems }) => {
-  const t = useTranslations("blog");
+  // const t = useTranslations("blog");
   const locale = useLocale();
   const [selectedTag, setSelectedTag] = useState<string>("all");
   const [currentPage, setCurrentPage] = useState<number>(1);

@@ -5,7 +5,7 @@ const Button: FC<{
   onClick?: MouseEventHandler<HTMLButtonElement>;
   children?: React.ReactNode;
   variant?: "primary" | "secondary" | "ghost" | "chosen";
-}> = ({ classNames, onClick, variant = "primary", children }) => {
+}> = ({ classNames, variant = "primary", children }) => {
   return (
     <button
       type="submit"

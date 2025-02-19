@@ -1,19 +1,16 @@
-import { FC } from "react";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import error404 from "@/assets/img/404.svg";
 import Section from "@/components/Section";
 import ActiveLink from "@/components/shared/ActiveLink";
+import PageProps from "@/types/page";
 
-// const NotFound: FC<{
-//   params: { locale: string };
-// }> = async ({ params }) => {
-const NotFound = async ({ params }: { params: { locale: string } }) => {
-  const resolvedParams = await Promise.resolve(params);
-  setRequestLocale(resolvedParams.locale);
+const NotFound = async (props: PageProps) => {
+  const params = await props.params;
+  const locale = params.locale;
 
   const t = await getTranslations({
-    locale: resolvedParams.locale,
+    locale,
     namespace: "notFound",
   });
 

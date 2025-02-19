@@ -1,16 +1,13 @@
-import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import HowItWorks from "@/components/HowItWorks";
+import PageProps from "@/types/page";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  const resolvedParams = await Promise.resolve(params);
+export async function generateMetadata(props: PageProps) {
+  const params = await props.params;
+  const locale = params.locale;
 
   const t = await getTranslations({
-    locale: resolvedParams.locale,
+    locale,
     namespace: "howItWorks",
   });
 
@@ -20,7 +17,7 @@ export async function generateMetadata({
   };
 }
 
-const HowItWorksPage = async ({ params }: { params: { locale: string } }) => {
+const HowItWorksPage = async () => {
   return (
     <div className="container mx-auto py-16 max-w-[1200px]">
       <HowItWorks />

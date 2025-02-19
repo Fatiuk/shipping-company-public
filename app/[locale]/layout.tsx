@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import { Nunito_Sans, Roboto_Condensed } from "next/font/google";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { location } from "@/app/data";
 import Navigation from "@/components/Navigation";
@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
 import { NavigationItemI } from "@/types/navigation";
 import "../globals.css";
-import NotFound from "./not-found";
+// import NotFound from "./not-found";
 
 const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
@@ -27,7 +27,7 @@ const nunitoSans = Nunito_Sans({
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale?: "en" | "fr" }>;
 };
 
 const navigation: NavigationItemI[] = [
@@ -115,15 +115,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({ children, params }: Props) {
-  const { locale } = await params;
+export default async function RootLayout(props: Props) {
+  const { children } = props;
+  const params = await props.params;
+  const locale = params.locale;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!locale || !routing.locales.includes(locale)) {
     notFound();
   }
 
-  setRequestLocale(locale);
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} suppressHydrationWarning>

@@ -1,10 +1,6 @@
-import CardI from "@/types/card";
 import InstructorI from "@/types/instructor";
-import Link from "next/link";
-import PrintLocationI from "@/types/printLocation";
 import QuotationI from "@/types/quotation";
 import React from "react";
-import StatsI from "@/types/stats";
 import LocationI from "@/types/location";
 import VideoData from "@/types/videoReview";
 
@@ -150,59 +146,6 @@ export const quotations: QuotationI[] = [
   },
 ];
 
-export const classesInfo: CardI[] = [
-  {
-    src: "/classes/class-ninjas.jpg",
-    ctaLink: "/classes/ninjas",
-    slug: "ninjas",
-    age: { min: 4, max: 6 },
-    title: "Ninjas",
-    description:
-      "The customer is very important, the customer will be followed by the customer. But there is no makeup that does not support the policy.",
-    alt: "",
-  },
-  {
-    src: "/classes/class-ninjas.jpg",
-    ctaLink: "/classes/beginners",
-    slug: "beginners",
-    age: { min: 6, max: 10 },
-    title: "Beginners",
-    description:
-      "The customer is very important, the customer will be followed by the customer. But there is no makeup that does not support the policy.",
-    alt: "",
-  },
-  {
-    src: "/classes/class-ninjas.jpg",
-    ctaLink: "/classes/intermediates",
-    slug: "intermediates",
-    age: { min: 10, max: 14 },
-    title: "Intermediates",
-    description:
-      "The customer is very important, the customer will be followed by the customer. But there is no makeup that does not support the policy.",
-    alt: "",
-  },
-  {
-    src: "/classes/class-ninjas.jpg",
-    ctaLink: "/classes/adults-and-teens",
-    slug: "adults-and-teens",
-    age: { min: 14 },
-    title: "Adults & Teens",
-    description:
-      "The customer is very important, the customer will be followed by the customer. But there is no makeup that does not support the policy.",
-    alt: "",
-  },
-  {
-    src: "/classes/class-ninjas.jpg",
-    ctaLink: "/classes/elites",
-    slug: "elites",
-    age: { min: 14 },
-    title: "Elites",
-    description:
-      "The customer is very important, the customer will be followed by the customer. But there is no makeup that does not support the policy.",
-    alt: "",
-  },
-];
-
 export const newsItems = [
   {
     id: 1,
@@ -222,11 +165,7 @@ export const newsItems = [
         </p>
         <p className="pb-4 last:pb-0">
           With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
+          every participant receives personalized guidance.
         </p>
         <p className="pb-4 last:pb-0">
           In addition to its regular classes, the club has announced a series of
@@ -234,7 +173,7 @@ export const newsItems = [
           These programs aim to provide flexibility for busy schedules while
           fostering a sense of camaraderie among members. The club also
           emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
+          French to cater to Monctons diverse population.
         </p>
         <p className="pb-4 last:pb-0">
           Prospective members are encouraged to visit the Otoshi Judo Club
@@ -257,7 +196,7 @@ export const newsItems = [
     text: (
       <div>
         <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
+          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
           arts community, is opening its doors to aspiring judokas of all ages
           and skill levels. Nestled in the heart of Moncton, the club offers a
           unique blend of traditional judo instruction and modern fitness
@@ -265,11 +204,7 @@ export const newsItems = [
         </p>
         <p className="pb-4 last:pb-0">
           With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
+          every participant receives personalized guidance.
         </p>
         <p className="pb-4 last:pb-0">
           In addition to its regular classes, the club has announced a series of
@@ -277,7 +212,7 @@ export const newsItems = [
           These programs aim to provide flexibility for busy schedules while
           fostering a sense of camaraderie among members. The club also
           emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
+          French to cater to Monctons diverse population.
         </p>
         <p className="pb-4 last:pb-0">
           Prospective members are encouraged to visit the Otoshi Judo Club
@@ -300,7 +235,7 @@ export const newsItems = [
     text: (
       <div>
         <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
+          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
           arts community, is opening its doors to aspiring judokas of all ages
           and skill levels. Nestled in the heart of Moncton, the club offers a
           unique blend of traditional judo instruction and modern fitness
@@ -308,11 +243,7 @@ export const newsItems = [
         </p>
         <p className="pb-4 last:pb-0">
           With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
+          every participant receives personalized guidance.
         </p>
         <p className="pb-4 last:pb-0">
           In addition to its regular classes, the club has announced a series of
@@ -320,7 +251,7 @@ export const newsItems = [
           These programs aim to provide flexibility for busy schedules while
           fostering a sense of camaraderie among members. The club also
           emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
+          French to cater to Monctons diverse population.
         </p>
         <p className="pb-4 last:pb-0">
           Prospective members are encouraged to visit the Otoshi Judo Club
@@ -342,7 +273,7 @@ export const newsItems = [
     text: (
       <div>
         <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
+          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
           arts community, is opening its doors to aspiring judokas of all ages
           and skill levels. Nestled in the heart of Moncton, the club offers a
           unique blend of traditional judo instruction and modern fitness
@@ -350,11 +281,7 @@ export const newsItems = [
         </p>
         <p className="pb-4 last:pb-0">
           With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
+          every participant receives personalized guidance.
         </p>
         <p className="pb-4 last:pb-0">
           In addition to its regular classes, the club has announced a series of
@@ -362,7 +289,7 @@ export const newsItems = [
           These programs aim to provide flexibility for busy schedules while
           fostering a sense of camaraderie among members. The club also
           emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
+          French to cater to Monctons diverse population.
         </p>
         <p className="pb-4 last:pb-0">
           Prospective members are encouraged to visit the Otoshi Judo Club
@@ -385,7 +312,7 @@ export const newsItems = [
     text: (
       <div>
         <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
+          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
           arts community, is opening its doors to aspiring judokas of all ages
           and skill levels. Nestled in the heart of Moncton, the club offers a
           unique blend of traditional judo instruction and modern fitness
@@ -393,11 +320,7 @@ export const newsItems = [
         </p>
         <p className="pb-4 last:pb-0">
           With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
+          every participant receives personalized guidance.
         </p>
         <p className="pb-4 last:pb-0">
           In addition to its regular classes, the club has announced a series of
@@ -405,7 +328,7 @@ export const newsItems = [
           These programs aim to provide flexibility for busy schedules while
           fostering a sense of camaraderie among members. The club also
           emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
+          French to cater to Monctons diverse population.
         </p>
         <p className="pb-4 last:pb-0">
           Prospective members are encouraged to visit the Otoshi Judo Club
@@ -435,11 +358,7 @@ export const newsItems = [
         </p>
         <p className="pb-4 last:pb-0">
           With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
+          every participant receives personalized guidance.
         </p>
         <p className="pb-4 last:pb-0">
           In addition to its regular classes, the club has announced a series of
@@ -447,7 +366,7 @@ export const newsItems = [
           These programs aim to provide flexibility for busy schedules while
           fostering a sense of camaraderie among members. The club also
           emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
+          French to cater to Monctons diverse population.
         </p>
         <p className="pb-4 last:pb-0">
           Prospective members are encouraged to visit the Otoshi Judo Club
@@ -469,7 +388,7 @@ export const newsItems = [
     text: (
       <div>
         <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
+          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
           arts community, is opening its doors to aspiring judokas of all ages
           and skill levels. Nestled in the heart of Moncton, the club offers a
           unique blend of traditional judo instruction and modern fitness
@@ -477,11 +396,7 @@ export const newsItems = [
         </p>
         <p className="pb-4 last:pb-0">
           With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
+          every participant receives personalized guidance.
         </p>
         <p className="pb-4 last:pb-0">
           In addition to its regular classes, the club has announced a series of
@@ -489,219 +404,7 @@ export const newsItems = [
           These programs aim to provide flexibility for busy schedules while
           fostering a sense of camaraderie among members. The club also
           emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 8,
-    date: "2024-05-08",
-    slug: "otoshi-judokas-win-big-at-the-spring-international-judo-championships-in-toronto",
-    tags: ["Otoshi Club Events"],
-    title:
-      "Otoshi Judokas Win Big at the Spring International Judo Championships in Toronto",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 9,
-    date: "2024-05-21",
-    slug: "otoshi-judo-club-celebrates-10-years-of-excellence-with-a-community-bbq",
-
-    tags: ["Otoshi Club Events"],
-    title:
-      "Otoshi Judo Club Celebrates 10 Years of Excellence with a Community BBQ",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 10,
-    date: "2024-06-14",
-    slug: "canadian-judo-day-otoshi-club-hosts-free-demonstrations-and-training-sessions",
-
-    tags: ["Otoshi Club Events"],
-    title:
-      "Canadian Judo Day: Otoshi Club Hosts Free Demonstrations and Training Sessions",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 11,
-    date: "2024-06-01",
-    slug: "canada-day-festivities-otoshi-judo-club-joins-parade-with-a-dazzling-performance",
-    tags: ["Canada Judo", "Otoshi Club Events"],
-    title:
-      "Canada Day Festivities: Otoshi Judo Club Joins Parade with a Dazzling Performance",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 12,
-    date: "2024-06-20",
-    slug: "moncton-s-otoshi-judo-club-organizes-a-summer-training-camp-for-all-ages",
-    tags: ["Otoshi Club Events"],
-    title:
-      "Moncton’s Otoshi Judo Club Organizes a Summer Training Camp for All Ages",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance. "Our goal is to make
-          judo accessible and enjoyable for everyone," says Sensei Émile Dubois,
-          head instructor at the club. "We want parents to see their children
-          grow in confidence, and adults to find a place where they can
-          challenge themselves while reducing stress."
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Moncton’s diverse population.
+          French to cater to Monctons diverse population.
         </p>
         <p className="pb-4 last:pb-0">
           Prospective members are encouraged to visit the Otoshi Judo Club

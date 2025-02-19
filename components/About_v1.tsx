@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const About: FC = () => {
   const t = useTranslations("home.about");
@@ -19,7 +20,7 @@ const About: FC = () => {
       </div>
       <div className="lg:w-1/2 flex justify-center">
         <div className="relative w-full max-w-lg aspect-square bg-[--color-b100-w] rounded-lg overflow-hidden">
-          <img
+          <Image
             src="/about.webp"
             alt="Transport vehicle"
             className="w-full h-full object-cover"

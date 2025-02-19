@@ -1,21 +1,17 @@
-import { FC, ReactElement, useEffect, useState } from "react";
-import { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import HeroCTA from "@/components/HeroCTA";
 import NewsList from "@/components/NewsList";
 import SectionFullWidth from "@/components/SectionFullWidth";
 import { newsItems } from "@/app/data";
 import GroupNinja from "@/assets/img/group-ninjas.jpg";
+import PageProps from "@/types/page";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  const resolvedParams = await Promise.resolve(params);
+export async function generateMetadata(props: PageProps) {
+  const params = await props.params;
+  const locale = params.locale;
 
   const t = await getTranslations({
-    locale: resolvedParams.locale,
+    locale,
     namespace: "blog",
   });
 
@@ -25,12 +21,11 @@ export async function generateMetadata({
   };
 }
 
-const Blog = async ({ params }: { params: { locale: string } }) => {
-  const resolvedParams = await Promise.resolve(params);
-
-  setRequestLocale(resolvedParams.locale);
+export default async function Blog(props: PageProps) {
+  const params = await props.params;
+  const locale = params.locale;
   const t = await getTranslations({
-    locale: resolvedParams.locale,
+    locale,
     namespace: "blog",
   });
 
@@ -49,6 +44,4 @@ const Blog = async ({ params }: { params: { locale: string } }) => {
       <NewsList newsItems={newsItems} />
     </>
   );
-};
-
-export default Blog;
+}

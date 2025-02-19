@@ -1,7 +1,4 @@
-import { Lang } from "@/types/lang";
 import NewsItemI from "@/types/newsItem";
-import PrintLocationI from "@/types/printLocation";
-import { useTranslations } from "next-intl";
 
 const isBrowser = () => typeof window !== "undefined";
 
@@ -16,14 +13,6 @@ export function setLocalStorageItem(key: string, value: string): void {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-function isPrintLocation(value: PrintLocationI): boolean {
-  return (
-    typeof value.name === "string" &&
-    (value.en === "Front" || value.en === "Back") &&
-    (value.fr === "Avant" || value.fr === "Retour")
-  );
-}
-
 export const formatDate = (dateString: string, lang: string): string => {
   const locale = lang === "en" ? "en-CA" : "fr-CA";
   const date = new Date(dateString);
@@ -34,8 +23,10 @@ export const formatDate = (dateString: string, lang: string): string => {
   }).format(date);
 };
 
-export const generateNewsTags = (newsItems: NewsItemI[]): string[] => {
-  const t = useTranslations("blog.tags");
+export const generateNewsTags = (
+  newsItems: NewsItemI[],
+  allTagText: string
+): string[] => {
   const allTags = new Set<string>();
 
   newsItems.forEach((item) => {
@@ -43,7 +34,5 @@ export const generateNewsTags = (newsItems: NewsItemI[]): string[] => {
     tags.forEach((tag) => allTags.add(tag));
   });
 
-  const additionalTag = t("all");
-
-  return [additionalTag, ...Array.from(allTags).sort()];
+  return [allTagText, ...Array.from(allTags).sort()];
 };

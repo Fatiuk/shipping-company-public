@@ -3,6 +3,7 @@ import { FC, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 const About: FC = () => {
   const t = useTranslations("home.about");
@@ -111,7 +112,7 @@ const About: FC = () => {
           <div className="relative">
             {/* Main image */}
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src="/about.webp"
                 alt="Transport vehicle"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"

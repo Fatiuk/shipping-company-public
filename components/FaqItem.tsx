@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, ReactElement, useState } from "react";
+import React, { FC, useState } from "react";
 
 const FAQItem: FC<{
   id: number;

@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 interface SectionFullWidthI {
   image?: string;
@@ -42,7 +43,11 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
           <div className="flex-1">{children}</div>
           {image && (
             <div className="w-3/5 lg:w-1/3 lg:mr-20">
-              <img src={image} alt="Section image" className="w-full h-auto" />
+              <Image
+                src={image}
+                alt="Section image"
+                className="w-full h-auto"
+              />
             </div>
           )}
         </div>

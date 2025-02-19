@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 const ThemeToggle: FC = () => {
   const t = useTranslations("navbar");
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const colorRays = "#ca325b";
   const colorSun = "#b31942";

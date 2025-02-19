@@ -9,9 +9,9 @@ interface ModalProps {
 }
 
 const VideoModal: React.FC<ModalProps> = ({ video, onClose }) => {
-  if (!video) return null;
-
   const t = useTranslations("videoReviews");
+
+  if (!video) return null;
 
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">

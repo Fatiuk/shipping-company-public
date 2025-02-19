@@ -1,17 +1,14 @@
-import { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import Section from "@/components/Section";
 import Faq from "@/components/Faq";
+import PageProps from "@/types/page";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  const resolvedParams = await Promise.resolve(params);
+export async function generateMetadata(props: PageProps) {
+  const params = await props.params;
+  const locale = params.locale;
 
   const t = await getTranslations({
-    locale: resolvedParams.locale,
+    locale,
     namespace: "home.faq",
   });
 
@@ -21,15 +18,7 @@ export async function generateMetadata({
   };
 }
 
-const FaqPage = async ({ params }: { params: { locale: string } }) => {
-  // const resolvedParams = await Promise.resolve(params);
-
-  // setRequestLocale(resolvedParams.locale);
-  // const t = await getTranslations({
-  //   locale: resolvedParams.locale,
-  //   namespace: "home.faq",
-  // });
-
+const FaqPage = () => {
   return (
     <Section title="home.faq.title">
       <Faq />

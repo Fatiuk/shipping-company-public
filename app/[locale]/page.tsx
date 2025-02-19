@@ -2,13 +2,9 @@
 import About from "@/components/About";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Quotation from "@/components/Quotation";
-import QuotationI from "@/types/quotation";
 import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
-import { FC, useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
-import { quotations } from "@/app/data";
+import { FC } from "react";
 import imgHero from "@/assets/img/blue-truck-dniprollc.png";
 import imgQuoteForm from "@/assets/img/black_truck.webp";
 import en from "@/i18n/messages/en.json";
@@ -30,12 +26,7 @@ const achievments = en.home.whyUs.achievments.map((_, index) => ({
 }));
 
 const Home: FC = () => {
-  const t = useTranslations("home");
-  const [quote, setQuote] = useState<QuotationI>(quotations[0]);
-
-  useEffect(() => {
-    setQuote(quotations[Math.floor(Math.random() * quotations?.length)]);
-  }, []);
+  // const t = useTranslations("home");
 
   return (
     <>
@@ -45,7 +36,7 @@ const Home: FC = () => {
 
       <Section className="!bg-[--color-b900-b200]">
         <div className="flex justify-between text-[--color-w-b900]">
-          {achievments.map((a, i) => (
+          {achievments.map((a) => (
             <StatsItem
               key={a.text}
               targetNumberStr={a.targetNumberStr}

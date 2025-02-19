@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { generateNewsTags } from "@/lib/utils";
 import NewsItemI from "@/types/newsItem";
+import { useTranslations } from "next-intl";
 
 interface NewsTagsI {
   newsItems: NewsItemI[];
@@ -13,7 +14,8 @@ const NewsTags: FC<NewsTagsI> = ({
   newsTagSelected,
   onNewsTagSelect,
 }) => {
-  const tagsWithAll = generateNewsTags(newsItems);
+  const t = useTranslations("blog");
+  const tagsWithAll = generateNewsTags(newsItems, t("title"));
   return (
     <>
       {tagsWithAll.map((tag) => (

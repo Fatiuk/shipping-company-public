@@ -1,8 +1,9 @@
 "use client";
-import { formatDate } from "@/lib/utils";
-import VideoReview from "@/types/videoReview";
-import { useLocale } from "next-intl";
 import { useEffect, useRef } from "react";
+import VideoReview from "@/types/videoReview";
+import { formatDate } from "@/lib/utils";
+import { useLocale } from "next-intl";
+import Image from "next/image";
 
 interface VideoCardProps extends VideoReview {
   onClick: (video: VideoReview) => void;
@@ -57,7 +58,7 @@ const VideoCard: React.FC<VideoCardProps> = ({
       }
     >
       <div className="aspect-video bg-gray-200 relative overflow-hidden">
-        <img
+        <Image
           src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
           alt={title}
           className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
