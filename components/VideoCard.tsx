@@ -59,8 +59,11 @@ const VideoCard: React.FC<VideoCardProps> = ({
     >
       <div className="aspect-video bg-gray-200 relative overflow-hidden">
         <Image
+          width={1280}
+          height={720}
           src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
           alt={title}
+          quality={100}
           className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300" />

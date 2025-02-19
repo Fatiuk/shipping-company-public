@@ -113,6 +113,8 @@ const About: FC = () => {
             {/* Main image */}
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <Image
+                width={0}
+                height={0}
                 src="/about.webp"
                 alt="Transport vehicle"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"

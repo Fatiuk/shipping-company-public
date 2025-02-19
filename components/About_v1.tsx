@@ -21,6 +21,8 @@ const About: FC = () => {
       <div className="lg:w-1/2 flex justify-center">
         <div className="relative w-full max-w-lg aspect-square bg-[--color-b100-w] rounded-lg overflow-hidden">
           <Image
+            width={0}
+            height={0}
             src="/about.webp"
             alt="Transport vehicle"
             className="w-full h-full object-cover"
