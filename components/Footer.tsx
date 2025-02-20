@@ -30,9 +30,6 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
             </div>
             <SocialLinks />
           </div>
-          {/* <div className="grid grid-cols-[auto_auto] sm:grid-cols-[auto_auto_auto] mx-auto w-full max-w-[860px] xl:max-w-[560px] 2xl:max-w-[700px]">
-            {navigation.map((section) => (
-              <div key={section.label} className="flex flex-col mx-auto"> */}
           <div className="grid grid-cols-2 sm:grid-cols-[auto_auto_auto] md:grid-cols-3 justify-items-start mx-auto w-full max-w-[860px] xl:max-w-[560px] 2xl:max-w-[700px]">
             {navigation.map((section) => (
               <div key={section.label} className="flex flex-col sm:mx-auto">
