@@ -3,12 +3,13 @@ import React, { FC } from "react";
 
 const Address: FC<{ address: AddressI }> = ({ address }) => {
   return (
-    <div className="flex flex-row xl:flex-col pb-8 last:pb-0 md:pb-0 max-w-[700px] xl:max-w-[500px]">
-      <div className="flex flex-col">
-        <p className="pb-1 font-header text-2xl text-blank dark:text-oaccent-700">
+    // <div className="flex flex-row xl:flex-col xl:max-w-[500px]">
+    <div className="flex flex-col xl:max-w-[500px]">
+      <div className="flex flex-col min-w-[200px]">
+        <p className="pb-1 font-header text-2xl text-[--color-black-a700]">
           {address.city}
         </p>
-        <p className="font-sans pb-3 mb-auto text-black dark:text-owhite">
+        <p className="font-sans pb-3 mb-auto text-[--color-black-w]">
           {address.address}
         </p>
       </div>

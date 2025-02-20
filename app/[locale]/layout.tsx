@@ -147,11 +147,6 @@ export default async function RootLayout(props: Props) {
             </main>
             <Footer
               navigation={footerNavigation}
-              // address={groups.map((group) => ({
-              //   city: group.city.label,
-              //   address: group.location.address,
-              //   mapLink: group.location.mapLink,
-              // }))}
               address={[
                 {
                   city: location.city.label,
