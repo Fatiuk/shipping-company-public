@@ -12,7 +12,6 @@ const StatsItem: FC<{
   const [currentNumber, setCurrentNumber] = useState(0);
   const targetNumber = parseFloat(t(targetNumberStr)) || 2000;
   const increment = parseFloat(t(incrementStr)) || 100;
-  // const duration = targetNumber / (increment * 10);
   const duration = 50;
 
   useEffect(() => {
@@ -29,12 +28,12 @@ const StatsItem: FC<{
   }, [currentNumber, targetNumber, increment]);
 
   return (
-    <div className="text-center sm:w-full md:w-[47%] lg:w-[30%]">
-      <p className="font-header text-5xl text-[--color-w-b900] pb-3">
+    <div className="text-center">
+      <p className="font-header text-3xl lg:text-4xl xl:text-5xl text-[--color-w-b900] pb-3">
         {Math.round(currentNumber)}
         {t(suffix)}
       </p>
-      <p className="font-sans text-lg">{t(text)}</p>
+      <p className="font-sans text-base md:text-lg">{t(text)}</p>
     </div>
   );
 };

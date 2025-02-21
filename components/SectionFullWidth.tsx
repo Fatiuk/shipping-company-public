@@ -28,7 +28,7 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
 
   return (
     <div
-      className="w-full relative z-0 w-full py-[4rem] overflow-hidden"
+      className="w-full relative z-0 w-full py-[1.5rem] sm:py-[3rem] overflow-hidden"
       style={style}
     >
       <div className={`absolute inset-0 ${bgClass}`}></div>
@@ -40,7 +40,7 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
           </header>
         )}
         <div className="flex flex-col lg:flex-row items-center gap-8">
-          <div className="w-full flex-1">{children}</div>
+          <div className="flex-1">{children}</div>
           {image && (
             <div className="w-3/5 lg:w-1/3 lg:mr-20">
               <Image

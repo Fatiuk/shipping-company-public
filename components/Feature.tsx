@@ -16,7 +16,7 @@ const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
   });
 
   return (
-    <div className="flex flex-col p-6 items-center text-center sm:w-[50%] md:w-[33.3333%]">
+    <div className="flex flex-col p-6 items-center text-center">
       <picture className="" ref={iconRef}>
         <Image
           src={src}
@@ -25,10 +25,10 @@ const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
           alt={alt === "" ? "" : t(alt)}
         />
       </picture>
-      <h3 className="text-2xl font-bold py-2 text-oblue-900 dark:text-oaccent-900">
+      <h3 className="text-xl md:text-2xl font-bold py-2 text-oblue-900 dark:text-oaccent-900">
         {t(title)}
       </h3>
-      <div className="text-lg text-black">{t(description)}</div>
+      <div className="text-base md:text-lg text-black">{t(description)}</div>
     </div>
   );
 };

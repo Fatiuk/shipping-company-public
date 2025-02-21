@@ -132,16 +132,17 @@ export const VideoReviewsSection: React.FC = () => {
 
   return (
     <div className="relative overflow-hidden">
-      {/* <div className="container sm:min-w-0 mx-auto px-4"> */}
-      <div className="w-full max-w-[2000px] mx-auto px-4">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-oblue-900 dark:text-white mb-3 md:mb-4">
-            {t("title")}
-          </h2>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            {t("description")}
-          </p>
-        </div>
+      <div className="text-center mb-8 md:mb-12">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-oblue-900 dark:text-white mb-3 md:mb-4">
+          {t("title")}
+        </h2>
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          {t("description")}
+        </p>
+      </div>
+      <div className="container mx-auto px-4">
+        {/* <div className="w-full max-w-[1600px] mx-auto px-8 xl:px-20"> */}
+
         <div className="relative group">
           {/* Carousel Container */}
           <div

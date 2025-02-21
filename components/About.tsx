@@ -69,7 +69,7 @@ const About: FC = () => {
       <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tl from-oaccent-500/10 to-transparent rounded-full blur-3xl" />
 
       {/* <div className="md:max-w-[2000px] px-4 md:px-16 flex flex-col lg:flex-row items-center justify-between gap-16 relative"> */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-[2000px] flex flex-col lg:flex-row items-center justify-between gap-16 relative">
+      <div className="w-full sm:container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-16 relative">
         <div ref={textRef} className="lg:w-1/2 space-y-6">
           {/* Small accent line */}
           <div className="w-20 h-1 bg-gradient-to-r from-oblue-300 to-oaccent-600" />
@@ -78,11 +78,11 @@ const About: FC = () => {
             {t("sectionTitle")}
           </h2>
 
-          <h3 className="text-3xl lg:text-4xl font-bold text-[--color-b900-w] leading-tight">
+          <h3 className="text-xl sm:text-3xl lg:text-4xl font-bold text-[--color-b900-w] leading-tight">
             {t("title")}
           </h3>
 
-          <p className="text-lg leading-relaxed text-[--color-b900-w]/80">
+          <p className="text-md sm:text-lg leading-relaxed text-[--color-b900-w]/80">
             {t("description")}
           </p>
 

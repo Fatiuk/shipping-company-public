@@ -12,7 +12,7 @@ const Section: FC<SectionProps> = ({ title, children, className = "" }) => {
   const t = useTranslations();
   return (
     <div
-      className={`w-full py-[4rem] px-4 lg:px-0 relative overflow-hidden text-[--color-b900-w] bg-[--color-w-b900] ${className}`}
+      className={`w-full py-[2rem] md:py-[4rem] px-4 lg:px-0 relative overflow-hidden text-[--color-b900-w] bg-[--color-w-b900] ${className}`}
     >
       <div className="mx-auto sm:max-w-full md:max-w-7xl px-8">
         {title && (

@@ -35,7 +35,7 @@
     "themeLabel": "Toggle theme"
   },
   "footer": {
-    "companyDesc": "Diminoble is a licensed shipping company that is fully insured and bonded. We operate across the country to make the relocation of all kinds of auto easier for our clients.",
+    "companyDesc": "Our company will go the extra mile to analyze the particular project in detail, and offer a business solution that will meet your requirements.",
     "company": "Company",
     "features": "Features",
     "blog": "Blog",
@@ -94,15 +94,15 @@
       ],
       "achievments": [
         {
-          "count": "15000",
+          "count": "2000",
           "suffix": "",
           "increment": "100",
           "title": "Shipping Customers"
         },
         {
-          "count": "30000",
+          "count": "8000",
           "suffix": "",
-          "increment": "200",
+          "increment": "100",
           "title": "Vehicles Shipped"
         },
         {

@@ -115,13 +115,13 @@ const QuoteForm: FC = () => {
   return (
     <div id="contact-us" className="">
       <div className="max-w-[1400px] mx-auto px-8 2xl:px-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           {/* Content Side */}
           <div ref={contentRef} className="max-w-[580px] lg:w-1/2 space-y-6">
-            <h2 className="text-4xl font-bold text-[--color-b900-w]">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-b900-w]">
               {t("content.title")}
             </h2>
-            <p className="text-lg text-[--color-b900-w]">
+            <p className="text-md md:text-lg text-[--color-b900-w]">
               {t("content.description")}
             </p>
 
@@ -175,7 +175,7 @@ const QuoteForm: FC = () => {
           {/* Form Side */}
           <div ref={formRef} className="max-w-[500px] lg:w-1/2 w-full">
             <div className="bg-[--color-w-b50] rounded-2xl shadow-xl p-8">
-              <h3 className="font-bold text-2xl text-center text-oaccent-800 uppercase mb-6">
+              <h3 className="font-bold text-xl md:text-2xl text-center text-oaccent-800 uppercase mb-6">
                 {t("formTitle")}
               </h3>
               <form onSubmit={formik.handleSubmit} className="">

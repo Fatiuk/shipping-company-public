@@ -12,8 +12,8 @@ export const VideoReviewsPage: React.FC = () => {
   const [selectedVideo, setSelectedVideo] = useState<VideoReview | null>(null);
 
   return (
-    <div className="container mx-auto bg-owhite dark:bg-oblue-900 py-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-oblue-900 dark:text-white mb-8 text-center">
+    <div className="container mx-auto text-[--color-w-b900] py-16">
+      <h1 className="text-3xl md:text-5xl font-bold text-[--color-b900-w] mb-8 text-center">
         {t("title")}
       </h1>
 

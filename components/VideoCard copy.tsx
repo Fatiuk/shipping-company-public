@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import VideoReview from "@/types/videoReview";
 import { formatDate } from "@/lib/utils";
 import { useLocale } from "next-intl";
@@ -18,8 +19,6 @@ const VideoCard: React.FC<VideoCardProps> = ({
   ...video
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const [displayTitle, setDisplayTitle] = useState(title);
   const locale = useLocale();
 
   useEffect(() => {
@@ -50,43 +49,6 @@ const VideoCard: React.FC<VideoCardProps> = ({
     };
   }, []);
 
-  useEffect(() => {
-    const titleElement = titleRef.current;
-    if (!titleElement) return;
-
-    const checkTitleOverflow = () => {
-      const isOverflowing = titleElement.scrollWidth > titleElement.clientWidth;
-
-      if (isOverflowing) {
-        let truncatedTitle = title;
-        titleElement.textContent = truncatedTitle;
-
-        while (
-          titleElement.scrollWidth > titleElement.clientWidth &&
-          truncatedTitle.length > 3
-        ) {
-          truncatedTitle = truncatedTitle.slice(0, -4) + "...";
-          titleElement.textContent = truncatedTitle;
-        }
-
-        setDisplayTitle(truncatedTitle);
-      } else {
-        setDisplayTitle(title);
-      }
-    };
-
-    // Initial check
-    checkTitleOverflow();
-
-    // Add resize observer to handle container size changes
-    const resizeObserver = new ResizeObserver(checkTitleOverflow);
-    resizeObserver.observe(titleElement);
-
-    return () => {
-      resizeObserver.disconnect();
-    };
-  }, [title]);
-
   return (
     <div
       ref={cardRef}
@@ -112,12 +74,8 @@ const VideoCard: React.FC<VideoCardProps> = ({
         </div>
       </div>
       <div className="p-4">
-        <h3
-          ref={titleRef}
-          className="text-lg font-bold text-oblue-900 dark:text-owhite mb-2 overflow-hidden whitespace-nowrap"
-          title={title} // Show full title on hover
-        >
-          {displayTitle}
+        <h3 className="text-lg font-bold text-oblue-900 dark:text-owhite mb-2">
+          {title}
         </h3>
         <div className="flex items-center justify-between">
           <span className="text-sm text-gray-600 dark:text-gray-300">

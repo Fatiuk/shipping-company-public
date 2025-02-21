@@ -462,7 +462,7 @@ export const videoData: VideoData[] = [
   {
     id: 6,
     videoId: "NpDAFKqeUDw",
-    title: "Excellent communication",
+    title: "Excellent communication and great car shipping experience!",
     author: "Shahar A.",
     rating: 4,
     date: "2024-11-18",
@@ -486,7 +486,7 @@ export const videoData: VideoData[] = [
   {
     id: 9,
     videoId: "Z-ejodfvbN8",
-    title: "Excellent communication",
+    title: "Excellent communication and reliable service",
     author: "Stephen S.",
     rating: 4,
     date: "2024-05-01",
@@ -510,7 +510,7 @@ export const videoData: VideoData[] = [
   {
     id: 12,
     videoId: "59Q_lhgGANc",
-    title: "Excellent communication",
+    title: "Excellent communication and reliable service",
     author: "Netta K.",
     rating: 4,
     date: "2024-11-11",
