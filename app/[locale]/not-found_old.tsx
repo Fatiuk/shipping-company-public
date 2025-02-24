@@ -6,7 +6,12 @@ import ActiveLink from "@/components/shared/ActiveLink";
 import PageProps from "@/types/page";
 
 const NotFound = async (props: PageProps) => {
-  const params = await props.params;
+  const propsFetched = await props;
+  const params = await propsFetched.params;
+
+  console.log("propsFetched", propsFetched);
+  console.log("params", params);
+
   const locale = params.locale;
 
   const t = await getTranslations({

@@ -1,10 +1,33 @@
 import React, { FC } from "react";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { newsItems } from "@/app/data";
-import NewsItemContent from "@/components/NewsItemContent";
-import DynamicRouteI from "@/types/dynamicRoute";
+import { blogItems } from "@/app/data";
 import PageProps from "@/types/page";
+import BlogItemContent from "@/components/BlogItemContent";
+
+console.log("Available blog items:", blogItems);
+
+type BlogItemProps = {
+  params: {
+    slug: string;
+    locale: string;
+  };
+};
+
+export async function generateStaticParams() {
+  // Get all your supported locales
+  const locales = ["en", "es"]; // adjust based on your supported languages
+
+  const params = blogItems.flatMap((item) =>
+    locales.map((locale) => ({
+      locale,
+      slug: item.slug,
+    }))
+  );
+
+  console.log("Generated params:", params);
+  return params;
+}
 
 export async function generateMetadata(props: PageProps) {
   const params = await props.params;
@@ -25,15 +48,18 @@ export async function generateMetadata(props: PageProps) {
   };
 }
 
-const NewsItemPage: FC<DynamicRouteI> = async ({ params }) => {
-  const slug = (await params).slug;
-  const item = newsItems.find((item) => item.slug === slug);
+const BlogItemPage = async ({ params }: BlogItemProps) => {
+  const { slug, locale } = params;
+
+  console.log("Debug - params received:", { slug, locale }); // Add this for debugging
+
+  const item = blogItems.find((item) => item.slug === slug);
 
   if (!item) {
     notFound();
   }
 
-  return <NewsItemContent item={item} />;
+  return <BlogItemContent item={item} />;
 };
 
-export default NewsItemPage;
+export default BlogItemPage;

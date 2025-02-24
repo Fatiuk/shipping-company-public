@@ -26,8 +26,6 @@ const achievments = en.home.whyUs.achievments.map((_, index) => ({
 }));
 
 const Home: FC = () => {
-  // const t = useTranslations("home");
-
   return (
     <>
       <SectionFullWidth image={imgHero.src}>

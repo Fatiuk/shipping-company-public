@@ -1,14 +1,14 @@
 "use client";
 import React, { FC } from "react";
-import { formatDate } from "@/lib/utils";
+import { useLocale } from "next-intl";
+import GroupNinja from "@/assets/img/group-ninjas.jpg";
 import HeroCTA from "@/components/HeroCTA";
 import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
-import GroupNinja from "@/assets/img/group-ninjas.jpg";
-import NewsItemI from "@/types/newsItem";
-import { useLocale } from "next-intl";
+import { formatDate } from "@/lib/utils";
+import BlogItemI from "@/types/blogItem";
 
-const NewsItemContent: FC<{ item: NewsItemI }> = ({ item }) => {
+const BlogItemContent: FC<{ item: BlogItemI }> = ({ item }) => {
   const locale = useLocale();
   return (
     <>
@@ -33,4 +33,4 @@ const NewsItemContent: FC<{ item: NewsItemI }> = ({ item }) => {
   );
 };
 
-export default NewsItemContent;
+export default BlogItemContent;

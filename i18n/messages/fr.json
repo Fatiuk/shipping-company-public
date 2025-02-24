@@ -242,7 +242,11 @@
     ]
   },
   "team": { "title": "", "description": "" },
-  "blog": { "title": "", "description": "", "tags": { "all": "Tout" } },
+  "blog": {
+    "title": "Blog",
+    "description": "Déplacez votre voiture en toute confiance – Rapide, Fiable, à l'échelle nationale !",
+    "tags": { "all": "Tous" }
+  },
   "about": { "title": "", "description": "" },
   "faq": { "title": "", "description": "" },
   "pagination": {

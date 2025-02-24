@@ -1,32 +1,32 @@
 import React, { FC } from "react";
-import { generateNewsTags } from "@/lib/utils";
-import NewsItemI from "@/types/newsItem";
 import { useTranslations } from "next-intl";
+import { generateNewsTags } from "@/lib/utils";
+import BlogItemI from "@/types/blogItem";
 
-interface NewsTagsI {
-  newsItems: NewsItemI[];
-  newsTagSelected: string;
-  onNewsTagSelect: (tag: string) => void;
+interface TagsI {
+  blogItems: BlogItemI[];
+  blogTagSelected: string;
+  onBlogTagSelect: (tag: string) => void;
 }
 
-const NewsTags: FC<NewsTagsI> = ({
-  newsItems,
-  newsTagSelected,
-  onNewsTagSelect,
+const BlogTags: FC<TagsI> = ({
+  blogItems,
+  blogTagSelected,
+  onBlogTagSelect,
 }) => {
   const t = useTranslations("blog");
-  const tagsWithAll = generateNewsTags(newsItems, t("title"));
+  const tagsWithAll = generateNewsTags(blogItems, t("tags.all"));
   return (
     <>
       {tagsWithAll.map((tag) => (
         <button
           className={`rounded-xl px-2 py-1 ${
-            newsTagSelected === tag
+            blogTagSelected === tag
               ? "bg-oblue-600 text-white dark:bg-oaccent-900 text-white dark:text-black"
               : "hover:bg-oblue-100 dark:hover:bg-oaccent-600 text-black dark:text-white dark:hover:text-black"
           }`}
           key={tag}
-          onClick={() => onNewsTagSelect(tag)}
+          onClick={() => onBlogTagSelect(tag)}
         >
           {tag}
         </button>
@@ -35,4 +35,4 @@ const NewsTags: FC<NewsTagsI> = ({
   );
 };
 
-export default NewsTags;
+export default BlogTags;

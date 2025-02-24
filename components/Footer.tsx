@@ -20,7 +20,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
   return (
     <footer className="flex flex-col">
       <div className="bg-oblue-50 dark:bg-oblue-800 py-4 md:py-6">
-        <div className="max-w-full lg:max-w-[1600px] px-4 sm:px-8 2xl:px-20 mx-auto flex flex-col xl:flex-row flex-wrap sm:flex-nowrap justify-between gap-6 lg:gap-8">
+        <div className="max-w-full lg:max-w-[1600px] px-4 px-12 lg:px-10 2xl:px-20 mx-auto flex flex-col xl:flex-row flex-wrap sm:flex-nowrap justify-between gap-6 2xl:gap-8">
           <div className="flex flex-row xl:flex-col gap-6 xl:max-w-[350px] items-center justify-between md:justify-start">
             <div className="w-fit">
               <Logo />
@@ -30,7 +30,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
             </div>
             <SocialLinks />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-[auto_auto_auto] md:grid-cols-3 justify-items-start mx-auto w-full max-w-[860px] xl:max-w-[560px] 2xl:max-w-[700px]">
+          <div className="grid grid-cols-2 sm:grid-cols-[auto_auto_auto] md:grid-cols-3 justify-items-start mx-auto w-full max-w-[860px] lg:max-w-[680px] 2xl:max-w-[860px]">
             {navigation.map((section) => (
               <div key={section.label} className="flex flex-col sm:mx-auto">
                 <h4 className="font-bold text-lg text-[--color-a700-b200]">

@@ -54,37 +54,39 @@ const Paginator = ({
         <div className="mx-auto sm:max-w-full md:max-w-4xl">
           {/* Render items */}
           <div>{children}</div>
-          <div className="flex flex-nowrap gap-x-4 justify-center pt-4">
-            <button
-              onClick={() => handlePageChange(1)}
-              disabled={currentPage === 1}
-              className={otherPageButtonStyle}
-            >
-              &laquo; {t("first")}
-            </button>
-            <button
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              className={otherPageButtonStyle}
-            >
-              &lsaquo; {t("previous")}
-            </button>
-            {renderPageNumbers(currentPage, totalPages, handlePageChange)}
-            <button
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-              className={otherPageButtonStyle}
-            >
-              {t("next")} &raquo;
-            </button>
-            <button
-              onClick={() => handlePageChange(totalPages)}
-              disabled={currentPage === totalPages}
-              className={otherPageButtonStyle}
-            >
-              {t("last")} &rsaquo;
-            </button>
-          </div>
+          {totalItems > itemsPerPage && (
+            <div className="flex flex-nowrap gap-x-4 justify-center pt-4">
+              <button
+                onClick={() => handlePageChange(1)}
+                disabled={currentPage === 1}
+                className={otherPageButtonStyle}
+              >
+                &laquo; {t("first")}
+              </button>
+              <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className={otherPageButtonStyle}
+              >
+                &lsaquo; {t("previous")}
+              </button>
+              {renderPageNumbers(currentPage, totalPages, handlePageChange)}
+              <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className={otherPageButtonStyle}
+              >
+                {t("next")} &raquo;
+              </button>
+              <button
+                onClick={() => handlePageChange(totalPages)}
+                disabled={currentPage === totalPages}
+                className={otherPageButtonStyle}
+              >
+                {t("last")} &rsaquo;
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </>

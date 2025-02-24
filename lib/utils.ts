@@ -1,4 +1,4 @@
-import NewsItemI from "@/types/newsItem";
+import NewsItemI from "@/types/blogItem";
 
 const isBrowser = () => typeof window !== "undefined";
 

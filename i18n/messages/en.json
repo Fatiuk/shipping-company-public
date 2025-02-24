@@ -242,7 +242,11 @@
     ]
   },
   "team": { "title": "", "description": "" },
-  "blog": { "title": "", "description": "", "tags": { "all": "All" } },
+  "blog": {
+    "title": "Blog",
+    "description": "Move Your Car with Confidence – Fast, Reliable, Nationwide!",
+    "tags": { "all": "All" }
+  },
   "about": { "title": "", "description": "" },
   "faq": { "title": "", "description": "" },
   "pagination": {

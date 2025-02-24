@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export default interface NewsItemI {
+export default interface BlogItemI {
   id: number;
   date: string;
   slug: string;

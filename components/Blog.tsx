@@ -1,17 +1,17 @@
 "use client";
 import React, { FC, useEffect, useState } from "react";
 import { useLocale } from "next-intl";
-import Link from "next/link";
-import { formatDate } from "@/lib/utils";
-import NewsItemI from "@/types/newsItem";
-import NewsTags from "@/components/NewsTags";
+import BlogTags from "@/components/BlogTags";
 import Paginator from "@/components/Paginator";
+import { formatDate } from "@/lib/utils";
+import BlogItemI from "@/types/blogItem";
+import ActiveLink from "./shared/ActiveLink";
 
-interface NewsListI {
-  newsItems: NewsItemI[];
+interface BlogI {
+  blogItems: BlogItemI[];
 }
 
-const NewsList: FC<NewsListI> = ({ newsItems }) => {
+const Blog: FC<BlogI> = ({ blogItems }) => {
   // const t = useTranslations("blog");
   const locale = useLocale();
   const [selectedTag, setSelectedTag] = useState<string>("all");
@@ -19,16 +19,16 @@ const NewsList: FC<NewsListI> = ({ newsItems }) => {
 
   const itemsPerPage = 5;
 
-  const newsSorted: NewsItemI[] = newsItems.sort((a, b) => {
+  const blogItemsSorted: BlogItemI[] = blogItems.sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
 
-  const filteredNews = newsSorted.filter((item) => {
+  const filteredBlogItems = blogItemsSorted.filter((item) => {
     const tags = item.tags;
     return selectedTag === "all" || tags.includes(selectedTag);
   });
 
-  const paginatedNews = filteredNews.slice(
+  const paginatedBlog = filteredBlogItems.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -42,10 +42,10 @@ const NewsList: FC<NewsListI> = ({ newsItems }) => {
       <div className="w-full pt-[4rem] pb-8 px-4 lg:px-0 relative overflow-hidden text-oblue-900 dark:text-white bg-owhite dark:bg-oblue-900">
         <div className="mx-auto sm:max-w-full md:max-w-4xl">
           <div className="flex flex-wrap gap-x-2 ml-[-8px]">
-            <NewsTags
-              newsItems={newsItems}
-              newsTagSelected={selectedTag}
-              onNewsTagSelect={setSelectedTag}
+            <BlogTags
+              blogItems={blogItems}
+              blogTagSelected={selectedTag}
+              onBlogTagSelect={setSelectedTag}
             />
           </div>
         </div>
@@ -53,22 +53,22 @@ const NewsList: FC<NewsListI> = ({ newsItems }) => {
 
       <div className="w-full mx-auto pb-[4rem]">
         <Paginator
-          totalItems={filteredNews.length}
+          totalItems={filteredBlogItems.length}
           itemsPerPage={itemsPerPage}
           currentPage={currentPage}
           onPageChange={setCurrentPage}
         >
-          {paginatedNews.map((news) => (
-            <div key={news.id} className="pb-4 last:pb-0">
+          {paginatedBlog.map((blog) => (
+            <div key={blog.id} className="pb-4 last:pb-0">
               <p className="text-oblue-600 dark:text-oaccent-700 text-md">
-                {formatDate(news.date, locale)}
+                {formatDate(blog.date, locale)}
               </p>
-              <Link
+              <ActiveLink
                 className="font-bold text-lg hover:underline hover:text-oaccent-900"
-                href={`/news/${news.slug}`}
+                href={`/company/blog/${blog.slug}`}
               >
-                {news.title}
-              </Link>
+                {blog.title}
+              </ActiveLink>
             </div>
           ))}
         </Paginator>
@@ -77,4 +77,4 @@ const NewsList: FC<NewsListI> = ({ newsItems }) => {
   );
 };
 
-export default NewsList;
+export default Blog;
