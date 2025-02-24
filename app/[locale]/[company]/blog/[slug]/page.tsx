@@ -1,22 +1,11 @@
-import React, { FC } from "react";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { blogItems } from "@/app/data";
 import PageProps from "@/types/page";
 import BlogItemContent from "@/components/BlogItemContent";
 
-console.log("Available blog items:", blogItems);
-
-type BlogItemProps = {
-  params: {
-    slug: string;
-    locale: string;
-  };
-};
-
 export async function generateStaticParams() {
-  // Get all your supported locales
-  const locales = ["en", "es"]; // adjust based on your supported languages
+  const locales = ["en", "es"];
 
   const params = blogItems.flatMap((item) =>
     locales.map((locale) => ({
@@ -48,16 +37,15 @@ export async function generateMetadata(props: PageProps) {
   };
 }
 
-const BlogItemPage = async ({ params }: BlogItemProps) => {
+const BlogItemPage = async (props: PageProps) => {
+  const params = await props.params;
   const { slug, locale } = params;
 
-  console.log("Debug - params received:", { slug, locale }); // Add this for debugging
+  console.log("params received:", { slug, locale });
 
   const item = blogItems.find((item) => item.slug === slug);
 
-  if (!item) {
-    notFound();
-  }
+  if (!item) notFound();
 
   return <BlogItemContent item={item} />;
 };

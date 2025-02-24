@@ -7,11 +7,11 @@ const HeroCTA: FC = () => {
 
   return (
     <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-6 relative z-10">
-      <button className="w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-900 text-white hover:text-black hover:bg-oaccent-700 hover:cursor-pointer transition-colors duration-200 rounded-xl">
+      <button className="w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-900 text-white hover:bg-oaccent-700 hover:cursor-pointer transition-colors duration-200 rounded-xl">
         {t("quote")}
       </button>
       <Link
-        className="flex w-full sm:w-auto mt-4 sm:mt-9 px-7 py-4 text-xl justify-center font-header capitalize border border-transparent bg-oblue-600 text-oblue-50 hover:text-black hover:bg-oblue-400 hover:cursor-pointer transition-colors duration-200 rounded-xl group"
+        className="flex w-full sm:w-auto mt-4 sm:mt-9 px-7 py-4 text-xl justify-center font-header capitalize border border-transparent bg-oblue-600 text-oblue-50 hover:bg-oblue-400 hover:cursor-pointer transition-colors duration-200 rounded-xl group"
         href="tel:"
       >
         <svg
@@ -20,7 +20,7 @@ const HeroCTA: FC = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6 me-2 text-oblue-50 transition-all rotate-0 group-hover:mt-1 group-hover:-rotate-12 group-hover:text-black"
+          className="size-6 me-2 text-oblue-50 transition-all rotate-0 group-hover:mt-1 group-hover:-rotate-12"
         >
           <path
             strokeLinecap="round"

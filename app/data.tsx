@@ -146,278 +146,6 @@ export const quotations: QuotationI[] = [
   },
 ];
 
-export const newsItems = [
-  {
-    id: 1,
-    date: "2024-01-12",
-    slug: "otoshi-judo-club-launches-beginner-friendly-workshop-for-new-year-enthusiasts",
-    tags: ["Otoshi Club Events"],
-    title:
-      "Otoshi Judo Club Launches Beginner-Friendly Workshop for New Year Enthusiasts",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance.
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Monctons diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 2,
-    date: "2024-01-26",
-    slug: "moncton-hosts-atlantic-judo-championships-featuring-rising-stars-from-otoshi",
-
-    tags: ["Competitions"],
-    title:
-      "Moncton Hosts Atlantic Judo Championships, Featuring Rising Stars from Otoshi",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance.
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Monctons diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 3,
-    date: "2024-02-10",
-    slug: "otoshi-judokas-shine-at-the-winter-provincial-judo-tournament-in-fredericton",
-
-    tags: ["Competitions"],
-    title:
-      "Otoshi Judokas Shine at the Winter Provincial Judo Tournament in Fredericton",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance.
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Monctons diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 4,
-    date: "2024-03-03",
-    slug: "otoshi-judo-club-organizes-annual-fundraiser-for-kids-judo-program",
-    tags: ["Otoshi Club Events"],
-    title:
-      "Otoshi Judo Club Organizes Annual Fundraiser for Kids' Judo Program",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance.
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Monctons diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 5,
-    date: "2024-03-15",
-    slug: "canadian-judo-federation-announces-national-ranking-updates-otoshi-athletes-make-the-cut",
-
-    tags: ["Canada Judo"],
-    title:
-      "Canadian Judo Federation Announces National Ranking Updates: Otoshi Athletes Make the Cut",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance.
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Monctons diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 6,
-    date: "2024-04-05",
-    slug: "judo-for-everyone-program-launches-at-otoshi-judo-club-to-promote-inclusivity",
-    tags: ["Otoshi Club Events"],
-    title:
-      '"Judo for Everyone" Program Launches at Otoshi Judo Club to Promote Inclusivity',
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB – The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance.
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Monctons diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 7,
-    date: "2024-04-22",
-    slug: "moncton-welcomes-top-canadian-judokas-for-the-national-team-trials",
-
-    tags: ["Competitions"],
-    title: "Moncton Welcomes Top Canadian Judokas for the National Team Trials",
-    text: (
-      <div>
-        <p className="pb-4 last:pb-0">
-          MONCTON, NB The Otoshi Judo Club, a cornerstone of the local martial
-          arts community, is opening its doors to aspiring judokas of all ages
-          and skill levels. Nestled in the heart of Moncton, the club offers a
-          unique blend of traditional judo instruction and modern fitness
-          training, creating a space where discipline meets community spirit.
-        </p>
-        <p className="pb-4 last:pb-0">
-          With a team of seasoned instructors, Otoshi Judo Club ensures that
-          every participant receives personalized guidance.
-        </p>
-        <p className="pb-4 last:pb-0">
-          In addition to its regular classes, the club has announced a series of
-          new initiatives, including weekend workshops and community events.
-          These programs aim to provide flexibility for busy schedules while
-          fostering a sense of camaraderie among members. The club also
-          emphasizes inclusivity, offering bilingual instruction in English and
-          French to cater to Monctons diverse population.
-        </p>
-        <p className="pb-4 last:pb-0">
-          Prospective members are encouraged to visit the Otoshi Judo Club
-          website for more information about upcoming events and class
-          schedules. The club is currently offering a free trial class for
-          newcomers, making it the perfect time to step onto the tatami and
-          experience the benefits of judo firsthand.
-        </p>
-      </div>
-    ),
-  },
-];
-
 export const blogItems = [
   {
     id: 1,
@@ -428,11 +156,6 @@ export const blogItems = [
       "Auto Transport Guide: Everything You Need to Know About Car Shipping Services",
     text: (
       <article>
-        <h1>
-          Auto Transport Guide: Everything You Need to Know About Car Shipping
-          Services
-        </h1>
-
         <p>
           When it comes to transporting your vehicle across the United States,
           choosing the right <strong>car shipping company</strong> can make all
@@ -442,7 +165,7 @@ export const blogItems = [
           for a smooth experience.
         </p>
 
-        <h2>Why Choose Professional Auto Transport Services?</h2>
+        <h3>Why Choose Professional Auto Transport Services?</h3>
 
         <p>
           Professional <strong>vehicle shipping services</strong> offer numerous
@@ -457,9 +180,9 @@ export const blogItems = [
           <li>Guaranteed insurance coverage during transit</li>
         </ul>
 
-        <h2>Types of Car Transport Services We Offer</h2>
+        <h3>Types of Car Transport Services We Offer</h3>
 
-        <h3>Open Transport</h3>
+        <h5>Open Transport</h5>
         <p>
           Our standard <strong>open carrier auto transport</strong> is the most
           economical option for shipping your vehicle. This method is perfect
@@ -467,14 +190,14 @@ export const blogItems = [
           competitive rates.
         </p>
 
-        <h3>Enclosed Auto Transport</h3>
+        <h5>Enclosed Auto Transport</h5>
         <p>
           For luxury, classic, or high-value vehicles, our{" "}
           <strong>enclosed car shipping</strong> service provides maximum
           protection from weather and road debris during transit.
         </p>
 
-        <h3>Door-to-Door Service</h3>
+        <h5>Door-to-Door Service</h5>
         <p>
           Experience the convenience of{" "}
           <strong>door-to-door car shipping</strong>, where we pick up and
@@ -482,7 +205,7 @@ export const blogItems = [
           subject to local restrictions.
         </p>
 
-        <h2>How to Prepare Your Vehicle for Shipping</h2>
+        <h3>How to Prepare Your Vehicle for Shipping</h3>
 
         <p>
           Ensure a smooth <strong>car transport</strong> experience by following
@@ -497,7 +220,7 @@ export const blogItems = [
           <li>Check tire pressure and battery charge</li>
         </ol>
 
-        <h2>Understanding Auto Transport Costs</h2>
+        <h3>Understanding Auto Transport Costs</h3>
 
         <p>
           Several factors influence <strong>car shipping costs</strong>:
@@ -511,7 +234,7 @@ export const blogItems = [
           <li>Pickup and delivery locations</li>
         </ul>
 
-        <h2>Why Choose Our Auto Transport Company?</h2>
+        <h3>Why Choose Our Auto Transport Company?</h3>
 
         <p>
           As a leading <strong>vehicle transport company</strong> in the United
@@ -526,7 +249,7 @@ export const blogItems = [
           <li>Dedicated customer support throughout the shipping process</li>
         </ul>
 
-        <h2>Popular Auto Transport Routes</h2>
+        <h3>Popular Auto Transport Routes</h3>
 
         <p>
           We specialize in major <strong>car shipping routes</strong> across the
@@ -540,7 +263,7 @@ export const blogItems = [
           <li>Seasonal routes for snowbirds</li>
         </ul>
 
-        <h2>Get Your Free Car Shipping Quote Today</h2>
+        <h3>Get Your Free Car Shipping Quote Today</h3>
 
         <p>
           Ready to transport your vehicle? Contact our{" "}

@@ -66,6 +66,3 @@ const config: Config = {
   darkMode: "selector",
 };
 export default config;
-// const colorRays = "#ca325b";
-// const colorSun = "#b31942";
-// const colorMoon = "#0a3161";
