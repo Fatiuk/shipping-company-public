@@ -2,7 +2,8 @@
 
 import React, { FC, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import LangSwitch from "@/components/LangSwitch";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
+import LocaleSwitcherMobile from "@/components/LocaleSwitcherMobile";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ActiveLink from "@/components/shared/ActiveLink";
 import Logo from "@/components/shared/Logo";
@@ -117,9 +118,9 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
             >
               {t("quote")}
             </ActiveLink>
-            <div className="flex items-center gap-x-8 ms-6">
+            <div className="flex items-center gap-x-4 ms-6">
               <ThemeSwitch />
-              <LangSwitch />
+              <LocaleSwitcher />
             </div>
           </div>
           {!isMenuOpen && (
@@ -188,7 +189,8 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
         </div>
       </div>
       <div
-        className={`fixed top-0 left-0 right-0 z-50 mt-[84px]
+        ref={menuMobileRef}
+        className={`fixed top-0 left-0 right-0 z-50 mt-[80px]
 			lg:hidden
 			overflow-hidden
 			shadow-mobmenu
@@ -199,7 +201,6 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
 			${isMenuOpen ? "max-h-[2000px]" : "max-h-0"}`}
       >
         <nav
-          ref={menuMobileRef}
           className={`flex lg:hidden gap-x-1.5 justify-center text-center text-lg`}
         >
           <ul className="flex flex-col justify-center w-full mx-4">
@@ -274,7 +275,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
         </nav>
         <div className="flex justify-center gap-x-6 py-6">
           <ThemeSwitch />
-          <LangSwitch />
+          <LocaleSwitcherMobile />
         </div>
       </div>
     </>
