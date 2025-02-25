@@ -40,9 +40,7 @@ export default function LocaleSwitcherBase({
     setIsOpen(false);
   };
 
-  const toggleDropdown = () => {
-    setIsOpen((prev) => !prev);
-  };
+  const toggleDropdown = () => setIsOpen((prev) => !prev);
 
   // current locale option
   const selectedOption = localeOptions.find(
@@ -67,21 +65,23 @@ export default function LocaleSwitcherBase({
         <div
           onClick={toggleDropdown}
           className={clsx(
-            "inline-flex items-center justify-between text-[--color-b400-b200] cursor-pointer",
+            "inline-flex items-center justify-between cursor-pointer",
             isPending && "opacity-50 cursor-not-allowed"
           )}
         >
           {variant === "desktop" ? (
             <>
-              <span className="pr-1 hidden xl:inline">
+              <span className="text-[--color-b400-b200] pr-1 hidden xl:inline">
                 {selectedOption?.label}
               </span>
-              <span className="pr-1 md:inline xl:hidden">
+              <span className="text-[--color-b400-b200] pr-1 md:inline xl:hidden">
                 {selectedOption?.abbr || selectedOption?.label}
               </span>
             </>
           ) : (
-            <span className="pr-1">{selectedOption?.label}</span>
+            <span className="text-[--color-b400-b200] pr-1">
+              {selectedOption?.label}
+            </span>
           )}
           <span
             className={clsx(
@@ -106,22 +106,24 @@ export default function LocaleSwitcherBase({
                 <li
                   key={option.value}
                   className={clsx(
-                    "cursor-pointer text-[--color-b400-b200] hover:text-[--color-a900-b200]",
+                    "cursor-pointer hover:text-[--color-a900-b200]",
                     variant === "desktop" ? "py-2 px-3 b2" : "py-2 px-4 b2"
                   )}
                   onClick={() => handleOptionClick(option.value)}
                 >
                   {variant === "desktop" ? (
                     <>
-                      <span className="md:hidden xl:inline">
+                      <span className="text-[--color-b400-b200] md:hidden xl:inline">
                         {option.label}
                       </span>
-                      <span className="hidden md:inline xl:hidden">
+                      <span className="text-[--color-b400-b200] hidden md:inline xl:hidden">
                         {option.abbr || option.label}
                       </span>
                     </>
                   ) : (
-                    <span>{option.label}</span>
+                    <span className="text-[--color-b400-b200]">
+                      {option.label}
+                    </span>
                   )}
                 </li>
               )

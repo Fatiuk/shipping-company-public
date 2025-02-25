@@ -32,12 +32,11 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
       style={style}
     >
       <div className={`absolute inset-0 ${bgClass}`}></div>
-      {/* <div className="relative z-10 mx-auto px-4 sm:max-w-full md:max-w-4xl"> */}
-      <div className="relative z-10 mx-auto px-4 xl:max-w-[2000px]">
+      <div className="relative z-10 mx-auto max-sm:px-4 sm:container">
         {title && (
-          <header className="font-header text-oblue-900 text-4xl text-center pb-4 z-20">
+          <h1 className="font-h1-h2 text-[--color-b900-w] text-center pb-4 z-20">
             {t(title)}
-          </header>
+          </h1>
         )}
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="flex-1">{children}</div>

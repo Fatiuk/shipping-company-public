@@ -2,6 +2,7 @@
 
 import React, { FC, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import LocaleSwitcherMobile from "@/components/LocaleSwitcherMobile";
 import ThemeSwitch from "@/components/ThemeSwitch";
@@ -11,6 +12,7 @@ import { NavigationI } from "@/types/navigation";
 
 const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
   const t = useTranslations("navbar");
+  const { resolvedTheme } = useTheme();
 
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
   const [activeMobileSubmenuIndex, setActiveMobileSubmenuIndex] = useState<
@@ -19,7 +21,9 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
 
   const menuMobileRef = useRef<HTMLDivElement>(null);
 
-  const toggleMenuOpen = () => setMenuOpen(!isMenuOpen);
+  const toggleMenuOpen = () => {
+    setMenuOpen((prevState) => !prevState);
+  };
 
   const toggleMobileSubmenu = (index: number) => {
     setActiveMobileSubmenuIndex(
@@ -30,11 +34,17 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
   const handleClickOutsideMobile = (e: MouseEvent) => {
     if (
       menuMobileRef.current &&
-      !menuMobileRef.current.contains(e.target as Node)
+      !menuMobileRef.current.contains(e.target as Node) &&
+      isMenuOpen
     ) {
       setMenuOpen(false);
     }
   };
+
+  // close mobile menu when theme changes
+  useEffect(() => {
+    if (isMenuOpen) setMenuOpen(false);
+  }, [resolvedTheme]);
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutsideMobile);
@@ -46,16 +56,16 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
   return (
     <>
       <div className="fixed py-2 top-0 z-50 w-full bg-[--color-b50-b950] shadow-md">
-        {/* <div className="flex justify-center sm:justify-between mx-auto sm:max-w-full md:max-w-[1600px]  */}
-        <div
+        {/* <div
           className="flex justify-between mx-auto sm:max-w-full md:max-w-[1600px] 
-        pl-2 pr-8 sm:px-8 2xl:px-20"
-        >
+        max-sm:pl-2 max-sm:pr-8 px-8 2xl:px-20"
+        > */}
+        <div className="flex justify-between mx-auto sm:container">
           <div className="min-w-12 min-h-12 self-center">
             <Logo />
           </div>
           <nav className={`hidden lg:flex self-center text-center`}>
-            <ul className="flex items-center gap-x-6 lg:gap-x-4">
+            <ul className="flex items-center gap-x-4 xl:gap-x-6">
               {navigation.map((nav) => (
                 <li key={t(nav.label)} className="relative group">
                   {nav.submenu ? (
@@ -115,32 +125,33 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
             </button>
           </nav>
 
-          <div className={`hidden lg:flex items-center gap-10`}>
+          <div className={`hidden lg:flex items-center xl:gap-10`}>
             <ActiveLink
               href="/#contact-us"
-              className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-owhite transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
+              className="whitespace-nowrap h-fit py-3 px-4 lg:py-4 lg:px-8 mr-4 rounded-lg font-bold text-owhite bg-[--color-a700-a900] hover:bg-[--color-a900-a700] transition-colors"
             >
               {t("quote")}
             </ActiveLink>
-            <div className="flex items-center gap-x-4 ms-6">
+            <div className="flex items-center gap-x-4 xl:ms-6">
               <ThemeSwitch />
               <LocaleSwitcher />
             </div>
           </div>
-          {!isMenuOpen && (
-            <div
-              className={`flex lg:hidden justify-center items-center sm:gap-x-8 ms-2 sm:ms-6`}
+
+          <div
+            className={`flex lg:hidden justify-center items-center sm:gap-x-8 ms-2 sm:ms-6`}
+          >
+            <ActiveLink
+              href="/#contact-us"
+              className="whitespace-nowrap h-fit py-3 px-8 rounded-lg font-bold text-owhite bg-[--color-a700-a900] hover:bg-[--color-a900-a700] transition-colors"
             >
-              <ActiveLink
-                href="/#contact-us"
-                className="whitespace-nowrap h-fit py-3 px-8 lg:px-4 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
-              >
-                {t("quote")}
-              </ActiveLink>
-              <div
-                className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
-                onClick={toggleMenuOpen}
-              >
+              {t("quote")}
+            </ActiveLink>
+            <div
+              className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
+              onClick={toggleMenuOpen}
+            >
+              {!isMenuOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -155,31 +166,14 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>
-              </div>
-            </div>
-          )}
-          {isMenuOpen && (
-            <div
-              className={`flex lg:hidden justify-center items-center sm:gap-x-8 ms-6`}
-            >
-              <ActiveLink
-                href="/contact-us"
-                className="h-fit py-3 px-8 lg:px-4 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
-              >
-                {t("quote")}
-              </ActiveLink>
-
-              <div
-                className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
-                onClick={toggleMenuOpen}
-              >
+              ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="var(--color-b500-w)"
-                  className="size-6"
+                  className="size-8"
                 >
                   <path
                     strokeLinecap="round"
@@ -187,9 +181,9 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                     d="M6 18 18 6M6 6l12 12"
                   />
                 </svg>
-              </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
       </div>
       <div
@@ -218,7 +212,6 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                         className="flex justify-center py-2"
                         activeClassName="text-[--color-a900-b200]"
                         onClick={() => setMenuOpen(false)}
-                        // onMouseEnter={() => toggleMobileSubmenu(index)}
                       >
                         {t(nav.label)}
                       </ActiveLink>
