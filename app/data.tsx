@@ -159,10 +159,10 @@ export const blogItems = [
         <p>
           When it comes to transporting your vehicle across the United States,
           choosing the right <strong>car shipping company</strong> can make all
-          the difference. Whether you're relocating for work, buying a car from
-          out of state, or need seasonal vehicle transport, understanding the
-          ins and outs of <strong>auto transport services</strong> is crucial
-          for a smooth experience.
+          the difference. Whether you&apos;re relocating for work, buying a car
+          from out of state, or need seasonal vehicle transport, understanding
+          the ins and outs of <strong>auto transport services</strong> is
+          crucial for a smooth experience.
         </p>
 
         <h3>Why Choose Professional Auto Transport Services?</h3>
@@ -277,7 +277,7 @@ export const blogItems = [
           <strong>vehicle transportation</strong> needs with the care and
           professionalism you deserve. With thousands of satisfied customers and
           years of experience in the <strong>auto transport industry</strong>,
-          we're your reliable partner for all your car shipping needs.
+          we&apos;re your reliable partner for all your car shipping needs.
         </p>
       </article>
     ),
