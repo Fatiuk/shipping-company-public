@@ -7,9 +7,8 @@ const Hero: FC = () => {
 
   return (
     <div className="max-w-4xl lg:ml-20 pt-6 md:pt-0">
-      <div className="flex flex-col items-center text-center justify-center h-full px-4 sm:px-8 text-[--color-black-w]">
+      <div className="flex flex-col items-center text-center justify-center h-full px-4 sm:px-8">
         <h1 className="font-h1-h2-h3 font-extrabold tracking-wide pb-4 text-[--color-b700-w]">
-          {/* <h1 className="font-h1-h2 font-extrabold tracking-wide pb-4 text-[--color-b700-w]"> */}
           {t("title")}
         </h1>
         <p className="font-b1-b2 text-justify sm:text-center">

@@ -8,6 +8,7 @@ import useGsapHover from "@/hooks/useGsapHover";
 const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
   const t = useTranslations();
   const iconRef = useRef<HTMLDivElement | null>(null);
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
 
   useGsapHover({
     target: iconRef,
@@ -25,7 +26,11 @@ const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
           alt={alt === "" ? "" : t(alt)}
         />
       </div>
-      <h3 className="text-xl md:text-2xl text-oblue-900 dark:text-oaccent-900">
+      <h3
+        ref={titleRef}
+        className="text-xl md:text-2xl text-oblue-900 dark:text-oaccent-900"
+        data-feature-title
+      >
         {t(title)}
       </h3>
       <p className="md:text-lg text-black mt-auto">{t(description)}</p>
