@@ -8,6 +8,7 @@ interface SectionFullWidthI {
   children: ReactNode;
   bgClass?: string;
   title?: string;
+  titleClass?: string;
 }
 
 const SectionFullWidth: FC<SectionFullWidthI> = ({
@@ -16,6 +17,7 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
   bgClass = "bg-gradient-to-b from-owhite/75 to-oblue-100 dark:from-oblue-600/75 dark:to-oblue-900/75",
   children,
   title,
+  titleClass = "",
 }) => {
   const t = useTranslations();
   const style = bgImage
@@ -34,7 +36,9 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
       <div className={`absolute inset-0 ${bgClass}`}></div>
       <div className="relative z-10 mx-auto max-sm:px-4 sm:container">
         {title && (
-          <h1 className="font-h1-h2 text-[--color-b900-w] text-center pb-4 z-20">
+          <h1
+            className={`font-h1-h2 text-[--color-b900-w] text-center pb-4 z-20 ${titleClass}`}
+          >
             {t(title)}
           </h1>
         )}
