@@ -270,8 +270,7 @@ p {
   line-height: var(--b2-b3-line-height);
 }
 
-span,
-.span {
+span {
   color: black;
 }
 
