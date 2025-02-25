@@ -25,7 +25,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
             <div className="w-fit">
               <Logo />
             </div>
-            <div className="hidden sm:block mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px]">
+            <div className="hidden sm:block font-b3-b4 mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px]">
               {t("companyDesc")}
             </div>
             <SocialLinks />
@@ -41,7 +41,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
                     <ActiveLink
                       key={sub.label}
                       href={sub.href ?? "#"}
-                      className="pt-2 font-sans hover:underline underline-offset-4 text-blank dark:text-owhite pl-2"
+                      className="pt-2 pl-2 font-b3-b4 text-[--foreground] hover:underline underline-offset-4 "
                     >
                       {t(sub.label)}
                     </ActiveLink>
@@ -53,20 +53,20 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
                 {t("contact")}
               </h4>
               <p className="pt-2 pl-2">
-                <span>{`${c("email.title")}: `}</span>
+                <span className="font-b3-b4">{`${c("email.title")}: `}</span>
                 <Link
                   href={`mailto:${c("email.value")}`}
-                  className="font-sans hover:underline underline-offset-4 text-blank dark:text-owhite"
+                  className="font-b3-b4 text-[--foreground] hover:underline underline-offset-4"
                 >
                   {` ${c("email.value")}`}
                 </Link>
               </p>
 
               <p className="pt-2 pl-2">
-                <span>{`${c("phone.title")}: `}</span>
+                <span className="font-b3-b4">{`${c("phone.title")}: `}</span>
                 <Link
                   href={`tel:${c("phone.value")}`}
-                  className="font-sans hover:underline underline-offset-4 text-blank dark:text-owhite"
+                  className="font-b3-b4 text-[--foreground] hover:underline underline-offset-4"
                 >
                   {` ${c("phone.value")}`}
                 </Link>

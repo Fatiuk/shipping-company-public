@@ -1,14 +1,16 @@
 import React, { FC, useEffect, useRef } from "react";
+import { LuMapPin, LuCalendar, LuPhone } from "react-icons/lu";
+import { useTranslations } from "next-intl";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { LuMapPin, LuCalendar, LuPhone } from "react-icons/lu";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Input from "@/components/ui/form/Input";
+import imgQuoteForm from "@/assets/img/black_truck.webp";
 // import Button from "@/components/ui/form/Button";
 import Button from "@/components/ui/form/ButtonSubmit";
-import { useTranslations } from "next-intl";
-import Checkbox from "./ui/form/Checkbox";
+import Checkbox from "@/components/ui/form/Checkbox";
+import Input from "@/components/ui/form/Input";
+import Image from "next/image";
 
 const QuoteForm: FC = () => {
   const t = useTranslations("quoteForm");
@@ -121,7 +123,7 @@ const QuoteForm: FC = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-b900-w]">
               {t("content.title")}
             </h2>
-            <p className="text-md md:text-lg text-[--color-b900-w]">
+            <p className="font-b1-b2 text-[--color-b900-w]">
               {t("content.description")}
             </p>
 
@@ -169,6 +171,16 @@ const QuoteForm: FC = () => {
                   <div className="text-sm">{t("content.coverage")}</div>
                 </div>
               </div>
+            </div>
+
+            <div className="py-4">
+              <Image
+                width={640}
+                height={360}
+                src={imgQuoteForm}
+                alt="Section image"
+                className="w-full h-auto rounded-2xl"
+              />
             </div>
           </div>
 

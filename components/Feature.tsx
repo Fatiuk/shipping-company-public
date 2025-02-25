@@ -16,19 +16,19 @@ const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
   });
 
   return (
-    <div className="flex flex-col p-6 items-center text-center">
-      <picture className="" ref={iconRef}>
+    <div className="flex flex-col p-6 items-center text-center justify-between">
+      <div ref={iconRef} className="h-[100px] w-auto flex items-center">
         <Image
           src={src}
           width={100}
           height={100}
           alt={alt === "" ? "" : t(alt)}
         />
-      </picture>
-      <h3 className="text-xl md:text-2xl font-bold py-2 text-oblue-900 dark:text-oaccent-900">
+      </div>
+      <h3 className="text-xl md:text-2xl text-oblue-900 dark:text-oaccent-900">
         {t(title)}
       </h3>
-      <div className="text-base md:text-lg text-black">{t(description)}</div>
+      <p className="md:text-lg text-black mt-auto">{t(description)}</p>
     </div>
   );
 };

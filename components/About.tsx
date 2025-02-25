@@ -82,25 +82,28 @@ const About: FC = () => {
             {t("title")}
           </h3>
 
-          <p className="text-md sm:text-lg leading-relaxed text-[--color-b900-w]/80">
-            {t("description")}
-          </p>
+          <div className="flex flex-col gap-4">
+            <p className="">{t("description.intro")}</p>
+            <p className=""> {t("description.experience")}</p>
+            <p className=""> {t("description.coverage")}</p>
+            <p> {t("description.trust")}</p>
+          </div>
 
           {/* Stats or highlights */}
           <div className="grid grid-cols-2 gap-6 pt-6">
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-[--color-b700-b200]">
+              <span className="text-3xl font-bold bg-gradient-to-r from-oblue-600 to-oaccent-600 text-transparent bg-clip-text">
                 5+
-              </div>
+              </span>
               <div className="text-sm text-[--color-b900-w]/70">
                 {t("highlights.years")}
               </div>
             </div>
             <div className="space-y-2">
               {/* <div className="text-3xl font-bold text-purple-500">50</div> */}
-              <div className="text-3xl font-bold text-[--color-a900-a500]">
+              <span className="text-3xl font-bold bg-gradient-to-r from-oblue-600 to-oaccent-600 text-transparent bg-clip-text">
                 50
-              </div>
+              </span>
               <div className="text-sm text-[--color-b900-w]/70">
                 {t("highlights.states")}
               </div>
@@ -128,9 +131,9 @@ const About: FC = () => {
             {/* Floating badge */}
             <div className="z-20 absolute right-[-0px] bottom-16 bg-[--color-w-b100] rounded-l-xl p-4 shadow-xl transform hover:scale-105 transition-transform duration-300">
               <div className="text-sm font-semibold text-oblue-500">
-                {t("badge.years")}
+                {t("badge.licensed")}
               </div>
-              <div className="text-xs text-oblue-300">{t("badge.states")}</div>
+              <div className="text-xs text-oblue-300">{t("badge.insured")}</div>
             </div>
           </div>
         </div>

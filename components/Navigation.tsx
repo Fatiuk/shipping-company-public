@@ -46,7 +46,11 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
   return (
     <>
       <div className="fixed py-2 top-0 z-50 w-full bg-[--color-b50-b950] shadow-md">
-        <div className="flex justify-between mx-auto sm:max-w-full md:max-w-[1600px] px-8 2xl:px-20">
+        {/* <div className="flex justify-center sm:justify-between mx-auto sm:max-w-full md:max-w-[1600px]  */}
+        <div
+          className="flex justify-between mx-auto sm:max-w-full md:max-w-[1600px] 
+        pl-2 pr-8 sm:px-8 2xl:px-20"
+        >
           <div className="min-w-12 min-h-12 self-center">
             <Logo />
           </div>
@@ -125,11 +129,11 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
           </div>
           {!isMenuOpen && (
             <div
-              className={`flex lg:hidden justify-center items-center gap-x-8 ms-6`}
+              className={`flex lg:hidden justify-center items-center sm:gap-x-8 ms-2 sm:ms-6`}
             >
               <ActiveLink
                 href="/#contact-us"
-                className="h-fit py-3 px-8 lg:px-4 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
+                className="whitespace-nowrap h-fit py-3 px-8 lg:px-4 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
               >
                 {t("quote")}
               </ActiveLink>
@@ -156,7 +160,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
           )}
           {isMenuOpen && (
             <div
-              className={`flex lg:hidden justify-center items-center gap-x-8 ms-6`}
+              className={`flex lg:hidden justify-center items-center sm:gap-x-8 ms-6`}
             >
               <ActiveLink
                 href="/contact-us"

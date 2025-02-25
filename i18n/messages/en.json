@@ -72,22 +72,22 @@
       "description": "Many things make us stand out in our industry. These are the reasons why we are the go-to company for many in need of vehicle shipment.",
       "benefits": [
         {
-          "src": "/benefits/map.svg",
+          "src": "/benefits/usa_pin.png",
           "title": "Nationwide Coverage",
           "description": "Diminoble Transportations offers seamless vehicle relocation services across all 50 states, ensuring your vehicle reaches its destination efficiently, regardless of location."
         },
         {
-          "src": "/benefits/team.svg",
+          "src": "/benefits/handshake_blue_700.svg",
           "title": "Experienced Team",
           "description": "With over 5 years in the relocation industry, our specialists provide exceptional service to companies, agents, and individuals, ensuring a smooth and professional experience."
         },
         {
-          "src": "/benefits/car-insurance.svg",
+          "src": "/benefits/car-insurance.png",
           "title": "Fully Insured and Bonded Partners",
           "description": "We collaborate with fully insured and bonded partners, guaranteeing the safety and security of your vehicle throughout the transportation process."
         },
         {
-          "src": "/benefits/shield-eye.svg",
+          "src": "/benefits/shield-eye.png",
           "title": "Transparent Process",
           "description": "We pride ourselves on keeping clients informed, ensuring you understand every step of the transportation process for a hassle-free experience."
         }
@@ -97,19 +97,19 @@
           "count": "2000",
           "suffix": "",
           "increment": "100",
-          "title": "Shipping Customers"
+          "title": "Shipping\nCustomers"
         },
         {
           "count": "8000",
           "suffix": "",
           "increment": "100",
-          "title": "Vehicles Shipped"
+          "title": "Vehicles\nShipped"
         },
         {
           "count": "1000",
           "suffix": "+",
           "increment": "10",
-          "title": "Positive Reviews"
+          "title": "Positive\nReviews"
         }
       ],
       "howItWorks": "How It Works"
@@ -120,14 +120,19 @@
     "about": {
       "sectionTitle": "About us",
       "title": "Diminoble ransportations is a licensed shipping company that works with fully insured and bonded partners",
-      "description": "We operate nationwide, simplifying the process of relocating various types of vehicles for our clients. With over 5 years of expertise in the relocation industry, our specialists have provided excellent service to companies, contractual agents, and private individuals. Our seamless transportation of vehicles spans all 50 states. If you're embarking on a relocation project, we recognize that numerous options are available. However, none compare to NFS transportation. We take pride in our commitment to quality service delivery and customer satisfaction. When you choose us, we ensure you comprehend the involved processes because we believe in keeping our clients informed. Providing value for money is our forte.",
+      "description": {
+        "intro": "We are a nationwide vehicle relocation service, simplifying the process for businesses and individuals alike. Our commitment is to provide seamless and efficient transportation solutions.",
+        "experience": "With over 5 years of expertise in the relocation industry, our specialists have served companies, contractors, and private individuals with excellence.",
+        "coverage": "We operate across all 50 states, ensuring secure and reliable vehicle transportation through our fully insured and bonded partners.",
+        "trust": "When you choose Diminoble Transportations, we prioritize transparency, keeping you informed at every step. Our goal is to provide top-tier service with unbeatable value."
+      },
       "highlights": {
         "years": "Years of Experience",
         "states": "States Covered"
       },
       "badge": {
-        "years": "Fully Licensed",
-        "states": "& Insured Service"
+        "licensed": "Fully Licensed",
+        "insured": "& Insured Service"
       }
     },
     "faq": {
@@ -193,7 +198,7 @@
       "phone": {
         "name": "phone number",
         "label": "Phone number",
-        "placeholder": "Phone Number"
+        "placeholder": "Phone Number (e.g., 1234567890)"
       }
     },
     "validation": {

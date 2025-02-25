@@ -6,7 +6,7 @@ import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
 import { FC } from "react";
 import imgHero from "@/assets/img/blue-truck-dniprollc.png";
-import imgQuoteForm from "@/assets/img/black_truck.webp";
+// import imgQuoteForm from "@/assets/img/black_truck.webp";
 import en from "@/i18n/messages/en.json";
 import QuoteForm from "@/components/QuoteForm";
 import VideoReviewsSection from "@/components/VideoReviewsSection";
@@ -58,8 +58,8 @@ const Home: FC = () => {
       </SectionFullWidth>
 
       <SectionFullWidth
-        bgImage={imgQuoteForm.src}
-        bgClass="bg-gradient-to-b from-oblue-200/65 to-oblue-50 dark:from-oblue-600/75 dark:to-oblue-900/75"
+      // bgImage={imgQuoteForm.src}
+      // bgClass="bg-gradient-to-b from-oblue-200/65 to-oblue-50 dark:from-oblue-600/75 dark:to-oblue-900/75"
       >
         <QuoteForm />
       </SectionFullWidth>
@@ -67,10 +67,6 @@ const Home: FC = () => {
       <SectionFullWidth bgClass="!bg-[--color-w-b700]">
         <VideoReviewsSection />
       </SectionFullWidth>
-
-      {/* <Section title="home.">
-        <Instructors instructors={instructors} />
-      </Section> */}
     </>
   );
 };

@@ -72,22 +72,22 @@
       "description": "De nombreux éléments nous distinguent dans notre secteur. Voici pourquoi nous sommes l'entreprise de référence pour ceux qui ont besoin d'expédier leur véhicule.",
       "benefits": [
         {
-          "src": "/benefits/map.svg",
+          "src": "/benefits/usa_pin.png",
           "title": "Couverture nationale",
           "description": "Diminoble Transportations propose des services de relocalisation de véhicules dans les 50 États, garantissant que votre véhicule atteint sa destination efficacement, quel que soit l'endroit."
         },
         {
-          "src": "/benefits/team.svg",
+          "src": "/benefits/handshake_blue_700.svg",
           "title": "Équipe expérimentée",
           "description": "Avec plus de 5 ans d'expérience dans l'industrie de la relocalisation, nos spécialistes offrent un service exceptionnel aux entreprises, agents et particuliers, assurant une expérience fluide et professionnelle."
         },
         {
-          "src": "/benefits/car-insurance.svg",
+          "src": "/benefits/car-insurance.png",
           "title": "Partenaires entièrement assurés et cautionnés",
           "description": "Nous collaborons avec des partenaires entièrement assurés et cautionnés, garantissant la sécurité et la protection de votre véhicule tout au long du processus de transport."
         },
         {
-          "src": "/benefits/shield-eye.svg",
+          "src": "/benefits/shield-eye.png",
           "title": "Processus transparent",
           "description": "Nous nous engageons à informer nos clients à chaque étape, vous assurant ainsi une compréhension claire du processus de transport pour une expérience sans souci."
         }
@@ -97,19 +97,19 @@
           "count": "2000",
           "suffix": "",
           "increment": "100",
-          "title": "Clients expédiés"
+          "title": "Clients\nexpédiés"
         },
         {
           "count": "8000",
           "suffix": "",
           "increment": "100",
-          "title": "Véhicules expédiés"
+          "title": "Véhicules\nexpédiés"
         },
         {
           "count": "1000",
           "suffix": "+",
           "increment": "10",
-          "title": "Avis positifs"
+          "title": "Avis\npositifs"
         }
       ],
       "howItWorks": "Comment ça marche"
@@ -120,14 +120,19 @@
     "about": {
       "sectionTitle": "À propos de nous",
       "title": "Diminoble Transportations est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés",
-      "description": "Nous opérons à l'échelle nationale, simplifiant le processus de relocalisation de divers types de véhicules pour nos clients. Avec plus de 5 ans d'expertise dans l'industrie de la relocalisation, nos spécialistes ont fourni un excellent service aux entreprises, aux agents contractuels et aux particuliers. Notre transport fluide de véhicules couvre les 50 États. Si vous entreprenez un projet de relocalisation, nous savons que de nombreuses options s'offrent à vous. Cependant, aucune ne se compare à NFS Transportations. Nous sommes fiers de notre engagement envers la qualité du service et la satisfaction des clients. En nous choisissant, nous nous assurons que vous comprenez les processus impliqués, car nous croyons en une communication transparente avec nos clients. Offrir un excellent rapport qualité-prix est notre priorité.",
+      "description": {
+        "intro": "Nous sommes un service national de relocalisation de véhicules, simplifiant le processus aussi bien pour les entreprises que pour les particuliers. Notre engagement est d'offrir des solutions de transport fluides et efficaces.",
+        "experience": "Avec plus de 5 ans d'expérience dans l'industrie de la relocalisation, nos spécialistes ont servi des entreprises, des entrepreneurs et des particuliers avec excellence.",
+        "coverage": "Nous opérons dans les 50 États, garantissant un transport sécurisé et fiable des véhicules grâce à nos partenaires entièrement assurés et cautionnés.",
+        "trust": "En choisissant Diminoble Transportations, nous privilégions la transparence en vous tenant informé à chaque étape. Notre objectif est de fournir un service de premier ordre avec une valeur inégalée."
+      },
       "highlights": {
         "years": "Années d'expérience",
         "states": "États couverts"
       },
       "badge": {
-        "years": "Entièrement agréé",
-        "states": "& Service assuré"
+        "licensed": "Entièrement agréé",
+        "insured": "& Service assuré"
       }
     },
     "faq": {
@@ -193,7 +198,7 @@
       "phone": {
         "name": "numéro de téléphone",
         "label": "Numéro de téléphone",
-        "placeholder": "Numéro de téléphone"
+        "placeholder": "Numéro de téléphone (ex. : 1234567890)"
       }
     },
     "validation": {
