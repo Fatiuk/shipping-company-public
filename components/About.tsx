@@ -92,7 +92,7 @@ const About: FC = () => {
           {/* Stats or highlights */}
           <div className="grid grid-cols-2 gap-6 pt-6">
             <div className="space-y-2">
-              <span className="text-3xl font-bold bg-gradient-to-r from-oblue-600 to-oaccent-600 text-transparent bg-clip-text">
+              <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 5+
               </span>
               <div className="text-sm text-[--color-b900-w]/70">
@@ -101,7 +101,7 @@ const About: FC = () => {
             </div>
             <div className="space-y-2">
               {/* <div className="text-3xl font-bold text-purple-500">50</div> */}
-              <span className="text-3xl font-bold bg-gradient-to-r from-oblue-600 to-oaccent-600 text-transparent bg-clip-text">
+              <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 50
               </span>
               <div className="text-sm text-[--color-b900-w]/70">

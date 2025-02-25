@@ -117,7 +117,7 @@ const QuoteForm: FC = () => {
   return (
     <div id="contact-us" className="">
       <div className="max-w-[1400px] mx-auto px-8 2xl:px-20">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-between gap-8">
           {/* Content Side */}
           <div ref={contentRef} className="max-w-[580px] lg:w-1/2 space-y-6">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-b900-w]">

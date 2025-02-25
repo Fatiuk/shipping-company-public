@@ -53,6 +53,7 @@ const Home: FC = () => {
       <SectionFullWidth
         bgClass="!bg-[--color-b100-b200]"
         title="home.whyUs.title"
+        titleClass="text-oblue-700"
       >
         <Features data={benefits} />
       </SectionFullWidth>
