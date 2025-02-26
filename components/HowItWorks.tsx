@@ -109,6 +109,7 @@ const HowItWorks: React.FC = () => {
           ))}
         </div>
       </div>
+
       {/* Steps Grid */}
       <div ref={containerRef} className="mt-4 space-y-8 px-6">
         {steps.map((step, index) => (

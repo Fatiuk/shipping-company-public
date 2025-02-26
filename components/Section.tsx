@@ -16,7 +16,7 @@ const Section: FC<SectionProps> = ({ title, children, className = "" }) => {
     >
       <div className="mx-auto -4 sm:container">
         {title && (
-          <h1 className="font-h1-h2 text-center pb-4 text-[--color-a900-a400]">
+          <h1 className="font-h1-h2 text-center pb-4 text-[--color-a900-w]">
             {t(title)}
           </h1>
         )}
