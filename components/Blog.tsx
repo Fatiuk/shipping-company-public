@@ -43,7 +43,6 @@ const Blog: FC<BlogI> = ({ blogItems }) => {
       {/* tags section */}
       <div className="w-full py-6 px-4 lg:px-8 relative overflow-hidden">
         <div className="mx-auto max-w-6xl relative z-10">
-          {/* <div className="mx-auto max-sm:px-4 sm:container relative z-10"> */}
           <div className="flex items-center justify-between flex-wrap gap-4">
             <h3 className="font-h3-h4 text-[--color-b700-w]">
               {t("browseTags")}
