@@ -246,7 +246,6 @@
       }
     ]
   },
-  "team": { "title": "", "description": "" },
   "blog": {
     "title": "Blog",
     "description": "Move Your Car with Confidence – Fast, Reliable, Nationwide!",
@@ -273,8 +272,6 @@
     "noPostsFound": "No posts found for the selected tag.",
     "returnToBlog": "Return to Blog"
   },
-  "about": { "title": "", "description": "" },
-  "faq": { "title": "", "description": "" },
   "pagination": {
     "first": "First",
     "previous": "Previous",
@@ -286,5 +283,27 @@
     "to": "to",
     "results": "results",
     "outOf": "out of"
-  }
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "Meet the dedicated professionals who make your car transport experience exceptional.",
+    "meetOurTeam": "Meet Our Team",
+    "teamDescription": "Our expert team combines years of industry experience with a passion for customer service to deliver the most reliable auto transport solutions nationwide.",
+    "positions": {
+      "ceo_founder": "CEO & Founder",
+      "operations_manager": "Operations Manager",
+      "fleet_supervisor": "Fleet Supervisor",
+      "customer_relations": "Customer Relations Director",
+      "logistics_specialist": "Logistics Specialist",
+      "compliance_officer": "Compliance Officer"
+    },
+    "viewProfile": "View Profile",
+    "contactMember": "Contact",
+    "contactUs": "Get in touch with our team",
+    "joinOurTeam": "Join Our Team",
+    "careersDescription": "Looking to be part of something special? We're always searching for talented individuals to join our growing team.",
+    "viewOpenings": "View Open Positions"
+  },
+  "about": { "title": "", "description": "" },
+  "faq": { "title": "", "description": "" }
 }
