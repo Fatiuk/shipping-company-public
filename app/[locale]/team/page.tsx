@@ -4,7 +4,7 @@ import Instructors from "@/components/Instructors";
 import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
 import { instructors } from "@/app/data";
-import GroupNinja from "@/assets/img/group-ninjas.jpg";
+import Truck from "@/assets/img/black_truck.webp";
 import PageProps from "@/types/page";
 
 export async function generateMetadata(props: PageProps) {
@@ -34,7 +34,7 @@ const Team = async (props: PageProps) => {
 
   return (
     <>
-      <SectionFullWidth bgImage={GroupNinja.src}>
+      <SectionFullWidth bgImage={Truck.src}>
         <div className="flex flex-col px-4 items-center text-center justify-center h-full px-8 text-black dark:text-white">
           <h1 className="text-7xl font-header pb-4 text-oblue-700 dark:text-white">
             {t("title")}

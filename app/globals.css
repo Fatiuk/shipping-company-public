@@ -128,6 +128,8 @@
   --color-b200-b600: var(--blue-200);
   --color-b200-b50: var(--blue-200);
 
+  --color-b300-b200: var(--blue-300);
+
   --color-b400-b200: var(--blue-400);
 
   --color-b500-w: var(--blue-500);
@@ -225,6 +227,7 @@
   --color-b200-b50: var(--blue-50);
   --color-b200-b600: var(--blue-600);
 
+  --color-b300-b200: var(--blue-200);
   --color-b400-b200: var(--blue-200);
 
   --color-b500-w: var(--white);

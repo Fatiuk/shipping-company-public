@@ -1,5 +1,5 @@
+import { ReactNode } from "react";
 import { useTranslations } from "next-intl";
-import React, { ReactNode } from "react";
 
 interface PaginatorPropsI {
   totalItems: number;
@@ -24,18 +24,16 @@ const Paginator = ({
     const delta = 2; // Pages to show on each side of current
     const range = [];
     const rangeWithDots = [];
-    let l;
 
     // Basic range calculation
     for (
       let i = Math.max(2, currentPage - delta);
       i <= Math.min(totalPages - 1, currentPage + delta);
       i++
-    ) {
+    )
       range.push(i);
-    }
 
-    // Add first page and dots if needed
+    // Add first page and dots
     if (range[0] > 2) {
       rangeWithDots.push(1);
       rangeWithDots.push("dots1");
@@ -48,7 +46,7 @@ const Paginator = ({
       rangeWithDots.push(i);
     }
 
-    // Add last page and dots if needed
+    // Add last page and dots
     if (range[range.length - 1] < totalPages - 1) {
       rangeWithDots.push("dots2");
       rangeWithDots.push(totalPages);
@@ -64,9 +62,7 @@ const Paginator = ({
     onPageChange(page);
   };
 
-  if (totalPages <= 1) {
-    return <div>{children}</div>;
-  }
+  if (totalPages <= 1) return <div>{children}</div>;
 
   return (
     <div className="flex flex-col items-center">
@@ -77,7 +73,9 @@ const Paginator = ({
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className="flex items-center justify-center px-3 h-10 rounded-md border border-blue-200 dark:border-blue-700 bg-white dark:bg-blue-900 text-blue-600 dark:text-blue-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-50 dark:hover:bg-blue-800 transition-colors"
+          className="flex items-center justify-center px-3 h-10 rounded-md border border-[--color-b400-b200] 
+          bg-[--color-w-b900] text-[--color-b400-b200] 
+          disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[--color-b50-b800] transition-colors"
           aria-label={t("previous")}
         >
           <svg
@@ -101,7 +99,7 @@ const Paginator = ({
               return (
                 <span
                   key={`dots-${index}`}
-                  className="px-2 text-gray-500 dark:text-gray-400"
+                  className="px-2 text-[--color-b300-b200]"
                 >
                   ...
                 </span>
@@ -129,7 +127,9 @@ const Paginator = ({
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="flex items-center justify-center px-3 h-10 rounded-md border border-blue-200 dark:border-blue-700 bg-white dark:bg-blue-900 text-blue-600 dark:text-blue-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-50 dark:hover:bg-blue-800 transition-colors"
+          className="flex items-center justify-center px-3 h-10 rounded-md border border-[--color-b400-b200] 
+          bg-[--color-w-b900] text-[--color-b400-b200] 
+          disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[--color-b50-b800] transition-colors"
           aria-label={t("next")}
         >
           <svg
@@ -148,7 +148,7 @@ const Paginator = ({
       </div>
 
       {/* Page indicator */}
-      <div className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+      <div className="mt-4 text-sm text-[--color-b300-b200]">
         {t("page")} {currentPage} {t("of")} {totalPages}
       </div>
     </div>

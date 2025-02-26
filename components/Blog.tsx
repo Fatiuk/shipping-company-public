@@ -41,9 +41,9 @@ const Blog: FC<BlogI> = ({ blogItems }) => {
   return (
     <>
       {/* tags section */}
-      {/* <div className="w-full py-6 px-4 lg:px-8 relative overflow-hidden bg-gradient-to-r from-oblue-50 to-oblue-100 dark:from-blue-900 dark:to-blue-800"> */}
       <div className="w-full py-6 px-4 lg:px-8 relative overflow-hidden">
         <div className="mx-auto max-w-6xl relative z-10">
+          {/* <div className="mx-auto max-sm:px-4 sm:container relative z-10"> */}
           <div className="flex items-center justify-between flex-wrap gap-4">
             <h3 className="font-h3-h4 text-[--color-b700-w]">
               {t("browseTags")}
@@ -58,14 +58,14 @@ const Blog: FC<BlogI> = ({ blogItems }) => {
           </div>
         </div>
       </div>
-      <div className="w-full mx-auto py-12 px-4 lg:px-8 bg-white dark:bg-blue-950">
+      <div className="w-full mx-auto py-12 px-4 lg:px-8 bg-[--color-w-b900]">
         <div className="max-w-6xl mx-auto">
           {/* Card Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {paginatedBlog.map((blog) => (
               <div
                 key={blog.id}
-                className="group flex flex-col bg-[--color-w-b900] rounded-xl overflow-hidden shadow-md hover:shadow-lg 
+                className="group flex flex-col bg-[--color-w-b700] rounded-xl overflow-hidden shadow-md hover:shadow-lg 
                 transition-all duration-300 hover:translate-y-[-4px] border border-[--color-b100-b700]"
               >
                 <div className="relative h-48 overflow-hidden">
