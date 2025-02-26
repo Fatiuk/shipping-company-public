@@ -246,7 +246,6 @@
       }
     ]
   },
-  "team": { "title": "", "description": "" },
   "blog": {
     "title": "Blog",
     "description": "Déplacez votre voiture en toute confiance – Rapide, fiable et partout aux États-Unis !",
@@ -273,8 +272,6 @@
     "noPostsFound": "Aucun article trouvé pour le tag sélectionné.",
     "returnToBlog": "Retour au blog"
   },
-  "about": { "title": "", "description": "" },
-  "faq": { "title": "", "description": "" },
   "pagination": {
     "first": "Premier",
     "previous": "Précédent",
@@ -286,5 +283,27 @@
     "to": "à",
     "results": "résultats",
     "outOf": "sur"
-  }
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "description": "Rencontrez les professionnels dévoués qui rendent votre expérience de transport automobile exceptionnelle.",
+    "meetOurTeam": "Rencontrez Notre Équipe",
+    "teamDescription": "Notre équipe d'experts allie des années d'expérience dans l'industrie à une passion pour le service client afin d'offrir les solutions de transport automobile les plus fiables à l'échelle nationale.",
+    "positions": {
+      "ceo_founder": "PDG & Fondateur",
+      "operations_manager": "Responsable des Opérations",
+      "fleet_supervisor": "Superviseur de Flotte",
+      "customer_relations": "Directeur des Relations Clients",
+      "logistics_specialist": "Spécialiste en Logistique",
+      "compliance_officer": "Responsable de la Conformité"
+    },
+    "viewProfile": "Voir le Profil",
+    "contactMember": "Contacter",
+    "contactUs": "Contactez notre équipe",
+    "joinOurTeam": "Rejoignez Notre Équipe",
+    "careersDescription": "Envie de faire partie d'une aventure exceptionnelle ? Nous recherchons toujours des talents pour rejoindre notre équipe en pleine croissance.",
+    "viewOpenings": "Voir les Offres d'Emploi"
+  },
+  "about": { "title": "", "description": "" },
+  "faq": { "title": "", "description": "" }
 }
