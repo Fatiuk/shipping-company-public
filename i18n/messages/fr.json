@@ -249,15 +249,37 @@
   "team": { "title": "", "description": "" },
   "blog": {
     "title": "Blog",
-    "description": "Déplacez votre voiture en toute confiance – Rapide, Fiable, à l'échelle nationale !",
-    "tags": { "all": "Tous" }
+    "description": "Déplacez votre voiture en toute confiance – Rapide, fiable et partout aux États-Unis !",
+    "recentPosts": "Articles récents",
+    "featuredPosts": "Articles en vedette",
+    "readMore": "Lire la suite",
+    "postedOn": "Publié le",
+    "by": "par",
+    "in": "dans",
+    "browseTags": "Parcourir par tags",
+    "relatedPosts": "Articles similaires",
+    "sharePost": "Partager cet article",
+    "tags": {
+      "title": "Tags",
+      "all": "Tous les articles",
+      "autoTransportGuide": "Guide de transport automobile",
+      "tag2": "Tag 2",
+      "tag3": "Tag 3"
+    },
+    "noPostsFound": "Aucun article trouvé pour le tag sélectionné."
   },
   "about": { "title": "", "description": "" },
   "faq": { "title": "", "description": "" },
   "pagination": {
-    "first": "Première",
-    "previous": "Précédente",
-    "next": "Suivante",
-    "last": "Dernière"
+    "first": "Premier",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "last": "Dernier",
+    "page": "Page",
+    "of": "de",
+    "showing": "Affichage",
+    "to": "à",
+    "results": "résultats",
+    "outOf": "sur"
   }
 }

@@ -7,4 +7,5 @@ export default interface BlogItemI {
   tags: string[];
   title: string;
   text: ReactNode;
+  image?: string;
 }
