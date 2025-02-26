@@ -16,7 +16,6 @@ const SocialLink: FC<SocialLinkProps> = ({ href, icon, label, color }) => {
     enterAnimation: { scale: 1.1, duration: 0.3 },
     leaveAnimation: { scale: 1, duration: 0.3 },
   });
-  //hover:${hoverColor}
   return (
     <a
       ref={linkRef}
@@ -29,7 +28,7 @@ const SocialLink: FC<SocialLinkProps> = ({ href, icon, label, color }) => {
       onMouseLeave={(e) => {
         e.currentTarget.style.backgroundColor = "";
       }}
-      className={`flex items-center justify-center w-10 h-10 rounded-full bg-[--color-b100-b700] text-[--color-b900-w] hover:text-white transition-colors duration-300`}
+      className={`flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[--color-b100-b700] text-[--color-b900-w] hover:text-white transition-colors duration-300`}
       aria-label={label}
     >
       {icon}
