@@ -41,8 +41,6 @@ const BlogItemPage = async (props: PageProps) => {
   const params = await props.params;
   const { slug, locale } = params;
 
-  console.log("params received:", { slug, locale });
-
   const item = blogItems.find((item) => item.slug === slug);
 
   if (!item) notFound();
