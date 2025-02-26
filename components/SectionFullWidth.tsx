@@ -34,7 +34,7 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
       style={style}
     >
       <div className={`absolute inset-0 ${bgClass}`}></div>
-      <div className="relative z-10 mx-auto max-sm:px-4 sm:container">
+      <div className="relative z-10 mx-auto container">
         {title && (
           <h1
             className={`font-h1-h2 text-[--color-b900-w] text-center pb-4 z-20 ${titleClass}`}

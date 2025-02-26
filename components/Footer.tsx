@@ -30,7 +30,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
             </div>
             <SocialLinks />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-[auto_auto_auto] md:grid-cols-3 justify-items-start mx-auto w-full max-w-[860px] lg:max-w-[680px] 2xl:max-w-[860px]">
+          <div className="grid grid-cols-[auto_auto] sm:grid-cols-[auto_auto_auto] md:grid-cols-3 justify-items-start mx-auto w-full max-w-[860px] lg:max-w-[680px] 2xl:max-w-[860px]">
             {navigation.map((section) => (
               <div key={section.label} className="flex flex-col sm:mx-auto">
                 <h4 className="font-bold text-lg text-oaccent-700">
@@ -78,13 +78,10 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
               <div className="pt-8 pl-2">
                 <ActiveLink
                   href="/#contact-us"
-                  className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-white transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
+                  className="whitespace-nowrap h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-white transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
                 >
                   {t("quote2")}
                 </ActiveLink>
-                {/* <div className="mt-8">
-                  <SocialLinks />
-                </div> */}
               </div>
             </div>
           </div>
@@ -95,10 +92,10 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
           </div>
         </div>
       </div>
-      <div className="bg-oblue-700 py-2 px-8">
-        <div className="container flex mx-auto max-w-full md:max-w-[1600px] px-8 xl:px-20 font-sans text-sm text-white">
-          <p className="">&copy;&nbsp;2025 Dimi Noble</p>
-          <p className="ms-auto">
+      <div className="bg-oblue-700 py-2">
+        <div className="container flex mx-auto font-b3-b4 whitespace-nowrap">
+          <p className="text-white">&copy;&nbsp;2025 Diminoble</p>
+          <p className="text-white ms-auto">
             {t("poweredBy")}
             <Link href="https://theclicks.ca/" className="underline">
               TheClicks

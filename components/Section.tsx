@@ -14,7 +14,7 @@ const Section: FC<SectionProps> = ({ title, children, className = "" }) => {
     <div
       className={`w-full py-[2rem] md:py-[3rem] px-4 lg:px-0 relative overflow-hidden text-[--color-b900-w] bg-[--color-w-b900] ${className}`}
     >
-      <div className="mx-auto -4 sm:container">
+      <div className="mx-auto container">
         {title && (
           <h1 className="font-h1-h2 text-center pb-4 text-[--color-a900-w]">
             {t(title)}
