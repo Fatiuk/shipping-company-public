@@ -250,7 +250,23 @@
   "blog": {
     "title": "Blog",
     "description": "Move Your Car with Confidence – Fast, Reliable, Nationwide!",
-    "tags": { "all": "All" }
+    "recentPosts": "Recent Posts",
+    "featuredPosts": "Featured Posts",
+    "readMore": "Read more",
+    "postedOn": "Posted on",
+    "by": "by",
+    "in": "in",
+    "browseTags": "Browse by Tags",
+    "relatedPosts": "Related Posts",
+    "sharePost": "Share this post",
+    "tags": {
+      "title": "Tags",
+      "all": "All Posts",
+      "autoTransportGuide": "Auto Transport Guide",
+      "tag2": "Tag 2",
+      "tag3": "Tag 3"
+    },
+    "noPostsFound": "No posts found for the selected tag."
   },
   "about": { "title": "", "description": "" },
   "faq": { "title": "", "description": "" },
@@ -258,6 +274,12 @@
     "first": "First",
     "previous": "Previous",
     "next": "Next",
-    "last": "Last"
+    "last": "Last",
+    "page": "Page",
+    "of": "of",
+    "showing": "Showing",
+    "to": "to",
+    "results": "results",
+    "outOf": "out of"
   }
 }
