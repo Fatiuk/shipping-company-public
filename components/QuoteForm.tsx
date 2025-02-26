@@ -6,10 +6,11 @@ import * as Yup from "yup";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import imgQuoteForm from "@/assets/img/black_truck.webp";
-// import Button from "@/components/ui/form/Button";
 import Button from "@/components/ui/form/ButtonSubmit";
 import Checkbox from "@/components/ui/form/Checkbox";
+import DateInput from "@/components/ui/form/Date";
 import Input from "@/components/ui/form/Input";
+import PhoneInput from "@/components/ui/form/Phone";
 import Image from "next/image";
 
 const QuoteForm: FC = () => {
@@ -209,8 +210,8 @@ const QuoteForm: FC = () => {
                   error={formik.errors.destinationZip}
                 />
 
-                <Input
-                  type="date"
+                {/* Use the Tailwind-styled DateInput component */}
+                <DateInput
                   placeholder={t("fields.movingDate.placeholder")}
                   icon={<LuCalendar className="ml-3 text-gray-400" size={20} />}
                   classNamesInput="px-3 bg-transparent"
@@ -219,8 +220,8 @@ const QuoteForm: FC = () => {
                   error={formik.errors.movingDate}
                 />
 
-                <Input
-                  type="tel"
+                {/* Use the Tailwind-styled PhoneInput component */}
+                <PhoneInput
                   placeholder={t("fields.phone.placeholder")}
                   icon={<LuPhone className="ml-3 text-gray-400" size={20} />}
                   classNamesInput="px-3 bg-transparent"
