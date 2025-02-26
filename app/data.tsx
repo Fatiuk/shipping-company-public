@@ -61,7 +61,7 @@ export const teamMembers: TeamMemberI[] = [
     position: "Logistics Specialist",
     positionSlug: "logistics_specialist",
     description:
-      "Robert's expertise in route planning and optimization helps us deliver vehicles efficiently across the nation.",
+      "Robert&apos;s expertise in route planning and optimization helps us deliver vehicles efficiently across the nation.",
     socialLinks: {
       email: "robert@example.com",
       phone: "+1-555-345-6789",
@@ -230,9 +230,9 @@ export const blogItems = [
         <p>
           Seasonal changes affect more than just your wardrobe—they
           significantly impact <strong>vehicle shipping services</strong> across
-          the United States. Whether you're a snowbird heading south for winter,
-          a college student returning home for summer, or a classic car owner
-          protecting your investment from harsh weather, understanding{" "}
+          the United States. Whether you&apos;re a snowbird heading south for
+          winter, a college student returning home for summer, or a classic car
+          owner protecting your investment from harsh weather, understanding{" "}
           <strong>seasonal auto transport</strong> can save you time, money, and
           stress.
         </p>
@@ -267,8 +267,8 @@ export const blogItems = [
 
         <h5>Fall (September-November)</h5>
         <p>
-          Fall brings the annual "snowbird" migration, when thousands of
-          retirees transport their vehicles from northern states to warmer
+          Fall brings the annual &quot;snowbird&quot; migration, when thousands
+          of retirees transport their vehicles from northern states to warmer
           southern locations:
         </p>
         <ul>
@@ -353,8 +353,8 @@ export const blogItems = [
 
         <ol>
           <li>
-            Schedule your vehicle to arrive after you've secured your seasonal
-            housing
+            Schedule your vehicle to arrive after you&apos;ve secured your
+            seasonal housing
           </li>
           <li>
             Consider enclosed transport for luxury or classic vehicles to
@@ -460,20 +460,20 @@ export const blogItems = [
         <h3>Book Your Seasonal Vehicle Transport Today</h3>
 
         <p>
-          Don't leave your seasonal <strong>vehicle shipping</strong> needs to
-          chance. Contact our <strong>auto shipping experts</strong> today for a
-          free quote tailored to your specific seasonal timeline. Our
+          Don&apos;t leave your seasonal <strong>vehicle shipping</strong> needs
+          to chance. Contact our <strong>auto shipping experts</strong> today
+          for a free quote tailored to your specific seasonal timeline. Our
           experienced team understands the unique challenges and opportunities
           each season presents for <strong>car shipping services</strong>,
           ensuring your vehicle arrives safely regardless of when or where
-          you're moving.
+          you&apos;re moving.
         </p>
 
         <p>
-          With Diminoble's specialized <strong>seasonal auto transport</strong>{" "}
-          services, you can focus on enjoying your destination while we handle
-          the logistics of getting your vehicle there safely, on time, and at
-          competitive seasonal rates.
+          With Diminoble&apos;s specialized{" "}
+          <strong>seasonal auto transport</strong> services, you can focus on
+          enjoying your destination while we handle the logistics of getting
+          your vehicle there safely, on time, and at competitive seasonal rates.
         </p>
       </article>
     ),
@@ -541,9 +541,9 @@ export const blogItems = [
 
         <p>
           These digital inspection tools create a verifiable record of a
-          vehicle's condition throughout the <strong>auto transport</strong>{" "}
-          process, reducing disputes and providing clear documentation for all
-          parties.
+          vehicle&apos;s condition throughout the{" "}
+          <strong>auto transport</strong> process, reducing disputes and
+          providing clear documentation for all parties.
         </p>
 
         <h3>Route Optimization Software</h3>
@@ -756,7 +756,7 @@ export const blogItems = [
           service quality. For anyone seeking{" "}
           <strong>auto shipping services</strong>, understanding these
           technological trends provides valuable context for evaluating
-          transport options in today's rapidly evolving marketplace.
+          transport options in today&apos;s rapidly evolving marketplace.
         </p>
       </article>
     ),
@@ -982,7 +982,7 @@ export const blogItems = [
           practices throughout the <strong>vehicle transport industry</strong>.
         </p>
 
-        <h3>Evaluating a Transport Company's Environmental Commitment</h3>
+        <h3>Evaluating a Transport Company&apos;s Environmental Commitment</h3>
 
         <p>
           When selecting an environmentally responsible{" "}
@@ -1083,7 +1083,7 @@ export const blogItems = [
           </li>
           <li>
             Supporting carbon offset programs when direct emission reductions
-            aren't possible
+            aren&apos;t possible
           </li>
         </ul>
 
@@ -1118,7 +1118,7 @@ export const blogItems = [
           Planning to ship your vehicle across the country can feel
           overwhelming, but with proper preparation, your{" "}
           <strong>cross-country auto transport</strong> can be a stress-free
-          experience. Whether you're relocating for a new job, spending the
+          experience. Whether you&apos;re relocating for a new job, spending the
           season in a warmer climate, or purchasing a vehicle from a distant
           seller, this comprehensive <strong>vehicle shipping checklist</strong>{" "}
           will guide you through every step of preparing your car for its
@@ -1170,7 +1170,7 @@ export const blogItems = [
           <li>
             <strong>Book your shipping slot</strong>
             <p>
-              Once you've selected a provider, secure your preferred dates.
+              Once you&apos;ve selected a provider, secure your preferred dates.
               Cross-country routes typically require 1-2 weeks transit time, so
               factor this into your planning.
             </p>
@@ -1178,9 +1178,9 @@ export const blogItems = [
           <li>
             <strong>Review shipping insurance coverage</strong>
             <p>
-              Understand what's covered by the carrier's insurance and whether
-              supplemental coverage is needed. Request a copy of the policy for
-              your records.
+              Understand what&apos;s covered by the carrier&apos;s insurance and
+              whether supplemental coverage is needed. Request a copy of the
+              policy for your records.
             </p>
           </li>
         </ol>
@@ -1294,9 +1294,9 @@ export const blogItems = [
           <li>
             <strong>Remove all personal items</strong>
             <p>
-              <strong>Auto transport</strong> insurance typically doesn't cover
-              personal belongings. Remove everything from your vehicle including
-              the trunk, glove compartment, and other storage areas.
+              <strong>Auto transport</strong> insurance typically doesn&apos;t
+              cover personal belongings. Remove everything from your vehicle
+              including the trunk, glove compartment, and other storage areas.
             </p>
           </li>
           <li>
@@ -1368,7 +1368,8 @@ export const blogItems = [
             <strong>Conduct a thorough inspection with the driver</strong>
             <p>
               Walk around the vehicle with the transport driver, pointing out
-              any existing damage and ensuring it's noted on the Bill of Lading.
+              any existing damage and ensuring it&apos;s noted on the Bill of
+              Lading.
             </p>
           </li>
           <li>
@@ -1491,7 +1492,7 @@ export const blogItems = [
         <h5>Electric Vehicles</h5>
         <ul>
           <li>
-            Ensure the battery is charged to the manufacturer's recommended
+            Ensure the battery is charged to the manufacturer&apos;s recommended
             level for storage (typically 50-80%)
           </li>
           <li>Provide special handling instructions for electric components</li>
@@ -1525,7 +1526,7 @@ export const blogItems = [
             <strong>Real-time tracking technology</strong>
             <p>
               Advanced GPS systems now allow customers to monitor their
-              vehicle's location throughout the shipping process via mobile
+              vehicle&apos;s location throughout the shipping process via mobile
               apps, providing unprecedented visibility.
             </p>
           </li>
@@ -1652,8 +1653,8 @@ export const blogItems = [
           By following these guidelines and working with a reputable{" "}
           <strong>car shipping company</strong>, your cross-country vehicle
           transport can be a seamless extension of your overall relocation or
-          travel plans. Remember that communication is key—don't hesitate to ask
-          questions or seek clarification from your transport provider
+          travel plans. Remember that communication is key—don&apos;t hesitate
+          to ask questions or seek clarification from your transport provider
           throughout the process.
         </p>
 
@@ -1682,16 +1683,16 @@ export const blogItems = [
           intersection of multiple economic forces, making it both resilient and
           vulnerable to market fluctuations. For consumers and businesses alike,
           understanding these dynamics provides valuable context when planning{" "}
-          <strong>vehicle shipping</strong> needs in today's rapidly evolving
-          economic environment.
+          <strong>vehicle shipping</strong> needs in today&apos;s rapidly
+          evolving economic environment.
         </p>
 
         <h3>Economic Indicators Influencing Vehicle Transport</h3>
 
         <p>
           Several key economic factors directly impact the{" "}
-          <strong>car shipping</strong> sector's operations, costs, and service
-          availability:
+          <strong>car shipping</strong> sector&apos;s operations, costs, and
+          service availability:
         </p>
 
         <ul>
@@ -1752,7 +1753,7 @@ export const blogItems = [
 
         <h5>Reshoring and Nearshoring Effects</h5>
         <p>
-          The automotive industry's strategic shift toward regional
+          The automotive industry&apos;s strategic shift toward regional
           manufacturing has reshaped traditional <strong>car shipping</strong>{" "}
           routes and volumes:
         </p>
@@ -1767,7 +1768,7 @@ export const blogItems = [
             multimodal solutions for <strong>vehicle transportation</strong>
           </li>
           <li>
-            Mexico's expanding automotive production sector has generated
+            Mexico&apos;s expanding automotive production sector has generated
             significant growth in cross-border{" "}
             <strong>car shipping services</strong>
           </li>
@@ -2021,8 +2022,8 @@ export const blogItems = [
             <p>
               Connected consumers now expect continuous visibility throughout
               the <strong>auto shipping</strong> process, with 78% of customers
-              ranking real-time tracking as "very important" in selecting a
-              provider.
+              ranking real-time tracking as &quot;very important&quot; in
+              selecting a provider.
             </p>
           </li>
           <li>
@@ -2043,7 +2044,7 @@ export const blogItems = [
           </li>
         </ul>
 
-        <h3>The Gig Economy's Influence</h3>
+        <h3>The Gig Economy&apos;s Influence</h3>
 
         <p>
           The gig economy model has begun to influence specific segments of the{" "}
@@ -2185,8 +2186,8 @@ export const blogItems = [
             <strong>Alternative fuel adoption</strong>
             <p>
               Rising investment in hydrogen and electric transport carriers
-              promises to reduce the industry's exposure to fossil fuel price
-              volatility while addressing environmental concerns.
+              promises to reduce the industry&apos;s exposure to fossil fuel
+              price volatility while addressing environmental concerns.
             </p>
           </li>
           <li>
@@ -2412,7 +2413,7 @@ export const blogItems = [
           <li>
             <strong>Long-range capability</strong>
             <p>
-              Hydrogen's energy density enables long-distance{" "}
+              Hydrogen&apos;s energy density enables long-distance{" "}
               <strong>car shipping</strong> operations comparable to diesel
               ranges, addressing the limitations of current battery-electric
               systems.
@@ -2916,7 +2917,7 @@ export const blogItems = [
             <strong>Digital twin optimization</strong>
             <p>
               Virtual modeling of entire <strong>auto shipping</strong> networks
-              enables system-level efficiency improvements beyond what's
+              enables system-level efficiency improvements beyond what&apos;s
               possible by optimizing individual components or routes.
             </p>
           </li>
