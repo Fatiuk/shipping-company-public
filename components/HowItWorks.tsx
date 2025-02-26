@@ -66,11 +66,11 @@ const HowItWorks: React.FC = () => {
     <div className="relative pt-[200px]">
       {/* make this div fixed not moving, all steps will move under it */}
       <div className="fixed top-[78px] left-0 right-0 z-10 backdrop-blur-md pt-12">
-        <div className="text-center max-w-3xl mx-auto mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-oblue-900 dark:text-white mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-6">
+          <h1 className="font-h1-h2 text-[--color-b900-w] mb-6">
             {t("sectionTitle")}
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+          <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
             {t("description")}
           </p>
         </div>
@@ -100,7 +100,7 @@ const HowItWorks: React.FC = () => {
         </div>
       </div>
       {/* Steps Grid */}
-      <div ref={containerRef} className="space-y-8 px-6">
+      <div ref={containerRef} className="mt-4 space-y-8 px-6">
         {steps.map((step, index) => (
           <div key={step.stepNumber} className="step-card">
             <StepCard {...step} isActive={index + 1 === activeStep} />

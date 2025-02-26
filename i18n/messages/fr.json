@@ -263,10 +263,15 @@
       "title": "Tags",
       "all": "Tous les articles",
       "autoTransportGuide": "Guide de transport automobile",
+      "industryTrends": "Tendances de l'industrie",
+      "transportTechnology": "Technologie du transport",
+      "greenTransport": "Transport écologique",
+      "sustainabilityPractices": "Pratiques de durabilité",
       "tag2": "Tag 2",
       "tag3": "Tag 3"
     },
-    "noPostsFound": "Aucun article trouvé pour le tag sélectionné."
+    "noPostsFound": "Aucun article trouvé pour le tag sélectionné.",
+    "returnToBlog": "Retour au blog"
   },
   "about": { "title": "", "description": "" },
   "faq": { "title": "", "description": "" },
