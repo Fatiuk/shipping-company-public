@@ -33,7 +33,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
           <div className="grid grid-cols-2 sm:grid-cols-[auto_auto_auto] md:grid-cols-3 justify-items-start mx-auto w-full max-w-[860px] lg:max-w-[680px] 2xl:max-w-[860px]">
             {navigation.map((section) => (
               <div key={section.label} className="flex flex-col sm:mx-auto">
-                <h4 className="font-bold text-lg text-[--color-a700-b200]">
+                <h4 className="font-bold text-lg text-oaccent-700">
                   {t(section.label)}
                 </h4>
                 {section.submenu &&
@@ -49,11 +49,13 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
               </div>
             ))}
             <div className="flex flex-col sm:mx-auto">
-              <h4 className="font-bold text-lg text-[--color-a700-b200]">
+              <h4 className="font-bold text-lg text-oaccent-700">
                 {t("contact")}
               </h4>
               <p className="pt-2 pl-2">
-                <span className="font-b3-b4">{`${c("email.title")}: `}</span>
+                <span className="font-b3-b4 text-[--foreground]">{`${c(
+                  "email.title"
+                )}: `}</span>
                 <Link
                   href={`mailto:${c("email.value")}`}
                   className="font-b3-b4 text-[--foreground] hover:underline underline-offset-4"
@@ -63,7 +65,9 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
               </p>
 
               <p className="pt-2 pl-2">
-                <span className="font-b3-b4">{`${c("phone.title")}: `}</span>
+                <span className="font-b3-b4 text-[--foreground]">{`${c(
+                  "phone.title"
+                )}: `}</span>
                 <Link
                   href={`tel:${c("phone.value")}`}
                   className="font-b3-b4 text-[--foreground] hover:underline underline-offset-4"
@@ -74,7 +78,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
               <div className="pt-8 pl-2">
                 <ActiveLink
                   href="/#contact-us"
-                  className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-[--color-w-black] transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
+                  className="h-fit mr-4 py-3 px-8 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-white transition-colors bg-[--color-a700-a900] hover:bg-[--color-a900-a700]"
                 >
                   {t("quote2")}
                 </ActiveLink>
