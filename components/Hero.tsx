@@ -11,7 +11,7 @@ const Hero: FC = () => {
         <h1 className="font-h1-h2-h3 font-extrabold tracking-wide pb-4 text-[--color-b700-w]">
           {t("title")}
         </h1>
-        <p className="font-b1-b2 text-justify sm:text-center">
+        <p className="font-b1-b2 text-justify sm:text-center text-[--color-b900-w]">
           {t("description")}
         </p>
       </div>
