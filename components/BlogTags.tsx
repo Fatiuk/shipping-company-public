@@ -30,14 +30,14 @@ const BlogTags = ({
     <div className="flex flex-wrap gap-2">
       <button
         onClick={() => onBlogTagSelect("all")}
-        className={`px-4 py-2 rounded-full transition-all duration-300 font-medium text-sm ${
+        className={`b4 px-4 py-2 rounded-full transition-all duration-300 ${
           blogTagSelected === "all"
-            ? "bg-blue-600 text-white shadow-md"
-            : "bg-white dark:bg-blue-900 text-blue-700 dark:text-blue-200 hover:bg-blue-50 dark:hover:bg-blue-800 border border-blue-200 dark:border-blue-800"
+            ? "bg-oblue-500 text-white shadow-md"
+            : "bg-[--color-w-b900] text-[--color-b700-b200] hover:bg-[--color-b50-b800] border border-[--color-b400-b200]"
         }`}
       >
         {t("all")}
-        <span className="ml-2 inline-flex items-center justify-center text-xs px-2 rounded-full bg-opacity-20 bg-blue-100 dark:bg-blue-700">
+        <span className="b4 ml-2 inline-flex items-center justify-center pt-[3px] px-[6px] rounded-xl bg-opacity-20 bg-[--color-b100-b200]">
           {blogItems.length}
         </span>
       </button>
@@ -46,14 +46,14 @@ const BlogTags = ({
         <button
           key={tag}
           onClick={() => onBlogTagSelect(tag)}
-          className={`px-4 py-2 rounded-full transition-all duration-300 font-medium text-sm ${
+          className={`b4 px-4 py-2 rounded-full transition-all duration-300 ${
             blogTagSelected === tag
-              ? "bg-blue-600 text-white shadow-md"
-              : "bg-white dark:bg-blue-900 text-blue-700 dark:text-blue-200 hover:bg-blue-50 dark:hover:bg-blue-800 border border-blue-200 dark:border-blue-800"
+              ? "bg-oblue-500 text-white shadow-md"
+              : "bg-[--color-w-b900] text-[--color-b700-b200] hover:bg-[--color-b50-b800] border border-[--color-b400-b200]"
           }`}
         >
           {t(tag)}
-          <span className="ml-2 inline-flex items-center justify-center text-xs px-2 rounded-full bg-opacity-20 bg-blue-100 dark:bg-blue-700">
+          <span className="b4 ml-2 inline-flex items-center justify-center pt-[3px] px-[6px] rounded-xl bg-opacity-20 bg-[--color-b100-b200]">
             {getTagCount(tag)}
           </span>
         </button>
