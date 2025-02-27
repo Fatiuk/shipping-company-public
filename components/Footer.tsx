@@ -86,11 +86,9 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
             </div>
           </div>
           <div className="sm:hidden flex flex-col sm:mx-auto">
-            <h4 className="font-bold text-lg text-oaccent-700">
-              {t("contact")}
-            </h4>
+            <h4 className="text-oaccent-700">{t("contact")}</h4>
             <p className="pt-2 pl-2">
-              <span className="font-b3-b4 text-[--foreground]">{`${c(
+              <span className="font-b3-b4 text-[--color-b900-w]">{`${c(
                 "email.title"
               )}: `}</span>
               <Link
