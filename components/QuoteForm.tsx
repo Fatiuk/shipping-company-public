@@ -129,7 +129,7 @@ const QuoteForm: FC = () => {
             </p>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-6">
+            <div className="grid grid-cols-[auto_auto] sm:grid-cols-2 gap-2 xs:gap-4 pt-6">
               <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
                   <svg

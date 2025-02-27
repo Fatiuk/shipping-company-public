@@ -97,18 +97,17 @@ const About: FC = () => {
               <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 5+
               </span>
-              <div className="b3 text-[--color-b900-w]/70">
+              <p className="b3 text-[--color-b900-w]/70">
                 {t("highlights.years")}
-              </div>
+              </p>
             </div>
             <div className="space-y-2">
-              {/* <div className="text-3xl font-bold text-purple-500">50</div> */}
               <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 50
               </span>
-              <div className="b3 text-[--color-b900-w]/70">
+              <p className="b3 text-[--color-b900-w]/70">
                 {t("highlights.states")}
-              </div>
+              </p>
             </div>
           </div>
         </div>
