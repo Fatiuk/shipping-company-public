@@ -74,19 +74,21 @@ const About: FC = () => {
           {/* Small accent line */}
           <div className="w-20 h-1 bg-gradient-to-r from-oblue-300 to-oaccent-600" />
 
-          <h2 className="text-sm uppercase tracking-wider text-[--color-b700-b200] font-semibold">
+          <h5 className="uppercase tracking-wider text-[--color-b700-b200]">
             {t("sectionTitle")}
-          </h2>
+          </h5>
 
-          <h3 className="text-xl sm:text-3xl lg:text-4xl font-bold text-[--color-b900-w] leading-tight">
+          <h3 className="font-h3-h4 text-[--color-b900-w] leading-tight">
             {t("title")}
           </h3>
 
           <div className="flex flex-col gap-4">
-            <p className="">{t("description.intro")}</p>
-            <p className=""> {t("description.experience")}</p>
-            <p className=""> {t("description.coverage")}</p>
-            <p> {t("description.trust")}</p>
+            <p className="text-[--color-b900-w]">{t("description.intro")}</p>
+            <p className="text-[--color-b900-w]">
+              {t("description.experience")}
+            </p>
+            <p className="text-[--color-b900-w]">{t("description.coverage")}</p>
+            <p className="text-[--color-b900-w]">{t("description.trust")}</p>
           </div>
 
           {/* Stats or highlights */}
@@ -95,7 +97,7 @@ const About: FC = () => {
               <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 5+
               </span>
-              <div className="text-sm text-[--color-b900-w]/70">
+              <div className="b3 text-[--color-b900-w]/70">
                 {t("highlights.years")}
               </div>
             </div>
@@ -104,7 +106,7 @@ const About: FC = () => {
               <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 50
               </span>
-              <div className="text-sm text-[--color-b900-w]/70">
+              <div className="b3 text-[--color-b900-w]/70">
                 {t("highlights.states")}
               </div>
             </div>
@@ -125,15 +127,17 @@ const About: FC = () => {
             </div>
 
             {/* Floating accent elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-oblue-600/10 rounded-full blur-xl" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-oaccent-500/10 rounded-full blur-xl" />
+            {/* <div className="absolute -top-4 -right-4 w-24 h-24 bg-oblue-600/10 rounded-full blur-xl" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-oaccent-500/10 rounded-full blur-xl" /> */}
 
             {/* Floating badge */}
-            <div className="z-20 absolute right-[-0px] bottom-16 bg-[--color-w-b100] rounded-l-xl p-4 shadow-xl transform hover:scale-105 transition-transform duration-300">
-              <div className="text-sm font-semibold text-oblue-500">
+            <div className="z-20 absolute right-[-0px] bottom-4 sm:bottom-16 bg-[--color-w-b100] rounded-l-xl p-2 sm:p-4 shadow-xl transform hover:scale-105 transition-transform duration-300">
+              <div className="font-b4-b5 font-semibold text-oblue-500">
                 {t("badge.licensed")}
               </div>
-              <div className="text-xs text-oblue-300">{t("badge.insured")}</div>
+              <div className="font-b4-b5 text-oblue-300">
+                {t("badge.insured")}
+              </div>
             </div>
           </div>
         </div>
