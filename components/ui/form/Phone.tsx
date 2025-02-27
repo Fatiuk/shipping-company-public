@@ -58,7 +58,7 @@ const PhoneInput: FC<PhoneInputPropsI> = ({
   }, [value]);
 
   return (
-    <div className="pb-6 last:pb-0">
+    <div className="pb-2 sm:pb-6 last:pb-0">
       <label
         htmlFor={name}
         className={`w-full border-2 rounded-lg text-gray-40 flex items-center gap-2 mb-2 ${
