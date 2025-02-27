@@ -117,7 +117,7 @@ const QuoteForm: FC = () => {
 
   return (
     <div id="contact-us" className="">
-      <div className="max-w-[1400px] mx-auto px-8 2xl:px-20">
+      <div className="sm:max-w-[1400px] mx-auto px-2 sm:px-8 2xl:px-20">
         <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-between gap-8">
           {/* Content Side */}
           <div ref={contentRef} className="max-w-[580px] lg:w-1/2 space-y-6">
@@ -129,7 +129,7 @@ const QuoteForm: FC = () => {
             </p>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 gap-4 pt-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-6">
               <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
                   <svg
@@ -186,11 +186,11 @@ const QuoteForm: FC = () => {
           </div>
 
           {/* Form Side */}
-          <div ref={formRef} className="max-w-[500px] lg:w-1/2 w-full">
-            <div className="bg-[--color-w-b50] rounded-2xl shadow-xl p-8">
-              <h3 className="font-bold text-xl md:text-2xl text-center text-oaccent-800 uppercase mb-6">
+          <div ref={formRef} className="smax-w-[500px] lg:w-1/2 w-full">
+            <div className="bg-[--color-w-b50] rounded-2xl shadow-xl px-3 py-4 sm:p-8">
+              <h4 className="font-h4-h5 text-center text-oaccent-800 uppercase mb-4 sm:mb-6">
                 {t("formTitle")}
-              </h3>
+              </h4>
               <form onSubmit={formik.handleSubmit} className="">
                 <Input
                   placeholder={t("fields.originZip.placeholder")}

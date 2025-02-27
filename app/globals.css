@@ -271,7 +271,7 @@ body {
 }
 
 p {
-  color: var(--foreground);
+  color: var(--color-b900-w);
   font-family: var(--font-sans);
   font-size: var(--b2-b3-font-size);
   line-height: var(--b2-b3-line-height);
