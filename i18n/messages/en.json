@@ -198,7 +198,7 @@
       "phone": {
         "name": "phone number",
         "label": "Phone number",
-        "placeholder": "Phone Number (e.g., 1234567890)"
+        "placeholder": "Phone (e.g., 1234567890)"
       }
     },
     "validation": {

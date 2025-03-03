@@ -46,17 +46,17 @@ const TeamMembers: FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-16 md:py-24 bg-white dark:bg-oblue-900"
+      className="w-full py-16 md:py-24 bg-[--color-w-b900]"
     >
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-bold text-3xl md:text-4xl mb-4 text-[--color-b900-w]">
+        {/* <div className="text-center mb-12">
+          <h2 className="font-h2-h3 md:text-4xl mb-4 text-[--color-b900-w]">
             {t("meetOurTeam")}
           </h2>
           <p className="max-w-2xl mx-auto text-[--foreground] font-b2-b3">
             {t("teamDescription")}
           </p>
-        </div>
+        </div> */}
 
         <div
           ref={teamRef}
