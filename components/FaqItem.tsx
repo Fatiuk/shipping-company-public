@@ -12,38 +12,27 @@ const FAQItem: FC<{
   return (
     <div className="pb-6 last:pb-0">
       <div
-        className="
-				group
-				flex flex-nowrap justify-between items-center
-				transition-color duration-200"
+        className="group flex flex-nowrap justify-between items-center transition-color duration-200"
         onClick={toggleOpen}
       >
-        <div
-          className={`p-3
-					flex-grow
-					rounded-ss-xl rounded-es-xl
-					border-2 border-oblue-900 dark:border-oaccent-700 
-					font-sans font-bold text-oblue-900
-					group-hover:cursor-pointer group-hover:bg-oblue-100 group-hover:text-oblue-900 group-hover:dark:bg-oaccent-400 group-hover:dark:text-black
+        <p
+          className={`font-b2-b3 font-bold p-3 flex-grow	rounded-ss-xl rounded-es-xl border-2 border-[--color-b900-a700] text-oblue-900
+					group-hover:cursor-pointer group-hover:bg-[--color-b100-a400] group-hover:text-[--color-b900-black] 
 					${
             isOpen
-              ? "bg-oblue-100 dark:bg-oaccent-400 dark:text-black !rounded-es-none"
-              : "dark:text-white"
+              ? "bg-[--color-b100-a400] dark:text-black !rounded-es-none"
+              : "dark:text-owhite"
           }`}
         >
           {id + ". " + question}
-        </div>
+        </p>
         <div
           className={`flex items-center self-stretch
 					ml-[-2px] p-3 pb-2
 					rounded-se-xl rounded-ee-xl
-					border-2 border-oblue-900 dark:border-oaccent-700
-					group-hover:cursor-pointer group-hover:bg-oaccent-700 group-hover:dark:bg-oaccent-700 
-					${
-            isOpen
-              ? "bg-oaccent-900 !rounded-ee-none"
-              : "bg-oblue-300 dark:bg-oaccent-700"
-          }`}
+					border-2 border-[--color-b900-a700]
+					group-hover:cursor-pointer group-hover:bg-oaccent-700 
+					${isOpen ? "bg-oaccent-900 !rounded-ee-none" : "bg-[--color-b300-a700]"}`}
         >
           {isOpen ? (
             <svg
@@ -83,7 +72,7 @@ const FAQItem: FC<{
 				overflow-hidden
 				rounded-es-xl rounded-ee-xl
 				border-2 border-t-0 border-black
-				text-oblue-900 dark:text-white
+				text-[--color-b900-w]
 				transition-[max-height] duration-200 ease-in-out
 				${
           isOpen
@@ -91,9 +80,7 @@ const FAQItem: FC<{
             : "max-h-0 hidden dark:border-white"
         }`}
       >
-        <div className="p-3 font-sans">
-          <p>{answer}</p>
-        </div>
+        <p className="p-3 font-b2-b3">{answer}</p>
       </div>
     </div>
   );

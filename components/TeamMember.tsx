@@ -11,7 +11,7 @@ const TeamMember: FC<TeamMemberI> = ({
   socialLinks,
 }) => {
   return (
-    <div className="bg-white dark:bg-oblue-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-[--color-w-b700] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="relative h-80 overflow-hidden">
         <Image
           src={`/team/${positionSlug}.jpeg`}
@@ -22,9 +22,9 @@ const TeamMember: FC<TeamMemberI> = ({
       </div>
 
       <div className="p-6">
-        <h3 className="text-xl font-bold text-[--color-b900-w] mb-1">{name}</h3>
-        <p className="text-[--color-a700-a900] mb-3 font-medium">{position}</p>
-        <p className="text-[--foreground] font-b3-b4 mb-4">{description}</p>
+        <h3 className="font-h3-h4 text-[--color-b900-w] mb-1">{name}</h3>
+        <p className="text-[--color-a700-a400] mb-3 font-b2-b3">{position}</p>
+        <p className="text-[ --color-b900-w] font-b3-b4 mb-4">{description}</p>
 
         {/* Social/Contact Links */}
         {socialLinks && (
@@ -34,7 +34,8 @@ const TeamMember: FC<TeamMemberI> = ({
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-800 flex items-center justify-center text-blue-600 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 rounded-full bg-[--color-b100-b900] 
+                flex items-center justify-center text-[--color-b600-b100] hover:bg-[--color-b200-b500] transition-colors"
                 aria-label={`${name}'s LinkedIn`}
               >
                 <svg
@@ -51,7 +52,8 @@ const TeamMember: FC<TeamMemberI> = ({
             {socialLinks.email && (
               <a
                 href={`mailto:${socialLinks.email}`}
-                className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-800 flex items-center justify-center text-blue-600 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 rounded-full bg-[--color-b100-b900] 
+                flex items-center justify-center text-[--color-b600-b100] hover:bg-[--color-b200-b500] transition-colors"
                 aria-label={`Email ${name}`}
               >
                 <svg
@@ -74,7 +76,8 @@ const TeamMember: FC<TeamMemberI> = ({
             {socialLinks.phone && (
               <a
                 href={`tel:${socialLinks.phone}`}
-                className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-800 flex items-center justify-center text-blue-600 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors"
+                className="w-10 h-10 rounded-full bg-[--color-b100-b900] 
+                flex items-center justify-center text-[--color-b600-b100] hover:bg-[--color-b200-b500] transition-colors"
                 aria-label={`Call ${name}`}
               >
                 <svg
