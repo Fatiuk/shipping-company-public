@@ -1,13 +1,13 @@
 "use client";
 import { FC, useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { teamMembers } from "@/app/data";
 import TeamMember from "@/components/TeamMember";
 
 const TeamMembers: FC = () => {
-  const t = useTranslations("team");
+  // const t = useTranslations("team");
   const sectionRef = useRef<HTMLDivElement>(null);
   const teamRef = useRef<HTMLDivElement>(null);
 
