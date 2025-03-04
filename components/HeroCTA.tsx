@@ -1,15 +1,19 @@
 import React, { FC } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import ActiveLink from "./shared/ActiveLink";
 
 const HeroCTA: FC = () => {
   const t = useTranslations("home");
 
   return (
     <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-6 relative z-10">
-      <button className="w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-900 text-white hover:bg-oaccent-700 hover:cursor-pointer transition-colors duration-200 rounded-xl">
+      <ActiveLink
+        href="/#contact-us"
+        className="text-center w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-900 text-white hover:bg-oaccent-700 hover:cursor-pointer transition-colors duration-200 rounded-xl"
+      >
         {t("quote")}
-      </button>
+      </ActiveLink>
       <Link
         className="flex w-full sm:w-auto mt-4 sm:mt-9 px-7 py-4 text-xl justify-center font-header capitalize border border-transparent bg-oblue-600 text-oblue-50 hover:bg-oblue-400 hover:cursor-pointer transition-colors duration-200 rounded-xl group"
         href="tel:"
