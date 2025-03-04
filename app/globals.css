@@ -138,6 +138,7 @@
   --color-b400-b200: var(--blue-400);
 
   --color-b500-w: var(--blue-500);
+  --color-b500-b100: var(--blue-500);
 
   --color-b600-b300: var(--blue-600);
   --color-b600-b100: var(--blue-600);
@@ -152,6 +153,7 @@
 
   --color-b900-a400: var(--blue-900);
   --color-b900-a700: var(--blue-900);
+  --color-b900-b50: var(--blue-900);
   --color-b900-b100: var(--blue-900);
   --color-b900-b200: var(--blue-900);
   --color-b900-black: var(--blue-900);
@@ -248,6 +250,7 @@
   --color-b400-b200: var(--blue-200);
 
   --color-b500-w: var(--white);
+  --color-b500-b100: var(--blue-100);
 
   --color-b600-b300: var(--blue-300);
   --color-b600-b100: var(--blue-100);
@@ -262,6 +265,7 @@
 
   --color-b900-a400: var(--accent-400);
   --color-b900-a700: var(--accent-700);
+  --color-b900-b50: var(--blue-50);
   --color-b900-b100: var(--blue-100);
   --color-b900-b200: var(--blue-200);
   --color-b900-black: black;

@@ -22,18 +22,23 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
       <div className="bg-oblue-50 dark:bg-oblue-800 py-4 md:py-6">
         <div className="max-w-full lg:max-w-[1600px] px-4 px-12 lg:px-10 2xl:px-20 mx-auto flex flex-col xl:flex-row flex-wrap sm:flex-nowrap justify-between gap-6 2xl:gap-8">
           <div className="flex flex-row xl:flex-col items-center justify-between md:justify-start md:gap-6 xl:max-w-[350px]">
-            <div className="min-w-fit mr-4 sm:mr-0">
+            <div className="min-w-fit mr-4 md:mr-0">
               <Logo />
             </div>
-            <div className="font-b3-b4 mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px]">
+            <div className="hidden sm:block font-b3-b4 mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px]">
               {t("companyDesc")}
             </div>
             <SocialLinks />
           </div>
+          <div className="block sm:hidden font-b3-b4 max-w-[400px]">
+            {t("companyDesc")}
+          </div>
           <div className="grid grid-cols-[auto_auto] sm:grid-cols-[auto_auto_auto] md:grid-cols-3 justify-items-start mx-auto w-full max-w-[860px] lg:max-w-[680px] 2xl:max-w-[860px]">
             {navigation.map((section) => (
               <div key={section.label} className="flex flex-col sm:mx-auto">
-                <h4 className="text-lg text-oaccent-700">{t(section.label)}</h4>
+                <h4 className="font-h4-h5 text-oaccent-700">
+                  {t(section.label)}
+                </h4>
                 {section.submenu &&
                   section.submenu.map((sub) => (
                     <ActiveLink
@@ -47,9 +52,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
               </div>
             ))}
             <div className="hidden sm:flex flex-col sm:mx-auto">
-              <h4 className="font-bold text-lg text-oaccent-700">
-                {t("contact")}
-              </h4>
+              <h4 className="font-h4-h5 text-oaccent-700">{t("contact")}</h4>
               <p className="pt-2 pl-2">
                 <span className="font-b3-b4 text-[--foreground]">{`${c(
                   "email.title"
@@ -84,7 +87,7 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
             </div>
           </div>
           <div className="sm:hidden flex flex-col sm:mx-auto">
-            <h4 className="text-oaccent-700">{t("contact")}</h4>
+            <h4 className="font-h4-h5 text-oaccent-700">{t("contact")}</h4>
             <p className="pt-2 pl-2">
               <span className="font-b3-b4 text-[--color-b900-w]">{`${c(
                 "email.title"

@@ -50,7 +50,7 @@ const YelpFilterBar: React.FC<FilterBarProps> = ({
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex sm:flex-row gap-4">
           <div>
             <h3 className="font-b3 text-oblue-700 font-semibold mb-2">
               {t("filter.sortBy")}
@@ -70,7 +70,7 @@ const YelpFilterBar: React.FC<FilterBarProps> = ({
 
           <button
             onClick={onReset}
-            className="self-end py-2 px-4 border border-gray-300 rounded-lg text-owhite bg-oblue-600 hover:bg-oblue-900 transition-colors"
+            className="self-end py-2 px-2 sm:px-4 border border-gray-300 rounded-lg text-owhite bg-oblue-600 hover:bg-oblue-900 transition-colors"
           >
             {t("filter.reset")}
           </button>
