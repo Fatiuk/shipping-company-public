@@ -1,4 +1,6 @@
+import { FC } from "react";
 import { getTranslations } from "next-intl/server";
+import YelpReviews from "@/components/YelpReviews";
 import PageProps from "@/types/page";
 
 export async function generateMetadata(props: PageProps) {
@@ -12,25 +14,12 @@ export async function generateMetadata(props: PageProps) {
 
   return {
     title: t("title") || "Yelp Reviews",
-    description: t("description") || "Yelp Reviews",
+    description: t("description") || "Customer Reviews from Yelp",
   };
 }
 
-const YelpReviews = async (props: PageProps) => {
-  const params = await props.params;
-  const locale = params.locale;
-
-  const t = await getTranslations({
-    locale,
-    namespace: "yelpReviews",
-  });
-
-  return (
-    <div className="m-8">
-      <p>Yelp Reviews</p>
-      <p>{t("title")}</p>
-    </div>
-  );
+const YelpReviewsPage: FC = () => {
+  return <YelpReviews />;
 };
 
-export default YelpReviews;
+export default YelpReviewsPage;

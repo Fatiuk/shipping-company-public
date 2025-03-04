@@ -217,7 +217,53 @@
     "next": "Next slide",
     "goTo": "Go to slide {slideNumber}"
   },
-  "yelpReviews": { "title": "", "description": "" },
+  "yelpReviews": {
+    "title": "Customer Reviews",
+    "description": "See what our customers are saying about our shipping services across the country. Read authentic reviews from real customers who have experienced our dedication to quality and reliability.",
+    "stats": {
+      "averageRating": "Average Rating",
+      "basedOn": "Based on {count} reviews",
+      "reviewDistribution": "Review Distribution"
+    },
+    "filter": {
+      "byRating": "Filter by rating:",
+      "sortBy": "Sort by:",
+      "sortOptions": {
+        "newest": "Most Recent",
+        "highest": "Highest Rated",
+        "mostHelpful": "Most Helpful"
+      },
+      "reset": "Reset Filters"
+    },
+    "reviewCard": {
+      "verified": "Verified Customer",
+      "readMore": "Read more",
+      "showLess": "Show less",
+      "helpful": "Helpful ({count})",
+      "share": "Share",
+      "report": "Report"
+    },
+    "emptyState": {
+      "title": "No reviews match your filter",
+      "description": "Try adjusting your filters to see more reviews",
+      "resetButton": "Reset Filters"
+    },
+    "loadMore": "Load More Reviews",
+    "leaveReview": "Share Your Experience",
+    "reviewCategories": {
+      "shipping": "Shipping Speed",
+      "customerService": "Customer Service",
+      "packaging": "Packaging Quality",
+      "pricing": "Pricing",
+      "overall": "Overall Experience"
+    },
+    "stats2": {
+      "shippedItems": "{count}+ Items Shipped",
+      "happyCustomers": "{count}+ Happy Customers",
+      "coverage": "Nationwide Coverage"
+    },
+    "disclaimer": "All reviews are from verified customers who have used our shipping services. Reviews are displayed chronologically by default."
+  },
   "howItWorks": {
     "sectionTitle": "How It Works",
     "title": "",
