@@ -139,7 +139,7 @@ const YelpReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
           {isContentTruncated && (
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-oblue-500 hover:text-oblue-600 text-sm font-medium mt-1"
+              className="text-[--color-b500-b100] hover:text-[--color-b600-b300] text-sm font-medium mt-1"
             >
               {isExpanded ? t("reviewCard.showLess") : t("reviewCard.readMore")}
             </button>
