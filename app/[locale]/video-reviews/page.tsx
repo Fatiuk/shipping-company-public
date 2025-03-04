@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { getTranslations } from "next-intl/server";
-import VideoReviewsPage from "@/components/VideoReviewsPage";
+import VideoReviews from "@/components/VideoReviews";
 import PageProps from "@/types/page";
 
 export async function generateMetadata(props: PageProps) {
@@ -18,8 +18,8 @@ export async function generateMetadata(props: PageProps) {
   };
 }
 
-const VideoReviews: FC = () => {
-  return <VideoReviewsPage />;
+const VideoReviewsPage: FC = () => {
+  return <VideoReviews />;
 };
 
-export default VideoReviews;
+export default VideoReviewsPage;

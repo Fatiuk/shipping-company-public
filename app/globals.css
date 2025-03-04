@@ -256,7 +256,6 @@
   --color-b700-b100: var(--blue-100);
   --color-b700-b200: var(--blue-200);
   --color-b700-b400: var(--blue-400);
-  --color-b900-black: black;
   --color-b700-w: var(--white);
 
   --color-b800-b200: var(--blue-200);
@@ -265,6 +264,7 @@
   --color-b900-a700: var(--accent-700);
   --color-b900-b100: var(--blue-100);
   --color-b900-b200: var(--blue-200);
+  --color-b900-black: black;
   --color-b900-w: var(--white);
 
   --color-black-b50: var(--blue-50);

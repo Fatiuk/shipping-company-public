@@ -217,7 +217,53 @@
     "next": "Diapositive suivante",
     "goTo": "Aller à la diapositive {slideNumber}"
   },
-  "yelpReviews": { "title": "", "description": "" },
+  "yelpReviews": {
+    "title": "Avis des Clients",
+    "description": "Découvrez ce que nos clients disent de nos services d'expédition à travers le pays. Lisez des avis authentiques de vrais clients qui ont expérimenté notre engagement envers la qualité et la fiabilité.",
+    "stats": {
+      "averageRating": "Note Moyenne",
+      "basedOn": "Basé sur {count} avis",
+      "reviewDistribution": "Répartition des Avis"
+    },
+    "filter": {
+      "byRating": "Filtrer par note :",
+      "sortBy": "Trier par :",
+      "sortOptions": {
+        "newest": "Le Plus Récent",
+        "highest": "Mieux Noté",
+        "mostHelpful": "Le Plus Utile"
+      },
+      "reset": "Réinitialiser les Filtres"
+    },
+    "reviewCard": {
+      "verified": "Client Vérifié",
+      "readMore": "Lire la suite",
+      "showLess": "Réduire",
+      "helpful": "Utile ({count})",
+      "share": "Partager",
+      "report": "Signaler"
+    },
+    "emptyState": {
+      "title": "Aucun avis ne correspond à votre filtre",
+      "description": "Essayez d'ajuster vos filtres pour voir plus d'avis",
+      "resetButton": "Réinitialiser les Filtres"
+    },
+    "loadMore": "Charger Plus d'Avis",
+    "leaveReview": "Partagez Votre Expérience",
+    "reviewCategories": {
+      "shipping": "Vitesse d'Expédition",
+      "customerService": "Service Client",
+      "packaging": "Qualité de l'Emballage",
+      "pricing": "Tarification",
+      "overall": "Expérience Globale"
+    },
+    "stats2": {
+      "shippedItems": "{count}+ Articles Expédiés",
+      "happyCustomers": "{count}+ Clients Satisfaits",
+      "coverage": "Couverture Nationale"
+    },
+    "disclaimer": "Tous les avis proviennent de clients vérifiés ayant utilisé nos services d'expédition. Les avis sont affichés par ordre chronologique par défaut."
+  },
   "howItWorks": {
     "sectionTitle": "Comment ça marche",
     "title": "",

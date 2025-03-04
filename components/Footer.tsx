@@ -22,10 +22,10 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
       <div className="bg-oblue-50 dark:bg-oblue-800 py-4 md:py-6">
         <div className="max-w-full lg:max-w-[1600px] px-4 px-12 lg:px-10 2xl:px-20 mx-auto flex flex-col xl:flex-row flex-wrap sm:flex-nowrap justify-between gap-6 2xl:gap-8">
           <div className="flex flex-row xl:flex-col items-center justify-between md:justify-start md:gap-6 xl:max-w-[350px]">
-            <div className="w-fit">
+            <div className="min-w-fit mr-4 sm:mr-0">
               <Logo />
             </div>
-            <div className="hidden sm:block font-b3-b4 mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px]">
+            <div className="font-b3-b4 mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px]">
               {t("companyDesc")}
             </div>
             <SocialLinks />

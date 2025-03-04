@@ -1,6 +1,7 @@
 import LocationI from "@/types/location";
 import VideoData from "@/types/videoReview";
 import TeamMemberI from "@/types/teamMember";
+import YelpReview from "@/types/yelpReview";
 
 export const location: LocationI = {
   city: { value: "buford", label: "Buford" },
@@ -3040,5 +3041,96 @@ export const videoData: VideoData[] = [
     author: "Netta K.",
     rating: 4,
     date: "2024-11-11",
+  },
+];
+
+export const yelpReviewsData: YelpReview[] = [
+  {
+    id: "1",
+    author: "Jessica R.",
+    rating: 5,
+    date: "2024-09-15",
+    content:
+      "Amazing service! My delivery arrived ahead of schedule and the driver was extremely professional. Would definitely use again for my shipping needs.",
+    location: "San Francisco, CA",
+    helpful: 24,
+    images: ["/yelp/delivery1.png"],
+  },
+  {
+    id: "2",
+    author: "Michael T.",
+    rating: 4,
+    date: "2024-08-22",
+    content:
+      "Very reliable shipping service. Package arrived in good condition and on time. The tracking system was easy to use and kept me updated throughout the shipping process.",
+    location: "Chicago, IL",
+    avatarUrl: "/yelp/avatars/michael.jpeg",
+    helpful: 18,
+    images: [],
+  },
+  {
+    id: "3",
+    author: "Sarah L.",
+    rating: 5,
+    date: "2024-07-30",
+    content:
+      "Outstanding customer service! I had an issue with my delivery time and they went above and beyond to accommodate my schedule. The care they took with my fragile items was impressive.",
+    location: "Austin, TX",
+    avatarUrl: "/yelp/avatars/sarah.jpeg",
+    helpful: 32,
+    images: ["/yelp/package1.png", "/yelp/package2.png"],
+  },
+  {
+    id: "4",
+    author: "David W.",
+    rating: 3,
+    date: "2024-07-18",
+    content:
+      "Decent shipping service. The package arrived a day late but was in perfect condition. Customer service was responsive when I called to check on the status.",
+    location: "Boston, MA",
+    helpful: 7,
+    images: [],
+  },
+  {
+    id: "5",
+    author: "Emma K.",
+    rating: 5,
+    date: "2024-06-25",
+    content:
+      "I've used many shipping companies before, but this one stands out. Their rates are competitive and their service is exceptional. My large furniture items were handled with care.",
+    location: "Seattle, WA",
+    helpful: 41,
+  },
+  {
+    id: "6",
+    author: "Ryan H.",
+    rating: 4,
+    date: "2024-06-10",
+    content:
+      "Good experience overall. Shipping was quick and the package arrived in good condition. The only issue was that the delivery window was quite broad.",
+    location: "Denver, CO",
+    avatarUrl: "/yelp/avatars/ryan.jpeg",
+    helpful: 15,
+    images: [],
+  },
+  {
+    id: "7",
+    author: "Olivia J.",
+    rating: 5,
+    date: "2024-05-22",
+    content:
+      "Exceptional service! They handled my international shipment with expertise. Everything arrived on time and without any customs issues. Their staff was knowledgeable and helpful throughout the process.",
+    location: "Miami, FL",
+    helpful: 29,
+  },
+  {
+    id: "8",
+    author: "William P.",
+    rating: 2,
+    date: "2024-05-05",
+    content:
+      "Disappointed with my experience. The package was delivered two days late and the box was damaged. Fortunately, the contents were intact. Customer service took a while to respond to my concerns.",
+    location: "Phoenix, AZ",
+    helpful: 12,
   },
 ];

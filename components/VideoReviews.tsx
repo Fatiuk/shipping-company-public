@@ -7,7 +7,7 @@ import VideoCard from "@/components//VideoCard";
 import VideoModal from "@/components/VideoModal";
 import VideoReview from "@/types/videoReview";
 
-export const VideoReviewsPage: React.FC = () => {
+export const VideoReviews: React.FC = () => {
   const t = useTranslations("videoReviews");
   const [selectedVideo, setSelectedVideo] = useState<VideoReview | null>(null);
 
@@ -31,4 +31,4 @@ export const VideoReviewsPage: React.FC = () => {
   );
 };
 
-export default VideoReviewsPage;
+export default VideoReviews;
