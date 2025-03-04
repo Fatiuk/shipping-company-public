@@ -1,16 +1,35 @@
-const YelpFilterBar: React.FC<{
+import { useTranslations } from "next-intl";
+
+type SortOrder = "newest" | "highest" | "most-helpful";
+
+interface FilterBarProps {
   filterRating: number | null;
   setFilterRating: (rating: number | null) => void;
-  sortOrder: "newest" | "highest" | "most-helpful";
-  setSortOrder: (order: "newest" | "highest" | "most-helpful") => void;
+  sortOrder: SortOrder;
+  setSortOrder: (order: SortOrder) => void;
   onReset: () => void;
-}> = ({ filterRating, setFilterRating, sortOrder, setSortOrder, onReset }) => {
+}
+
+const YelpFilterBar: React.FC<FilterBarProps> = ({
+  filterRating,
+  setFilterRating,
+  sortOrder,
+  setSortOrder,
+  onReset,
+}) => {
+  const t = useTranslations("yelpReviews");
+
+  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value as SortOrder;
+    setSortOrder(value);
+  };
+
   return (
     <div className="bg-[--color-w-b200] rounded-xl shadow-sm p-4 mb-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h3 className="font-b3 text-oblue-700 font-semibold mb-2">
-            Filter by rating:
+            {t("filter.byRating")}
           </h3>
           <div className="flex gap-2">
             {[5, 4, 3, 2, 1].map((rating) => (
@@ -34,16 +53,18 @@ const YelpFilterBar: React.FC<{
         <div className="flex flex-col sm:flex-row gap-4">
           <div>
             <h3 className="font-b3 text-oblue-700 font-semibold mb-2">
-              Sort by:
+              {t("filter.sortBy")}
             </h3>
             <select
               value={sortOrder}
-              onChange={(e) => setSortOrder(e.target.value as any)}
+              onChange={handleSortChange}
               className="bg-transparent border border-gray-300 rounded-lg py-2 px-3 text-oblue-700 focus:border-oblue-500 focus:ring-1 focus:ring-oblue-500"
             >
-              <option value="newest">Most Recent</option>
-              <option value="highest">Highest Rated</option>
-              <option value="most-helpful">Most Helpful</option>
+              <option value="newest">{t("filter.sortOptions.newest")}</option>
+              <option value="highest">{t("filter.sortOptions.highest")}</option>
+              {/* <option value="most-helpful">
+                {t("filter.sortOptions.mostHelpful")}
+              </option> */}
             </select>
           </div>
 
@@ -51,7 +72,7 @@ const YelpFilterBar: React.FC<{
             onClick={onReset}
             className="self-end py-2 px-4 border border-gray-300 rounded-lg text-owhite bg-oblue-600 hover:bg-oblue-900 transition-colors"
           >
-            Reset Filters
+            {t("filter.reset")}
           </button>
         </div>
       </div>

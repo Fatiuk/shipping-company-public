@@ -6,11 +6,11 @@ import { gsap } from "gsap";
 import { yelpReviewsData } from "@/app/data";
 import YelpReviewCard from "@/components/YelpReviewCard";
 import FilterBar from "@/components/YelpFilterBar";
-import YelpReview from "@/types/yelpReview";
 
 const YelpReviews: React.FC = () => {
   const t = useTranslations("yelpReviews");
-  const [reviews, setReviews] = useState<YelpReview[]>(yelpReviewsData);
+  // const [reviews, setReviews] = useState<YelpReview[]>(yelpReviewsData);
+  const reviews = yelpReviewsData;
   const [filterRating, setFilterRating] = useState<number | null>(null);
   const [sortOrder, setSortOrder] = useState<
     "newest" | "highest" | "most-helpful"
