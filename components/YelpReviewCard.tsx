@@ -9,41 +9,94 @@ interface YelpReviewCardProps {
 }
 
 const YelpReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
-  const t = useTranslations("yelpReviews");
-  const [isExpanded, setIsExpanded] = useState(false);
-  const contentRef = useRef<HTMLParagraphElement>(null);
-  const [isContentTruncated, setIsContentTruncated] = useState(false);
   const locale = useLocale();
-  const cardRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("yelpReviews");
 
-  // Generate avatar URL from name if no custom avatar exists
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isContentTruncated, setIsContentTruncated] = useState(false);
+
+  const cardRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLParagraphElement>(null);
+  const fullTextRef = useRef<HTMLParagraphElement>(null);
+
   const getAvatarUrl = (name: string) => {
     if (review.avatarUrl) return review.avatarUrl;
-
-    // const nameParts = name.split(" ");
-    // let initials;
-
-    // if (nameParts.length === 1) {
-    //   initials = nameParts[0].charAt(0);
-    // } else if (nameParts.length >= 2) {
-    //   initials = `${nameParts[0].charAt(0)}${nameParts[
-    //     nameParts.length - 1
-    //   ].charAt(0)}`;
-    // }
-
-    // Encode the name for the URL
-    const encodedName = encodeURIComponent(name);
-
+    const encodedName = encodeURIComponent(name); // Encode the name for the URL
     return `https://ui-avatars.com/api/?name=${encodedName}&background=ebd7c1&color=0a3161&bold=true`;
   };
 
-  // Check if content needs to be truncated
-  useEffect(() => {
-    if (contentRef.current) {
-      const element = contentRef.current;
-      setIsContentTruncated(element.scrollHeight > element.clientHeight);
+  // Update the checkContentTruncation function
+  const checkContentTruncation = () => {
+    if (contentRef.current && fullTextRef.current) {
+      const lineClampedHeight = contentRef.current.clientHeight;
+      const fullTextHeight = fullTextRef.current.clientHeight;
+      const shouldBeTruncated = fullTextHeight > lineClampedHeight;
+
+      // Only update truncation state when not expanded
+      if (!isExpanded) {
+        setIsContentTruncated(shouldBeTruncated);
+      }
     }
+  };
+
+  // Add a separate handler for expand/collapse toggle
+  const handleToggleExpand = () => {
+    if (isExpanded) {
+      // When collapsing, first update the state then check truncation
+      setIsExpanded(false);
+      setTimeout(() => checkContentTruncation(), 10);
+    } else {
+      setIsExpanded(true);
+    }
+  };
+
+  // Check truncation when expanding/collapsing
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      checkContentTruncation();
+    }, 10);
+
+    return () => clearTimeout(timeoutId);
+  }, [isExpanded]);
+
+  // Check truncation on initial render and content change
+  useEffect(() => {
+    // Delay to ensure DOM has rendered completely
+    const timeoutId = setTimeout(() => {
+      checkContentTruncation();
+    }, 10);
+
+    return () => clearTimeout(timeoutId);
   }, [review.content]);
+
+  // resize handler with debounce
+  useEffect(() => {
+    let resizeTimer: NodeJS.Timeout;
+
+    const handleResize = () => {
+      // Clear previous timer
+      clearTimeout(resizeTimer);
+
+      // Set a new timer to debounce the resize event
+      resizeTimer = setTimeout(() => {
+        // Update width of fullTextRef to match contentRef
+        if (fullTextRef.current && contentRef.current) {
+          fullTextRef.current.style.width = `${contentRef.current.clientWidth}px`;
+        }
+
+        checkContentTruncation();
+      }, 100);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      clearTimeout(resizeTimer);
+    };
+  }, []);
 
   // 3D hover effect (similar to VideoCard)
   useEffect(() => {
@@ -127,18 +180,31 @@ const YelpReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
         </div>
 
         {/* Review content */}
-        <div className="mb-4">
-          <p
-            ref={contentRef}
-            className={`text-[--color-b900-w] ${
-              !isExpanded ? "line-clamp-3" : ""
-            }`}
+        <div className="mb-4 relative">
+          {isExpanded ? (
+            <p ref={contentRef} className="text-[--color-b900-w]">
+              {review.content}
+            </p>
+          ) : (
+            <p ref={contentRef} className="text-[--color-b900-w] line-clamp-3">
+              {review.content}
+            </p>
+          )}
+
+          {/* Hidden element to measure full text height */}
+          <div
+            className="absolute top-0 left-0 h-0 overflow-hidden opacity-0 pointer-events-none"
+            aria-hidden="true"
           >
-            {review.content}
-          </p>
-          {isContentTruncated && (
+            <p ref={fullTextRef} className="text-[--color-b900-w]">
+              {review.content}
+            </p>
+          </div>
+
+          {/* Replace the button code with this */}
+          {(isExpanded || isContentTruncated) && (
             <button
-              onClick={() => setIsExpanded(!isExpanded)}
+              onClick={handleToggleExpand}
               className="text-[--color-b500-b100] hover:text-[--color-b600-b300] text-sm font-medium mt-1"
             >
               {isExpanded ? t("reviewCard.showLess") : t("reviewCard.readMore")}
