@@ -199,6 +199,10 @@
         "name": "numéro de téléphone",
         "label": "Numéro de téléphone",
         "placeholder": "Téléphone (ex. : 1234567890)"
+      },
+      "acceptTerms": {
+        "name": "Conditions",
+        "label": "En cochant cette case, vous acceptez de recevoir des messages texte automatisés et personnalisés au numéro indiqué ci-dessus. Répondez STOP pour annuler. La fréquence des messages varie. Des frais de messagerie et de données peuvent s'appliquer."
       }
     },
     "validation": {
@@ -206,7 +210,12 @@
       "mustBeValid": "Doit être un(e) {field} valide",
       "pastDate": "La date ne peut pas être dans le passé"
     },
-    "cta": "Obtenir un devis gratuit"
+    "cta": "Obtenir un devis gratuit",
+    "success": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.",
+    "error": {
+      "title": "Erreur",
+      "description": "Une erreur s'est produite"
+    }
   },
   "videoReviews": {
     "title": "Avis Vidéo des Clients",
@@ -249,20 +258,7 @@
       "resetButton": "Réinitialiser les Filtres"
     },
     "loadMore": "Charger Plus d'Avis",
-    "leaveReview": "Partagez Votre Expérience",
-    "reviewCategories": {
-      "shipping": "Vitesse d'Expédition",
-      "customerService": "Service Client",
-      "packaging": "Qualité de l'Emballage",
-      "pricing": "Tarification",
-      "overall": "Expérience Globale"
-    },
-    "stats2": {
-      "shippedItems": "{count}+ Articles Expédiés",
-      "happyCustomers": "{count}+ Clients Satisfaits",
-      "coverage": "Couverture Nationale"
-    },
-    "disclaimer": "Tous les avis proviennent de clients vérifiés ayant utilisé nos services d'expédition. Les avis sont affichés par ordre chronologique par défaut."
+    "showing": "Affichage de {visible} sur {all} avis"
   },
   "howItWorks": {
     "sectionTitle": "Comment ça marche",

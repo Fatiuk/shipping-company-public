@@ -16,6 +16,11 @@ const YelpReviews: React.FC = () => {
     "newest" | "highest" | "most-helpful"
   >("newest");
   const [showReviews, setShowReviews] = useState(false);
+
+  // Pagination
+  const [visibleReviews, setVisibleReviews] = useState(4);
+  const reviewsPerPage = 4;
+
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const filteredReviews = reviews
@@ -30,9 +35,48 @@ const YelpReviews: React.FC = () => {
       }
     });
 
+  const currentlyVisibleReviews = filteredReviews.slice(0, visibleReviews);
+  const hasMoreReviews = filteredReviews.length > visibleReviews;
+
+  const handleLoadMore = () => {
+    const newCardStartIndex = visibleReviews;
+    const newCardEndIndex = Math.min(
+      visibleReviews + reviewsPerPage,
+      filteredReviews.length
+    );
+
+    setVisibleReviews((prevVisible) => prevVisible + reviewsPerPage);
+
+    setTimeout(() => {
+      if (!sectionRef.current) return;
+
+      // newly added cards
+      const newReviewElements = Array.from(
+        sectionRef.current.querySelectorAll(".review-card")
+      ).slice(newCardStartIndex, newCardEndIndex);
+
+      if (newReviewElements.length > 0) {
+        gsap.set(newReviewElements, {
+          opacity: 0,
+          y: 50,
+        });
+
+        gsap.to(newReviewElements, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.25,
+          ease: "power2.out",
+        });
+      }
+    }, 100);
+  };
+
   const handleResetFilter = () => {
     setFilterRating(null);
     setSortOrder("newest");
+    // Reset to default number of visible reviews when filters change
+    setVisibleReviews(reviewsPerPage);
   };
 
   // Initial load - hide reviews until ready to animate
@@ -41,6 +85,11 @@ const YelpReviews: React.FC = () => {
       setShowReviews(true);
     }, 100);
   }, []);
+
+  // Reset pagination when filters change
+  useEffect(() => {
+    setVisibleReviews(reviewsPerPage);
+  }, [filterRating, sortOrder]);
 
   // Animation effect
   useEffect(() => {
@@ -63,7 +112,7 @@ const YelpReviews: React.FC = () => {
         delay: 0.2, // delay before first card
       });
     }, 300);
-  }, [showReviews, filteredReviews]);
+  }, [showReviews, filterRating, sortOrder]);
 
   const averageRating =
     reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length;
@@ -106,7 +155,7 @@ const YelpReviews: React.FC = () => {
                   ))}
                 </div>
                 <div className="text-sm text-oblue-700 mt-1">
-                  Based on {reviews.length} reviews
+                  {t("stats.basedOn", { count: reviews.length })}
                 </div>
               </div>
             </div>
@@ -154,7 +203,7 @@ const YelpReviews: React.FC = () => {
             <div className="w-8 h-8 border-4 border-t-oblue-600 border-oblue-200 rounded-full animate-spin mx-auto"></div>
           </div>
         ) : filteredReviews.length > 0 ? (
-          filteredReviews.map((review) => (
+          currentlyVisibleReviews.map((review) => (
             <div key={review.id} className="review-card">
               <YelpReviewCard review={review} />
             </div>
@@ -163,30 +212,38 @@ const YelpReviews: React.FC = () => {
           <div className="col-span-2 text-center py-12">
             <div className="text-5xl mb-4">🔍</div>
             <h3 className="font-h3-h4 text-[--color-b900-w] mb-2">
-              No reviews match your filter
+              {t("emptyState.title")}
             </h3>
             <p className="text-[--color-b700-b200]">
-              Try adjusting your filters to see more reviews
+              {t("emptyState.description")}
             </p>
             <button
               onClick={handleResetFilter}
               className="mt-4 px-6 py-2 bg-oblue-600 text-white rounded-lg hover:bg-oblue-700 transition-colors"
             >
-              Reset Filters
+              {t("emptyState.resetButton")}
             </button>
           </div>
         )}
       </div>
 
       {/* "Load More" button */}
-      {filteredReviews.length > 0 &&
-        filteredReviews.length < reviews.length && (
-          <div className="text-center mt-12">
-            <button className="px-8 py-3 bg-white border border-oblue-300 text-oblue-600 rounded-lg hover:bg-oblue-50 transition-colors">
-              Load More Reviews
-            </button>
-          </div>
-        )}
+      {showReviews && hasMoreReviews && (
+        <div className="text-center mt-12">
+          <button
+            onClick={handleLoadMore}
+            className="px-8 py-3 bg-white border border-oblue-300 text-oblue-600 rounded-lg hover:bg-oblue-50 transition-colors"
+          >
+            {t("loadMore")}
+          </button>
+          <p className="text-sm text-[--color-b700-b100] mt-2">
+            {t("showing", {
+              visible: currentlyVisibleReviews.length,
+              all: filteredReviews.length,
+            })}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

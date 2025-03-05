@@ -199,6 +199,10 @@
         "name": "phone number",
         "label": "Phone number",
         "placeholder": "Phone (e.g., 1234567890)"
+      },
+      "acceptTerms": {
+        "name": "Terms",
+        "label": "By checking this box, you agree to receive automated and personalized text messages at the number listed above. Reply STOP to cancel. Message frequency varies. Message & data rates may apply."
       }
     },
     "validation": {
@@ -206,7 +210,9 @@
       "mustBeValid": "Must be a valid {field}",
       "pastDate": "Date cannot be in the past"
     },
-    "cta": "Get Free Quote"
+    "cta": "Get Free Quote",
+    "success": "We’ve received your inquiry and will contact you shortly.",
+    "error": { "title": "Error", "description": "Something went wrong" }
   },
   "videoReviews": {
     "title": "Customer Video Reviews",
@@ -249,20 +255,7 @@
       "resetButton": "Reset Filters"
     },
     "loadMore": "Load More Reviews",
-    "leaveReview": "Share Your Experience",
-    "reviewCategories": {
-      "shipping": "Shipping Speed",
-      "customerService": "Customer Service",
-      "packaging": "Packaging Quality",
-      "pricing": "Pricing",
-      "overall": "Overall Experience"
-    },
-    "stats2": {
-      "shippedItems": "{count}+ Items Shipped",
-      "happyCustomers": "{count}+ Happy Customers",
-      "coverage": "Nationwide Coverage"
-    },
-    "disclaimer": "All reviews are from verified customers who have used our shipping services. Reviews are displayed chronologically by default."
+    "showing": "Showing {visible} of {all} reviews"
   },
   "howItWorks": {
     "sectionTitle": "How It Works",
