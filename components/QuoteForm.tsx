@@ -21,7 +21,7 @@ const QuoteForm: FC = () => {
 
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(false);
+  const [submissionError, setSubmissionError] = useState(false);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -131,7 +131,8 @@ const QuoteForm: FC = () => {
         setSubmitted(true);
         formik.resetForm();
       } catch (error) {
-        setError(true);
+        console.error("form submission error", error);
+        setSubmissionError(true);
       } finally {
         setLoading(false);
       }
@@ -281,7 +282,7 @@ const QuoteForm: FC = () => {
                   <p className="text-oblue-500">{t("success")}</p>
                 </div>
               )}
-              {error && (
+              {submissionError && (
                 <div className="mt-2 p-2 flex items-center justify-center gap-4 bg-oaccent-400 rounded-xl">
                   <PiSmileySad className="text-5xl text-oaccent-700" />
                   <p className="font-b2-b3 font-semibold text-oaccent-700">
