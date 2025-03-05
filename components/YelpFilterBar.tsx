@@ -58,7 +58,7 @@ const YelpFilterBar: React.FC<FilterBarProps> = ({
             <select
               value={sortOrder}
               onChange={handleSortChange}
-              className="bg-transparent border border-gray-300 rounded-lg py-2 px-3 text-oblue-700 focus:border-oblue-500 focus:ring-1 focus:ring-oblue-500"
+              className="bg-transparent border border-gray-300 rounded-lg py-2 px-3 text-oblue-700 focus:outline-none"
             >
               <option value="newest">{t("filter.sortOptions.newest")}</option>
               <option value="highest">{t("filter.sortOptions.highest")}</option>

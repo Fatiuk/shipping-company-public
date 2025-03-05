@@ -33,7 +33,7 @@ const Home: FC = () => {
       </SectionFullWidth>
 
       <Section className="!bg-[--color-b900-b200]">
-        <div className="flex justify-between text-[--color-w-b900]">
+        <div className="container sm:max-w-[90%] mx-auto flex justify-between text-[--color-w-b900]">
           {achievments.map((a) => (
             <StatsItem
               key={a.text}

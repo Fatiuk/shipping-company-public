@@ -1,3 +1,4 @@
+"use client";
 import { LinkProps } from "next/link";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 

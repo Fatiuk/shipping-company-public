@@ -1,5 +1,6 @@
-import React, { FC, useEffect, useRef } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import { LuMapPin, LuCalendar, LuPhone } from "react-icons/lu";
+import { PiSmiley, PiSmileySad } from "react-icons/pi";
 import { useTranslations } from "next-intl";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -17,6 +18,10 @@ const QuoteForm: FC = () => {
   const t = useTranslations("quoteForm");
   const contentRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
+
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -110,8 +115,26 @@ const QuoteForm: FC = () => {
         .required("You must accept the terms")
         .oneOf([true], "You must accept the terms"),
     }),
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      try {
+        setLoading(true);
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(values),
+        });
+
+        if (!res.ok) {
+          throw new Error("Something went wrong");
+        }
+
+        setSubmitted(true);
+        formik.resetForm();
+      } catch (error) {
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
     },
   });
 
@@ -237,7 +260,7 @@ const QuoteForm: FC = () => {
               />
 
               <Checkbox
-                label="By checking this box, you agree to receive automated and personalized text messages at the number listed above. Reply STOP to cancel. Message frequency varies. Message & data rates may apply."
+                label={t("fields.acceptTerms.label")}
                 {...formik.getFieldProps("acceptTerms")}
                 checked={formik.values.acceptTerms}
                 touched={formik.touched.acceptTerms}
@@ -245,8 +268,27 @@ const QuoteForm: FC = () => {
               />
 
               <Button variant="primary" classNames="w-full py-4">
-                {t("cta")}
+                {loading ? (
+                  <span className="inline-block w-7 h-7 border-4 border-owhite border-t-transparent rounded-full animate-spin mx-auto"></span>
+                ) : (
+                  t("cta")
+                )}
               </Button>
+
+              {submitted && (
+                <div className="mt-2 p-2 flex items-center justify-center gap-4 bg-oblue-100 rounded-xl">
+                  <PiSmiley className="text-6xl text-oblue-500" />
+                  <p className="text-oblue-500">{t("success")}</p>
+                </div>
+              )}
+              {error && (
+                <div className="mt-2 p-2 flex items-center justify-center gap-4 bg-oaccent-400 rounded-xl">
+                  <PiSmileySad className="text-5xl text-oaccent-700" />
+                  <p className="font-b2-b3 font-semibold text-oaccent-700">
+                    {t("error.description")}
+                  </p>
+                </div>
+              )}
             </form>
           </div>
         </div>

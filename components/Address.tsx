@@ -6,7 +6,7 @@ const Address: FC<{ address: AddressI }> = ({ address }) => {
     // <div className="flex flex-row xl:flex-col xl:max-w-[500px]">
     <div className="flex flex-col xl:max-w-[500px]">
       <div className="flex flex-col min-w-[200px]">
-        <p className="pb-1 font-header text-2xl text-[--color-black-a700]">
+        <p className="pb-1 font-header text-2xl text-[--color-black-w]">
           {address.city}
         </p>
         <p className="font-sans pb-3 mb-auto text-[--color-black-w]">
