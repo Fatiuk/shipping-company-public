@@ -403,5 +403,149 @@
         }
       }
     }
+  },
+  "termsAndConditions": {
+    "title": "Termes et Conditions",
+    "subtitle": "Introduction",
+    "description": "Ces Termes et Conditions (\"Termes\") régissent votre utilisation des services d'expédition de véhicules de Dimi Noble (\"nous,\" \"notre,\" ou \"nos\"). En accédant à notre site web ou en utilisant nos services, vous acceptez de vous conformer à ces Termes et d'y être lié.",
+    "sections": {
+      "1": {
+        "title": "1. Services Fournis",
+        "content": "Dimi Noble est spécialisé dans le transport national de divers types de véhicules, en collaborant avec des partenaires entièrement assurés et cautionnés pour garantir une livraison sûre et fiable."
+      },
+      "2": {
+        "title": "2. Responsabilités de l'Utilisateur",
+        "content": "Les utilisateurs doivent fournir des informations exactes et complètes lors de la demande de nos services. Cela inclut, sans s'y limiter, les adresses d'origine et de destination, les dates de transport et les coordonnées. Les utilisateurs sont également responsables de la préparation du véhicule pour le transport, ce qui inclut :",
+        "items": [
+          "S'assurer que le véhicule est propre pour l'inspection.",
+          "Désactiver toutes les alarmes.",
+          "Maintenir un niveau de carburant inférieur ou égal à 1/4 du réservoir.",
+          "Retirer ou sécuriser toutes les pièces détachées, accessoires fragiles ou saillants, et les spoilers bas.",
+          "Retirer les dispositifs de péage électronique pour éviter des frais involontaires."
+        ]
+      },
+      "3": {
+        "title": "3. Conditions de Paiement",
+        "content": "Un acompte est requis pour initier le processus d'expédition. Le solde restant est dû à la livraison du véhicule et doit être payé en totalité en espèces, par mandat ou par chèque certifié au transporteur autorisé."
+      },
+      "4": {
+        "title": "4. Politique d'Annulation",
+        "content": "Les commandes peuvent être annulées à tout moment avant l'affectation d'un transporteur sans frais d'annulation."
+      },
+      "5": {
+        "title": "5. Responsabilité et Assurance",
+        "content": "Dimi Noble et ses partenaires sont entièrement assurés et cautionnés. Cependant, il est conseillé aux utilisateurs de maintenir leur propre couverture d'assurance. Nous ne sommes pas responsables des objets personnels laissés dans le véhicule pendant le transport."
+      },
+      "6": {
+        "title": "6. Droit Applicable",
+        "content": "Ces Termes sont régis et interprétés conformément aux lois de l'État dans lequel Dimi Noble opère, sans tenir compte des principes de conflit de lois."
+      },
+      "7": {
+        "title": "7. Coordonnées",
+        "content": "Pour toute question ou préoccupation concernant ces Termes, veuillez nous contacter à :",
+        "contact": {
+          "email": { "label": "Email", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Téléphone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  },
+  "accessibilityStatement": {
+    "title": "Déclaration d'Accessibilité",
+    "subtitle": "Notre Engagement",
+    "description": "Dimi Noble (\"nous,\" \"notre,\" ou \"nos\") s'engage à garantir l'accessibilité pour tous les utilisateurs, y compris les personnes en situation de handicap. Nous nous efforçons de rendre notre site web et nos services accessibles et conviviaux pour tous.",
+    "sections": {
+      "1": {
+        "title": "1. Normes d'Accessibilité",
+        "content": "Nous visons à nous conformer aux normes d'accessibilité applicables, notamment aux directives pour l'accessibilité du contenu Web (WCAG) 2.1 Niveau AA. Nos efforts incluent l'amélioration de la navigation sur le site, de la lisibilité et de la compatibilité avec les technologies d'assistance."
+      },
+      "2": {
+        "title": "2. Fonctionnalités et Accommodements",
+        "content": "Afin d'améliorer l'accessibilité, nous avons mis en place les fonctionnalités suivantes :",
+        "items": [
+          "Prise en charge de la navigation au clavier pour les utilisateurs qui n'utilisent pas de souris.",
+          "Texte alternatif pour les images afin d'aider les utilisateurs de lecteurs d'écran.",
+          "Contraste de couleurs suffisant pour assurer une bonne lisibilité.",
+          "Texte ajustable pour les utilisateurs ayant besoin de polices plus grandes.",
+          "Compatibilité avec les lecteurs d'écran et autres technologies d'assistance."
+        ]
+      },
+      "3": {
+        "title": "3. Améliorations Continues",
+        "content": "Nous révisons et améliorons continuellement l'accessibilité de notre site web en réalisant des audits réguliers, en intégrant les retours des utilisateurs et en suivant les meilleures pratiques de l'industrie."
+      },
+      "4": {
+        "title": "4. Contenu Tiers",
+        "content": "Bien que nous nous efforcions d'assurer l'accessibilité sur l'ensemble de notre site web, certains contenus ou intégrations de tiers peuvent ne pas être entièrement conformes à nos normes d'accessibilité. Nous encourageons les fournisseurs tiers à améliorer leurs fonctionnalités d'accessibilité."
+      },
+      "5": {
+        "title": "5. Retours et Assistance",
+        "content": "Nous accueillons avec plaisir les retours concernant l'accessibilité de notre site web et de nos services. Si vous rencontrez des difficultés ou avez besoin d'assistance, veuillez nous contacter à :",
+        "contact": {
+          "email": { "label": "Email", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Téléphone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  },
+  "organizationalPolicy": {
+    "title": "Politique Organisationnelle",
+    "subtitle": "Introduction",
+    "description": "Dimi Noble (\"nous,\" \"notre,\" ou \"nos\") s'engage à maintenir des normes élevées de professionnalisme, d'intégrité et d'excellence de service dans l'industrie du transport de véhicules. Cette Politique Organisationnelle décrit nos principes directeurs, nos normes éthiques et nos engagements opérationnels.",
+    "sections": {
+      "1": {
+        "title": "1. Mission et Valeurs",
+        "content": "Notre mission est de fournir des services de transport de véhicules sûrs, fiables et efficaces tout en respectant les valeurs de transparence, de satisfaction client et de conformité aux réglementations de l'industrie."
+      },
+      "2": {
+        "title": "2. Code de Conduite",
+        "content": "Tous les employés, partenaires et affiliés sont tenus de respecter les normes éthiques et professionnelles les plus élevées. Cela inclut :",
+        "items": [
+          "Fournir une communication honnête et transparente avec les clients et les parties prenantes.",
+          "Garantir la confidentialité et la protection des informations sensibles des clients.",
+          "Éviter les conflits d’intérêts et agir dans le meilleur intérêt des clients et de l’entreprise.",
+          "Maintenir un environnement de travail respectueux et inclusif."
+        ]
+      },
+      "3": {
+        "title": "3. Conformité aux Lois et Réglementations",
+        "content": "Nous opérons en totale conformité avec toutes les réglementations locales, nationales et fédérales applicables au transport de véhicules. Cela inclut le respect des exigences en matière de licences, d’assurances et de sécurité."
+      },
+      "4": {
+        "title": "4. Engagement envers le Service Client",
+        "content": "Nous nous engageons à offrir un service client exceptionnel en :",
+        "items": [
+          "Fournissant des informations claires et précises sur les services, les tarifs et les politiques.",
+          "Assurant des réponses rapides aux demandes et préoccupations des clients.",
+          "Garantissant un transport de véhicules sûr et sécurisé.",
+          "Traitant et résolvant les plaintes rapidement et de manière professionnelle."
+        ]
+      },
+      "5": {
+        "title": "5. Responsabilité Environnementale",
+        "content": "Nous reconnaissons l'importance de la durabilité environnementale et nous nous efforçons de minimiser notre empreinte écologique en :",
+        "items": [
+          "Encourageant des pratiques de transport économes en carburant.",
+          "Réduisant les émissions inutiles en optimisant la logistique.",
+          "Promouvant des pratiques commerciales respectueuses de l’environnement."
+        ]
+      },
+      "6": {
+        "title": "6. Responsabilités des Employés",
+        "content": "Nos employés sont tenus de faire preuve de professionnalisme, d'intégrité et de responsabilité. Nous offrons des opportunités de formation et de développement pour assurer une croissance continue et le respect des normes de l'industrie."
+      },
+      "7": {
+        "title": "7. Révision et Mises à Jour",
+        "content": "Cette politique est soumise à des révisions et mises à jour périodiques afin d’assurer sa conformité avec les évolutions du secteur et les nouvelles pratiques commerciales."
+      },
+      "8": {
+        "title": "8. Coordonnées",
+        "content": "Pour toute question concernant notre Politique Organisationnelle, veuillez nous contacter à :",
+        "contact": {
+          "email": { "label": "Email", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Téléphone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
   }
 }
