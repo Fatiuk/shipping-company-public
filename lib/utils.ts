@@ -1,4 +1,3 @@
-import { TranslationValues } from "next-intl";
 import NewsItemI from "@/types/blogItem";
 
 const isBrowser = () => typeof window !== "undefined";
@@ -37,26 +36,3 @@ export const generateNewsTags = (
 
   return [allTagText, ...Array.from(allTags).sort()];
 };
-
-/**
- * Safely retrieves section content from translations
- */
-export const getSectionContent = (
-  t: (key: string, values?: TranslationValues) => string,
-  namespace: string,
-  sectionNumber: string,
-  key: string,
-  fallback: string = ""
-): string => {
-  try {
-    return t(`${namespace}.${sectionNumber}.${key}`);
-  } catch {
-    return fallback;
-  }
-};
-
-interface RenderComponentsProps {
-  t: any;
-  namespace: string;
-  sectionNumber: string;
-}
