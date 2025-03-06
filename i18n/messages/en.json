@@ -343,6 +343,62 @@
     "careersDescription": "Looking to be part of something special? We're always searching for talented individuals to join our growing team.",
     "viewOpenings": "View Open Positions"
   },
-  "about": { "title": "", "description": "" },
-  "faq": { "title": "", "description": "" }
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Introduction",
+    "description": "Dimi Noble (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website https://diminoble.com/, use our transportation services, or otherwise interact with us. Please read this policy carefully to understand our views and practices regarding your personal data.",
+    "sections": {
+      "1": {
+        "title": "1. Information We Collect",
+        "content": "We may collect and process the following types of information:",
+        "items": [
+          "Personal Data: We collect personal information such as your origin, destination, moving date, and phone number. This information is used to provide our transportation services and to communicate with you.",
+          "Usage Data: Information about how you interact with our website, such as IP addresses, browser types, and pages viewed.",
+          "Cookies and Tracking Technologies: Information collected through cookies and other tracking technologies."
+        ]
+      },
+      "2": {
+        "title": "2. How We Use Your Information",
+        "content": "We use the information we collect in the following ways:",
+        "items": [
+          "To provide and maintain our transportation services",
+          "To manage and schedule your transportation services",
+          "To communicate with you, including responding to inquiries",
+          "To comply with legal obligations"
+        ]
+      },
+      "3": {
+        "title": "3. Sharing Your Information",
+        "content": "We do not share your personal data with third parties. All information collected is used solely by Dimi Noble to fulfill our service commitments to you."
+      },
+      "4": {
+        "title": "4. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data. However, please note that no transmission over the internet is entirely secure, and we cannot guarantee the absolute security of your information."
+      },
+      "5": {
+        "title": "5. Your Rights",
+        "content": "You have the right to access, correct, delete, or object to the processing of your personal data. To exercise these rights, please contact us at leadmanager@expresscartransports.com or call +1 (561) 894-5331."
+      },
+      "6": {
+        "title": "6. Cookies and Tracking Technologies",
+        "content": "We may use cookies and similar tracking technologies to enhance your experience on our website. You can manage your cookie preferences through your browser settings."
+      },
+      "7": {
+        "title": "7. Compliance with Laws",
+        "content": "We comply with applicable data protection laws and regulations, including the California Consumer Privacy Act (CCPA) and other relevant state and federal laws. We are committed to protecting your privacy and data rights."
+      },
+      "8": {
+        "title": "8. Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information."
+      },
+      "9": {
+        "title": "9. Contact Us",
+        "content": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
+        "contact": {
+          "email": { "label": "Email", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Phone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  }
 }
