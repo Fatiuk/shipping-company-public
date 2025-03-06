@@ -71,7 +71,7 @@ const footerNavigation: NavigationItemI[] = [
     label: "features",
     submenu: [
       { label: "faq", href: "/company/faq" },
-      { label: "termsAndConditions", href: "/terms-conditions" },
+      { label: "termsAndConditions", href: "/terms-and-conditions" },
       { label: "accessibilityStatement", href: "/accessibility-statement" },
       { label: "orgPolicy", href: "/organizational-policy" },
       { label: "privacyPolicy", href: "/privacy-policy" },

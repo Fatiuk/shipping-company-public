@@ -9,25 +9,25 @@ export async function generateMetadata(props: PageProps) {
 
   const t = await getTranslations({
     locale,
-    namespace: "privacyPolicy",
+    namespace: "termsAndConditions",
   });
 
   return {
-    title: t("title") || "Privacy Policy",
+    title: t("title") || "Terms and Conditions",
     description:
       t("description") ||
-      'Dimi Noble ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website https://diminoble.com/, use our transportation services, or otherwise interact with us. Please read this policy carefully to understand our views and practices regarding your personal data.',
+      'These Terms and Conditions ("Terms") govern your use of Dimi Noble\'s ("we," "us," or "our") vehicle shipping services. By accessing our website or utilizing our services, you agree to comply with and be bound by these Terms.',
   };
 }
 
-export default async function PrivacyPolicy(props: PageProps) {
+export default async function TermsAndConditions(props: PageProps) {
   const params = await props.params;
   const locale = params.locale;
-  const t = await getTranslations({ locale, namespace: "privacyPolicy" });
+  const t = await getTranslations({ locale, namespace: "termsAndConditions" });
 
   // lists of sections with various components
-  const sectionsWithItems = ["1", "2"];
-  const sectionsWithContact = ["9"];
+  const sectionsWithItems = ["2"];
+  const sectionsWithContact = ["7"];
 
   return (
     <Section>

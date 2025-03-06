@@ -400,5 +400,149 @@
         }
       }
     }
+  },
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "subtitle": "Introduction",
+    "description": "These Terms and Conditions (\"Terms\") govern your use of Dimi Noble's (\"we,\" \"us,\" or \"our\") vehicle shipping services. By accessing our website or utilizing our services, you agree to comply with and be bound by these Terms.",
+    "sections": {
+      "1": {
+        "title": "1. Services Provided",
+        "content": "Dimi Noble specializes in the nationwide transportation of various types of vehicles, working with fully insured and bonded partners to ensure safe and reliable delivery."
+      },
+      "2": {
+        "title": "2. User Responsibilities",
+        "content": "Users must provide accurate and complete information when requesting our services. This includes, but is not limited to, the origin and destination addresses, moving dates, and contact information. Users are also responsible for preparing the vehicle for transport, which includes:",
+        "items": [
+          "Ensuring the vehicle is clean for inspection purposes.",
+          "Disabling any alarms.",
+          "Maintaining a fuel level of 1/4 tank or less.",
+          "Removing or securing all loose parts, fragile or protruding accessories, and low-hanging spoilers.",
+          "Removing electronic toll collection devices to prevent unintended charges."
+        ]
+      },
+      "3": {
+        "title": "3. Payment Terms",
+        "content": "A down payment is required to initiate the shipping process. The remaining balance is due upon delivery of the vehicle and must be paid in full via cash, money order, or a certified check to the authorized carrier."
+      },
+      "4": {
+        "title": "4. Cancellation Policy",
+        "content": "Orders may be canceled at any time before a carrier has been assigned without incurring any cancellation fees."
+      },
+      "5": {
+        "title": "5. Liability and Insurance",
+        "content": "Dimi Noble and its partners are fully insured and bonded. However, users are advised to maintain their own insurance coverage. We are not liable for any personal items left in the vehicle during transport."
+      },
+      "6": {
+        "title": "6. Governing Law",
+        "content": "These Terms are governed by and construed in accordance with the laws of the state in which Dimi Noble operates, without regard to its conflict of law principles."
+      },
+      "7": {
+        "title": "7. Contact Information",
+        "content": "For any questions or concerns regarding these Terms, please contact us at:",
+        "contact": {
+          "email": { "label": "Email", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Phone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  },
+  "accessibilityStatement": {
+    "title": "Accessibility Statement",
+    "subtitle": "Our Commitment",
+    "description": "Dimi Noble (\"we,\" \"us,\" or \"our\") is committed to ensuring accessibility for all users, including individuals with disabilities. We strive to make our website and services accessible and user-friendly for everyone.",
+    "sections": {
+      "1": {
+        "title": "1. Accessibility Standards",
+        "content": "We aim to comply with applicable accessibility standards, including the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. Our efforts include improving website navigation, readability, and compatibility with assistive technologies."
+      },
+      "2": {
+        "title": "2. Features and Accommodations",
+        "content": "To enhance accessibility, we have implemented the following features:",
+        "items": [
+          "Keyboard navigation support for users who do not use a mouse.",
+          "Alternative text for images to assist screen reader users.",
+          "Sufficient color contrast to ensure readability.",
+          "Scalable text for users who need larger fonts.",
+          "Compatibility with screen readers and other assistive technologies."
+        ]
+      },
+      "3": {
+        "title": "3. Ongoing Improvements",
+        "content": "We continuously review and improve our website’s accessibility by conducting regular audits, incorporating user feedback, and following industry best practices."
+      },
+      "4": {
+        "title": "4. Third-Party Content",
+        "content": "While we strive to ensure accessibility across our website, some third-party content or integrations may not fully comply with our accessibility standards. We encourage third-party providers to enhance their accessibility features."
+      },
+      "5": {
+        "title": "5. Feedback and Assistance",
+        "content": "We welcome feedback on the accessibility of our website and services. If you experience any difficulties or need assistance, please contact us at:",
+        "contact": {
+          "email": { "label": "Email", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Phone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  },
+  "organizationalPolicy": {
+    "title": "Organizational Policy",
+    "subtitle": "Introduction",
+    "description": "Dimi Noble (\"we,\" \"us,\" or \"our\") is committed to maintaining high standards of professionalism, integrity, and service excellence in the vehicle transportation industry. This Organizational Policy outlines our guiding principles, ethical standards, and operational commitments.",
+    "sections": {
+      "1": {
+        "title": "1. Mission and Values",
+        "content": "Our mission is to provide safe, reliable, and efficient vehicle transportation services while upholding values of transparency, customer satisfaction, and compliance with industry regulations."
+      },
+      "2": {
+        "title": "2. Code of Conduct",
+        "content": "All employees, partners, and affiliates are expected to adhere to the highest ethical and professional standards. This includes:",
+        "items": [
+          "Providing honest and transparent communication with customers and stakeholders.",
+          "Ensuring confidentiality and protecting sensitive customer information.",
+          "Avoiding conflicts of interest and acting in the best interests of clients and the company.",
+          "Maintaining a respectful and inclusive work environment."
+        ]
+      },
+      "3": {
+        "title": "3. Compliance with Laws and Regulations",
+        "content": "We operate in full compliance with all applicable local, state, and federal regulations regarding vehicle transportation. This includes adherence to licensing, insurance, and safety requirements."
+      },
+      "4": {
+        "title": "4. Customer Service Commitment",
+        "content": "We are dedicated to providing exceptional customer service by:",
+        "items": [
+          "Offering clear and accurate information regarding services, pricing, and policies.",
+          "Ensuring timely responses to customer inquiries and concerns.",
+          "Providing safe and secure vehicle transportation services.",
+          "Addressing and resolving complaints promptly and professionally."
+        ]
+      },
+      "5": {
+        "title": "5. Environmental Responsibility",
+        "content": "We recognize the importance of environmental sustainability and strive to minimize our environmental footprint through:",
+        "items": [
+          "Encouraging fuel-efficient transportation practices.",
+          "Reducing unnecessary emissions by optimizing logistics.",
+          "Promoting eco-friendly business practices."
+        ]
+      },
+      "6": {
+        "title": "6. Employee Responsibilities",
+        "content": "Our employees are expected to maintain professionalism, integrity, and accountability. We provide training and development opportunities to ensure continuous growth and adherence to industry standards."
+      },
+      "7": {
+        "title": "7. Review and Updates",
+        "content": "This policy is subject to periodic review and updates to ensure compliance with industry developments and evolving business practices."
+      },
+      "8": {
+        "title": "8. Contact Information",
+        "content": "For any questions regarding our Organizational Policy, please contact us at:",
+        "contact": {
+          "email": { "label": "Email", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Phone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
   }
 }
