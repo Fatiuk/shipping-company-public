@@ -49,7 +49,7 @@ const StepCard: React.FC<Step & { isActive: boolean }> = ({
     >
       <div className="flex items-start gap-6">
         <div
-          className={`flex-shrink-0 p-4 rounded-xl transition-colors duration-300
+          className={`flex-shrink-0 p-2 md:p-4 rounded-xl transition-colors duration-300
                         ${
                           isActive
                             ? "bg-oblue-600 text-white"
