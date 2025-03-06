@@ -1,4 +1,3 @@
-import React from "react";
 import { TranslationValues } from "next-intl";
 
 interface ClassNamesConfig {
@@ -12,8 +11,13 @@ interface ClassNamesConfig {
   contactLink?: string;
 }
 
+interface Translator {
+  (key: string, values?: TranslationValues): string;
+  raw: (key: string) => unknown;
+}
+
 interface ContentSectionsProps {
-  t: any;
+  t: Translator;
   namespace: string;
   sectionsWithItems?: string[];
   sectionsWithContact?: string[];
@@ -44,7 +48,6 @@ export const ContentSections: React.FC<ContentSectionsProps> = ({
     ...classNames,
   };
 
-  // Get all section numbers
   const sections = getSectionNumbers(t, namespace);
 
   return (
@@ -90,14 +93,14 @@ export const ContentSections: React.FC<ContentSectionsProps> = ({
   );
 };
 
-// Helper functions encapsulated within the same file
-const getSectionNumbers = (t: any, namespace: string): string[] => {
-  const sectionsData = t.raw(namespace);
+// Helper functions
+const getSectionNumbers = (t: Translator, namespace: string): string[] => {
+  const sectionsData = t.raw(namespace) as Record<string, unknown>;
   return Object.keys(sectionsData || {});
 };
 
 const getSectionContent = (
-  t: (key: string, values?: TranslationValues) => string,
+  t: Translator,
   namespace: string,
   sectionNumber: string,
   key: string,
@@ -110,8 +113,10 @@ const getSectionContent = (
   }
 };
 
+type Item = string;
+
 const renderItems = (
-  t: any,
+  t: Translator,
   namespace: string,
   sectionNumber: string,
   sectionsWithItems: string[],
@@ -121,7 +126,7 @@ const renderItems = (
   if (!sectionsWithItems.includes(sectionNumber)) return null;
 
   try {
-    const items = t.raw(`${namespace}.${sectionNumber}.items`);
+    const items = t.raw(`${namespace}.${sectionNumber}.items`) as Item[];
 
     if (items && Array.isArray(items) && items.length > 0) {
       return (
@@ -140,8 +145,14 @@ const renderItems = (
   }
 };
 
+interface ContactInfo {
+  email?: { label: string; value: string };
+  phone?: { label: string; value: string };
+  address?: { label: string; value: string };
+}
+
 const renderContact = (
-  t: any,
+  t: Translator,
   namespace: string,
   sectionNumber: string,
   sectionsWithContact: string[],
@@ -150,7 +161,9 @@ const renderContact = (
   if (!sectionsWithContact.includes(sectionNumber)) return null;
 
   try {
-    const contact = t.raw(`${namespace}.${sectionNumber}.contact`);
+    const contact = t.raw(
+      `${namespace}.${sectionNumber}.contact`
+    ) as ContactInfo;
 
     if (contact && typeof contact === "object") {
       const contactItemClass = classNames.contactItem || "";
