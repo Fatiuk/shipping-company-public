@@ -26,10 +26,7 @@ export async function generateMetadata(props: PageProps) {
 export default async function BlogPage(props: PageProps) {
   const params = await props.params;
   const locale = params.locale;
-  const t = await getTranslations({
-    locale,
-    namespace: "blog",
-  });
+  const t = await getTranslations({ locale, namespace: "blog" });
 
   return (
     <>

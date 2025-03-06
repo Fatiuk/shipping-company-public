@@ -10,13 +10,13 @@ interface YelpReviewCardProps {
 }
 
 const YelpReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
+  const locale = useLocale();
   const t = useTranslations("yelpReviews");
   const [isExpanded, setIsExpanded] = useState(false);
   const [isHelpfulClicked, setIsHelpfulClicked] = useState(false);
   const [helpfulCount, setHelpfulCount] = useState(review.helpful);
   const contentRef = useRef<HTMLParagraphElement>(null);
   const [isContentTruncated, setIsContentTruncated] = useState(false);
-  const locale = useLocale();
   const cardRef = useRef<HTMLDivElement>(null);
 
   // Generate avatar URL from name if no custom avatar exists
@@ -37,7 +37,7 @@ const YelpReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
     }
   }, [review.content]);
 
-  // 3D hover effect (similar to VideoCard)
+  // 3D hover effect
   useEffect(() => {
     const card = cardRef.current;
     if (!card) return;

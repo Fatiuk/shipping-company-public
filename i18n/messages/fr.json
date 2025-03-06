@@ -346,6 +346,62 @@
     "careersDescription": "Envie de faire partie d'une aventure exceptionnelle ? Nous recherchons toujours des talents pour rejoindre notre équipe en pleine croissance.",
     "viewOpenings": "Voir les Offres d'Emploi"
   },
-  "about": { "title": "", "description": "" },
-  "faq": { "title": "", "description": "" }
+  "privacyPolicy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Introduction",
+    "description": "Dimi Noble (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web https://diminoble.com/, utilisez nos services de transport ou interagissez avec nous de toute autre manière. Veuillez lire attentivement cette politique afin de comprendre notre approche et nos pratiques en matière de protection des données personnelles.",
+    "sections": {
+      "1": {
+        "title": "1. Informations que nous collectons",
+        "content": "Nous pouvons collecter et traiter les types d’informations suivants :",
+        "items": [
+          "Données personnelles : Nous collectons des informations personnelles telles que votre lieu d’origine, votre destination, votre date de déménagement et votre numéro de téléphone. Ces informations sont utilisées pour fournir nos services de transport et communiquer avec vous.",
+          "Données d'utilisation : Informations sur la façon dont vous interagissez avec notre site web, telles que les adresses IP, les types de navigateurs et les pages consultées.",
+          "Cookies et technologies de suivi : Informations collectées via des cookies et d'autres technologies de suivi."
+        ]
+      },
+      "2": {
+        "title": "2. Comment nous utilisons vos informations",
+        "content": "Nous utilisons les informations collectées de la manière suivante :",
+        "items": [
+          "Fournir et maintenir nos services de transport",
+          "Gérer et planifier vos services de transport",
+          "Communiquer avec vous, notamment pour répondre à vos demandes",
+          "Respecter nos obligations légales"
+        ]
+      },
+      "3": {
+        "title": "3. Partage de vos informations",
+        "content": "Nous ne partageons pas vos données personnelles avec des tiers. Toutes les informations collectées sont utilisées exclusivement par Dimi Noble pour remplir nos engagements de service envers vous."
+      },
+      "4": {
+        "title": "4. Sécurité des données",
+        "content": "Nous mettons en place des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles. Toutefois, veuillez noter qu’aucune transmission sur Internet n'est totalement sécurisée, et nous ne pouvons garantir la sécurité absolue de vos informations."
+      },
+      "5": {
+        "title": "5. Vos droits",
+        "content": "Vous avez le droit d'accéder à vos données personnelles, de les corriger, de les supprimer ou de vous opposer à leur traitement. Pour exercer ces droits, veuillez nous contacter à l'adresse leadmanager@expresscartransports.com ou appeler le +1 (561) 894-5331."
+      },
+      "6": {
+        "title": "6. Cookies et technologies de suivi",
+        "content": "Nous pouvons utiliser des cookies et des technologies de suivi similaires pour améliorer votre expérience sur notre site web. Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur."
+      },
+      "7": {
+        "title": "7. Conformité aux lois",
+        "content": "Nous respectons les lois et réglementations en vigueur en matière de protection des données, y compris le California Consumer Privacy Act (CCPA) et d'autres lois nationales et fédérales applicables. Nous nous engageons à protéger votre vie privée et vos droits en matière de données."
+      },
+      "8": {
+        "title": "8. Modifications de cette politique de confidentialité",
+        "content": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Nous vous encourageons à consulter régulièrement cette politique pour rester informé(e) de la manière dont nous protégeons vos informations."
+      },
+      "9": {
+        "title": "9. Nous contacter",
+        "content": "Si vous avez des questions ou préoccupations concernant cette Politique de Confidentialité ou nos pratiques en matière de données, veuillez nous contacter à :",
+        "contact": {
+          "email": { "label": "E-mail", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Téléphone", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  }
 }
