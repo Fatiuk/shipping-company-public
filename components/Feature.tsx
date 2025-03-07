@@ -28,12 +28,12 @@ const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
       </div>
       <h3
         ref={titleRef}
-        className="text-xl md:text-2xl text-oblue-900 dark:text-oaccent-900"
+        className="text-xl md:text-2xl text-[--color-b900-a900]"
         data-feature-title
       >
         {t(title)}
       </h3>
-      <p className="md:text-lg text-black mt-auto">{t(description)}</p>
+      <p className="md:text-lg text-oblue-700 mt-auto">{t(description)}</p>
     </div>
   );
 };

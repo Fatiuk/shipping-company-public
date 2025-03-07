@@ -96,7 +96,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
 										hover:after:origin-left hover:after:scale-x-100 
 										${
                       nav.cta === "primary"
-                        ? "ml-6 px-6 py-3 rounded-xl font-bold text-white bg-[--color-a700-a900] hover:bg-[--color-a900-a700] after:content-none"
+                        ? "ml-6 px-6 py-3 rounded-xl font-bold text-white bg-oaccent-700 hover:bg-oaccent-900 after:content-none"
                         : nav.cta === "secondary"
                         ? "px-3 rounded-xl font-bold text-[--color-black-b50]  hover:text-[--color-w-black] bg-[--color-b200-b600] hover:bg-[--color-b700-b400] after:content-none"
                         : "text-[--color-b900-w]"
@@ -124,7 +124,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
           <div className={`hidden lg:flex items-center xl:gap-10`}>
             <ActiveLink
               href="/#contact-us"
-              className="whitespace-nowrap h-fit py-3 px-4 lg:py-4 lg:px-8 mr-4 rounded-lg font-bold text-owhite bg-[--color-a700-a900] hover:bg-[--color-a900-a700] transition-colors"
+              className="whitespace-nowrap h-fit py-3 px-4 lg:py-4 lg:px-8 mr-4 rounded-lg font-bold text-white bg-oaccent-700 hover:bg-oaccent-900 transition-colors"
             >
               {t("quote")}
             </ActiveLink>
