@@ -83,12 +83,14 @@ const About: FC = () => {
           </h3>
 
           <div className="flex flex-col gap-4">
-            <p className="text-[--color-b900-w]">{t("description.intro")}</p>
-            <p className="text-[--color-b900-w]">
+            <p className="text-[--color-b700-b100]">{t("description.intro")}</p>
+            <p className="text-[--color-b700-b100]">
               {t("description.experience")}
             </p>
-            <p className="text-[--color-b900-w]">{t("description.coverage")}</p>
-            <p className="text-[--color-b900-w]">{t("description.trust")}</p>
+            <p className="text-[--color-b700-b100]">
+              {t("description.coverage")}
+            </p>
+            <p className="text-[--color-b700-b100]">{t("description.trust")}</p>
           </div>
 
           {/* Stats or highlights */}

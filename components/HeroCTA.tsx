@@ -10,7 +10,7 @@ const HeroCTA: FC = () => {
     <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-6 relative z-10">
       <ActiveLink
         href="/#contact-us"
-        className="text-center w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-900 text-white hover:bg-oaccent-700 hover:cursor-pointer transition-colors duration-200 rounded-xl"
+        className="text-center w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-700 text-white hover:bg-oaccent-900 hover:cursor-pointer transition-colors duration-200 rounded-xl"
       >
         {t("quote")}
       </ActiveLink>

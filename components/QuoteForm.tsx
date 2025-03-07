@@ -152,13 +152,13 @@ const QuoteForm: FC = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-b900-w]">
             {t("content.title")}
           </h2>
-          <p className="font-b1-b2 text-[--color-b900-w]">
+          <p className="font-b1-b2 text-gray-800 dark:text-oblue-100">
             {t("content.description")}
           </p>
           {/* Trust Indicators */}
           <div className="grid grid-cols-[auto_auto] sm:grid-cols-2 gap-2 xs:gap-4 pt-6">
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-              <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-gray-300/50 dark:bg-oblue-500/50 flex items-center justify-center">
                 <svg
                   className="w-6 h-6 text-blue-600"
                   fill="none"
@@ -179,9 +179,9 @@ const QuoteForm: FC = () => {
               </div>
             </div>
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-              <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-gray-300/50 dark:bg-oblue-500/50 flex items-center justify-center">
                 <svg
-                  className="w-6 h-6 text-green-600"
+                  className="w-6 h-6 text-blue-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -215,7 +215,7 @@ const QuoteForm: FC = () => {
         <div
           id="contact-us"
           ref={formRef}
-          className="max-w-[500px] lg:w-1/2 w-full"
+          className="max-w-[500px] lg:w-1/2 w-f ull"
         >
           <div className="bg-[--color-w-b50] rounded-2xl shadow-xl px-3 py-4 sm:p-8">
             <h4 className="font-h4-h5 text-center text-oaccent-800 uppercase mb-4 sm:mb-6">
