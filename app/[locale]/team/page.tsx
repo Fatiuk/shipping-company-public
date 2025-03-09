@@ -1,8 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import HeroCTA from "@/components/HeroCTA";
 import Team from "@/components/Team";
-import SectionFullWidth from "@/components/SectionFullWidth";
-import imgHero from "@/assets/img/blue-truck-dniprollc.png";
 import PageProps from "@/types/page";
 
 export async function generateMetadata(props: PageProps) {
