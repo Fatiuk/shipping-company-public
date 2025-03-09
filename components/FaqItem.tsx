@@ -34,7 +34,7 @@ const FAQItem: FC<{
 					group-hover:cursor-pointer group-hover:bg-[--color-a700-b400]
 					${
             isOpen
-              ? "bg-oaccent-900 border-oaccent-900 !rounded-ee-none"
+              ? "bg-[--color-a900-b400] border-[--color-a900-b400] !rounded-ee-none"
               : "bg-[--color-b300-b200]"
           }`}
         >
