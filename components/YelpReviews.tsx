@@ -125,7 +125,7 @@ const YelpReviews: React.FC = () => {
         <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
           {t("title")}
         </h1>
-        <p className="font-b2-b3 text-[--color-b700-b100] mb-8">
+        <p className="font-b1-b2 text-gray-600 dark:text-gray-300 mb-8">
           {t("description")}
         </p>
 

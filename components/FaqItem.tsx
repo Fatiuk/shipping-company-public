@@ -16,11 +16,11 @@ const FAQItem: FC<{
         onClick={toggleOpen}
       >
         <p
-          className={`font-b2-b3 font-bold p-3 flex-grow	rounded-ss-xl rounded-es-xl border-2 border-[--color-b900-a700] text-oblue-900
-					group-hover:cursor-pointer group-hover:bg-[--color-b100-a400] group-hover:text-[--color-b900-black] 
+          className={`font-b2-b3 font-bold p-3 flex-grow	rounded-ss-xl rounded-es-xl border-2 border-[--color-b900-b200] text-oblue-900
+					group-hover:cursor-pointer group-hover:bg-[--color-b100-b200] group-hover:text-[--color-b900-black] 
 					${
             isOpen
-              ? "bg-[--color-b100-a400] dark:text-black !rounded-es-none"
+              ? "bg-[--color-b100-b200] dark:text-black !rounded-es-none"
               : "dark:text-owhite"
           }`}
         >
@@ -30,9 +30,13 @@ const FAQItem: FC<{
           className={`flex items-center self-stretch
 					ml-[-2px] p-3 pb-2
 					rounded-se-xl rounded-ee-xl
-					border-2 border-[--color-b900-a700]
-					group-hover:cursor-pointer group-hover:bg-oaccent-700 
-					${isOpen ? "bg-oaccent-900 !rounded-ee-none" : "bg-[--color-b300-a700]"}`}
+					border-2 border-[--color-b900-b200]
+					group-hover:cursor-pointer group-hover:bg-[--color-a700-b400]
+					${
+            isOpen
+              ? "bg-[--color-a900-b400] border-[--color-a900-b400] !rounded-ee-none"
+              : "bg-[--color-b300-b200]"
+          }`}
         >
           {isOpen ? (
             <svg
@@ -76,7 +80,7 @@ const FAQItem: FC<{
 				transition-[max-height] duration-200 ease-in-out
 				${
           isOpen
-            ? "max-h-[500px] dark:border-oaccent-700"
+            ? "max-h-[500px] dark:border-oblue-200"
             : "max-h-0 hidden dark:border-white"
         }`}
       >

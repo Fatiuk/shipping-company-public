@@ -43,8 +43,8 @@ const StepCard: React.FC<Step & { isActive: boolean }> = ({
       className={`relative p-6 md:p-8 rounded-2xl transition-all duration-500
                  ${
                    isActive
-                     ? "bg-gradient-to-br from-oblue-50 to-oaccent-600/10 dark:from-oblue-500/50 dark:to-oaccent-800/30 shadow-2xl"
-                     : "bg-white/50 dark:bg-oblue-900/30 shadow-lg"
+                     ? "bg-gradient-to-br from-owhite/75 to-oblue-100 dark:from-oblue-500/75 dark:to-oblue-700/75 shadow-2xl dark:shadow-owhite-glow"
+                     : "bg-white/50 dark:bg-oblue-600/30 shadow-lg"
                  }`}
     >
       <div className="flex items-start gap-6">

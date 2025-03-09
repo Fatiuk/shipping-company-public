@@ -13,11 +13,16 @@ export const VideoReviews: React.FC = () => {
 
   return (
     <div className="container mx-auto text-[--color-w-b900] py-16">
-      <h1 className="text-3xl md:text-5xl font-bold text-[--color-b900-w] mb-8 text-center">
-        {t("title")}
-      </h1>
+      <div className="text-center mx-auto max-w-[600px]">
+        <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
+          {t("title")}
+        </h1>
+        {/* <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
+          {t("description")}
+        </p> */}
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="mt-2 md:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {videoData.map((video) => (
           <VideoCard key={video.id} {...video} onClick={setSelectedVideo} />
         ))}
