@@ -76,8 +76,8 @@ const HowItWorks: React.FC = () => {
     <div className="relative pt-[200px]">
       {/* make this div fixed not moving, all steps will move under it */}
       <div className="fixed top-[78px] left-0 right-0 z-10 backdrop-blur-md pt-12">
-        <div className="text-center max-w-3xl mx-auto mb-6">
-          <h1 className="font-h1-h2 text-[--color-b900-w] mb-6">
+        <div className="text-center mx-auto max-w-[600px]">
+          <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
             {t("sectionTitle")}
           </h1>
           <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
@@ -86,7 +86,7 @@ const HowItWorks: React.FC = () => {
         </div>
 
         {/* Timeline Progress */}
-        <div className="hidden lg:flex justify-between max-w-4xl mx-auto">
+        <div className="hidden lg:flex justify-between max-w-4xl mx-auto mt-6">
           {steps.map((_, index) => (
             <React.Fragment key={index}>
               <div className="flex flex-col items-center">

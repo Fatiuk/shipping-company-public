@@ -29,21 +29,16 @@ export default async function TeamPage(props: PageProps) {
   });
 
   return (
-    <>
-      <SectionFullWidth
-        image={imgHero.src}
-        bgClass="bg-gradient-to-b from-owhite/75 to-oblue-100 dark:from-oblue-300/75 dark:to-oblue-500/75"
-      >
-        <div className="flex flex-col px-4 items-center text-center justify-center h-full px-8 text-[--foreground]">
-          <h1 className="font-h1-h2 font-header pb-4 text-[--color-b700-w]">
-            {t("title")}
-          </h1>
-          <p className="font-b1-b2">{t("description")}</p>
-        </div>
-        <HeroCTA />
-      </SectionFullWidth>
-
+    <div className="container mx-auto py-16">
+      <div className="text-center mx-auto max-w-[600px]">
+        <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
+          {t("title")}
+        </h1>
+        <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
+          {t("description")}
+        </p>
+      </div>
       <Team />
-    </>
+    </div>
   );
 }
