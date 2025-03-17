@@ -25,6 +25,7 @@
   "navbar": {
     "videoReviews": "Avis vidéo",
     "yelpReviews": "Avis Yelp",
+    "reviews": "Avis",
     "howItWorks": "Comment ça marche",
     "team": "Notre équipe",
     "company": "Notre entreprise",
@@ -226,7 +227,7 @@
     "next": "Diapositive suivante",
     "goTo": "Aller à la diapositive {slideNumber}"
   },
-  "yelpReviews": {
+  "reviews": {
     "title": "Avis des Clients",
     "description": "Découvrez ce que nos clients disent de nos services d'expédition à travers le pays. Lisez des avis authentiques de vrais clients qui ont expérimenté notre engagement envers la qualité et la fiabilité.",
     "stats": {

@@ -2,15 +2,15 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { formatDate } from "@/lib/utils";
-import YelpReview from "@/types/yelpReview";
+import YelpReview from "@/types/review";
 
 interface YelpReviewCardProps {
   review: YelpReview;
 }
 
-const YelpReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
+const ReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
   const locale = useLocale();
-  const t = useTranslations("yelpReviews");
+  const t = useTranslations("reviews");
 
   const [isExpanded, setIsExpanded] = useState(false);
   const [isContentTruncated, setIsContentTruncated] = useState(false);
@@ -238,4 +238,4 @@ const YelpReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
   );
 };
 
-export default YelpReviewCard;
+export default ReviewCard;

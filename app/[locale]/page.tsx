@@ -6,7 +6,7 @@ import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
 import { FC } from "react";
 import imgHero from "@/assets/img/blue-truck-dniprollc.png";
-// import imgQuoteForm from "@/assets/img/black_truck.webp";
+// import imgHero from "@/assets/img/hero.png";
 import en from "@/i18n/messages/en.json";
 import QuoteForm from "@/components/QuoteForm";
 import VideoReviewsSection from "@/components/VideoReviewsSection";

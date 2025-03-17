@@ -25,6 +25,7 @@
   "navbar": {
     "videoReviews": "Video Reviews",
     "yelpReviews": "Yelp Reviews",
+    "reviews": "Reviews",
     "howItWorks": "How It Works",
     "team": "Our Team",
     "company": "Our Company",
@@ -223,7 +224,7 @@
     "next": "Next slide",
     "goTo": "Go to slide {slideNumber}"
   },
-  "yelpReviews": {
+  "reviews": {
     "title": "Customer Reviews",
     "description": "See what our customers are saying about our shipping services across the country. Read authentic reviews from real customers who have experienced our dedication to quality and reliability.",
     "stats": {

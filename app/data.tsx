@@ -1,7 +1,7 @@
 import LocationI from "@/types/location";
 import VideoData from "@/types/videoReview";
 import TeamMemberI from "@/types/teamMember";
-import YelpReview from "@/types/yelpReview";
+import Review from "@/types/review";
 
 export const location: LocationI = {
   city: { value: "buford", label: "Buford" },
@@ -3044,93 +3044,119 @@ export const videoData: VideoData[] = [
   },
 ];
 
-export const yelpReviewsData: YelpReview[] = [
+export const reviewsData: Review[] = [
   {
     id: "1",
     author: "Jessica R.",
     rating: 5,
-    date: "2024-09-15",
+    date: "2023-09-16",
     content:
       "Amazing service! My delivery arrived ahead of schedule and the driver was extremely professional. Would definitely use again for my shipping needs.",
     location: "San Francisco, CA",
     helpful: 24,
-    images: ["/yelp/delivery1.png"],
+    images: ["/reviews/1.jpg"],
   },
   {
-    id: "2",
-    author: "Michael T.",
-    rating: 4,
-    date: "2024-08-22",
-    content:
-      "Very reliable shipping service. Package arrived in good condition and on time. The tracking system was easy to use and kept me updated throughout the shipping process.",
-    location: "Chicago, IL",
-    avatarUrl: "/yelp/avatars/michael.jpeg",
-    helpful: 18,
-    images: [],
-  },
-  {
-    id: "3",
-    author: "Sarah L.",
+    id: "11",
+    author: "John Anderson",
     rating: 5,
-    date: "2024-07-30",
+    date: "2023-11-22",
     content:
-      "Outstanding customer service! I had an issue with my delivery time and they went above and beyond to accommodate my schedule. The care they took with my fragile items was impressive.",
-    location: "Austin, TX",
-    avatarUrl: "/yelp/avatars/sarah.jpeg",
-    helpful: 32,
-    images: ["/yelp/package1.png", "/yelp/package2.png"],
-  },
-  {
-    id: "4",
-    author: "David W.",
-    rating: 3,
-    date: "2024-07-18",
-    content:
-      "Decent shipping service. The package arrived a day late but was in perfect condition. Customer service was responsive when I called to check on the status.",
-    location: "Boston, MA",
-    helpful: 7,
-    images: [],
-  },
-  {
-    id: "5",
-    author: "Emma K.",
-    rating: 5,
-    date: "2024-06-25",
-    content:
-      "I've used many shipping companies before, but this one stands out. Their rates are competitive and their service is exceptional. My large furniture items were handled with care.",
-    location: "Seattle, WA",
-    helpful: 41,
-  },
-  {
-    id: "6",
-    author: "Ryan H.",
-    rating: 4,
-    date: "2024-06-10",
-    content:
-      "Good experience overall. Shipping was quick and the package arrived in good condition. The only issue was that the delivery window was quite broad.",
-    location: "Denver, CO",
-    avatarUrl: "/yelp/avatars/ryan.jpeg",
-    helpful: 15,
-    images: [],
-  },
-  {
-    id: "7",
-    author: "Olivia J.",
-    rating: 5,
-    date: "2024-05-22",
-    content:
-      "Exceptional service! They handled my international shipment with expertise. Everything arrived on time and without any customs issues. Their staff was knowledgeable and helpful throughout the process.",
-    location: "Miami, FL",
-    helpful: 29,
-  },
-  {
-    id: "8",
-    author: "William P.",
-    rating: 2,
-    date: "2024-05-05",
-    content:
-      "Disappointed with my experience. The package was delivered two days late and the box was damaged. Fortunately, the contents were intact. Customer service took a while to respond to my concerns.",
-    location: "Phoenix, AZ",
+      "Diminoble Transportations made my vehicle relocation smooth and stress-free! Their team kept me updated at every step, and the driver was professional. Highly recommend!",
+    location: "Los Angeles, CA",
+    avatarUrl: "https://randomuser.me/api/portraits/men/1.jpg",
     helpful: 12,
+    images: ["/reviews/11.jpg"],
+  },
+  {
+    id: "12",
+    author: "Samantha Green",
+    rating: 5,
+    date: "2023-12-28",
+    content:
+      "Excellent service! My car arrived on time and in perfect condition. The entire process was seamless, and their pricing was very competitive. Would definitely use them again.",
+    location: "New York, NY",
+    avatarUrl: "https://randomuser.me/api/portraits/women/2.jpg",
+  },
+  {
+    id: "13",
+    author: "Michael Carter",
+    rating: 5,
+    date: "2024-02-28",
+    content:
+      "I was skeptical at first, but Diminoble Transportations exceeded my expectations. Their transparent pricing and professionalism set them apart. Great experience!",
+    location: "Dallas, TX",
+    avatarUrl: "https://randomuser.me/api/portraits/men/3.jpg",
+  },
+  {
+    id: "14",
+    author: "Jessica Reynolds",
+    rating: 5,
+    date: "2024-03-07",
+    content:
+      "A very professional company with great customer service. My SUV was picked up and delivered as promised, with no hidden fees. Would highly recommend their services!",
+    location: "Seattle, WA",
+    images: ["/reviews/14_1.jpg", "/reviews/14_2.jpg"],
+  },
+  {
+    id: "15",
+    author: "Daniel Lee",
+    rating: 5,
+    date: "2024-04-29",
+    content:
+      "Super reliable and transparent throughout the process. My car was transported from Florida to California without any issues. I would trust them again!",
+    location: "Miami, FL",
+  },
+  {
+    id: "16",
+    author: "Rachel Adams",
+    rating: 5,
+    date: "2024-05-09",
+    content:
+      "Outstanding experience! The team was professional, the driver was punctual, and my vehicle was delivered earlier than expected. 10/10 service!",
+    location: "Chicago, IL",
+    avatarUrl: "https://randomuser.me/api/portraits/women/6.jpg",
+    helpful: 11,
+    images: ["/reviews/16.jpg"],
+  },
+  {
+    id: "17",
+    author: "Chris Bennett",
+    rating: 4,
+    date: "2024-06-13",
+    content:
+      "Good service overall. The process was smooth, and my car was delivered in great condition. However, the driver arrived a bit later than expected.",
+    location: "Denver, CO",
+    avatarUrl: "https://randomuser.me/api/portraits/men/7.jpg",
+    helpful: 4,
+  },
+  {
+    id: "18",
+    author: "Emily Thompson",
+    rating: 4,
+    date: "2024-02-25",
+    content:
+      "Very professional company. The only issue was a slight delay in pickup, but they kept me informed. Would use their services again!",
+    location: "Boston, MA",
+  },
+  {
+    id: "19",
+    author: "Mark Phillips",
+    rating: 3,
+    date: "2023-12-15",
+    content:
+      "Average experience. My car was transported safely, but communication could have been better. I had to call multiple times for updates.",
+    location: "Phoenix, AZ",
+  },
+  {
+    id: "20",
+    author: "Sarah Collins",
+    rating: 2,
+    date: "2023-10-17",
+    content:
+      "Not the best experience. My car arrived safely, but it was delayed by several days with little communication from the company.",
+    location: "Houston, TX",
+    avatarUrl: "https://randomuser.me/api/portraits/women/10.jpg",
+    helpful: 2,
   },
 ];

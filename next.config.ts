@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
         pathname: "/vi/**",
       },
     ],
+    domains: ["randomuser.me"],
   },
 };
 

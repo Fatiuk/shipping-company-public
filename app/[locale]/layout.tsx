@@ -31,13 +31,17 @@ type Props = {
 };
 
 const navigation: NavigationItemI[] = [
+  // {
+  //   label: "videoReviews",
+  //   href: "/video-reviews",
+  // },
+  // {
+  //   label: "yelpReviews",
+  //   href: "/yelp-reviews",
+  // },
   {
-    label: "videoReviews",
-    href: "/video-reviews",
-  },
-  {
-    label: "yelpReviews",
-    href: "/yelp-reviews",
+    label: "reviews",
+    href: "/reviews",
   },
   {
     label: "howItWorks",

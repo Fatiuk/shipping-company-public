@@ -10,14 +10,14 @@ interface FilterBarProps {
   onReset: () => void;
 }
 
-const YelpFilterBar: React.FC<FilterBarProps> = ({
+const ReviewFilterBar: React.FC<FilterBarProps> = ({
   filterRating,
   setFilterRating,
   sortOrder,
   setSortOrder,
   onReset,
 }) => {
-  const t = useTranslations("yelpReviews");
+  const t = useTranslations("reviews");
 
   const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value as SortOrder;
@@ -80,4 +80,4 @@ const YelpFilterBar: React.FC<FilterBarProps> = ({
   );
 };
 
-export default YelpFilterBar;
+export default ReviewFilterBar;
