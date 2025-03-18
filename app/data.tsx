@@ -3231,4 +3231,210 @@ export const reviewsData: Review[] = [
       "Very professional company. The only issue was a slight delay in pickup, but they kept me informed. Would use their services again!",
     location: "Boston, MA",
   },
+  {
+    id: "20",
+    author: "Thomas Wright",
+    rating: 5,
+    date: "2025-04-02",
+    content:
+      "First time using a vehicle transport service and I'm thoroughly impressed! The driver called me ahead of time, arrived on schedule, and delivered my car without a scratch. Their customer service team was responsive and friendly throughout the process.",
+    location: "Nashville, TN",
+    helpful: 8,
+  },
+  {
+    id: "21",
+    author: "Megan Foster",
+    rating: 5,
+    date: "2025-04-10",
+    content:
+      "Diminoble Transportations handled my classic car with exceptional care. I was nervous about shipping my restored 1967 Mustang, but they used enclosed transport and delivered it exactly as promised. Worth every penny!",
+    location: "Sacramento, CA",
+    avatarUrl: "https://randomuser.me/api/portraits/women/15.jpg",
+    helpful: 14,
+    images: ["/reviews/21.jpg"],
+  },
+  {
+    id: "22",
+    author: "James Donovan",
+    rating: 5,
+    date: "2025-04-17",
+    content:
+      "Relocated from NY to FL and needed my two vehicles transported. The team at Diminoble made the whole process straightforward. Their pricing was transparent with no surprise fees, and both cars arrived on time and in perfect condition.",
+    location: "Tampa, FL",
+    helpful: 7,
+  },
+  {
+    id: "23",
+    author: "Lisa Chen",
+    rating: 4,
+    date: "2025-04-25",
+    content:
+      "Good service with minor timing issues. My SUV was delivered in excellent condition, but pickup was delayed by a day. Customer service was responsive and kept me updated about the delay, which I appreciated.",
+    location: "Minneapolis, MN",
+    avatarUrl: "https://randomuser.me/api/portraits/women/22.jpg",
+  },
+  {
+    id: "24",
+    author: "Robert Jackson",
+    rating: 5,
+    date: "2025-05-03",
+    content:
+      "Exceptional service from start to finish! The online quote was easy, the pickup was on time, and delivery was ahead of schedule. The driver was professional and communicated clearly throughout the journey. Will definitely use again!",
+    location: "Detroit, MI",
+    helpful: 5,
+  },
+  {
+    id: "25",
+    author: "Jennifer Williams",
+    rating: 5,
+    date: "2025-05-11",
+    content:
+      "After researching several transport companies, I chose Diminoble and couldn't be happier with my decision. The representatives were knowledgeable, the driver was careful with my BMW, and the entire experience was stress-free.",
+    location: "Seattle, WA",
+    images: ["/reviews/25.jpg"],
+  },
+  {
+    id: "26",
+    author: "Brandon Taylor",
+    rating: 5,
+    date: "2025-05-19",
+    content:
+      "Moved from Texas to California and needed my truck transported. Diminoble's team provided frequent updates, and the driver was professional and friendly. My vehicle arrived without issues and right on schedule.",
+    location: "San Jose, CA",
+    helpful: 9,
+  },
+  {
+    id: "27",
+    author: "Victoria Reynolds",
+    rating: 5,
+    date: "2025-05-27",
+    content:
+      "As a first-time customer, I was impressed by the level of professionalism. The quote was fair, the pickup was smooth, and the delivery was on time. My car arrived in the same condition as when it left. Will use their services again!",
+    location: "Raleigh, NC",
+    avatarUrl: "https://randomuser.me/api/portraits/women/28.jpg",
+    helpful: 6,
+  },
+  {
+    id: "28",
+    author: "Carlos Rodriguez",
+    rating: 4,
+    date: "2025-06-04",
+    content:
+      "Reliable service with good communication. There was a slight delay in transit due to weather conditions, but the team kept me informed every step of the way. Vehicle arrived in perfect condition.",
+    location: "Miami, FL",
+    helpful: 3,
+  },
+  {
+    id: "29",
+    author: "Amanda Pierce",
+    rating: 5,
+    date: "2025-06-12",
+    content:
+      "Outstanding experience with Diminoble! From the initial quote to the final delivery, everything was handled professionally. The driver took extra care with my luxury vehicle, and it arrived ahead of schedule.",
+    location: "Denver, CO",
+    avatarUrl: "https://randomuser.me/api/portraits/women/32.jpg",
+    images: ["/reviews/29.jpg"],
+  },
+  {
+    id: "30",
+    author: "Patrick O'Neill",
+    rating: 5,
+    date: "2025-06-20",
+    content:
+      "After a bad experience with another company, Diminoble was a breath of fresh air. Clear communication, no hidden fees, and my car was delivered right to my doorstep in pristine condition. Couldn't ask for better service!",
+    location: "Chicago, IL",
+    helpful: 11,
+  },
+  {
+    id: "31",
+    author: "Michelle Peterson",
+    rating: 5,
+    date: "2025-06-28",
+    content:
+      "I needed to transport my car across the country for a job relocation, and Diminoble made it completely stress-free. Their online tracking system gave me peace of mind, and their team was always available to answer questions.",
+    location: "Washington, DC",
+    avatarUrl: "https://randomuser.me/api/portraits/women/38.jpg",
+    helpful: 7,
+  },
+  {
+    id: "32",
+    author: "David Schwartz",
+    rating: 5,
+    date: "2025-07-06",
+    content:
+      "Professional service from beginning to end. The quote was competitive, the communication was excellent, and the pickup and delivery were exactly as scheduled. My vehicle arrived without a single issue.",
+    location: "Phoenix, AZ",
+    helpful: 4,
+  },
+  {
+    id: "33",
+    author: "Lauren Cooper",
+    rating: 5,
+    date: "2025-07-14",
+    content:
+      "I had to ship my car from New York to California, and Diminoble made it so easy! The customer service team was knowledgeable and friendly, and the driver was careful and punctual. Will definitely recommend to friends and family.",
+    location: "Los Angeles, CA",
+    images: ["/reviews/33.jpg"],
+  },
+  {
+    id: "34",
+    author: "Michael Hernandez",
+    rating: 5,
+    date: "2025-07-22",
+    content:
+      "Diminoble Transportations exceeded my expectations in every way. The price was fair, the pickup was on time, and the delivery was early. My car arrived in perfect condition, and the driver was extremely professional.",
+    location: "San Antonio, TX",
+    helpful: 8,
+  },
+  {
+    id: "35",
+    author: "Stephanie Morrison",
+    rating: 4,
+    date: "2025-07-30",
+    content:
+      "Good experience overall. The transport took a day longer than initially estimated, but my vehicle arrived in perfect condition and the company kept me informed of the delay. Customer service was very responsive.",
+    location: "Portland, OR",
+    avatarUrl: "https://randomuser.me/api/portraits/women/42.jpg",
+  },
+  {
+    id: "36",
+    author: "Jason Baker",
+    rating: 5,
+    date: "2025-08-07",
+    content:
+      "I've used several auto transport companies over the years, and Diminoble is by far the best. Their attention to detail, clear communication, and on-time delivery set them apart from the competition. Highly recommended!",
+    location: "Indianapolis, IN",
+    helpful: 10,
+  },
+  {
+    id: "37",
+    author: "Alexandra Grant",
+    rating: 5,
+    date: "2025-08-15",
+    content:
+      "Shipped my SUV from Florida to Washington state with Diminoble, and the experience was seamless. The driver was professional, the price was exactly as quoted, and my vehicle arrived right on schedule.",
+    location: "Seattle, WA",
+    avatarUrl: "https://randomuser.me/api/portraits/women/45.jpg",
+    helpful: 6,
+  },
+  {
+    id: "38",
+    author: "William Harrison",
+    rating: 5,
+    date: "2025-08-23",
+    content:
+      "Genuinely impressed with the level of service provided by Diminoble. Their dispatch team was extremely organized, the driver was courteous and professional, and my vehicle was delivered without a single issue.",
+    location: "New Orleans, LA",
+    images: ["/reviews/38.jpg"],
+  },
+  {
+    id: "39",
+    author: "Natalie Winters",
+    rating: 5,
+    date: "2025-08-31",
+    content:
+      "After researching several companies, I chose Diminoble based on reviews, and they didn't disappoint! The entire process was transparent and efficient. My car arrived early and in perfect condition. Will definitely use again!",
+    location: "Kansas City, MO",
+    helpful: 9,
+  },
 ];
