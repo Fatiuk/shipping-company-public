@@ -25,6 +25,7 @@
   "navbar": {
     "videoReviews": "Video Reviews",
     "yelpReviews": "Yelp Reviews",
+    "reviews": "Reviews",
     "howItWorks": "How It Works",
     "team": "Our Team",
     "company": "Our Company",
@@ -77,7 +78,7 @@
           "description": "Diminoble Transportations offers seamless vehicle relocation services across all 50 states, ensuring your vehicle reaches its destination efficiently, regardless of location."
         },
         {
-          "src": "/benefits/handshake_blue_700.svg",
+          "src": "/benefits/handshake.png",
           "title": "Experienced Team",
           "description": "With over 5 years in the relocation industry, our specialists provide exceptional service to companies, agents, and individuals, ensuring a smooth and professional experience."
         },
@@ -223,9 +224,13 @@
     "next": "Next slide",
     "goTo": "Go to slide {slideNumber}"
   },
-  "yelpReviews": {
+  "reviews": {
     "title": "Customer Reviews",
     "description": "See what our customers are saying about our shipping services across the country. Read authentic reviews from real customers who have experienced our dedication to quality and reliability.",
+    "viewAll": "View All Reviews",
+    "previous": "Previous slide",
+    "next": "Next slide",
+    "goTo": "Go to slide {slideNumber}",
     "stats": {
       "averageRating": "Average Rating",
       "basedOn": "Based on {count} reviews",

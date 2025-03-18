@@ -3,14 +3,13 @@
 import { useState, useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { gsap } from "gsap";
-import { yelpReviewsData } from "@/app/data";
-import YelpReviewCard from "@/components/YelpReviewCard";
-import FilterBar from "@/components/YelpFilterBar";
+import { reviewsData } from "@/app/data";
+import ReviewCard from "@/components/ReviewCard";
+import FilterBar from "@/components/ReviewFilterBar";
 
-const YelpReviews: React.FC = () => {
-  const t = useTranslations("yelpReviews");
-  // const [reviews, setReviews] = useState<YelpReview[]>(yelpReviewsData);
-  const reviews = yelpReviewsData;
+const Reviews: React.FC = () => {
+  const t = useTranslations("reviews");
+  const reviews = reviewsData;
   const [filterRating, setFilterRating] = useState<number | null>(null);
   const [sortOrder, setSortOrder] = useState<
     "newest" | "highest" | "most-helpful"
@@ -31,7 +30,8 @@ const YelpReviews: React.FC = () => {
       } else if (sortOrder === "highest") {
         return b.rating - a.rating;
       } else {
-        return b.helpful - a.helpful;
+        // return b.helpful - a.helpful;
+        return parseInt(b.id) - parseInt(a.id);
       }
     });
 
@@ -205,7 +205,7 @@ const YelpReviews: React.FC = () => {
         ) : filteredReviews.length > 0 ? (
           currentlyVisibleReviews.map((review) => (
             <div key={review.id} className="review-card">
-              <YelpReviewCard review={review} />
+              <ReviewCard review={review} />
             </div>
           ))
         ) : (
@@ -248,4 +248,4 @@ const YelpReviews: React.FC = () => {
   );
 };
 
-export default YelpReviews;
+export default Reviews;

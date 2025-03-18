@@ -1,4 +1,4 @@
-export default interface YelpReview {
+export default interface Review {
   id: string;
   author: string;
   rating: number;
@@ -6,6 +6,6 @@ export default interface YelpReview {
   content: string;
   location: string;
   avatarUrl?: string;
-  helpful: number;
+  helpful?: number;
   images?: string[];
 }
