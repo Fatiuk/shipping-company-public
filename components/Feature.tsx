@@ -24,11 +24,12 @@ const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
           width={100}
           height={100}
           alt={alt === "" ? "" : t(alt)}
+          style={{ width: "auto" }}
         />
       </div>
       <h3
         ref={titleRef}
-        className="text-xl md:text-2xl text-[--color-b900-a900]"
+        className="font-h3-h4 text-[--color-b900-a900] mt-4"
         data-feature-title
       >
         {t(title)}

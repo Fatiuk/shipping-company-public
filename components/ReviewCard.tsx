@@ -2,13 +2,13 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { formatDate } from "@/lib/utils";
-import YelpReview from "@/types/review";
+import Review from "@/types/review";
 
-interface YelpReviewCardProps {
-  review: YelpReview;
+interface ReviewCardProps {
+  review: Review;
 }
 
-const ReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
+const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
   const locale = useLocale();
   const t = useTranslations("reviews");
 
@@ -227,6 +227,7 @@ const ReviewCard: React.FC<YelpReviewCardProps> = ({ review }) => {
                     width={80}
                     height={80}
                     className="object-cover"
+                    style={{ width: "auto" }}
                   />
                 </div>
               ))}

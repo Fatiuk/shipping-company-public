@@ -30,7 +30,8 @@ const Reviews: React.FC = () => {
       } else if (sortOrder === "highest") {
         return b.rating - a.rating;
       } else {
-        return b.helpful - a.helpful;
+        // return b.helpful - a.helpful;
+        return parseInt(b.id) - parseInt(a.id);
       }
     });
 

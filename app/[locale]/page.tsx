@@ -9,7 +9,7 @@ import imgHero from "@/assets/img/blue-truck-dniprollc.png";
 // import imgHero from "@/assets/img/hero.png";
 import en from "@/i18n/messages/en.json";
 import QuoteForm from "@/components/QuoteForm";
-import VideoReviewsSection from "@/components/VideoReviewsSection";
+import ReviewsSection from "@/components/ReviewsSection";
 import StatsItem from "@/components/StatsItem";
 
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
@@ -66,7 +66,7 @@ const Home: FC = () => {
       </SectionFullWidth>
 
       <SectionFullWidth bgClass="!bg-[--color-w-b700]">
-        <VideoReviewsSection />
+        <ReviewsSection />
       </SectionFullWidth>
     </>
   );
