@@ -54,7 +54,7 @@
     "privacyPolicy": "Privacy Policy",
     "rightsReserved": {
       "year": "© 2025 ",
-      "clicks": "Diminoble Auto Transportation",
+      "clicks": "Dimi Noble Inc",
       "allRights": ". All Rights Reserved."
     },
     "poweredBy": "Powered by"
@@ -67,15 +67,15 @@
   },
   "home": {
     "title": "Reliable Car Shipping Across the Nation",
-    "description": "At Diminoble transportations, we stand out in the vehicle relocation sector. We believe in showcasing our excellence, not just making promises. Our services cover the entire country, providing our customers with the transportation of any type of vehicle.",
+    "description": "At Dimi Noble, we stand out in the vehicle relocation sector. We believe in showcasing our excellence, not just making promises. Our services cover the entire country, providing our customers with the transportation of any type of vehicle.",
     "whyUs": {
-      "title": "Why Diminoble?",
+      "title": "Why Dimi Noble?",
       "description": "Many things make us stand out in our industry. These are the reasons why we are the go-to company for many in need of vehicle shipment.",
       "benefits": [
         {
           "src": "/benefits/usa_pin.png",
           "title": "Nationwide Coverage",
-          "description": "Diminoble Transportations offers seamless vehicle relocation services across all 50 states, ensuring your vehicle reaches its destination efficiently, regardless of location."
+          "description": "Dimi Noble offers seamless vehicle relocation services across all 50 states, ensuring your vehicle reaches its destination efficiently, regardless of location."
         },
         {
           "src": "/benefits/handshake.png",
@@ -120,12 +120,12 @@
     "contactUs": "Contact Us",
     "about": {
       "sectionTitle": "About us",
-      "title": "Diminoble ransportations is a licensed shipping company that works with fully insured and bonded partners",
+      "title": "Dimi Noble Inc is a licensed shipping company that works with fully insured and bonded partners",
       "description": {
         "intro": "We are a nationwide vehicle relocation service, simplifying the process for businesses and individuals alike. Our commitment is to provide seamless and efficient transportation solutions.",
         "experience": "With over 5 years of expertise in the relocation industry, our specialists have served companies, contractors, and private individuals with excellence.",
         "coverage": "We operate across all 50 states, ensuring secure and reliable vehicle transportation through our fully insured and bonded partners.",
-        "trust": "When you choose Diminoble Transportations, we prioritize transparency, keeping you informed at every step. Our goal is to provide top-tier service with unbeatable value."
+        "trust": "When you choose Dimi Noble, we prioritize transparency, keeping you informed at every step. Our goal is to provide top-tier service with unbeatable value."
       },
       "highlights": {
         "years": "Years of Experience",
@@ -140,23 +140,23 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "question": "What services does Diminoble Transportations offer?",
-          "answer": "Diminoble Transportations provides nationwide vehicle relocation services, handling all types of vehicles across all 50 states."
+          "question": "What services does Dimi Noble Inc offer?",
+          "answer": "Dimi Noble provides nationwide vehicle relocation services, handling all types of vehicles across all 50 states."
         },
         {
           "question": "How can I request a quote for shipping my vehicle?",
           "answer": "You can request a quote by visiting our website and filling out the 'Get Your Price' form with your origin, destination, moving date, and phone number."
         },
         {
-          "question": "Is Diminoble Transportations a licensed and insured company?",
-          "answer": "Yes, Diminoble Transportations is a licensed shipping company that collaborates with fully insured and bonded partners."
+          "question": "Is Dimi Noble Inc a licensed and insured company?",
+          "answer": "Yes, Dimi Noble is a licensed shipping company that collaborates with fully insured and bonded partners."
         },
         {
-          "question": "How long has Diminoble Transportations been in the vehicle relocation industry?",
+          "question": "How long has Dimi Noble been in the vehicle relocation industry?",
           "answer": "We have over 5 years of experience in the vehicle relocation industry, serving companies, contractual agents, and private individuals."
         },
         {
-          "question": "What types of vehicles can Diminoble Transportations relocate?",
+          "question": "What types of vehicles can Dimi Noble Inc relocate?",
           "answer": "We handle the transportation of all types of vehicles, ensuring safe and reliable delivery across the nation."
         },
         {
@@ -164,7 +164,7 @@
           "answer": "Our process involves the submission of a client request, providing an estimate, service selection and contract agreement, vehicle pickup, and delivery. For detailed information, please visit the 'How It Works' section on our website."
         },
         {
-          "question": "How can I contact Diminoble Transportations for more information?",
+          "question": "How can I contact Dimi Noble for more information?",
           "answer": "You can reach us via email at teamlead@diminoble.com or by phone at (561) 894-5331."
         }
       ]
@@ -351,7 +351,7 @@
   "privacyPolicy": {
     "title": "Privacy Policy",
     "subtitle": "Introduction",
-    "description": "Dimi Noble (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website https://diminoble.com/, use our transportation services, or otherwise interact with us. Please read this policy carefully to understand our views and practices regarding your personal data.",
+    "description": "Dimi Noble Inc (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website https://diminoble.com/, use our transportation services, or otherwise interact with us. Please read this policy carefully to understand our views and practices regarding your personal data.",
     "sections": {
       "1": {
         "title": "1. Information We Collect",
