@@ -25,14 +25,14 @@ export const teamMembers: TeamMemberI[] = [
     },
   },
   {
-    name: "Sarah Martinez",
+    name: "Ben Martinez",
     position: "Operations Manager",
     positionSlug: "operations_manager",
     description:
-      "Sarah ensures all our shipping operations run smoothly, optimizing routes and ensuring timely deliveries.",
+      "Ben ensures all our shipping operations run smoothly, optimizing routes and ensuring timely deliveries.",
     socialLinks: {
       linkedin: "https://linkedin.com/in/sarah-martinez",
-      email: "sarah@example.com",
+      email: "ben@example.com",
     },
   },
   {
@@ -62,7 +62,7 @@ export const teamMembers: TeamMemberI[] = [
     position: "Logistics Specialist",
     positionSlug: "logistics_specialist",
     description:
-      "Robert&apos;s expertise in route planning and optimization helps us deliver vehicles efficiently across the nation.",
+      "Robert's expertise in route planning and optimization helps us deliver vehicles efficiently across the nation.",
     socialLinks: {
       email: "robert@example.com",
       phone: "+1-555-345-6789",

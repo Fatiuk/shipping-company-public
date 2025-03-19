@@ -111,7 +111,7 @@ const HowItWorks: React.FC = () => {
       </div>
 
       {/* Steps Grid */}
-      <div ref={containerRef} className="mt-4 space-y-8 px-6">
+      <div ref={containerRef} className="mt-8 sm:mt-12 space-y-8 px-6">
         {steps.map((step, index) => (
           <div key={step.stepNumber} className="step-card">
             <StepCard {...step} isActive={index + 1 === activeStep} />

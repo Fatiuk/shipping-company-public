@@ -139,7 +139,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
           >
             <ActiveLink
               href="/#contact-us"
-              className="whitespace-nowrap h-fit py-3 px-8 rounded-lg font-bold text-owhite bg-[--color-a700-a900] hover:bg-[--color-a900-a700] transition-colors"
+              className="whitespace-nowrap h-fit py-3 px-8 rounded-lg font-bold text-owhite bg-oaccent-700 hover:bg-oaccent-900 transition-colors"
             >
               {t("quote")}
             </ActiveLink>

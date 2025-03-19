@@ -48,6 +48,7 @@
     "quote3": "Get a Quote",
     "team": "Our Team",
     "testimonials": "Video Testimonials",
+    "reviews": "Reviews",
     "termsAndConditions": "Terms & Conditions",
     "accessibilityStatement": "Accessibility Statement",
     "orgPolicy": "Organizational Policy",
@@ -191,6 +192,11 @@
         "label": "Destination ZIP",
         "placeholder": "Destination ZIP Code"
       },
+      "vehicleModel": {
+        "label": "Vehicle Model",
+        "name": "vehicle model",
+        "placeholder": "Vehicle model (e.g. Ford F-150)"
+      },
       "movingDate": {
         "name": "date",
         "label": "Moving date",
@@ -209,7 +215,9 @@
     "validation": {
       "required": "{field} is required",
       "mustBeValid": "Must be a valid {field}",
-      "pastDate": "Date cannot be in the past"
+      "pastDate": "Date cannot be in the past",
+      "tooShort": "{field} must be at least {min} characters",
+      "tooLong": "{field} cannot exceed {max} characters"
     },
     "cta": "Get Free Quote",
     "success": "We’ve received your inquiry and will contact you shortly.",

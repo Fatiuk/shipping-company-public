@@ -48,6 +48,7 @@
     "quote3": "Obtenez un devis",
     "team": "Notre équipe",
     "testimonials": "Témoignages vidéo",
+    "reviews": "Avis",
     "termsAndConditions": "Conditions générales",
     "accessibilityStatement": "Déclaration d'accessibilité",
     "orgPolicy": "Politique organisationnelle",
@@ -191,6 +192,11 @@
         "label": "Code postal de destination",
         "placeholder": "Code postal de destination"
       },
+      "vehicleModel": {
+        "label": "Modèle du véhicule",
+        "name": "modèle du véhicule",
+        "placeholder": "Modèle du véhicule (ex. : Ford F-150)"
+      },
       "movingDate": {
         "name": "date",
         "label": "Date de déménagement",
@@ -209,7 +215,9 @@
     "validation": {
       "required": "{field} est requis",
       "mustBeValid": "Doit être un(e) {field} valide",
-      "pastDate": "La date ne peut pas être dans le passé"
+      "pastDate": "La date ne peut pas être dans le passé",
+      "tooShort": "{field} doit contenir au moins {min} caractères",
+      "tooLong": "{field} ne peut pas dépasser {max} caractères"
     },
     "cta": "Obtenir un devis gratuit",
     "success": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.",

@@ -67,7 +67,7 @@ const footerNavigation: NavigationItemI[] = [
     submenu: [
       { label: "about", href: "/company/about" },
       { label: "team", href: "/team" },
-      { label: "testimonials", href: "/video-reviews" },
+      { label: "reviews", href: "/reviews" },
       { label: "blog", href: "/company/blog" },
     ],
   },
