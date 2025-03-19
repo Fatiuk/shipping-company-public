@@ -12,15 +12,8 @@ export const ReviewsSection: React.FC = () => {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  // Dynamic items per view based on screen size
-  const getItemsPerView = () => {
-    if (typeof window === "undefined") return 3;
-    if (window.innerWidth < 640) return 1;
-    if (window.innerWidth < 1024) return 2;
-    return 3;
-  };
-
-  const [itemsPerView, setItemsPerView] = useState(getItemsPerView());
+  const [itemsPerView, setItemsPerView] = useState(3);
+  const [isMounted, setIsMounted] = useState(false);
 
   // Calculate visible items for each slide index
   const getVisibleItems = (index: number) => {
@@ -29,10 +22,19 @@ export const ReviewsSection: React.FC = () => {
     return reviewsData.slice(startIdx, endIdx);
   };
 
-  const totalSlides = Math.ceil(reviewsData.length / itemsPerView);
-
-  // Update items per view on resize
+  //useEffect for client-side initialization
   useEffect(() => {
+    // Dynamic items per view based on screen size
+    const getItemsPerView = () => {
+      if (window.innerWidth < 640) return 1;
+      if (window.innerWidth < 1024) return 2;
+      return 3;
+    };
+
+    setItemsPerView(getItemsPerView());
+    setIsMounted(true);
+
+    // Update items per view on resize
     const handleResize = () => {
       const newItemsPerView = getItemsPerView();
       if (newItemsPerView !== itemsPerView) {
@@ -47,6 +49,11 @@ export const ReviewsSection: React.FC = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [itemsPerView]);
+
+  // Calculate totalSlides only after component is mounted
+  const totalSlides = isMounted
+    ? Math.ceil(reviewsData.length / itemsPerView)
+    : 1; // Default value for server rendering
 
   // Touch handling for mobile
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -97,7 +104,7 @@ export const ReviewsSection: React.FC = () => {
   };
 
   const handleNext = () => {
-    if (isAnimating) return;
+    if (isAnimating || !isMounted) return;
     const nextIndex = (currentIndex + 1) % totalSlides;
     setCurrentIndex(nextIndex);
     setIsAnimating(true);
@@ -105,7 +112,7 @@ export const ReviewsSection: React.FC = () => {
   };
 
   const handlePrev = () => {
-    if (isAnimating) return;
+    if (isAnimating || !isMounted) return;
     const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     setCurrentIndex(prevIndex);
     setIsAnimating(true);
@@ -113,6 +120,8 @@ export const ReviewsSection: React.FC = () => {
   };
 
   useEffect(() => {
+    if (!isMounted) return;
+
     const interval = setInterval(() => {
       if (!document.hidden && !isAnimating) {
         handleNext();
@@ -120,7 +129,32 @@ export const ReviewsSection: React.FC = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, isAnimating]);
+  }, [currentIndex, isAnimating, isMounted]);
+
+  // Conditional rendering to avoid hydration mismatch
+  if (!isMounted) {
+    return (
+      <div className="relative overflow-hidden">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-oblue-900 dark:text-white mb-3 md:mb-4">
+            {t("title")}
+          </h2>
+        </div>
+        <div className="container mx-auto px-4">
+          <div className="relative group">
+            {/* Placeholder loading state */}
+            <div className="flex flex-wrap">
+              {reviewsData.slice(0, 3).map((review) => (
+                <div key={review.id} className="p-2 w-full sm:w-1/2 lg:w-1/3">
+                  <CompactReviewCard review={review} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative overflow-hidden">

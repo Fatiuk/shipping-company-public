@@ -171,8 +171,8 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
           </div>
         </div>
       </div>
-      <div className="bg-oblue-700 py-2 mt-2">
-        <div className="container flex mx-auto font-b3-b4 whitespace-nowrap gap-6">
+      <div className="bg-oblue-700 py-2">
+        <div className="px-6 sm:container flex justify-between mx-auto font-b3-b4 whitespace-nowrap">
           <p className="text-white">&copy;&nbsp;2025 Dimi Noble Inc</p>
           <p className="text-white ms-auto">
             {t("poweredBy")}{" "}
