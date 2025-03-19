@@ -4,7 +4,8 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
   try {
-    const { originZip, destinationZip, movingDate, phone } = await req.json();
+    const { originZip, destinationZip, vehicleModel, movingDate, phone } =
+      await req.json();
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
@@ -28,6 +29,7 @@ export async function POST(req: Request) {
           <p><strong>Moving Date:</strong> ${movingDate}</p>
           <p><strong>Origin ZIP:</strong> ${originZip}</p>
           <p><strong>Destination Zip:</strong> ${destinationZip}</p>
+          <p><strong>Vehicle model:</strong> ${vehicleModel}</p>
         `,
     };
 
