@@ -23,7 +23,6 @@ const DateInput: FC<DateInputPropsI> = ({
 }) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [showPlaceholder, setShowPlaceholder] = useState(!value);
-  const [hasFocus, setHasFocus] = useState(false);
 
   // Update placeholder visibility when the value changes
   useEffect(() => {
@@ -80,14 +79,7 @@ const DateInput: FC<DateInputPropsI> = ({
             // Push the calendar icon to the right edge
             paddingRight: "10px",
           }}
-          onFocus={() => {
-            setHasFocus(true);
-            if (!inputRef.current?.value) {
-              setShowPlaceholder(true);
-            }
-          }}
           onBlur={() => {
-            setHasFocus(false);
             const isEmpty = !inputRef.current?.value;
             setShowPlaceholder(isEmpty);
             // Update text color when field is empty
@@ -98,7 +90,6 @@ const DateInput: FC<DateInputPropsI> = ({
           onChange={(e) => {
             // Call original onChange if it exists
             if (props.onChange) props.onChange(e);
-
             e.target.style.color = e.target.value ? "black" : "transparent";
             setShowPlaceholder(!e.target.value);
           }}
