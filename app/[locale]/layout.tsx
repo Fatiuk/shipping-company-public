@@ -67,7 +67,7 @@ const footerNavigation: NavigationItemI[] = [
     submenu: [
       { label: "about", href: "/company/about" },
       { label: "team", href: "/team" },
-      { label: "testimonials", href: "/video-reviews" },
+      { label: "reviews", href: "/reviews" },
       { label: "blog", href: "/company/blog" },
     ],
   },
@@ -86,7 +86,7 @@ const footerNavigation: NavigationItemI[] = [
 export const metadata: Metadata = {
   title: "Reliable Car Shipping Across the Nation",
   description:
-    "At Diminoble transportations, we stand out in the vehicle relocation sector. We believe in showcasing our excellence, not just making promises. Our services cover the entire country, providing our customers with the transportation of any type of vehicle.",
+    "At Dimi Noble Inc, we stand out in the vehicle relocation sector. We believe in showcasing our excellence, not just making promises. Our services cover the entire country, providing our customers with the transportation of any type of vehicle.",
   icons: {
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },

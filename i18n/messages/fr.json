@@ -48,13 +48,14 @@
     "quote3": "Obtenez un devis",
     "team": "Notre équipe",
     "testimonials": "Témoignages vidéo",
+    "reviews": "Avis",
     "termsAndConditions": "Conditions générales",
     "accessibilityStatement": "Déclaration d'accessibilité",
     "orgPolicy": "Politique organisationnelle",
     "privacyPolicy": "Politique de confidentialité",
     "rightsReserved": {
       "year": "© 2025 ",
-      "clicks": "Diminoble Auto Transportation",
+      "clicks": "Dimi Noble Inc",
       "allRights": ". Tous droits réservés."
     },
     "poweredBy": "Propulsé par"
@@ -67,15 +68,15 @@
   },
   "home": {
     "title": "Transport fiable de voitures à travers le pays",
-    "description": "Chez Diminoble Transportations, nous nous distinguons dans le secteur du transport de véhicules. Nous croyons en la démonstration de notre excellence, et pas seulement en des promesses. Nos services couvrent tout le pays, offrant à nos clients le transport de tout type de véhicule.",
+    "description": "Chez Dimi Noble, nous nous distinguons dans le secteur du transport de véhicules. Nous croyons en la démonstration de notre excellence, et pas seulement en des promesses. Nos services couvrent tout le pays, offrant à nos clients le transport de tout type de véhicule.",
     "whyUs": {
-      "title": "Pourquoi choisir Diminoble ?",
+      "title": "Pourquoi choisir Dimi Noble ?",
       "description": "De nombreux éléments nous distinguent dans notre secteur. Voici pourquoi nous sommes l'entreprise de référence pour ceux qui ont besoin d'expédier leur véhicule.",
       "benefits": [
         {
           "src": "/benefits/usa_pin.png",
           "title": "Couverture nationale",
-          "description": "Diminoble Transportations propose des services de relocalisation de véhicules dans les 50 États, garantissant que votre véhicule atteint sa destination efficacement, quel que soit l'endroit."
+          "description": "Dimi Noble propose des services de relocalisation de véhicules dans les 50 États, garantissant que votre véhicule atteint sa destination efficacement, quel que soit l'endroit."
         },
         {
           "src": "/benefits/handshake_blue_700.svg",
@@ -120,12 +121,12 @@
     "contactUs": "Contactez-nous",
     "about": {
       "sectionTitle": "À propos de nous",
-      "title": "Diminoble Transportations est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés",
+      "title": "Dimi Noble Inc est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés",
       "description": {
         "intro": "Nous sommes un service national de relocalisation de véhicules, simplifiant le processus aussi bien pour les entreprises que pour les particuliers. Notre engagement est d'offrir des solutions de transport fluides et efficaces.",
         "experience": "Avec plus de 5 ans d'expérience dans l'industrie de la relocalisation, nos spécialistes ont servi des entreprises, des entrepreneurs et des particuliers avec excellence.",
         "coverage": "Nous opérons dans les 50 États, garantissant un transport sécurisé et fiable des véhicules grâce à nos partenaires entièrement assurés et cautionnés.",
-        "trust": "En choisissant Diminoble Transportations, nous privilégions la transparence en vous tenant informé à chaque étape. Notre objectif est de fournir un service de premier ordre avec une valeur inégalée."
+        "trust": "En choisissant Dimi Noble, nous privilégions la transparence en vous tenant informé à chaque étape. Notre objectif est de fournir un service de premier ordre avec une valeur inégalée."
       },
       "highlights": {
         "years": "Années d'expérience",
@@ -140,23 +141,23 @@
       "title": "Foire aux questions",
       "items": [
         {
-          "question": "Quels services propose Diminoble Transportations ?",
-          "answer": "Diminoble Transportations offre des services de relocalisation de véhicules à l'échelle nationale, couvrant tous types de véhicules dans les 50 États."
+          "question": "Quels services propose Dimi Noble Inc ?",
+          "answer": "Dimi Noble offre des services de relocalisation de véhicules à l'échelle nationale, couvrant tous types de véhicules dans les 50 États."
         },
         {
           "question": "Comment puis-je obtenir un devis pour expédier mon véhicule ?",
           "answer": "Vous pouvez demander un devis en visitant notre site Web et en remplissant le formulaire 'Obtenez votre prix' avec votre lieu de départ, destination, date de déménagement et numéro de téléphone."
         },
         {
-          "question": "Diminoble Transportations est-elle une entreprise agréée et assurée ?",
-          "answer": "Oui, Diminoble Transportations est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés."
+          "question": "Dimi Noble Inc est-elle une entreprise agréée et assurée ?",
+          "answer": "Oui, Dimi Noble est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés."
         },
         {
-          "question": "Depuis combien de temps Diminoble Transportations est-elle dans l'industrie de la relocalisation de véhicules ?",
+          "question": "Depuis combien de temps Dimi Noble est-elle dans l'industrie de la relocalisation de véhicules ?",
           "answer": "Nous avons plus de 5 ans d'expérience dans l'industrie de la relocalisation de véhicules, au service des entreprises, agents contractuels et particuliers."
         },
         {
-          "question": "Quels types de véhicules Diminoble Transportations peut-elle relocaliser ?",
+          "question": "Quels types de véhicules Dimi Noble Inc peut-elle relocaliser ?",
           "answer": "Nous assurons le transport de tous types de véhicules, garantissant une livraison sûre et fiable à travers le pays."
         },
         {
@@ -164,7 +165,7 @@
           "answer": "Notre processus comprend la soumission d'une demande client, l'estimation du coût, la sélection du service et l'accord du contrat, la prise en charge du véhicule et la livraison. Pour plus de détails, veuillez consulter la section 'Comment ça marche' sur notre site Web."
         },
         {
-          "question": "Comment puis-je contacter Diminoble Transportations pour plus d'informations ?",
+          "question": "Comment puis-je contacter Dimi Noble pour plus d'informations ?",
           "answer": "Vous pouvez nous joindre par e-mail à teamlead@diminoble.com ou par téléphone au (561) 894-5331."
         }
       ]
@@ -191,6 +192,11 @@
         "label": "Code postal de destination",
         "placeholder": "Code postal de destination"
       },
+      "vehicleModel": {
+        "label": "Modèle du véhicule",
+        "name": "modèle du véhicule",
+        "placeholder": "Modèle du véhicule (ex. : Ford F-150)"
+      },
       "movingDate": {
         "name": "date",
         "label": "Date de déménagement",
@@ -209,7 +215,9 @@
     "validation": {
       "required": "{field} est requis",
       "mustBeValid": "Doit être un(e) {field} valide",
-      "pastDate": "La date ne peut pas être dans le passé"
+      "pastDate": "La date ne peut pas être dans le passé",
+      "tooShort": "{field} doit contenir au moins {min} caractères",
+      "tooLong": "{field} ne peut pas dépasser {max} caractères"
     },
     "cta": "Obtenir un devis gratuit",
     "success": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.",
@@ -354,7 +362,7 @@
   "privacyPolicy": {
     "title": "Politique de Confidentialité",
     "subtitle": "Introduction",
-    "description": "Dimi Noble (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web https://diminoble.com/, utilisez nos services de transport ou interagissez avec nous de toute autre manière. Veuillez lire attentivement cette politique afin de comprendre notre approche et nos pratiques en matière de protection des données personnelles.",
+    "description": "Dimi Noble Inc (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web https://diminoble.com/, utilisez nos services de transport ou interagissez avec nous de toute autre manière. Veuillez lire attentivement cette politique afin de comprendre notre approche et nos pratiques en matière de protection des données personnelles.",
     "sections": {
       "1": {
         "title": "1. Informations que nous collectons",
@@ -412,7 +420,7 @@
   "termsAndConditions": {
     "title": "Termes et Conditions",
     "subtitle": "Introduction",
-    "description": "Ces Termes et Conditions (\"Termes\") régissent votre utilisation des services d'expédition de véhicules de Dimi Noble (\"nous,\" \"notre,\" ou \"nos\"). En accédant à notre site web ou en utilisant nos services, vous acceptez de vous conformer à ces Termes et d'y être lié.",
+    "description": "Ces Termes et Conditions (\"Termes\") régissent votre utilisation des services d'expédition de véhicules de Dimi Noble Inc (\"nous,\" \"notre,\" ou \"nos\"). En accédant à notre site web ou en utilisant nos services, vous acceptez de vous conformer à ces Termes et d'y être lié.",
     "sections": {
       "1": {
         "title": "1. Services Fournis",

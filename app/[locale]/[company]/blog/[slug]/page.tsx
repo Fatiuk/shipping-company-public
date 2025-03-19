@@ -28,12 +28,10 @@ export async function generateMetadata(props: PageProps) {
   });
 
   return {
-    title:
-      t("title") ||
-      "Diminoble ransportations is a licensed shipping company that works with fully insured and bonded partners",
+    title: t("title") || "Blog",
     description:
       t("description") ||
-      "We operate nationwide, simplifying the process of relocating various types of vehicles for our clients. With over 5 years of expertise in the relocation industry, our specialists have provided excellent service to companies, contractual agents, and private individuals. Our seamless transportation of vehicles spans all 50 states. If you're embarking on a relocation project, we recognize that numerous options are available. However, none compare to NFS transportation. We take pride in our commitment to quality service delivery and customer satisfaction. When you choose us, we ensure you comprehend the involved processes because we believe in keeping our clients informed. Providing value for money is our forte.",
+      "Move Your Car with Confidence – Fast, Reliable, Nationwide!",
   };
 }
 
@@ -41,11 +39,26 @@ const BlogItemPage = async (props: PageProps) => {
   const params = await props.params;
   const { slug } = params;
 
+  const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: "blog" });
+
   const item = blogItems.find((item) => item.slug === slug);
 
   if (!item) notFound();
 
-  return <BlogItemContent item={item} />;
+  return (
+    <div className="container mx-auto py-16">
+      <div className="text-center mx-auto max-w-[600px] mb-6">
+        <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
+          {t("title")}
+        </h1>
+        <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
+          {t("description")}
+        </p>
+      </div>
+      <BlogItemContent item={item} />;
+    </div>
+  );
 };
 
 export default BlogItemPage;

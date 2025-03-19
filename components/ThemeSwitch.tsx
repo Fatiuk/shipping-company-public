@@ -1,16 +1,25 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { IoMdMoon } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { useTheme } from "next-themes";
 
 const ThemeSwitcher = () => {
   const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Only render the toggle after component has mounted to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleToggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newTheme = e.target.checked ? "dark" : "light";
     setTheme(newTheme);
   };
+
+  if (!mounted) return <div className="h-[30px] w-[50px]"></div>;
 
   return (
     <label className="flex items-center cursor-pointer mr-2">
@@ -35,10 +44,7 @@ const ThemeSwitcher = () => {
               translate-x-0 dark:translate-x-8 text-left w-full"
           >
             {resolvedTheme === "dark" ? (
-              <IoMdMoon
-                className="h-[19px] w-[19px] text-oblue-900"
-                style={{ stroke: "#020a0d", strokeWidth: 48 }}
-              />
+              <IoMdMoon className="h-[19px] w-[19px] text-oblue-900" />
             ) : (
               <MdOutlineWbSunny className="h-[19px] w-[19px] text-oblue-700" />
             )}

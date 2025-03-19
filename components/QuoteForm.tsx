@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef, useState } from "react";
-import { LuMapPin, LuCalendar, LuPhone } from "react-icons/lu";
+import { LuMapPin, LuCalendar, LuPhone, LuCar } from "react-icons/lu";
 import { PiSmiley, PiSmileySad } from "react-icons/pi";
 import { useTranslations } from "next-intl";
 import { useFormik } from "formik";
@@ -75,6 +75,7 @@ const QuoteForm: FC = () => {
     initialValues: {
       originZip: "",
       destinationZip: "",
+      vehicleModel: "",
       movingDate: "",
       phone: "",
       acceptTerms: false,
@@ -98,6 +99,24 @@ const QuoteForm: FC = () => {
           /^[0-9]{5}$/,
           t("validation.mustBeValid", {
             field: t("fields.destinationZip.name"),
+          })
+        ),
+      vehicleModel: Yup.string()
+        .required(
+          t("validation.required", { field: t("fields.vehicleModel.label") })
+        )
+        .min(
+          2,
+          t("validation.tooShort", {
+            field: t("fields.vehicleModel.label"),
+            min: 2,
+          })
+        )
+        .max(
+          40,
+          t("validation.tooLong", {
+            field: t("fields.vehicleModel.label"),
+            max: 40,
           })
         ),
       movingDate: Yup.date()
@@ -238,6 +257,19 @@ const QuoteForm: FC = () => {
                 {...formik.getFieldProps("destinationZip")}
                 touched={formik.touched.destinationZip}
                 error={formik.errors.destinationZip}
+              />
+
+              {/* Vehicle Model Input Field */}
+              <Input
+                placeholder={
+                  t("fields.vehicleModel.placeholder") ||
+                  "Enter vehicle model (e.g. Ford F-150)"
+                }
+                icon={<LuCar className="ml-3 text-gray-400" size={20} />}
+                classNamesInput="px-3 bg-transparent"
+                {...formik.getFieldProps("vehicleModel")}
+                touched={formik.touched.vehicleModel}
+                error={formik.errors.vehicleModel}
               />
 
               {/* Use the Tailwind-styled DateInput component */}

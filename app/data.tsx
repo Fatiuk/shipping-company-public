@@ -25,14 +25,14 @@ export const teamMembers: TeamMemberI[] = [
     },
   },
   {
-    name: "Sarah Martinez",
+    name: "Ben Martinez",
     position: "Operations Manager",
     positionSlug: "operations_manager",
     description:
-      "Sarah ensures all our shipping operations run smoothly, optimizing routes and ensuring timely deliveries.",
+      "Ben ensures all our shipping operations run smoothly, optimizing routes and ensuring timely deliveries.",
     socialLinks: {
       linkedin: "https://linkedin.com/in/sarah-martinez",
-      email: "sarah@example.com",
+      email: "ben@example.com",
     },
   },
   {
@@ -62,7 +62,7 @@ export const teamMembers: TeamMemberI[] = [
     position: "Logistics Specialist",
     positionSlug: "logistics_specialist",
     description:
-      "Robert&apos;s expertise in route planning and optimization helps us deliver vehicles efficiently across the nation.",
+      "Robert's expertise in route planning and optimization helps us deliver vehicles efficiently across the nation.",
     socialLinks: {
       email: "robert@example.com",
       phone: "+1-555-345-6789",
@@ -3226,7 +3226,7 @@ export const reviewsData: Review[] = [
     id: "19",
     author: "Emily Thompson",
     rating: 4,
-    date: "2025-03-18",
+    date: "2023-12-18",
     content:
       "Very professional company. The only issue was a slight delay in pickup, but they kept me informed. Would use their services again!",
     location: "Boston, MA",
@@ -3235,7 +3235,7 @@ export const reviewsData: Review[] = [
     id: "20",
     author: "Thomas Wright",
     rating: 5,
-    date: "2025-04-02",
+    date: "2023-11-02",
     content:
       "First time using a vehicle transport service and I'm thoroughly impressed! The driver called me ahead of time, arrived on schedule, and delivered my car without a scratch. Their customer service team was responsive and friendly throughout the process.",
     location: "Nashville, TN",
@@ -3245,7 +3245,7 @@ export const reviewsData: Review[] = [
     id: "21",
     author: "Megan Foster",
     rating: 5,
-    date: "2025-04-10",
+    date: "2023-10-10",
     content:
       "Diminoble Transportations handled my classic car with exceptional care. I was nervous about shipping my restored 1967 Mustang, but they used enclosed transport and delivered it exactly as promised. Worth every penny!",
     location: "Sacramento, CA",
@@ -3257,7 +3257,7 @@ export const reviewsData: Review[] = [
     id: "22",
     author: "James Donovan",
     rating: 5,
-    date: "2025-04-17",
+    date: "2023-09-17",
     content:
       "Relocated from NY to FL and needed my two vehicles transported. The team at Diminoble made the whole process straightforward. Their pricing was transparent with no surprise fees, and both cars arrived on time and in perfect condition.",
     location: "Tampa, FL",
@@ -3267,7 +3267,7 @@ export const reviewsData: Review[] = [
     id: "23",
     author: "Lisa Chen",
     rating: 4,
-    date: "2025-04-25",
+    date: "2023-11-25",
     content:
       "Good service with minor timing issues. My SUV was delivered in excellent condition, but pickup was delayed by a day. Customer service was responsive and kept me updated about the delay, which I appreciated.",
     location: "Minneapolis, MN",
@@ -3277,7 +3277,7 @@ export const reviewsData: Review[] = [
     id: "24",
     author: "Robert Jackson",
     rating: 5,
-    date: "2025-05-03",
+    date: "2024-07-03",
     content:
       "Exceptional service from start to finish! The online quote was easy, the pickup was on time, and delivery was ahead of schedule. The driver was professional and communicated clearly throughout the journey. Will definitely use again!",
     location: "Detroit, MI",
@@ -3287,9 +3287,9 @@ export const reviewsData: Review[] = [
     id: "25",
     author: "Jennifer Williams",
     rating: 5,
-    date: "2025-05-11",
+    date: "2024-09-11",
     content:
-      "After researching several transport companies, I chose Diminoble and couldn't be happier with my decision. The representatives were knowledgeable, the driver was careful with my BMW, and the entire experience was stress-free.",
+      "After researching several transport companies, I chose Dimi Noble and couldn't be happier with my decision. The representatives were knowledgeable, the driver was careful with my BMW, and the entire experience was stress-free.",
     location: "Seattle, WA",
     images: ["/reviews/25.jpg"],
   },
@@ -3297,9 +3297,9 @@ export const reviewsData: Review[] = [
     id: "26",
     author: "Brandon Taylor",
     rating: 5,
-    date: "2025-05-19",
+    date: "2025-03-19",
     content:
-      "Moved from Texas to California and needed my truck transported. Diminoble's team provided frequent updates, and the driver was professional and friendly. My vehicle arrived without issues and right on schedule.",
+      "Moved from Texas to California and needed my truck transported.  Dimi Noble's team provided frequent updates, and the driver was professional and friendly. My vehicle arrived without issues and right on schedule.",
     location: "San Jose, CA",
     helpful: 9,
   },
@@ -3307,7 +3307,7 @@ export const reviewsData: Review[] = [
     id: "27",
     author: "Victoria Reynolds",
     rating: 5,
-    date: "2025-05-27",
+    date: "2024-05-27",
     content:
       "As a first-time customer, I was impressed by the level of professionalism. The quote was fair, the pickup was smooth, and the delivery was on time. My car arrived in the same condition as when it left. Will use their services again!",
     location: "Raleigh, NC",
@@ -3318,7 +3318,7 @@ export const reviewsData: Review[] = [
     id: "28",
     author: "Carlos Rodriguez",
     rating: 4,
-    date: "2025-06-04",
+    date: "2024-06-04",
     content:
       "Reliable service with good communication. There was a slight delay in transit due to weather conditions, but the team kept me informed every step of the way. Vehicle arrived in perfect condition.",
     location: "Miami, FL",
@@ -3328,9 +3328,9 @@ export const reviewsData: Review[] = [
     id: "29",
     author: "Amanda Pierce",
     rating: 5,
-    date: "2025-06-12",
+    date: "2024-05-12",
     content:
-      "Outstanding experience with Diminoble! From the initial quote to the final delivery, everything was handled professionally. The driver took extra care with my luxury vehicle, and it arrived ahead of schedule.",
+      "Outstanding experience with Dimi Noble! From the initial quote to the final delivery, everything was handled professionally. The driver took extra care with my luxury vehicle, and it arrived ahead of schedule.",
     location: "Denver, CO",
     avatarUrl: "https://randomuser.me/api/portraits/women/32.jpg",
     images: ["/reviews/29.jpg"],
@@ -3339,9 +3339,9 @@ export const reviewsData: Review[] = [
     id: "30",
     author: "Patrick O'Neill",
     rating: 5,
-    date: "2025-06-20",
+    date: "2024-04-20",
     content:
-      "After a bad experience with another company, Diminoble was a breath of fresh air. Clear communication, no hidden fees, and my car was delivered right to my doorstep in pristine condition. Couldn't ask for better service!",
+      "After a bad experience with another company, Dimi Noble was a breath of fresh air. Clear communication, no hidden fees, and my car was delivered right to my doorstep in pristine condition. Couldn't ask for better service!",
     location: "Chicago, IL",
     helpful: 11,
   },
@@ -3349,9 +3349,9 @@ export const reviewsData: Review[] = [
     id: "31",
     author: "Michelle Peterson",
     rating: 5,
-    date: "2025-06-28",
+    date: "2024-03-28",
     content:
-      "I needed to transport my car across the country for a job relocation, and Diminoble made it completely stress-free. Their online tracking system gave me peace of mind, and their team was always available to answer questions.",
+      "I needed to transport my car across the country for a job relocation, and Dimi Noble made it completely stress-free. Their online tracking system gave me peace of mind, and their team was always available to answer questions.",
     location: "Washington, DC",
     avatarUrl: "https://randomuser.me/api/portraits/women/38.jpg",
     helpful: 7,
@@ -3360,7 +3360,7 @@ export const reviewsData: Review[] = [
     id: "32",
     author: "David Schwartz",
     rating: 5,
-    date: "2025-07-06",
+    date: "2024-02-06",
     content:
       "Professional service from beginning to end. The quote was competitive, the communication was excellent, and the pickup and delivery were exactly as scheduled. My vehicle arrived without a single issue.",
     location: "Phoenix, AZ",
@@ -3370,9 +3370,9 @@ export const reviewsData: Review[] = [
     id: "33",
     author: "Lauren Cooper",
     rating: 5,
-    date: "2025-07-14",
+    date: "2024-12-14",
     content:
-      "I had to ship my car from New York to California, and Diminoble made it so easy! The customer service team was knowledgeable and friendly, and the driver was careful and punctual. Will definitely recommend to friends and family.",
+      "I had to ship my car from New York to California, and Dimi Noble made it so easy! The customer service team was knowledgeable and friendly, and the driver was careful and punctual. Will definitely recommend to friends and family.",
     location: "Los Angeles, CA",
     images: ["/reviews/33.jpg"],
   },
@@ -3380,7 +3380,7 @@ export const reviewsData: Review[] = [
     id: "34",
     author: "Michael Hernandez",
     rating: 5,
-    date: "2025-07-22",
+    date: "2023-10-22",
     content:
       "Diminoble Transportations exceeded my expectations in every way. The price was fair, the pickup was on time, and the delivery was early. My car arrived in perfect condition, and the driver was extremely professional.",
     location: "San Antonio, TX",
@@ -3390,7 +3390,7 @@ export const reviewsData: Review[] = [
     id: "35",
     author: "Stephanie Morrison",
     rating: 4,
-    date: "2025-07-30",
+    date: "2024-04-30",
     content:
       "Good experience overall. The transport took a day longer than initially estimated, but my vehicle arrived in perfect condition and the company kept me informed of the delay. Customer service was very responsive.",
     location: "Portland, OR",
@@ -3400,9 +3400,9 @@ export const reviewsData: Review[] = [
     id: "36",
     author: "Jason Baker",
     rating: 5,
-    date: "2025-08-07",
+    date: "2024-05-07",
     content:
-      "I've used several auto transport companies over the years, and Diminoble is by far the best. Their attention to detail, clear communication, and on-time delivery set them apart from the competition. Highly recommended!",
+      "I've used several auto transport companies over the years, and Dimi Noble is by far the best. Their attention to detail, clear communication, and on-time delivery set them apart from the competition. Highly recommended!",
     location: "Indianapolis, IN",
     helpful: 10,
   },
@@ -3410,9 +3410,9 @@ export const reviewsData: Review[] = [
     id: "37",
     author: "Alexandra Grant",
     rating: 5,
-    date: "2025-08-15",
+    date: "2024-06-15",
     content:
-      "Shipped my SUV from Florida to Washington state with Diminoble, and the experience was seamless. The driver was professional, the price was exactly as quoted, and my vehicle arrived right on schedule.",
+      "Shipped my SUV from Florida to Washington state with Dimi Noble, and the experience was seamless. The driver was professional, the price was exactly as quoted, and my vehicle arrived right on schedule.",
     location: "Seattle, WA",
     avatarUrl: "https://randomuser.me/api/portraits/women/45.jpg",
     helpful: 6,
@@ -3421,7 +3421,7 @@ export const reviewsData: Review[] = [
     id: "38",
     author: "William Harrison",
     rating: 5,
-    date: "2025-08-23",
+    date: "2024-07-23",
     content:
       "Genuinely impressed with the level of service provided by Diminoble. Their dispatch team was extremely organized, the driver was courteous and professional, and my vehicle was delivered without a single issue.",
     location: "New Orleans, LA",
@@ -3431,10 +3431,134 @@ export const reviewsData: Review[] = [
     id: "39",
     author: "Natalie Winters",
     rating: 5,
-    date: "2025-08-31",
+    date: "2024-08-31",
     content:
-      "After researching several companies, I chose Diminoble based on reviews, and they didn't disappoint! The entire process was transparent and efficient. My car arrived early and in perfect condition. Will definitely use again!",
+      "After researching several companies, I chose  Dimi Noble based on reviews, and they didn't disappoint! The entire process was transparent and efficient. My car arrived early and in perfect condition. Will definitely use again!",
     location: "Kansas City, MO",
     helpful: 9,
+  },
+  {
+    id: "40",
+    author: "Gregory Wilson",
+    rating: 5,
+    date: "2024-09-08",
+    content:
+      "Dimi Noble delivered my Tesla Model Y from California to New York without a single issue. The driver was extremely knowledgeable about handling electric vehicles, and the communication throughout was excellent. Couldn't be happier!",
+    location: "Brooklyn, NY",
+    helpful: 13,
+  },
+  {
+    id: "41",
+    author: "Diana Mitchell",
+    rating: 5,
+    date: "2025-02-15",
+    content:
+      "After being let down by another transport company, Dimi Noble stepped in and saved the day. They arranged pickup within 48 hours, provided consistent updates, and delivered my vehicle right on schedule. Their customer service team was a pleasure to work with.",
+    location: "Austin, TX",
+    avatarUrl: "https://randomuser.me/api/portraits/women/48.jpg",
+    helpful: 7,
+  },
+  {
+    id: "42",
+    author: "Kyle Richardson",
+    rating: 4,
+    date: "2025-03-02",
+    content:
+      "Good service with minor scheduling issues. My car was transported safely and arrived in perfect condition, but pickup was delayed by a day. The company was transparent about the delay and kept me informed, which I appreciated.",
+    location: "Salt Lake City, UT",
+    helpful: 5,
+  },
+  {
+    id: "43",
+    author: "Olivia Freeman",
+    rating: 5,
+    date: "2025-01-29",
+    content:
+      "I was relocating for a new job and needed my car shipped quickly. Diminoble not only met but exceeded my expectations! They provided door-to-door service, the driver was courteous, and my car arrived ahead of schedule. Highly recommend!",
+    location: "Atlanta, GA",
+    avatarUrl: "https://randomuser.me/api/portraits/women/52.jpg",
+    helpful: 8,
+  },
+  {
+    id: "44",
+    author: "Benjamin Sullivan",
+    rating: 5,
+    date: "2025-03-06",
+    content:
+      "As a car collector, I'm extremely particular about who transports my vehicles.  Dimi Noble provided enclosed transport for my classic Corvette, and the attention to detail was impressive. Will definitely use their services again for my other vehicles.",
+    location: "Scottsdale, AZ",
+    helpful: 15,
+  },
+  {
+    id: "45",
+    author: "Heather Nguyen",
+    rating: 5,
+    date: "2025-02-13",
+    content:
+      "I needed to ship my car from Boston to San Diego, and  Dimi Noble made it incredibly easy. Their online quote system was straightforward, pickup was on time, and delivery was exactly as promised. My car arrived in pristine condition.",
+    location: "San Diego, CA",
+    avatarUrl: "https://randomuser.me/api/portraits/women/55.jpg",
+  },
+  {
+    id: "46",
+    author: "Derek Montgomery",
+    rating: 4,
+    date: "2024-11-20",
+    content:
+      "Solid service overall. The transport took a couple days longer than initially estimated due to weather conditions, but the company was communicative throughout and my vehicle arrived in perfect condition. Would use again despite the slight delay.",
+    location: "Columbus, OH",
+    helpful: 4,
+  },
+  {
+    id: "47",
+    author: "Allison Parker",
+    rating: 5,
+    date: "2024-10-27",
+    content:
+      "Exceeded all my expectations! From the initial phone call to the final delivery, Diminoble's team was professional, friendly, and efficient. My SUV was delivered on time and in the same condition as when it was picked up. Five stars well deserved!",
+    location: "Denver, CO",
+    helpful: 11,
+  },
+  {
+    id: "48",
+    author: "Trevor Hamilton",
+    rating: 5,
+    date: "2025-01-03",
+    content:
+      "Had to transport two vehicles from Michigan to Florida for our winter home.  Dimi Noble coordinated both transports perfectly, provided regular updates, and delivered both cars on the same day as promised. Their service was worth every penny!",
+    location: "Naples, FL",
+    helpful: 9,
+  },
+  {
+    id: "49",
+    author: "Julia Sanchez",
+    rating: 5,
+    date: "2024-11-10",
+    content:
+      "My experience with  Dimi Noble Transportations was flawless. The quote was fair and transparent, the driver was on time for both pickup and delivery, and my vehicle arrived in perfect condition. Their customer service team was also very responsive.",
+    location: "Albuquerque, NM",
+    avatarUrl: "https://randomuser.me/api/portraits/women/58.jpg",
+    helpful: 6,
+  },
+  {
+    id: "50",
+    author: "Adrian Brooks",
+    rating: 5,
+    date: "2025-03-17",
+    content:
+      "After comparing several transport companies, I chose Dimi Noble based on their reviews and competitive pricing. They definitely lived up to their reputation! The entire process was smooth from start to finish, and my car arrived without any issues.",
+    location: "Dallas, TX",
+    helpful: 7,
+  },
+  {
+    id: "51",
+    author: "Sophia Miller",
+    rating: 5,
+    date: "2024-12-24",
+    content:
+      "I was nervous about shipping my brand new car across the country, but Diminoble put all my worries to rest. Their enclosed transport option was perfect, the driver was extremely careful, and their tracking system allowed me to monitor the journey. Excellent service!",
+    location: "San Francisco, CA",
+    avatarUrl: "https://randomuser.me/api/portraits/women/62.jpg",
+    helpful: 12,
   },
 ];

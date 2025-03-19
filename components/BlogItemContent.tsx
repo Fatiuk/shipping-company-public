@@ -15,16 +15,6 @@ const BlogItemContent: FC<{ item: BlogItemI }> = ({ item }) => {
   const locale = useLocale();
   return (
     <>
-      <SectionFullWidth bgImage={imgQuoteForm.src}>
-        <div className="flex flex-col px-4 items-center text-center justify-center h-full px-8 py-8 text-[--foreground]">
-          <h1 className="font-h1-h2 pb-4 text-[--color-b700-w]">
-            {t("title")}
-          </h1>
-          <p className="font-b1-b2">{t("description")}</p>
-        </div>
-        <HeroCTA />
-      </SectionFullWidth>
-
       <Section>
         <ActiveLink
           href="/company/blog"

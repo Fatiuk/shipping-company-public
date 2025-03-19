@@ -154,9 +154,9 @@ const Reviews: React.FC = () => {
                     </svg>
                   ))}
                 </div>
-                <div className="text-sm text-oblue-700 mt-1">
+                {/* <div className="text-sm text-oblue-700 mt-1">
                   {t("stats.basedOn", { count: reviews.length })}
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="space-y-1 w-full md:w-2/5">
