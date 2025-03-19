@@ -56,7 +56,7 @@ const BlogItemPage = async (props: PageProps) => {
           {t("description")}
         </p>
       </div>
-      <BlogItemContent item={item} />;
+      <BlogItemContent item={item} />
     </div>
   );
 };

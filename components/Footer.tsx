@@ -27,12 +27,12 @@ const Footer: FC<FooterI> = ({ navigation, address }) => {
                 <div className="min-w-fit mr-4 md:mr-0">
                   <Logo />
                 </div>
-                <div className="hidden sm:block font-b3-b4 mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px]">
+                <div className="hidden sm:block font-b3-b4 mx-auto lg:max-w-[550px] xl:max-w-[300px] 2xl:max-w-[300px] text-[--color-b500-b100]">
                   {t("companyDesc")}
                 </div>
                 {/* <SocialLinks /> */}
               </div>
-              <div className="block sm:hidden font-b3-b4 max-w-[400px] mt-2 470:mt-6">
+              <div className="block sm:hidden font-b3-b4 max-w-[400px] mt-2 470:mt-6 text-[--color-b500-b100]">
                 {t("companyDesc")}
               </div>
             </div>
