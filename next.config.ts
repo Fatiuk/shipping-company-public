@@ -13,8 +13,13 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/vi/**",
       },
+      {
+        protocol: "https",
+        hostname: "randomuser.me",
+        port: "",
+        pathname: "/vi/**",
+      },
     ],
-    domains: ["randomuser.me"],
   },
 };
 

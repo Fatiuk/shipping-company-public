@@ -17,6 +17,7 @@ const TeamMember: FC<TeamMemberI> = ({
           src={`/team/${positionSlug}.jpeg`}
           alt={name}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover object-center transform hover:scale-105 transition-transform duration-500"
         />
       </div>
