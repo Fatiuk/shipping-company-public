@@ -2,7 +2,6 @@
 import React, { FC } from "react";
 import { LuArrowLeft } from "react-icons/lu";
 import { useLocale, useTranslations } from "next-intl";
-import Section from "@/components/Section";
 import { formatDate } from "@/lib/utils";
 import BlogItemI from "@/types/blogItem";
 import ActiveLink from "./shared/ActiveLink";

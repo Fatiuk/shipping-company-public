@@ -41,28 +41,14 @@ const BlogItemPage = async (props: PageProps) => {
   const params = await props.params;
   const { slug } = params;
 
-  const locale = params.locale;
-  const t = await getTranslations({ locale, namespace: "blog" });
-
   const item = blogItems.find((item) => item.slug === slug);
 
   if (!item) notFound();
 
   return (
-    // <div className="container mx-auto py-16">
-    //   <div className="text-center mx-auto max-w-[600px] mb-6">
-    //     <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
-    //       {t("title")}
-    //     </h1>
-    //     <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
-    //       {t("description")}
-    //     </p>
-    //   </div>
-    //   <BlogItemContent item={item} />
-    // </div>
     <>
       <SectionFullWidth bgImage={item.image} title={item.title}>
-        <h2></h2>
+        <span></span>
       </SectionFullWidth>
       <Section>
         <BlogItemContent item={item} />
