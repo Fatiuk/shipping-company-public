@@ -20,7 +20,7 @@ const BlogItemContent: FC<{ item: BlogItemI }> = ({ item }) => {
         {t("returnToBlog")}
       </ActiveLink>
 
-      <h2 className="font-h2-h3 pb-9">{item.title}</h2>
+      {/* <h2 className="font-h2-h3 pb-9">{item.title}</h2> */}
       <p className="pb-4">{formatDate(item.date, locale)}</p>
       <div className="prose">{item.text}</div>
 
