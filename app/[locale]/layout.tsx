@@ -3,7 +3,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import { Nunito_Sans, Roboto_Condensed } from "next/font/google";
-// import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { location } from "@/app/data";
 import Navigation from "@/components/Navigation";
@@ -11,7 +10,6 @@ import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
 import { NavigationItemI } from "@/types/navigation";
 import "../globals.css";
-// import NotFound from "./not-found";
 
 const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
