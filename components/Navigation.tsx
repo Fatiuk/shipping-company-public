@@ -178,6 +178,37 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                   />
                 </svg>
               )}
+              {/* {!isMenuOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="var(--color-b500-w)"
+                  className="size-8"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="var(--color-b500-w)"
+                  className="size-8"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              )} */}
             </div>
           </div>
         </div>
@@ -218,8 +249,8 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                         }}
                         className={`relative top-5 ml-2 w-2.5 h-2.5 border-t-2 border-l-2 border-oblue-200 hover:cursor-pointer hover:border-oaccent-900 hover:border-t-4 hover:border-l-4 transform transition-transform ${
                           activeMobileSubmenuIndex === index
-                            ? "-mt-1 -rotate-135"
-                            : "rotate-45"
+                            ? "-mt-1 rotate-45"
+                            : "-rotate-135"
                         }`}
                       ></span>
                     </div>

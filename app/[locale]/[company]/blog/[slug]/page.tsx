@@ -6,20 +6,6 @@ import BlogItemContent from "@/components/BlogItemContent";
 import SectionFullWidth from "@/components/SectionFullWidth";
 import Section from "@/components/Section";
 
-export async function generateStaticParams() {
-  const locales = ["en", "es"];
-
-  const params = blogItems.flatMap((item) =>
-    locales.map((locale) => ({
-      locale,
-      slug: item.slug,
-    }))
-  );
-
-  console.log("Generated params:", params);
-  return params;
-}
-
 export async function generateMetadata(props: PageProps) {
   const params = await props.params;
   const locale = params.locale;
@@ -47,8 +33,10 @@ const BlogItemPage = async (props: PageProps) => {
 
   return (
     <>
-      <SectionFullWidth bgImage={item.image} title={item.title}>
-        <span></span>
+      <SectionFullWidth bgImage={item.image}>
+        <h2 className="font-h2-h3 text-[--color-b900-w] text-center py-10 sm:py-20">
+          {item.title}
+        </h2>
       </SectionFullWidth>
       <Section>
         <BlogItemContent item={item} />
