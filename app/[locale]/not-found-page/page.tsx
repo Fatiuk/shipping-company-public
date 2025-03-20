@@ -21,11 +21,12 @@ export default async function NotFoundPage(props: PageProps) {
           src={error404}
           width={500}
           height={500}
+          priority
           alt="404 image"
           className="rounded-xl"
         />
-        <h2 className="font-h2-h3">{t("error")} 404</h2>
-        <h3 className="font-h3-h4">{t("title")}</h3>
+        <h2 className="font-h2-h3 my-0">{t("error")} 404</h2>
+        <h3 className="font-h3-h4 my-0">{t("title")}</h3>
         <p className="font-b1-b2">{t("message")}</p>
         <ActiveLink
           href="/"
