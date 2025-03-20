@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "randomuser.me",
         port: "",
-        pathname: "/vi/**",
+        pathname: "/api/**",
       },
     ],
   },
