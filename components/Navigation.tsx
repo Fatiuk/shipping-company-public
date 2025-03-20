@@ -218,8 +218,8 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                         }}
                         className={`relative top-5 ml-2 w-2.5 h-2.5 border-t-2 border-l-2 border-oblue-200 hover:cursor-pointer hover:border-oaccent-900 hover:border-t-4 hover:border-l-4 transform transition-transform ${
                           activeMobileSubmenuIndex === index
-                            ? "-mt-1 -rotate-135"
-                            : "rotate-45"
+                            ? "-mt-1 rotate-45"
+                            : "-rotate-135"
                         }`}
                       ></span>
                     </div>
