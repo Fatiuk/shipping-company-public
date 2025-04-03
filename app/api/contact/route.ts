@@ -10,6 +10,11 @@ export async function POST(req: Request) {
     const emailUser = process.env.EMAIL_USER;
     const emailPass = process.env.EMAIL_PASS;
 
+    console.log("env vars", {
+      evEmail: `Email ${process.env.EMAIL_USER}`,
+      evPass: `Pass ${process.env.EMAIL_PASS}`,
+    });
+
     console.log("Email configuration:", {
       host: "smtpout.secureserver.net",
       user: emailUser ? "Email user is set" : "Email user is MISSING",
