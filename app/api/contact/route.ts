@@ -8,19 +8,22 @@ export async function POST(req: Request) {
       await req.json();
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
+      // host: "smtp.gmail.com",
+      host: "smtpout.secureserver.net",
       port: 465,
       secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
-      debug: true, // Enable debug output
-      logger: true, // Log information in the console
+      debug: true,
+      logger: true,
     });
 
     const mailOptions = {
-      to: "anastasia.dorfman1@gmail.com",
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      cc: "anastasia.dorfman1@gmail.com",
       subject: "Quote Form Submission",
       html: `
           <h1>Quote Form Submission</h1>

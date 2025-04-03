@@ -45,10 +45,10 @@ const navigation: NavigationItemI[] = [
     label: "howItWorks",
     href: "/how-it-works",
   },
-  {
-    label: "team",
-    href: "/team",
-  },
+  // {
+  //   label: "team",
+  //   href: "/team",
+  // },
   {
     label: "company",
     submenu: [
@@ -64,7 +64,7 @@ const footerNavigation: NavigationItemI[] = [
     label: "company",
     submenu: [
       { label: "about", href: "/company/about" },
-      { label: "team", href: "/team" },
+      // { label: "team", href: "/team" },
       { label: "reviews", href: "/reviews" },
       { label: "blog", href: "/company/blog" },
     ],
