@@ -7,22 +7,33 @@ export async function POST(req: Request) {
     const { originZip, destinationZip, vehicleModel, movingDate, phone } =
       await req.json();
 
+    const emailUser = process.env.EMAIL_USER;
+    const emailPass = process.env.EMAIL_PASS;
+
+    console.log("Email configuration:", {
+      host: "smtpout.secureserver.net",
+      user: emailUser ? "Email user is set" : "Email user is MISSING",
+      pass: emailPass ? "Password is set" : "Password is MISSING",
+    });
+
     const transporter = nodemailer.createTransport({
       // host: "smtp.gmail.com",
       host: "smtpout.secureserver.net",
-      port: 465,
-      secure: true,
+      // port: 465,
+      // secure: true,
+      port: 587,
+      secure: false,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: emailUser,
+        pass: emailPass,
       },
       debug: true,
       logger: true,
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
+      from: emailUser,
+      to: emailUser,
       cc: "anastasia.dorfman1@gmail.com",
       subject: "Quote Form Submission",
       html: `
