@@ -1,0 +1,586 @@
+{
+  "location": {
+    "city": "Buford",
+    "address": "6005 Chimney Springs Rd",
+    "zip": "30518 ",
+    "mapLink": "!1m18!1m12!1m3!1d3301.6505654960797!2d-84.0110305882497!3d34.15528101216963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59224f0b5cfa9%3A0xca2a62d0db8eb0b4!2s6005%20Chimney%20Springs%20Rd%2C%20Buford%2C%20GA%2030518%2C%20USA!5e0!3m2!1sen!2sca!4v1739399333884!5m2!1sen!2sca"
+  },
+  "contactData": {
+    "email": { "title": "Correo electrónico", "value": "teamlead@diminoble.com" },
+    "phone": { "title": "Teléfono", "value": "(561) 894-5331" }
+  },
+  "localeSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, fr {fr} en {en} es {es} other {unknown}}",
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "noten": "Français",
+    "notfr": "English",
+    "notes": "English",
+    "abbr": {
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
+    },
+    "languageLabel": "Alternar idioma"
+  },
+  "navbar": {
+    "videoReviews": "Reseñas en Video",
+    "yelpReviews": "Reseñas de Yelp",
+    "reviews": "Reseñas",
+    "howItWorks": "Cómo Funciona",
+    "team": "Nuestro Equipo",
+    "company": "Nuestra Empresa",
+    "blog": "Blog",
+    "about": "Acerca de Nosotros",
+    "faq": "Preguntas Frecuentes",
+    "quote": "Obtener Cotización",
+    "themeLabel": "Alternar tema",
+    "support24": "Soporte 24/7"
+  },
+  "footer": {
+    "companyDesc": "Nuestra empresa hará todo lo posible para analizar el proyecto particular en detalle y ofrecer una solución comercial que satisfaga sus requisitos.",
+    "company": "Empresa",
+    "features": "Características",
+    "blog": "Blog",
+    "about": "Acerca de",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contáctanos",
+    "quote": "Obtén tu Precio",
+    "quote2": "Obtén tu Cotización Gratuita",
+    "quote3": "Obtener Cotización",
+    "team": "Nuestro Equipo",
+    "testimonials": "Testimonios en Video",
+    "reviews": "Reseñas",
+    "termsAndConditions": "Términos y Condiciones",
+    "accessibilityStatement": "Declaración de Accesibilidad",
+    "orgPolicy": "Política Organizacional",
+    "privacyPolicy": "Política de Privacidad",
+    "rightsReserved": {
+      "year": "© 2025 ",
+      "clicks": "Dimi Noble Inc",
+      "allRights": ". Todos los Derechos Reservados."
+    },
+    "poweredBy": "Desarrollado por"
+  },
+  "notFound": {
+    "error": "Error",
+    "title": "¡Parece que esta página aún no existe!",
+    "message": "Puedes volver al inicio o contactarnos para encontrar la información que has estado buscando.",
+    "back": "Volver al inicio"
+  },
+  "home": {
+    "title": "Envío Confiable de Automóviles en Todo el País",
+    "description": "En Dimi Noble, nos destacamos en el sector de reubicación de vehículos. Creemos en mostrar nuestra excelencia, no solo hacer promesas. Nuestros servicios cubren todo el país, brindando a nuestros clientes el transporte de cualquier tipo de vehículo.",
+    "whyUs": {
+      "title": "¿Por qué Dimi Noble?",
+      "description": "Muchas cosas nos hacen destacar en nuestra industria. Estas son las razones por las que somos la empresa preferida para muchos que necesitan envío de vehículos.",
+      "benefits": [
+        {
+          "src": "/benefits/usa_pin.png",
+          "title": "Cobertura Nacional",
+          "description": "Dimi Noble ofrece servicios de reubicación de vehículos sin problemas en los 50 estados, asegurando que su vehículo llegue a su destino de manera eficiente, sin importar la ubicación."
+        },
+        {
+          "src": "/benefits/handshake.png",
+          "title": "Equipo Experimentado",
+          "description": "Con más de 5 años en la industria de reubicación, nuestros especialistas brindan un servicio excepcional a empresas, agentes e individuos, asegurando una experiencia fluida y profesional."
+        },
+        {
+          "src": "/benefits/car-insurance.png",
+          "title": "Socios Completamente Asegurados y Afianzados",
+          "description": "Colaboramos con socios completamente asegurados y afianzados, garantizando la seguridad y protección de su vehículo durante todo el proceso de transporte."
+        },
+        {
+          "src": "/benefits/shield-eye.png",
+          "title": "Proceso Transparente",
+          "description": "Nos enorgullecemos de mantener informados a los clientes, asegurando que comprenda cada paso del proceso de transporte para una experiencia sin complicaciones."
+        }
+      ],
+      "achievments": [
+        {
+          "count": "2000",
+          "suffix": "",
+          "increment": "100",
+          "title": "Clientes de\nEnvío"
+        },
+        {
+          "count": "6000",
+          "suffix": "",
+          "increment": "100",
+          "title": "Vehículos\nEnviados"
+        },
+        {
+          "count": "500",
+          "suffix": "+",
+          "increment": "10",
+          "title": "Reseñas\nPositivas"
+        }
+      ],
+      "howItWorks": "Cómo Funciona"
+    },
+    "quote": "Comienza tu cotización gratuita",
+    "callUs": "Llámanos Ahora",
+    "contactUs": "Contáctanos",
+    "about": {
+      "sectionTitle": "Acerca de nosotros",
+      "title": "Dimi Noble Inc es una empresa de envío licenciada que trabaja con socios completamente asegurados y afianzados",
+      "description": {
+        "intro": "Somos un servicio nacional de reubicación de vehículos, simplificando el proceso tanto para empresas como para individuos. Nuestro compromiso es brindar soluciones de transporte eficientes y sin problemas.",
+        "experience": "Con más de 5 años de experiencia en la industria de reubicación, nuestros especialistas han servido a empresas, contratistas e individuos privados con excelencia.",
+        "coverage": "Operamos en los 50 estados, asegurando el transporte seguro y confiable de vehículos a través de nuestros socios completamente asegurados y afianzados.",
+        "trust": "Cuando eliges Dimi Noble, priorizamos la transparencia, manteniéndote informado en cada paso. Nuestro objetivo es brindar un servicio de primer nivel con un valor inmejorable."
+      },
+      "highlights": {
+        "years": "Años de Experiencia",
+        "states": "Estados Cubiertos"
+      },
+      "badge": {
+        "licensed": "Completamente Licenciado",
+        "insured": "y Servicio Asegurado"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "question": "¿Qué servicios ofrece Dimi Noble Inc?",
+          "answer": "Dimi Noble proporciona servicios nacionales de reubicación de vehículos, manejando todo tipo de vehículos en los 50 estados."
+        },
+        {
+          "question": "¿Cómo puedo solicitar una cotización para enviar mi vehículo?",
+          "answer": "Puedes solicitar una cotización visitando nuestro sitio web y completando el formulario 'Obtén tu Precio' con tu origen, destino, fecha de mudanza y número de teléfono."
+        },
+        {
+          "question": "¿Es Dimi Noble Inc una empresa licenciada y asegurada?",
+          "answer": "Sí, Dimi Noble es una empresa de envío licenciada que colabora con socios completamente asegurados y afianzados."
+        },
+        {
+          "question": "¿Cuánto tiempo ha estado Dimi Noble en la industria de reubicación de vehículos?",
+          "answer": "Tenemos más de 5 años de experiencia en la industria de reubicación de vehículos, sirviendo a empresas, agentes contractuales e individuos privados."
+        },
+        {
+          "question": "¿Qué tipos de vehículos puede reubicar Dimi Noble Inc?",
+          "answer": "Manejamos el transporte de todo tipo de vehículos, asegurando una entrega segura y confiable en todo el país."
+        },
+        {
+          "question": "¿Cómo funciona el proceso de reubicación de vehículos?",
+          "answer": "Nuestro proceso involucra la presentación de una solicitud del cliente, proporcionar una estimación, selección de servicio y acuerdo de contrato, recogida del vehículo y entrega. Para información detallada, por favor visita la sección 'Cómo Funciona' en nuestro sitio web."
+        },
+        {
+          "question": "¿Cómo puedo contactar a Dimi Noble para más información?",
+          "answer": "Puedes contactarnos por correo electrónico en teamlead@diminoble.com o por teléfono al (561) 894-5331."
+        }
+      ]
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "items": [
+        {
+          "title": "Transporte de Vehículos Individuales",
+          "description": "Para propietarios privados, coleccionistas y reubicaciones."
+        },
+        {
+          "title": "Reubicación de Empresas y Flotas",
+          "description": "Confianza de contratistas, clientes corporativos y concesionarios."
+        },
+        {
+          "title": "Envío de RV, Botes y Remolques",
+          "description": "Más que solo autos: movemos todo."
+        },
+        {
+          "title": "Entrega Puerta a Puerta",
+          "description": "Directo, seguro y siempre a tiempo."
+        }
+      ]
+    }
+  },
+  "quoteForm": {
+    "formTitle": "Obtén tu Precio",
+    "content": {
+      "title": "Obtén tu Cotización de Mudanza Gratuita Hoy",
+      "description": "Servicios profesionales de transporte de vehículos en los 50 estados. Rápido, confiable y completamente asegurado.",
+      "licensed": "Licenciado",
+      "certified": "Completamente Certificado",
+      "insured": "Asegurado",
+      "coverage": "100% Cobertura"
+    },
+    "fields": {
+      "originZip": {
+        "name": "Código postal",
+        "label": "Código postal de origen",
+        "placeholder": "Código postal de origen"
+      },
+      "destinationZip": {
+        "name": "Código postal",
+        "label": "Código postal de destino",
+        "placeholder": "Código postal de destino"
+      },
+      "vehicleModel": {
+        "label": "Modelo del vehículo",
+        "name": "modelo del vehículo",
+        "placeholder": "Modelo del vehículo (ej. Ford F-150)"
+      },
+      "movingDate": {
+        "name": "fecha",
+        "label": "Fecha de mudanza",
+        "placeholder": "Fecha de mudanza"
+      },
+      "phone": {
+        "name": "número de teléfono",
+        "label": "Número de teléfono",
+        "placeholder": "Teléfono (ej., 1234567890)"
+      },
+      "acceptTerms": {
+        "name": "Términos",
+        "label": "Al marcar esta casilla, aceptas recibir mensajes de texto automatizados y personalizados en el número listado arriba. Responde STOP para cancelar. La frecuencia de mensajes varía. Pueden aplicar tarifas de mensajes y datos."
+      }
+    },
+    "validation": {
+      "required": "{field} es requerido",
+      "mustBeValid": "Debe ser un {field} válido",
+      "pastDate": "La fecha no puede estar en el pasado",
+      "tooShort": "{field} debe tener al menos {min} caracteres",
+      "tooLong": "{field} no puede exceder {max} caracteres"
+    },
+    "cta": "Obtener Cotización Gratuita",
+    "success": "Hemos recibido tu consulta y te contactaremos pronto.",
+    "error": { "title": "Error", "description": "Algo salió mal" }
+  },
+  "videoReviews": {
+    "title": "Reseñas en Video de Clientes",
+    "description": "Mira lo que nuestros clientes tienen que decir sobre su experiencia con nuestro servicio de envío de automóviles",
+    "close": "Cerrar",
+    "viewAll": "Ver Todas las Reseñas",
+    "previous": "Diapositiva anterior",
+    "next": "Siguiente diapositiva",
+    "goTo": "Ir a la diapositiva {slideNumber}"
+  },
+  "reviews": {
+    "title": "Reseñas de Clientes",
+    "description": "Mira lo que nuestros clientes están diciendo sobre nuestros servicios de envío en todo el país. Lee reseñas auténticas de clientes reales que han experimentado nuestra dedicación a la calidad y confiabilidad.",
+    "viewAll": "Ver Todas las Reseñas",
+    "previous": "Diapositiva anterior",
+    "next": "Siguiente diapositiva",
+    "goTo": "Ir a la diapositiva {slideNumber}",
+    "stats": {
+      "averageRating": "Calificación Promedio",
+      "basedOn": "Basado en {count} reseñas",
+      "reviewDistribution": "Distribución de Reseñas"
+    },
+    "filter": {
+      "byRating": "Filtrar por calificación:",
+      "sortBy": "Ordenar por:",
+      "sortOptions": {
+        "newest": "Más Recientes",
+        "highest": "Mejor Calificadas",
+        "mostHelpful": "Más Útiles"
+      },
+      "reset": "Restablecer Filtros"
+    },
+    "reviewCard": {
+      "verified": "Cliente Verificado",
+      "readMore": "Leer más",
+      "showLess": "Mostrar menos",
+      "helpful": "Útil ({count})",
+      "share": "Compartir",
+      "report": "Reportar"
+    },
+    "emptyState": {
+      "title": "No hay reseñas que coincidan con tu filtro",
+      "description": "Intenta ajustar tus filtros para ver más reseñas",
+      "resetButton": "Restablecer Filtros"
+    },
+    "loadMore": "Cargar Más Reseñas",
+    "showing": "Mostrando {visible} de {all} reseñas"
+  },
+  "howItWorks": {
+    "sectionTitle": "Cómo Funciona",
+    "title": "",
+    "description": "Sigue nuestro proceso simple para transportar tu vehículo de manera segura y eficiente",
+    "step": "Paso",
+    "steps": [
+      {
+        "title": "Presentación de Solicitud del Cliente",
+        "description": "El paso inicial que requerimos de nuestros clientes es la presentación de su solicitud, que se puede hacer convenientemente a través de nuestro sitio web integrado, teléfono o correo electrónico. Buscamos la información esencial para determinar la mejor opción disponible para ti, siguiendo estos pasos:\n- La primera pantalla te solicita ingresar el año, marca y modelo de tu vehículo. En caso de que tu vehículo no esté listado, por favor contáctanos por correo electrónico.\n- Posteriormente, indicas si el vehículo a reubicar está operativo. Es crucial notar que la capacidad de encender no necesariamente implica funcionalidad completa. Un vehículo considerado operativo es uno que enciende, se mueve por su propia fuerza y tiene frenos funcionales.\n- En la siguiente pantalla, solicitamos información sobre la ubicación actual y destino de tu vehículo, indicado por los códigos postales de ambas ubicaciones.\n- También preguntamos sobre tu tiempo preferido para el proyecto y tu flexibilidad. Puedes elegir reubicación inmediata o especificar una fecha particular.\n- En el siguiente paso, necesitamos tus datos de contacto (nombre, correo electrónico y número de teléfono) para guardar tu cotización bajo tu nombre."
+      },
+      {
+        "title": "Proporcionar Estimaciones",
+        "description": "El proceso de estimación involucra una consideración cuidadosa de numerosos factores, y aunque esto puede tomar tiempo, buscamos minimizar la duración. En línea con nuestro compromiso de entregar un servicio de reubicación de vehículos asequible, nuestros agentes de ventas certificados procesarán internamente una aplicación en tu nombre. Evaluamos meticulosamente todas las variables para proporcionarte el precio más preciso y económico.\nLa distancia se destaca como un factor significativo que influye en el precio cotizado. Sin embargo, la noción convencional de que mayor distancia equivale a costos de transporte más altos no siempre es precisa. Si nuestros conductores ya están en ruta hacia o desde tu ubicación, tu gasto de transporte puede ser solo una fracción del precio completo.\nVarios otros factores contribuyen a la estimación, incluyendo la longitud del vehículo, condición, tipo, altura, distancia al suelo, peso en la acera y estado operativo. Cada cotización que presentamos ofrece la opción entre transporte abierto o transporte cerrado. Aunque la cobertura de seguro permanece igual para ambos, algunos clientes prefieren transporte cerrado, mientras que otros optan por transporte abierto."
+      },
+      {
+        "title": "Selección de Servicio y Acuerdo de Contrato",
+        "description": "Al revisar todas las opciones disponibles, te empoderamos para elegir una oferta. Después de tu selección, procedemos a recopilar toda la información necesaria requerida para la transferencia de tu vehículo. La información crucial en esta etapa incluye:\n-El momento de nuestra cita.\n-Tu ubicación preferida para el vehículo.-Confirmación de la condición del vehículo, y más.\n-Toda esta información precisa se incorpora en el contrato, que luego se te envía. Tenemos especial cuidado en documentar todo para prevenir errores engañosos, malentendidos o futuras incomprensiones. Nuestro compromiso es asegurar que nuestros clientes se sientan seguros en sus tratos con nosotros. Mantenemos transparencia en el negocio, asegurándote que no hacemos cambios después de un acuerdo, ni introducimos tarifas ocultas.\n\nNuestros agentes certificados están siempre disponibles para asistirte. Si tienes preguntas, inquietudes o necesitas aclaraciones, están listos para ayudar. Para tu conveniencia, puedes elegir firmar el contrato ya sea manualmente o electrónicamente. Lo que te convenga nos conviene a nosotros. Una vez que el contrato está firmado, programamos rápidamente una fecha para el proyecto."
+      },
+      {
+        "title": "Recogida",
+        "description": "En la fecha y hora acordada, un vehículo llegará a la ubicación especificada. Antes de comenzar el procedimiento de carga, el conductor realiza una inspección exhaustiva del vehículo designado para transporte. Cada imperfección observada se documenta, y se te informa rápidamente de cualquier hallazgo. Además, el piso del transportador, responsable de transportar tu vehículo, se somete a inspección para asegurar que no haya elementos sueltos que puedan potencialmente dañar tu vehículo.\nLa seguridad de tu vehículo, desde el inicio del proceso de transporte hasta su entrega en la ubicación designada, sigue siendo nuestra máxima prioridad. Por lo tanto, tomamos medidas para asegurar el transporte del vehículo en condiciones óptimas.\nSiguiendo la inspección, el conductor posiciona cuidadosamente tu vehículo en el espacio dedicado en el transportador, adhiriéndose a un orden específico para carga y descarga. Las barras estabilizadoras se bajan luego para garantizar peso equilibrado para máximo refuerzo y seguridad. Una vez que tu vehículo está seguro en el transportador, el conductor asegura además su estabilidad agregando correas tanto al frente como atrás del vehículo. En cada parada hecha durante el transporte, el conductor prueba la carga en las correas para mantener la seguridad."
+      },
+      {
+        "title": "Proceso de Entrega",
+        "description": "En el día de entrega de tu vehículo, es importante notar que nuestro conductor puede tener recogidas y entregas adicionales programadas. La ruta de entrega típicamente se extiende a la ubicación más lejana primero, lo que significa que los clientes en proximidad más cercana pueden recibir sus vehículos antes. Mientras tu vehículo puede ser transportado a varias ubicaciones para recogidas y entregas en el camino, es improbable que sea movido nuevamente hasta que llegue a tu destino final.\nPara tu conveniencia, el conductor coordinará contigo para determinar una ubicación adecuada para la entrega. El conductor elegirá un espacio abierto que permita dar vuelta y facilite la carga y descarga de otros vehículos a bordo. Durante esta fase, la correa que asegura tu vehículo será removida, el reporte de entrega será finalizado, y el conductor realizará las siguientes acciones:\n-Inspeccionar el vehículo y proporcionar un reporte de entrega detallado al cliente.\n-Descargar el vehículo y entregar las llaves al destino final.\n-Si el vehículo fue inicialmente recogido de una instalación comercial y hay información pertinente que transmitir, nuestro conductor compartirá todos los detalles relevantes sobre el vehículo.\n\nAmablemente solicitamos que asignes aproximadamente una hora de tu tiempo para el proceso post-entrega. Este tiempo es esencial para asegurar la entrega cuidadosa y segura de tu vehículo"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "¡Mueve tu Auto con Confianza – Rápido, Confiable, Nacional!",
+    "recentPosts": "Publicaciones Recientes",
+    "featuredPosts": "Publicaciones Destacadas",
+    "readMore": "Leer más",
+    "postedOn": "Publicado el",
+    "by": "por",
+    "in": "en",
+    "browseTags": "Navegar por Etiquetas",
+    "relatedPosts": "Publicaciones Relacionadas",
+    "sharePost": "Compartir esta publicación",
+    "tags": {
+      "title": "Etiquetas",
+      "all": "Todas las Publicaciones",
+      "autoTransportGuide": "Guía de Transporte Automotriz",
+      "industryTrends": "Tendencias de la Industria",
+      "transportTechnology": "Tecnología de Transporte",
+      "greenTransport": "Transporte Verde",
+      "sustainabilityPractices": "Prácticas de Sostenibilidad",
+      "tag2": "Etiqueta 2",
+      "tag3": "Etiqueta 3"
+    },
+    "noPostsFound": "No se encontraron publicaciones para la etiqueta seleccionada.",
+    "returnToBlog": "Volver al Blog"
+  },
+  "pagination": {
+    "first": "Primero",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "last": "Último",
+    "page": "Página",
+    "of": "de",
+    "showing": "Mostrando",
+    "to": "a",
+    "results": "resultados",
+    "outOf": "de"
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "description": "Conoce a los profesionales dedicados que hacen excepcional tu experiencia de transporte de automóviles.",
+    "meetOurTeam": "Conoce Nuestro Equipo",
+    "teamDescription": "Nuestro equipo experto combina años de experiencia en la industria con una pasión por el servicio al cliente para entregar las soluciones de transporte automotriz más confiables a nivel nacional.",
+    "positions": {
+      "ceo_founder": "CEO y Fundador",
+      "operations_manager": "Gerente de Operaciones",
+      "fleet_supervisor": "Supervisor de Flota",
+      "customer_relations": "Director de Relaciones con Clientes",
+      "logistics_specialist": "Especialista en Logística",
+      "compliance_officer": "Oficial de Cumplimiento"
+    },
+    "viewProfile": "Ver Perfil",
+    "contactMember": "Contactar",
+    "contactUs": "Ponte en contacto con nuestro equipo",
+    "joinOurTeam": "Únete a Nuestro Equipo",
+    "careersDescription": "¿Buscas ser parte de algo especial? Siempre estamos buscando individuos talentosos para unirse a nuestro equipo en crecimiento.",
+    "viewOpenings": "Ver Posiciones Abiertas"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Introducción",
+    "description": "Dimi Noble Inc (\"nosotros\", \"nos\" o \"nuestro\") está comprometido a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web https://diminoble.com/, usas nuestros servicios de transporte o interactúas con nosotros de otra manera. Por favor lee esta política cuidadosamente para entender nuestras perspectivas y prácticas con respecto a tus datos personales.",
+    "sections": {
+      "1": {
+        "title": "1. Información que Recopilamos",
+        "content": "Podemos recopilar y procesar los siguientes tipos de información:",
+        "items": [
+          "Datos Personales: Recopilamos información personal como tu origen, destino, fecha de mudanza y número de teléfono. Esta información se usa para proporcionar nuestros servicios de transporte y para comunicarnos contigo.",
+          "Datos de Uso: Información sobre cómo interactúas con nuestro sitio web, como direcciones IP, tipos de navegador y páginas vistas.",
+          "Cookies y Tecnologías de Seguimiento: Información recopilada a través de cookies y otras tecnologías de seguimiento."
+        ]
+      },
+      "2": {
+        "title": "2. Cómo Usamos tu Información",
+        "content": "Usamos la información que recopilamos de las siguientes maneras:",
+        "items": [
+          "Para proporcionar y mantener nuestros servicios de transporte",
+          "Para gestionar y programar tus servicios de transporte",
+          "Para comunicarnos contigo, incluyendo responder a consultas",
+          "Para cumplir con obligaciones legales"
+        ]
+      },
+      "3": {
+        "title": "3. Compartir tu Información",
+        "content": "No compartimos tus datos personales con terceros. Toda la información recopilada es usada únicamente por Dimi Noble para cumplir nuestros compromisos de servicio contigo."
+      },
+      "4": {
+        "title": "4. Seguridad de Datos",
+        "content": "Implementamos medidas técnicas y organizacionales apropiadas para proteger tus datos personales. Sin embargo, ten en cuenta que ninguna transmisión por internet es completamente segura, y no podemos garantizar la seguridad absoluta de tu información."
+      },
+      "5": {
+        "title": "5. Tus Derechos",
+        "content": "Tienes el derecho de acceder, corregir, eliminar u objetar el procesamiento de tus datos personales. Para ejercer estos derechos, por favor contáctanos en leadmanager@expresscartransports.com o llama al +1 (561) 894-5331."
+      },
+      "6": {
+        "title": "6. Cookies y Tecnologías de Seguimiento",
+        "content": "Podemos usar cookies y tecnologías de seguimiento similares para mejorar tu experiencia en nuestro sitio web. Puedes gestionar tus preferencias de cookies a través de la configuración de tu navegador."
+      },
+      "7": {
+        "title": "7. Cumplimiento con Leyes",
+        "content": "Cumplimos con las leyes y regulaciones de protección de datos aplicables, incluyendo la Ley de Privacidad del Consumidor de California (CCPA) y otras leyes estatales y federales relevantes. Estamos comprometidos a proteger tu privacidad y derechos de datos."
+      },
+      "8": {
+        "title": "8. Cambios a esta Política de Privacidad",
+        "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Cualquier cambio será publicado en esta página con una fecha de revisión actualizada. Te animamos a revisar esta Política de Privacidad periódicamente para mantenerte informado sobre cómo estamos protegiendo tu información."
+      },
+      "9": {
+        "title": "9. Contáctanos",
+        "content": "Si tienes preguntas o inquietudes sobre esta Política de Privacidad o nuestras prácticas de datos, por favor contáctanos en:",
+        "contact": {
+          "email": { "label": "Correo electrónico", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Teléfono", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  },
+  "termsAndConditions": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Introducción",
+    "description": "Estos Términos y Condiciones (\"Términos\") rigen tu uso de los servicios de envío de vehículos de Dimi Noble (\"nosotros\", \"nos\" o \"nuestro\"). Al acceder a nuestro sitio web o utilizar nuestros servicios, aceptas cumplir y estar sujeto a estos Términos.",
+    "sections": {
+      "1": {
+        "title": "1. Servicios Proporcionados",
+        "content": "Dimi Noble se especializa en el transporte nacional de varios tipos de vehículos, trabajando con socios completamente asegurados y afianzados para asegurar una entrega segura y confiable."
+      },
+      "2": {
+        "title": "2. Responsabilidades del Usuario",
+        "content": "Los usuarios deben proporcionar información precisa y completa al solicitar nuestros servicios. Esto incluye, pero no se limita a, las direcciones de origen y destino, fechas de mudanza e información de contacto. Los usuarios también son responsables de preparar el vehículo para el transporte, lo que incluye:",
+        "items": [
+          "Asegurar que el vehículo esté limpio para propósitos de inspección.",
+          "Desactivar cualquier alarma.",
+          "Mantener un nivel de combustible de 1/4 de tanque o menos.",
+          "Remover o asegurar todas las partes sueltas, accesorios frágiles o sobresalientes, y spoilers que cuelguen bajo.",
+          "Remover dispositivos electrónicos de cobro de peajes para prevenir cargos no deseados."
+        ]
+      },
+      "3": {
+        "title": "3. Términos de Pago",
+        "content": "Se requiere un pago inicial para iniciar el proceso de envío. El saldo restante vence al momento de la entrega del vehículo y debe pagarse completamente en efectivo, giro postal o cheque certificado al transportista autorizado."
+      },
+      "4": {
+        "title": "4. Política de Cancelación",
+        "content": "Los pedidos pueden cancelarse en cualquier momento antes de que se asigne un transportista sin incurrir en tarifas de cancelación."
+      },
+      "5": {
+        "title": "5. Responsabilidad y Seguro",
+        "content": "Dimi Noble y sus socios están completamente asegurados y afianzados. Sin embargo, se aconseja a los usuarios mantener su propia cobertura de seguro. No somos responsables por artículos personales dejados en el vehículo durante el transporte."
+      },
+      "6": {
+        "title": "6. Ley Aplicable",
+        "content": "Estos Términos se rigen y se interpretan de acuerdo con las leyes del estado en el que opera Dimi Noble, sin consideración a sus principios de conflicto de leyes."
+      },
+      "7": {
+        "title": "7. Información de Contacto",
+        "content": "Para cualquier pregunta o inquietud con respecto a estos Términos, por favor contáctanos en:",
+        "contact": {
+          "email": { "label": "Correo electrónico", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Teléfono", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  },
+  "accessibilityStatement": {
+    "title": "Declaración de Accesibilidad",
+    "subtitle": "Nuestro Compromiso",
+    "description": "Dimi Noble (\"nosotros\", \"nos\" o \"nuestro\") está comprometido a asegurar la accesibilidad para todos los usuarios, incluyendo individuos con discapacidades. Nos esforzamos por hacer nuestro sitio web y servicios accesibles y fáciles de usar para todos.",
+    "sections": {
+      "1": {
+        "title": "1. Estándares de Accesibilidad",
+        "content": "Buscamos cumplir con los estándares de accesibilidad aplicables, incluyendo las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1 Nivel AA. Nuestros esfuerzos incluyen mejorar la navegación del sitio web, legibilidad y compatibilidad con tecnologías asistivas."
+      },
+      "2": {
+        "title": "2. Características y Acomodaciones",
+        "content": "Para mejorar la accesibilidad, hemos implementado las siguientes características:",
+        "items": [
+          "Soporte de navegación por teclado para usuarios que no usan un ratón.",
+          "Texto alternativo para imágenes para ayudar a usuarios de lectores de pantalla.",
+          "Contraste de color suficiente para asegurar legibilidad.",
+          "Texto escalable para usuarios que necesitan fuentes más grandes.",
+          "Compatibilidad con lectores de pantalla y otras tecnologías asistivas."
+        ]
+      },
+      "3": {
+        "title": "3. Mejoras Continuas",
+        "content": "Revisamos y mejoramos continuamente la accesibilidad de nuestro sitio web realizando auditorías regulares, incorporando comentarios de usuarios y siguiendo las mejores prácticas de la industria."
+      },
+      "4": {
+        "title": "4. Contenido de Terceros",
+        "content": "Aunque nos esforzamos por asegurar la accesibilidad en todo nuestro sitio web, algún contenido o integraciones de terceros pueden no cumplir completamente con nuestros estándares de accesibilidad. Alentamos a los proveedores de terceros a mejorar sus características de accesibilidad."
+      },
+      "5": {
+        "title": "5. Comentarios y Asistencia",
+        "content": "Damos la bienvenida a comentarios sobre la accesibilidad de nuestro sitio web y servicios. Si experimentas dificultades o necesitas asistencia, por favor contáctanos en:",
+        "contact": {
+          "email": { "label": "Correo electrónico", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Teléfono", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  },
+  "organizationalPolicy": {
+    "title": "Política Organizacional",
+    "subtitle": "Introducción",
+    "description": "Dimi Noble (\"nosotros\", \"nos\" o \"nuestro\") está comprometido a mantener altos estándares de profesionalismo, integridad y excelencia en el servicio en la industria de transporte de vehículos. Esta Política Organizacional describe nuestros principios rectores, estándares éticos y compromisos operacionales.",
+    "sections": {
+      "1": {
+        "title": "1. Misión y Valores",
+        "content": "Nuestra misión es proporcionar servicios de transporte de vehículos seguros, confiables y eficientes mientras mantenemos valores de transparencia, satisfacción del cliente y cumplimiento con las regulaciones de la industria."
+      },
+      "2": {
+        "title": "2. Código de Conducta",
+        "content": "Se espera que todos los empleados, socios y afiliados se adhieran a los más altos estándares éticos y profesionales. Esto incluye:",
+        "items": [
+          "Proporcionar comunicación honesta y transparente con clientes y partes interesadas.",
+          "Asegurar la confidencialidad y proteger la información sensible del cliente.",
+          "Evitar conflictos de interés y actuar en el mejor interés de los clientes y la empresa.",
+          "Mantener un ambiente de trabajo respetuoso e inclusivo."
+        ]
+      },
+      "3": {
+        "title": "3. Cumplimiento con Leyes y Regulaciones",
+        "content": "Operamos en pleno cumplimiento con todas las regulaciones locales, estatales y federales aplicables con respecto al transporte de vehículos. Esto incluye adherencia a los requisitos de licencias, seguros y seguridad."
+      },
+      "4": {
+        "title": "4. Compromiso de Servicio al Cliente",
+        "content": "Estamos dedicados a proporcionar un servicio al cliente excepcional mediante:",
+        "items": [
+          "Ofrecer información clara y precisa sobre servicios, precios y políticas.",
+          "Asegurar respuestas oportunas a consultas e inquietudes de clientes.",
+          "Proporcionar servicios de transporte de vehículos seguros y protegidos.",
+          "Abordar y resolver quejas de manera rápida y profesional."
+        ]
+      },
+      "5": {
+        "title": "5. Responsabilidad Ambiental",
+        "content": "Reconocemos la importancia de la sostenibilidad ambiental y nos esforzamos por minimizar nuestra huella ambiental a través de:",
+        "items": [
+          "Fomentar prácticas de transporte eficientes en combustible.",
+          "Reducir emisiones innecesarias optimizando la logística.",
+          "Promover prácticas comerciales ecológicas."
+        ]
+      },
+      "6": {
+        "title": "6. Responsabilidades de los Empleados",
+        "content": "Se espera que nuestros empleados mantengan profesionalismo, integridad y responsabilidad. Proporcionamos oportunidades de capacitación y desarrollo para asegurar el crecimiento continuo y la adherencia a los estándares de la industria."
+      },
+      "7": {
+        "title": "7. Revisión y Actualizaciones",
+        "content": "Esta política está sujeta a revisión y actualizaciones periódicas para asegurar el cumplimiento con los desarrollos de la industria y las prácticas comerciales en evolución."
+      },
+      "8": {
+        "title": "8. Información de Contacto",
+        "content": "Para cualquier pregunta con respecto a nuestra Política Organizacional, por favor contáctanos en:",
+        "contact": {
+          "email": { "label": "Correo electrónico", "value": "teamlead@diminoble.com" },
+          "phone": { "label": "Teléfono", "value": "+1 (561) 894-5331" }
+        }
+      }
+    }
+  }
+}

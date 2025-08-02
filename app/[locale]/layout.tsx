@@ -137,11 +137,13 @@ export default async function RootLayout(props: Props) {
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
           storageKey="theme-preference"
+          forcedTheme="dark"
         >
+          {/* Force dark theme only - overrides any previously saved user preferences */}
           <NextIntlClientProvider messages={messages} locale={locale}>
             <Navigation navigation={navigation} />
             <main className="w-full flex flex-wrap flex-grow mt-[64px] mx-auto px-0">

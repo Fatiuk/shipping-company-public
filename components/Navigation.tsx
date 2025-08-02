@@ -41,7 +41,6 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
     }
   };
 
-  // close mobile menu when theme changes
   useEffect(() => {
     if (isMenuOpen) setMenuOpen(false);
   }, [resolvedTheme]);
@@ -72,7 +71,7 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                         className="flex items-center text-[--color-b900-w]"
                       >
                         {t(nav.label)}
-                        <span className="ml-2 w-2.5 h-2.5 border-t-2 border-l-2 border-oblue-200 relative -top-1 transform -rotate-135 transition-transform group-hover:rotate-45 group-hover:mt-3"></span>
+                        <span className="ml-2 w-2.5 h-2.5 border-t-2 border-l-2 border-oblue-200 relative -top-0.5 transform -rotate-135 transition-transform group-hover:rotate-45 origin-center"></span>
                       </ActiveLink>
                       <ul className="absolute w-max left-0 pt-2 bg-[--color-b50-b900] rounded-xl drop-shadow-xl dark:shadow-light-lg p-2 space-y-2 hidden group-hover:block z-10">
                         {nav.submenu.map((sub) => (
@@ -121,15 +120,35 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
             </button>
           </nav>
 
-          <div className={`hidden lg:flex items-center xl:gap-10`}>
+          <div className={`hidden lg:flex items-center lg:gap-10`}>
+            <div className="flex items-center gap-x-1">
+              <div className="relative h-10 w-10 flex items-center justify-center">
+                <img 
+                  src="/benefits/phone.svg" 
+                  alt="Support" 
+                  className="h-6 w-6 object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xs text-[--color-b600-b300] font-medium">
+                  {t("support24")}
+                </span>
+                <a 
+                  href="tel:+15618945331" 
+                  className="text-sm font-bold text-[--color-b900-w] hover:text-[--color-a700-a500] transition-colors"
+                >
+                  (561) 894-5331
+                </a>
+              </div>
+            </div>
             <ActiveLink
               href="/#contact-us"
-              className="whitespace-nowrap h-fit py-3 px-4 lg:py-4 lg:px-8 mr-4 rounded-lg font-bold text-white bg-oaccent-700 hover:bg-oaccent-900 transition-colors"
+              className="whitespace-nowrap h-fit py-3 px-4 lg:py-4 lg:px-8 rounded-lg font-bold text-white bg-oaccent-700 hover:bg-oaccent-900 transition-colors"
             >
               {t("quote")}
             </ActiveLink>
             <div className="flex items-center gap-x-4 xl:ms-6">
-              <ThemeSwitch />
+              {/* <ThemeSwitch /> */}
               <LocaleSwitcher />
             </div>
           </div>
@@ -203,25 +222,32 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                 {nav.submenu ? (
                   <>
                     <div className="flex justify-center">
-                      <ActiveLink
-                        href={nav.href ?? "#"}
-                        className="flex justify-center py-2"
-                        activeClassName="text-[--color-a900-b200]"
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {t(nav.label)}
-                      </ActiveLink>
-                      <span
+                      <div 
+                        className="flex items-center cursor-pointer"
                         onClick={(e) => {
                           e.stopPropagation();
                           toggleMobileSubmenu(index);
                         }}
-                        className={`relative top-5 ml-2 w-2.5 h-2.5 border-t-2 border-l-2 border-oblue-200 hover:cursor-pointer hover:border-oaccent-900 hover:border-t-4 hover:border-l-4 transform transition-transform ${
-                          activeMobileSubmenuIndex === index
-                            ? "-mt-1 rotate-45"
-                            : "-rotate-135"
-                        }`}
-                      ></span>
+                      >
+                        <ActiveLink
+                          href={nav.href ?? "#"}
+                          className="flex justify-center py-1"
+                          activeClassName="text-[--color-a900-b200]"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            toggleMobileSubmenu(index);
+                          }}
+                        >
+                          {t(nav.label)}
+                        </ActiveLink>
+                        <span
+                          className={`ml-2 w-2.5 h-2.5 border-t-2 border-l-2 border-oblue-200 hover:cursor-pointer hover:border-oaccent-900 hover:border-t-4 hover:border-l-4 transform transition-transform origin-center ${
+                            activeMobileSubmenuIndex === index
+                              ? "rotate-45"
+                              : "-rotate-135"
+                          }`}
+                        ></span>
+                      </div>
                     </div>
                     {activeMobileSubmenuIndex === index && (
                       <ul className="w-full pt-2 p-2 space-y-2">
@@ -266,9 +292,31 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
             ))}
           </ul>
         </nav>
-        <div className="flex justify-center gap-x-6 py-6">
-          <ThemeSwitch />
-          <LocaleSwitcherMobile />
+        <div className="flex flex-col items-center gap-y-4 py-6">
+          <div className="flex items-center gap-x-3">
+            <div className="relative h-8 w-8 flex items-center justify-center">
+              <img 
+                src="/benefits/customer-service.svg" 
+                alt="Support" 
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xs text-[--color-b600-b300] font-medium">
+                {t("support24")}
+              </span>
+              <a 
+                href="tel:+15618945331" 
+                className="text-sm font-bold text-[--color-black-w] hover:text-[--color-a700-a500] transition-colors"
+              >
+                (561) 894-5331
+              </a>
+            </div>
+          </div>
+          <div className="flex justify-center gap-x-6">
+            {/* <ThemeSwitch /> */}
+            <LocaleSwitcherMobile />
+          </div>
         </div>
       </div>
     </>

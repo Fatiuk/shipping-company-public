@@ -64,15 +64,11 @@ const About: FC = () => {
 
   return (
     <div ref={sectionRef} className="relative">
-      {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-oblue-500/10 to-transparent rounded-full blur-2xl" />
       <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tl from-oaccent-500/10 to-transparent rounded-full blur-3xl" />
 
-      {/* <div className="md:max-w-[2000px] px-4 md:px-16 flex flex-col lg:flex-row items-center justify-between gap-16 relative"> */}
       <div className="w-full  mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-16 relative">
         <div ref={textRef} className="lg:w-1/2 space-y-6">
-          {/* Small accent line */}
-          <div className="w-20 h-1 bg-gradient-to-r from-oblue-300 to-oaccent-600" />
 
           <h5 className="uppercase tracking-wider text-[--color-b700-b200]">
             {t("sectionTitle")}
@@ -93,7 +89,6 @@ const About: FC = () => {
             <p className="text-[--color-b700-b100]">{t("description.trust")}</p>
           </div>
 
-          {/* Stats or highlights */}
           <div className="grid grid-cols-2 gap-6 pt-6">
             <div className="space-y-2">
               <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
@@ -116,7 +111,6 @@ const About: FC = () => {
 
         <div ref={imageRef} className="lg:w-1/2">
           <div className="relative">
-            {/* Main image */}
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 width={1316}
@@ -127,11 +121,6 @@ const About: FC = () => {
               />
             </div>
 
-            {/* Floating accent elements */}
-            {/* <div className="absolute -top-4 -right-4 w-24 h-24 bg-oblue-600/10 rounded-full blur-xl" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-oaccent-500/10 rounded-full blur-xl" /> */}
-
-            {/* Floating badge */}
             <div className="z-20 absolute right-[-0px] bottom-4 sm:bottom-16 bg-[--color-w-b100] rounded-l-xl p-2 sm:p-4 shadow-xl transform hover:scale-105 transition-transform duration-300">
               <div className="font-b4-b5 font-semibold text-oblue-500">
                 {t("badge.licensed")}

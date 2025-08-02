@@ -11,14 +11,17 @@
   },
   "localeSwitcher": {
     "label": "Changer de langue",
-    "locale": "{locale, select, fr {fr} en {en} other {inconnu}}",
+    "locale": "{locale, select, fr {fr} en {en} es {es} other {inconnu}}",
     "en": "English",
     "fr": "Français",
+    "es": "Español",
     "noten": "Français",
     "notfr": "English",
+    "notes": "English",
     "abbr": {
-      "en": "Eng",
-      "fr": "Fr"
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
     },
     "languageLabel": "Changer de langue"
   },
@@ -33,7 +36,8 @@
     "about": "À propos de nous",
     "faq": "FAQ",
     "quote": "Obtenir un devis",
-    "themeLabel": "Changer de thème"
+    "themeLabel": "Changer de thème",
+    "support24": "Support 24/7"
   },
   "footer": {
     "companyDesc": "Notre entreprise fera un effort supplémentaire pour analyser en détail votre projet spécifique et proposer une solution commerciale adaptée à vos besoins.",
@@ -167,6 +171,27 @@
         {
           "question": "Comment puis-je contacter Dimi Noble pour plus d'informations ?",
           "answer": "Vous pouvez nous joindre par e-mail à teamlead@diminoble.com ou par téléphone au (561) 894-5331."
+        }
+      ]
+    },
+    "services": {
+      "title": "Nos Services",
+      "items": [
+        {
+          "title": "Transport de Véhicules Individuels",
+          "description": "Pour les propriétaires privés, collectionneurs et déménagements."
+        },
+        {
+          "title": "Relocalisation d'Entreprises et de Flottes",
+          "description": "Fiabilité pour les entrepreneurs, clients corporatifs et concessionnaires."
+        },
+        {
+          "title": "Expédition de VR, Bateaux et Remorques",
+          "description": "Plus que des voitures—nous transportons tout."
+        },
+        {
+          "title": "Livraison Porte-à-Porte",
+          "description": "Direct, sécurisé et toujours à l'heure."
         }
       ]
     }

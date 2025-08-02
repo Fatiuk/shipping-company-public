@@ -33,7 +33,6 @@ const QuoteForm: FC = () => {
       },
     });
 
-    // Animate content (left side)
     tl.fromTo(
       contentRef.current,
       {
@@ -48,7 +47,6 @@ const QuoteForm: FC = () => {
       }
     );
 
-    // Animate form (right side)
     tl.fromTo(
       formRef.current,
       {
@@ -63,7 +61,7 @@ const QuoteForm: FC = () => {
         duration: 1.2,
         ease: "power2.out",
       },
-      "-=0.7" // Start slightly before the first animation ends
+      "-=0.7"
     );
 
     return () => {

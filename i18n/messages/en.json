@@ -11,14 +11,17 @@
   },
   "localeSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, fr {fr} en {en} other {unknown}}",
+    "locale": "{locale, select, fr {fr} en {en} es {es} other {unknown}}",
     "en": "English",
     "fr": "Français",
+    "es": "Español",
     "noten": "Français",
     "notfr": "English",
+    "notes": "English",
     "abbr": {
-      "en": "Eng",
-      "fr": "Fr"
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
     },
     "languageLabel": "Toggle language"
   },
@@ -33,7 +36,8 @@
     "about": "About Us",
     "faq": "FAQ",
     "quote": "Get a Quote",
-    "themeLabel": "Toggle theme"
+    "themeLabel": "Toggle theme",
+    "support24": "Support 24/7"
   },
   "footer": {
     "companyDesc": "Our company will go the extra mile to analyze the particular project in detail, and offer a business solution that will meet your requirements.",
@@ -167,6 +171,27 @@
         {
           "question": "How can I contact Dimi Noble for more information?",
           "answer": "You can reach us via email at teamlead@diminoble.com or by phone at (561) 894-5331."
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "items": [
+        {
+          "title": "Individual Vehicle Transport",
+          "description": "For private owners, collectors, and relocations."
+        },
+        {
+          "title": "Business & Fleet Relocation",
+          "description": "Trusted by contractors, corporate clients, and dealerships."
+        },
+        {
+          "title": "RV, Boat & Trailer Shipping",
+          "description": "More than just cars—we move it all."
+        },
+        {
+          "title": "Door-to-Door Delivery",
+          "description": "Direct, secure, and always on time."
         }
       ]
     }

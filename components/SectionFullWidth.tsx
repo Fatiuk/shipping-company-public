@@ -9,6 +9,7 @@ interface SectionFullWidthI {
   bgClass?: string;
   title?: string;
   titleClass?: string;
+  fullHeight?: boolean;
 }
 
 const SectionFullWidth: FC<SectionFullWidthI> = ({
@@ -18,11 +19,12 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
   children,
   title,
   titleClass = "",
+  fullHeight = false,
 }) => {
   const t = useTranslations();
-  const style = bgImage
+  const style = bgImage || (fullHeight && image)
     ? {
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${bgImage || image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }
@@ -30,11 +32,23 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
 
   return (
     <div
-      className="w-full relative z-0 w-full py-[1.5rem] sm:py-[3rem] overflow-hidden"
+      className={`w-full relative z-0 overflow-hidden ${
+        bgImage || fullHeight
+          ? "h-[472px] lg:h-[700px]" 
+          : "py-[1.5rem] sm:py-[3rem]"
+      }`}
       style={style}
     >
-      <div className={`absolute inset-0 ${bgClass}`}></div>
-      <div className="relative z-10 mx-auto container">
+      <div className={`absolute inset-0 ${
+        fullHeight && image && !bgImage 
+          ? "bg-black/80" 
+          : bgClass
+      }`}></div>
+      <div className={`relative z-10 mx-auto container ${
+        bgImage || fullHeight
+          ? "h-full flex flex-col justify-center" 
+          : ""
+      }`}>
         {title && (
           <h1
             className={`font-h1-h2 text-[--color-b900-w] text-center pb-4 z-20 ${titleClass}`}
@@ -44,7 +58,7 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
         )}
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="flex-1">{children}</div>
-          {image && (
+          {image && !fullHeight && (
             <div className="w-3/5 lg:w-1/3 lg:mr-20">
               <Image
                 width={640}

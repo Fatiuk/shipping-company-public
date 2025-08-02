@@ -93,7 +93,6 @@ export const ContentSections: React.FC<ContentSectionsProps> = ({
   );
 };
 
-// Helper functions
 const getSectionNumbers = (t: Translator, namespace: string): string[] => {
   const sectionsData = t.raw(namespace) as Record<string, unknown>;
   return Object.keys(sectionsData || {});
@@ -122,7 +121,6 @@ const renderItems = (
   sectionsWithItems: string[],
   classNames: ClassNamesConfig
 ) => {
-  // Only render items for sections in the whitelist
   if (!sectionsWithItems.includes(sectionNumber)) return null;
 
   try {
