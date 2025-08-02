@@ -78,22 +78,18 @@
       "description": "De nombreux éléments nous distinguent dans notre secteur. Voici pourquoi nous sommes l'entreprise de référence pour ceux qui ont besoin d'expédier leur véhicule.",
       "benefits": [
         {
-          "src": "/benefits/usa_pin.png",
           "title": "Couverture nationale",
           "description": "Dimi Noble propose des services de relocalisation de véhicules dans les 50 États, garantissant que votre véhicule atteint sa destination efficacement, quel que soit l'endroit."
         },
         {
-          "src": "/benefits/handshake_blue_700.svg",
           "title": "Équipe expérimentée",
           "description": "Avec plus de 5 ans d'expérience dans l'industrie de la relocalisation, nos spécialistes offrent un service exceptionnel aux entreprises, agents et particuliers, assurant une expérience fluide et professionnelle."
         },
         {
-          "src": "/benefits/car-insurance.png",
           "title": "Partenaires entièrement assurés et cautionnés",
           "description": "Nous collaborons avec des partenaires entièrement assurés et cautionnés, garantissant la sécurité et la protection de votre véhicule tout au long du processus de transport."
         },
         {
-          "src": "/benefits/shield-eye.png",
           "title": "Processus transparent",
           "description": "Nous nous engageons à informer nos clients à chaque étape, vous assurant ainsi une compréhension claire du processus de transport pour une expérience sans souci."
         }

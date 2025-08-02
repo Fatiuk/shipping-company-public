@@ -14,7 +14,6 @@ import Services from "@/components/Services";
 import StatsItem from "@/components/StatsItem";
 
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
-  src: en.home.whyUs.benefits[index].src,
   title: `home.whyUs.benefits.${index}.title`,
   description: `home.whyUs.benefits.${index}.description`,
 }));

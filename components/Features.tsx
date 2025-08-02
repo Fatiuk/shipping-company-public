@@ -17,12 +17,10 @@ const Features: FC<{ data: FeatureI[] }> = ({ data }) => {
 
     const titleElements = document.querySelectorAll("[data-feature-title]");
 
-    // Reset all heights
     titleElements.forEach((element) => {
       (element as HTMLElement).style.height = "auto";
     });
 
-    // Small delay to ensure reset took effect
     setTimeout(() => {
       if (titleElements.length > 0) {
         let maxHeight = 0;
@@ -32,7 +30,6 @@ const Features: FC<{ data: FeatureI[] }> = ({ data }) => {
           maxHeight = Math.max(maxHeight, height);
         });
 
-        // Set all title elements to max height
         titleElements.forEach((element) => {
           (element as HTMLElement).style.height = `${maxHeight}px`;
         });
@@ -40,20 +37,17 @@ const Features: FC<{ data: FeatureI[] }> = ({ data }) => {
     }, 50);
   }, [isMobile, isMounted]);
 
-  // Handle resize events
   const handleResize = useCallback(() => {
     checkMobileView();
     setTimeout(normalizeHeights, 10);
   }, [checkMobileView, normalizeHeights]);
 
-  // Initialize component on mount
   useEffect(() => {
     setIsMounted(true);
     checkMobileView();
 
     window.addEventListener("resize", handleResize);
 
-    // Initial normalization with a delay to ensure DOM is ready
     const timeoutId = setTimeout(normalizeHeights, 100);
 
     return () => {
@@ -62,7 +56,6 @@ const Features: FC<{ data: FeatureI[] }> = ({ data }) => {
     };
   }, [checkMobileView, normalizeHeights, handleResize]);
 
-  // reset heights when switching between mobile/desktop
   useEffect(() => {
     if (isMounted) {
       if (isMobile) {

@@ -78,22 +78,18 @@
       "description": "Many things make us stand out in our industry. These are the reasons why we are the go-to company for many in need of vehicle shipment.",
       "benefits": [
         {
-          "src": "/benefits/usa_pin.png",
           "title": "Nationwide Coverage",
           "description": "Dimi Noble offers seamless vehicle relocation services across all 50 states, ensuring your vehicle reaches its destination efficiently, regardless of location."
         },
         {
-          "src": "/benefits/handshake.png",
           "title": "Experienced Team",
           "description": "With over 5 years in the relocation industry, our specialists provide exceptional service to companies, agents, and individuals, ensuring a smooth and professional experience."
         },
         {
-          "src": "/benefits/car-insurance.png",
           "title": "Fully Insured and Bonded Partners",
           "description": "We collaborate with fully insured and bonded partners, guaranteeing the safety and security of your vehicle throughout the transportation process."
         },
         {
-          "src": "/benefits/shield-eye.png",
           "title": "Transparent Process",
           "description": "We pride ourselves on keeping clients informed, ensuring you understand every step of the transportation process for a hassle-free experience."
         }

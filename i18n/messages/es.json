@@ -78,22 +78,18 @@
       "description": "Muchas cosas nos hacen destacar en nuestra industria. Estas son las razones por las que somos la empresa preferida para muchos que necesitan envío de vehículos.",
       "benefits": [
         {
-          "src": "/benefits/usa_pin.png",
           "title": "Cobertura Nacional",
           "description": "Dimi Noble ofrece servicios de reubicación de vehículos sin problemas en los 50 estados, asegurando que su vehículo llegue a su destino de manera eficiente, sin importar la ubicación."
         },
         {
-          "src": "/benefits/handshake.png",
           "title": "Equipo Experimentado",
           "description": "Con más de 5 años en la industria de reubicación, nuestros especialistas brindan un servicio excepcional a empresas, agentes e individuos, asegurando una experiencia fluida y profesional."
         },
         {
-          "src": "/benefits/car-insurance.png",
           "title": "Socios Completamente Asegurados y Afianzados",
           "description": "Colaboramos con socios completamente asegurados y afianzados, garantizando la seguridad y protección de su vehículo durante todo el proceso de transporte."
         },
         {
-          "src": "/benefits/shield-eye.png",
           "title": "Proceso Transparente",
           "description": "Nos enorgullecemos de mantener informados a los clientes, asegurando que comprenda cada paso del proceso de transporte para una experiencia sin complicaciones."
         }
