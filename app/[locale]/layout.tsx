@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
-import { Nunito_Sans, Roboto_Condensed } from "next/font/google";
+import { Nunito_Sans, Roboto } from "next/font/google";
 import { notFound } from "next/navigation";
 import { location } from "@/app/data";
 import Navigation from "@/components/Navigation";
@@ -11,9 +11,9 @@ import { routing } from "@/i18n/routing";
 import { NavigationItemI } from "@/types/navigation";
 import "../globals.css";
 
-const robotoCondensed = Roboto_Condensed({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["700", "900"],
+  weight: ["400", "700"],
   variable: "--font-header",
 });
 
@@ -132,7 +132,7 @@ export default async function RootLayout(props: Props) {
     <html lang={locale} suppressHydrationWarning>
       <head></head>
       <body
-        className={`${robotoCondensed.variable} ${nunitoSans.variable} antialiased flex flex-col min-h-screen font-sans text-sm bg-owhite dark:bg-oblue-900`}
+        className={`${roboto.variable} ${nunitoSans.variable} antialiased flex flex-col min-h-screen font-sans text-sm bg-owhite dark:bg-oblue-900`}
         suppressHydrationWarning
       >
         <ThemeProvider

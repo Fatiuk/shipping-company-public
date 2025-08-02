@@ -51,6 +51,8 @@ const config: Config = {
         title: ["var(--font-title)", "sans-serif"],
         header: ["var(--font-header)", "sans-serif"],
         sans: ["var(--font-sans)", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
       },
       rotate: {
         "135": "135deg",

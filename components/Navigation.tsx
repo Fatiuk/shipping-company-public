@@ -124,13 +124,13 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
             <div className="flex items-center gap-x-1">
               <div className="relative h-10 w-10 flex items-center justify-center">
                 <img 
-                  src="/benefits/phone.svg" 
+                  src="/phone.svg" 
                   alt="Support" 
                   className="h-6 w-6 object-contain"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-xs text-[--color-b600-b300] font-medium">
+                <span className="text-xs font-medium text-white opacity-50">
                   {t("support24")}
                 </span>
                 <a 
@@ -296,13 +296,13 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
           <div className="flex items-center gap-x-3">
             <div className="relative h-8 w-8 flex items-center justify-center">
               <img 
-                src="/benefits/customer-service.svg" 
+                src="/phone.svg" 
                 alt="Support" 
                 className="h-full w-full object-contain"
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-xs text-[--color-b600-b300] font-medium">
+              <span className="text-xs font-medium text-white opacity-50">
                 {t("support24")}
               </span>
               <a 
