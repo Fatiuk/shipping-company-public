@@ -79,10 +79,8 @@ const Features: FC<{ data: FeatureI[] }> = ({ data }) => {
       {data.map((item) => (
         <Feature
           key={item.title}
-          src={item.src}
           title={item.title}
           description={item.description}
-          alt={item.alt}
         />
       ))}
     </div>
