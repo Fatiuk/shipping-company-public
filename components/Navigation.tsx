@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import LocaleSwitcherMobile from "@/components/LocaleSwitcherMobile";
-import ThemeSwitch from "@/components/ThemeSwitch";
 import ActiveLink from "@/components/shared/ActiveLink";
 import Logo from "@/components/shared/Logo";
 import { NavigationI } from "@/types/navigation";
