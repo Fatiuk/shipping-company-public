@@ -5,36 +5,37 @@ import Image from "next/image";
 import FeatureI from "@/types/feature";
 import useGsapHover from "@/hooks/useGsapHover";
 
-const Feature: FC<FeatureI> = ({ src, title, description, alt = "" }) => {
+const Feature: FC<FeatureI> = ({ title, description, icon }) => {
   const t = useTranslations();
-  const iconRef = useRef<HTMLDivElement | null>(null);
+  const cardRef = useRef<HTMLDivElement | null>(null);
   const titleRef = useRef<HTMLHeadingElement | null>(null);
 
   useGsapHover({
-    target: iconRef,
-    enterAnimation: { scale: 1.2, duration: 0.3 },
+    target: cardRef,
+    enterAnimation: { scale: 1.05, duration: 0.3 },
     leaveAnimation: { scale: 1, duration: 0.3 },
   });
 
   return (
-    <div className="flex flex-col p-6 items-center text-center justify-between">
-      <div ref={iconRef} className="h-[100px] w-auto flex items-center">
-        <Image
-          src={src}
-          width={100}
-          height={100}
-          alt={alt === "" ? "" : t(alt)}
-          style={{ width: "auto" }}
-        />
-      </div>
+    <div 
+      ref={cardRef}
+      className="flex flex-col p-4 bg-oblue-50 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full"
+    >
+      {icon && (
+          <Image 
+            src={t(icon)} 
+            alt={t(title)} 
+            width={24} 
+            height={24} 
+          />
+      )}
       <h3
         ref={titleRef}
-        className="font-h3-h4 text-[--color-b900-a900] mt-4"
-        data-feature-title
+        className="font-nunito font-bold text-base leading-none text-oaccent-800 my-4"
       >
         {t(title)}
       </h3>
-      <p className="md:text-lg text-oblue-700 mt-auto">{t(description)}</p>
+      <p className="font-nunito font-normal text-base leading-relaxed text-oblue-700">{t(description)}</p>
     </div>
   );
 };

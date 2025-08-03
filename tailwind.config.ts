@@ -24,7 +24,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         oblue: {
           DEFAULT: "#0A3161",
-          50: "#E6EAEF",
+          50: "#E6EAEE",
           100: "#CED5DF",
           200: "#9DACBF",
           300: "#6C83A0",
@@ -51,6 +51,8 @@ const config: Config = {
         title: ["var(--font-title)", "sans-serif"],
         header: ["var(--font-header)", "sans-serif"],
         sans: ["var(--font-sans)", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
       },
       rotate: {
         "135": "135deg",

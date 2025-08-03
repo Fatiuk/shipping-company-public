@@ -5,17 +5,18 @@ import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import SectionFullWidth from "@/components/SectionFullWidth";
 import { FC } from "react";
-import imgHero from "@/assets/img/blue-truck-dniprollc.png";
-// import imgHero from "@/assets/img/hero.png";
+// import imgHero from "@/assets/img/blue-truck-dniprollc.png";
+import imgHero from "@/assets/img/hero.webp";
 import en from "@/i18n/messages/en.json";
 import QuoteForm from "@/components/QuoteForm";
 import ReviewsSection from "@/components/ReviewsSection";
+import Services from "@/components/Services";
 import StatsItem from "@/components/StatsItem";
 
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
-  src: en.home.whyUs.benefits[index].src,
   title: `home.whyUs.benefits.${index}.title`,
   description: `home.whyUs.benefits.${index}.description`,
+  icon: `home.whyUs.benefits.${index}.icon`,
 }));
 
 const achievments = en.home.whyUs.achievments.map((_, index) => ({
@@ -28,7 +29,7 @@ const achievments = en.home.whyUs.achievments.map((_, index) => ({
 const Home: FC = () => {
   return (
     <>
-      <SectionFullWidth image={imgHero.src}>
+      <SectionFullWidth image={imgHero.src} fullHeight={true}>
         <Hero />
       </SectionFullWidth>
 
@@ -46,14 +47,17 @@ const Home: FC = () => {
         </div>
       </Section>
 
+      <Section bgClass="!bg-[--blue-800]">
+        <Services />
+      </Section>
+
       <SectionFullWidth bgClass="!bg-[--color-w-b700]">
         <About />
       </SectionFullWidth>
 
       <SectionFullWidth
-        bgClass="!bg-[--color-b100-b200]"
+        bgClass="!bg-[--blue-800]"
         title="home.whyUs.title"
-        titleClass="text-oblue-700"
       >
         <Features data={benefits} />
       </SectionFullWidth>

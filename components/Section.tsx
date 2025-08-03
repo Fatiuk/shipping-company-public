@@ -6,13 +6,14 @@ interface SectionProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
   children: ReactNode;
   className?: string;
+  bgClass?: string;
 }
 
-const Section: FC<SectionProps> = ({ title, children, className = "" }) => {
+const Section: FC<SectionProps> = ({ title, children, className = "", bgClass = "!bg-[--color-w-b700]" }) => {
   const t = useTranslations();
   return (
     <div
-      className={`w-full py-[2rem] md:py-[3rem] px-4 lg:px-0 relative overflow-hidden text-[--color-b900-w] bg-[--color-w-b900] ${className}`}
+      className={`w-full py-[2rem] md:py-[3rem] px-4 lg:px-0 relative overflow-hidden text-[--color-b900-w] ${bgClass} ${className}`}
     >
       <div className="mx-auto container">
         {title && (

@@ -7,31 +7,26 @@ const HeroCTA: FC = () => {
   const t = useTranslations("home");
 
   return (
-    <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-6 relative z-10">
+    <div className="flex flex-col items-center sm:flex-row sm:justify-start sm:gap-6 relative z-10">
       <ActiveLink
         href="/#contact-us"
-        className="text-center w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-xl font-header capitalize border border-transparent bg-oaccent-700 text-white hover:bg-oaccent-900 hover:cursor-pointer transition-colors duration-200 rounded-xl"
+        className="text-center w-full sm:w-auto mt-6 sm:mt-9 px-7 py-4 text-base leading-6 font-bold font-roboto tracking-normal capitalize border border-transparent bg-oaccent-700 text-white hover:bg-oaccent-900 hover:cursor-pointer transition-colors duration-200 rounded-xl"
       >
         {t("quote")}
       </ActiveLink>
       <Link
-        className="flex w-full sm:w-auto mt-4 sm:mt-9 px-7 py-4 text-xl justify-center font-header capitalize border border-transparent bg-oblue-600 text-oblue-50 hover:bg-oblue-400 hover:cursor-pointer transition-colors duration-200 rounded-xl group"
-        href="tel:"
+        className="flex w-full sm:w-auto mt-4 sm:mt-9 px-7 py-4 text-base leading-6 font-bold font-roboto tracking-normal justify-center capitalize border border-transparent text-white hover:cursor-pointer transition-colors duration-200 rounded-xl group"
+        style={{ backgroundColor: '#65D072' }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.backgroundColor = '#5BB866';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundColor = '#65D072';
+        }}
+        href="https://wa.me/14424164400"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="size-6 me-2 text-oblue-50 transition-all rotate-0 group-hover:mt-1 group-hover:-rotate-12"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-          />
-        </svg>
         {t("callUs")}
       </Link>
     </div>

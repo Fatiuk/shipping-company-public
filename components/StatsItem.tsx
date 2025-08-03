@@ -29,11 +29,11 @@ const StatsItem: FC<{
 
   return (
     <div className="text-center">
-      <h1 className="font-h1-h2-h3 my-0 font-extrabold text-[--color-w-b900]">
+      <h2 className="font-h1-h2-h3 my-0 font-bold text-[color-b900-w]">
         {Math.round(currentNumber)}
         {t(suffix)}
-      </h1>
-      <p className="font-b1-b2 text-[--color-w-b900] whitespace-pre">
+      </h2>
+      <p className="font-b1-b2 text-[color-b900-w] whitespace-pre">
         {t(text)}
       </p>
     </div>

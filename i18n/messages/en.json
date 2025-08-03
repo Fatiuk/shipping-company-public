@@ -11,14 +11,17 @@
   },
   "localeSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, fr {fr} en {en} other {unknown}}",
+    "locale": "{locale, select, fr {fr} en {en} es {es} other {unknown}}",
     "en": "English",
     "fr": "Français",
+    "es": "Español",
     "noten": "Français",
     "notfr": "English",
+    "notes": "English",
     "abbr": {
-      "en": "Eng",
-      "fr": "Fr"
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
     },
     "languageLabel": "Toggle language"
   },
@@ -33,26 +36,29 @@
     "about": "About Us",
     "faq": "FAQ",
     "quote": "Get a Quote",
-    "themeLabel": "Toggle theme"
+    "themeLabel": "Toggle theme",
+    "support24": "Support 24/7"
   },
   "footer": {
     "companyDesc": "Our company will go the extra mile to analyze the particular project in detail, and offer a business solution that will meet your requirements.",
     "company": "Company",
-    "features": "Features",
-    "blog": "Blog",
     "about": "About",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "features": "Features",
     "faq": "FAQ",
+    "termsAndConditions": "Terms & Conditions",
+    "accessibilityStatement": "Accessibility Statement",
+    "orgPolicy": "Organizational Policy",
+    "privacyPolicy": "Privacy Policy",
     "contact": "Contact Us",
+    "email": "teamlead@diminoble.com",
+    "phone": "(561) 894-5331",
     "quote": "Get Your Price",
     "quote2": "Get Your Free Quote",
     "quote3": "Get a Quote",
     "team": "Our Team",
     "testimonials": "Video Testimonials",
-    "reviews": "Reviews",
-    "termsAndConditions": "Terms & Conditions",
-    "accessibilityStatement": "Accessibility Statement",
-    "orgPolicy": "Organizational Policy",
-    "privacyPolicy": "Privacy Policy",
     "rightsReserved": {
       "year": "© 2025 ",
       "clicks": "Dimi Noble Inc",
@@ -67,31 +73,31 @@
     "back": "Back home"
   },
   "home": {
-    "title": "Reliable Car Shipping Across the Nation",
-    "description": "At Dimi Noble, we stand out in the vehicle relocation sector. We believe in showcasing our excellence, not just making promises. Our services cover the entire country, providing our customers with the transportation of any type of vehicle.",
+    "title": "Trusted Transport Solution Across The U.S.",
+    "description": "At Dimi Noble Inc., we deliver more than just transportation — we deliver trust, reliability, and excellence. From vehicles and boats to RVs and mobile homes, our team ensures your assets reach their destination with precision and care.",
     "whyUs": {
-      "title": "Why Dimi Noble?",
+      "title": "Why Choose Us?",
       "description": "Many things make us stand out in our industry. These are the reasons why we are the go-to company for many in need of vehicle shipment.",
       "benefits": [
         {
-          "src": "/benefits/usa_pin.png",
-          "title": "Nationwide Coverage",
-          "description": "Dimi Noble offers seamless vehicle relocation services across all 50 states, ensuring your vehicle reaches its destination efficiently, regardless of location."
+          "title": "Reliable Coast-to-Coast Coverage",
+          "description": "From New York to California, we transport vehicles across all 50 states with precision and care.",
+          "icon": "/features/route.svg"
         },
         {
-          "src": "/benefits/handshake.png",
-          "title": "Experienced Team",
-          "description": "With over 5 years in the relocation industry, our specialists provide exceptional service to companies, agents, and individuals, ensuring a smooth and professional experience."
+          "title": "Fully Licensed & Bonded",
+          "description": "We only work with fully insured, bonded carriers—ensuring your vehicle is protected every step of the way.",
+          "icon": "/features/guaranteed.svg"
         },
         {
-          "src": "/benefits/car-insurance.png",
-          "title": "Fully Insured and Bonded Partners",
-          "description": "We collaborate with fully insured and bonded partners, guaranteeing the safety and security of your vehicle throughout the transportation process."
+          "title": "5+ Years of Proven Expertise",
+          "description": "Our team brings deep experience in handling relocations for businesses, contractors, and individuals alike.",
+          "icon": "/features/statistic.svg"
         },
         {
-          "src": "/benefits/shield-eye.png",
-          "title": "Transparent Process",
-          "description": "We pride ourselves on keeping clients informed, ensuring you understand every step of the transportation process for a hassle-free experience."
+          "title": "Transparent Communication",
+          "description": "You're never left guessing. We keep you informed at every stage of your vehicle's journey.",
+          "icon": "/features/chat.svg"
         }
       ],
       "achievments": [
@@ -116,21 +122,20 @@
       ],
       "howItWorks": "How It Works"
     },
-    "quote": "Start your free quote",
-    "callUs": "Call Us Now",
+    "quote": "Get Your Free Quote",
+    "callUs": "Chat on WhatsApp",
     "contactUs": "Contact Us",
     "about": {
-      "sectionTitle": "About us",
-      "title": "Dimi Noble Inc is a licensed shipping company that works with fully insured and bonded partners",
+      "title": "About us",
       "description": {
-        "intro": "We are a nationwide vehicle relocation service, simplifying the process for businesses and individuals alike. Our commitment is to provide seamless and efficient transportation solutions.",
-        "experience": "With over 5 years of expertise in the relocation industry, our specialists have served companies, contractors, and private individuals with excellence.",
-        "coverage": "We operate across all 50 states, ensuring secure and reliable vehicle transportation through our fully insured and bonded partners.",
-        "trust": "When you choose Dimi Noble, we prioritize transparency, keeping you informed at every step. Our goal is to provide top-tier service with unbeatable value."
+        "intro": "At Dimi Noble Inc., we specialize in premium nationwide vehicle relocation services designed for both businesses and individuals. As a fully licensed company working exclusively with insured and bonded partners, we deliver secure, efficient, and hassle-free transportation solutions across all 50 U.S. states.",
+        "experience": "Backed by over 5 years of industry experience, our dedicated team has earned the trust of corporate clients, contractors, and private customers by consistently exceeding expectations.",
+        "coverage": "We believe in full transparency — from pick-up to drop-off, you're always kept in the loop. Our mission is simple: to provide top-tier service, exceptional value, and complete peace of mind.",
+        "trust": "Dimi Noble Inc. — where experience meets excellence in motion."
       },
       "highlights": {
-        "years": "Years of Experience",
-        "states": "States Covered"
+        "years": "Years of experience",
+        "states": "States covered"
       },
       "badge": {
         "licensed": "Fully Licensed",
@@ -169,33 +174,56 @@
           "answer": "You can reach us via email at teamlead@diminoble.com or by phone at (561) 894-5331."
         }
       ]
+    },
+    "services": {
+      "title": "Our Services",
+      "items": [
+        {
+          "title": "Individual Vehicle Transport",
+          "description": "For private owners, collectors, and relocations."
+        },
+        {
+          "title": "Business & Fleet Relocation",
+          "description": "Trusted by contractors, corporate clients, and dealerships."
+        },
+        {
+          "title": "RV, Boat & Trailer Shipping",
+          "description": "More than just cars—we move it all."
+        },
+        {
+          "title": "Door-to-Door Delivery",
+          "description": "Direct, secure, and always on time."
+        }
+      ]
     }
   },
   "quoteForm": {
-    "formTitle": "Get Your Price",
+    "formTitle": "Ready to Ship?",
     "content": {
-      "title": "Get Your Free Moving Quote Today",
-      "description": "Professional vehicle transportation services across all 50 states. Fast, reliable, and fully insured.",
+      "title": "Ready to Ship?",
+      "description": "Send Your Info - We'll Do The Rest.",
       "licensed": "Licensed",
       "certified": "Fully Certified",
       "insured": "Insured",
-      "coverage": "100% Coverage"
+      "coverage": "100% Coverage",
+      "topTierService": "Top-Tier Service",
+      "unbeatableValue": "Unbeatable Value"
     },
     "fields": {
       "originZip": {
         "name": "ZIP code",
-        "label": "Origin ZIP",
-        "placeholder": "Origin ZIP Code"
+        "label": "Origin ZIP code",
+        "placeholder": "Origin ZIP code"
       },
       "destinationZip": {
         "name": "ZIP code",
-        "label": "Destination ZIP",
-        "placeholder": "Destination ZIP Code"
+        "label": "Destination ZIP code",
+        "placeholder": "Destination ZIP code"
       },
       "vehicleModel": {
-        "label": "Vehicle Model",
+        "label": "Vehicle model",
         "name": "vehicle model",
-        "placeholder": "Vehicle model (e.g. Ford F-150)"
+        "placeholder": "Vehicle model (e.g Ford-F150)"
       },
       "movingDate": {
         "name": "date",
@@ -204,8 +232,13 @@
       },
       "phone": {
         "name": "phone number",
-        "label": "Phone number",
-        "placeholder": "Phone (e.g., 1234567890)"
+        "label": "+1 Phone",
+        "placeholder": "+1 Phone (1234567890)"
+      },
+      "email": {
+        "name": "email",
+        "label": "Email",
+        "placeholder": "Email"
       },
       "acceptTerms": {
         "name": "Terms",
@@ -219,8 +252,8 @@
       "tooShort": "{field} must be at least {min} characters",
       "tooLong": "{field} cannot exceed {max} characters"
     },
-    "cta": "Get Free Quote",
-    "success": "We’ve received your inquiry and will contact you shortly.",
+    "cta": "Get Your Free Quote",
+    "success": "We've received your inquiry and will contact you shortly.",
     "error": { "title": "Error", "description": "Something went wrong" }
   },
   "videoReviews": {
