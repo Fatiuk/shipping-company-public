@@ -156,12 +156,19 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
           <div
             className={`flex lg:hidden justify-center items-center sm:gap-x-8 ms-2 sm:ms-6`}
           >
-            <ActiveLink
-              href="/#contact-us"
-              className="whitespace-nowrap h-fit py-3 px-8 rounded-lg font-bold text-owhite bg-oaccent-700 hover:bg-oaccent-900 transition-colors"
-            >
-              {t("quote")}
-            </ActiveLink>
+            <div className="flex items-center gap-x-2 mr-8">
+              <div className="flex flex-col">
+                <span className="text-xs font-medium text-white opacity-50">
+                  {t("support24")}
+                </span>
+                <a 
+                  href="tel:+15618945331" 
+                  className="text-sm font-bold text-[--color-b900-w] hover:text-[--color-a700-a500] transition-colors"
+                >
+                  (561) 894-5331
+                </a>
+              </div>
+            </div>
             <div
               className={`flex lg:hidden items-center p-3 me-[-0.75rem] hover:cursor-pointer`}
               onClick={toggleMenuOpen}
@@ -290,29 +297,19 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                 )}
               </li>
             ))}
+            {/* Get a Quote button in mobile menu */}
+            <li className="flex flex-col relative group py-2 mt-4">
+              <ActiveLink
+                href="/#contact-us"
+                className="w-full py-3 px-6 rounded-lg font-bold text-white bg-oaccent-700 hover:bg-oaccent-900 transition-colors text-center"
+                onClick={() => setMenuOpen(false)}
+              >
+                {t("quote")}
+              </ActiveLink>
+            </li>
           </ul>
         </nav>
         <div className="flex flex-col items-center gap-y-4 py-6">
-          <div className="flex items-center gap-x-3">
-            <div className="relative h-8 w-8 flex items-center justify-center">
-              <img 
-                src="/phone.svg" 
-                alt="Support" 
-                className="h-full w-full object-contain"
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xs font-medium text-white opacity-50">
-                {t("support24")}
-              </span>
-              <a 
-                href="tel:+15618945331" 
-                className="text-sm font-bold text-[--color-black-w] hover:text-[--color-a700-a500] transition-colors"
-              >
-                (561) 894-5331
-              </a>
-            </div>
-          </div>
           <div className="flex justify-center gap-x-6">
             {/* <ThemeSwitch /> */}
             <LocaleSwitcherMobile />

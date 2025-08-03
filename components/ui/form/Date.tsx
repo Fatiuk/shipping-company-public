@@ -78,6 +78,7 @@ const DateInput: FC<DateInputPropsI> = ({
             opacity: 1,
             // Push the calendar icon to the right edge
             paddingRight: "10px",
+            height: "52px",
           }}
           onBlur={() => {
             const isEmpty = !inputRef.current?.value;

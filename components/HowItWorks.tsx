@@ -42,7 +42,6 @@ const HowItWorks: React.FC = () => {
     return "linear-gradient(to bottom, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0.25) 85%, rgba(255,255,255,0.05) 95%, rgba(255,255,255,0) 100%)";
   };
 
-  // Memoize steps data to prevent recreation on each render
   const steps: Step[] = useMemo(
     () =>
       Array.from({ length: 5 }, (_, i) => ({
@@ -57,18 +56,19 @@ const HowItWorks: React.FC = () => {
   );
 
   useEffect(() => {
-    // Only register plugin once
     if (!timelineInitialized.current) {
       gsap.registerPlugin(ScrollTrigger);
       timelineInitialized.current = true;
     }
 
     const ctx = gsap.context(() => {
-      // Timeline sticky behavior
       if (timelineRef.current) {
+        const isMobile = window.innerWidth < 640;
+        const headerHeight = isMobile ? 72 : 78;
+        
         ScrollTrigger.create({
           trigger: timelineRef.current,
-          start: "top 78px",
+          start: `top ${headerHeight}px`,
           end: () => containerRef.current ? `+=${containerRef.current.offsetHeight}` : "+=2000",
           onEnter: () => setIsTimelineFixed(true),
           onLeave: () => setIsTimelineFixed(false),
@@ -77,7 +77,6 @@ const HowItWorks: React.FC = () => {
         });
       }
 
-      // Steps activation
       const sections = document.querySelectorAll(".step-card");
       sections.forEach((section, index) => {
         ScrollTrigger.create({
@@ -93,13 +92,11 @@ const HowItWorks: React.FC = () => {
       });
     }, containerRef);
 
-    // Clean up function to prevent memory leaks
     return () => ctx.revert();
   }, []);
 
   return (
     <div className="relative">
-      {/* Header section - normal flow */}
       <div className="text-center mx-auto max-w-[600px] pt-12 pb-6">
         <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
           {t("sectionTitle")}
@@ -109,14 +106,13 @@ const HowItWorks: React.FC = () => {
         </p>
       </div>
 
-      {/* Timeline Progress - starts normal, becomes fixed */}
       <div
         ref={timelineRef}
         className={`transition-all duration-300 ${
           isTimelineFixed
-            ? "fixed top-[78px] left-0 right-0 z-10 backdrop-blur-md"
+            ? "fixed top-[72px] sm:top-[78px] left-0 right-0 z-10 backdrop-blur-md"
             : "relative"
-        } py-4`}
+        } py-1 sm:py-4`}
         style={
           isTimelineFixed
             ? {
@@ -126,12 +122,12 @@ const HowItWorks: React.FC = () => {
             : {}
         }
       >
-        <div className="hidden lg:flex justify-between max-w-4xl mx-auto">
+        <div className="flex justify-between max-w-4xl mx-auto px-4">
           {steps.map((_, index) => (
             <React.Fragment key={index}>
               <div className="flex flex-col items-center">
                 <div
-                  className={`w-8 h-8 rounded-full flex items-center justify-center
+                  className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm
                              transition-colors duration-300
                              ${
                                index + 1 <= activeStep
@@ -143,15 +139,14 @@ const HowItWorks: React.FC = () => {
                 </div>
               </div>
               {index < steps.length - 1 && (
-                <div className="flex-grow h-px my-4 bg-gray-200" />
+                <div className="flex-grow h-px my-3 sm:my-4 bg-gray-200" />
               )}
             </React.Fragment>
           ))}
         </div>
       </div>
 
-      {/* Steps Grid */}
-      <div ref={containerRef} className={`space-y-8 px-6 ${isTimelineFixed ? 'pt-16' : 'pt-8'}`}>
+      <div ref={containerRef} className={`space-y-8 px-6 ${isTimelineFixed ? 'pt-12 sm:pt-16' : 'pt-4 sm:pt-8'}`}>
         {steps.map((step, index) => (
           <div key={step.stepNumber} className="step-card">
             <StepCard {...step} isActive={index + 1 === activeStep} />
