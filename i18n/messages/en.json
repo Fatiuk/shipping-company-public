@@ -73,8 +73,8 @@
     "back": "Back home"
   },
   "home": {
-    "title": "Trusted Transport Solution Across The U.S.",
-    "description": "At Dimi Noble Inc., we deliver more than just transportation — we deliver trust, reliability, and excellence. From vehicles and boats to RVs and mobile homes, our team ensures your assets reach their destination with precision and care.",
+    "title": "Reliable Vehicle & Boat Shipping Across the U.S.",
+    "description": "At Dimi Noble Inc., we provide more than transportation — we deliver trust, reliability, and excellence. From vehicles and boats to RVs and mobile homes, our team ensures that your assets reach their destination with precision and care.",
     "whyUs": {
       "title": "Why Choose Us?",
       "description": "Many things make us stand out in our industry. These are the reasons why we are the go-to company for many in need of vehicle shipment.",
@@ -131,7 +131,8 @@
         "intro": "At Dimi Noble Inc., we specialize in premium nationwide vehicle relocation services designed for both businesses and individuals. As a fully licensed company working exclusively with insured and bonded partners, we deliver secure, efficient, and hassle-free transportation solutions across all 50 U.S. states.",
         "experience": "Backed by over 5 years of industry experience, our dedicated team has earned the trust of corporate clients, contractors, and private customers by consistently exceeding expectations.",
         "coverage": "We believe in full transparency — from pick-up to drop-off, you're always kept in the loop. Our mission is simple: to provide top-tier service, exceptional value, and complete peace of mind.",
-        "trust": "Dimi Noble Inc. — where experience meets excellence in motion."
+        "trust": "Dimi Noble Inc. — where experience meets excellence in motion.",
+        "authorization": "Dimi Noble Inc has been authorized to operate under MC1645568 and USDOT 4246895."
       },
       "highlights": {
         "years": "Years of experience",
@@ -201,7 +202,7 @@
     "formTitle": "Ready to Ship?",
     "content": {
       "title": "Ready to Ship?",
-      "description": "Send Your Info - We'll Do The Rest.",
+      "description": "Send Your Info - We'll Do The Rest",
       "licensed": "Licensed",
       "certified": "Fully Certified",
       "insured": "Insured",

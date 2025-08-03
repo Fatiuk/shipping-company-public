@@ -83,6 +83,7 @@ const About: FC = () => {
               {t("description.coverage")}
             </p>
             <p className="font-nunito text-base font-normal leading-6 text-[--color-b900-w]">{t("description.trust")}</p>
+            <p className="font-nunito text-base font-normal leading-6 text-[--color-b900-w]">{t("description.authorization")}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-6 pt-6">

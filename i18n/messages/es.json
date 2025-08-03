@@ -73,8 +73,8 @@
     "back": "Volver al inicio"
   },
   "home": {
-    "title": "Solución de transporte confiable en todo Estados Unidos",
-    "description": "En Dimi Noble Inc., ofrecemos más que transporte: entregamos confianza, fiabilidad y excelencia. Desde vehículos y barcos hasta casas rodantes y móviles, nuestro equipo garantiza que sus bienes lleguen a destino con precisión y cuidado.",
+    "title": "Transporte confiable de vehículos y embarcaciones en todo Estados Unidos",
+    "description": "En Dimi Noble Inc., ofrecemos más que transporte: brindamos confianza, fiabilidad y excelencia. Desde vehículos y embarcaciones hasta casas rodantes y viviendas móviles, nuestro equipo garantiza que sus bienes lleguen a su destino con precisión y cuidado.",
     "whyUs": {
       "title": "¿Por qué elegirnos?",
       "description": "Muchas cosas nos distinguen en nuestra industria. Estas son las razones por las que somos la empresa preferida para muchos que necesitan envío de vehículos.",
@@ -132,7 +132,8 @@
         "intro": "En Dimi Noble Inc., nos especializamos en servicios premium de reubicación de vehículos a nivel nacional, diseñados tanto para empresas como para particulares. Como empresa debidamente registrada que trabaja exclusivamente con socios asegurados y con fianza, ofrecemos soluciones de transporte seguras, eficientes y sin complicaciones en los 50 estados de EE. UU.",
         "experience": "Con más de 5 años de experiencia en la industria, nuestro equipo dedicado se ha ganado la confianza de clientes corporativos, contratistas y particulares superando constantemente sus expectativas.",
         "coverage": "Creemos en la transparencia total: desde la recogida hasta la entrega, siempre estás informado. Nuestra misión es simple: brindar un servicio de primer nivel, un valor excepcional y total tranquilidad.",
-        "trust": "Dimi Noble Inc. — donde la experiencia se une con la excelencia en movimiento."
+        "trust": "Dimi Noble Inc. — donde la experiencia se une con la excelencia en movimiento.",
+        "authorization": "Dimi Noble Inc está autorizada para operar bajo los números MC1645568 y USDOT 4246895."
       },
       "highlights": {
         "years": "Años de experiencia",
@@ -202,7 +203,7 @@
     "formTitle": "¿Listo para enviar?",
     "content": {
       "title": "¿Listo para enviar?",
-      "description": "Envíanos tu info — nosotros nos encargamos del resto.",
+      "description": "Envíanos tu info — nosotros nos encargamos del resto",
       "licensed": "Licenciado",
       "certified": "Totalmente certificado",
       "insured": "Asegurado",
