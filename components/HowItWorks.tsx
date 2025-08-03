@@ -26,8 +26,21 @@ const STEP_ICONS = {
 const HowItWorks: React.FC = () => {
   const t = useTranslations("howItWorks");
   const [activeStep, setActiveStep] = React.useState(1);
+  const [isTimelineFixed, setIsTimelineFixed] = React.useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const timelineRef = useRef<HTMLDivElement>(null);
   const timelineInitialized = useRef(false);
+
+  // Get gradient colors for light/dark mode
+  const getTimelineGradient = () => {
+    if (typeof window !== 'undefined') {
+      const isDark = document.documentElement.classList.contains('dark');
+      if (isDark) {
+        return "linear-gradient(to bottom, rgba(17,24,39,0.98) 0%, rgba(17,24,39,0.95) 30%, rgba(17,24,39,0.85) 50%, rgba(17,24,39,0.6) 70%, rgba(17,24,39,0.25) 85%, rgba(17,24,39,0.05) 95%, rgba(17,24,39,0) 100%)";
+      }
+    }
+    return "linear-gradient(to bottom, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0.25) 85%, rgba(255,255,255,0.05) 95%, rgba(255,255,255,0) 100%)";
+  };
 
   // Memoize steps data to prevent recreation on each render
   const steps: Step[] = useMemo(
@@ -50,15 +63,27 @@ const HowItWorks: React.FC = () => {
       timelineInitialized.current = true;
     }
 
-    // single ScrollTrigger context that manages all steps
     const ctx = gsap.context(() => {
-      const sections = document.querySelectorAll(".step-card");
+      // Timeline sticky behavior
+      if (timelineRef.current) {
+        ScrollTrigger.create({
+          trigger: timelineRef.current,
+          start: "top 78px",
+          end: () => containerRef.current ? `+=${containerRef.current.offsetHeight}` : "+=2000",
+          onEnter: () => setIsTimelineFixed(true),
+          onLeave: () => setIsTimelineFixed(false),
+          onEnterBack: () => setIsTimelineFixed(true),
+          onLeaveBack: () => setIsTimelineFixed(false),
+        });
+      }
 
+      // Steps activation
+      const sections = document.querySelectorAll(".step-card");
       sections.forEach((section, index) => {
         ScrollTrigger.create({
           trigger: section,
-          start: "top center",
-          end: "bottom center",
+          start: "top 60%",
+          end: "bottom 40%",
           onToggle: ({ isActive }) => {
             if (isActive) {
               setActiveStep(index + 1);
@@ -73,20 +98,35 @@ const HowItWorks: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative pt-[200px]">
-      {/* make this div fixed not moving, all steps will move under it */}
-      <div className="fixed top-[78px] left-0 right-0 z-10 backdrop-blur-md pt-12">
-        <div className="text-center mx-auto max-w-[600px]">
-          <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
-            {t("sectionTitle")}
-          </h1>
-          <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
-            {t("description")}
-          </p>
-        </div>
+    <div className="relative">
+      {/* Header section - normal flow */}
+      <div className="text-center mx-auto max-w-[600px] pt-12 pb-6">
+        <h1 className="font-h1-h2-h3 text-[--color-b900-w] mb-4">
+          {t("sectionTitle")}
+        </h1>
+        <p className="font-b1-b2 text-gray-600 dark:text-gray-300">
+          {t("description")}
+        </p>
+      </div>
 
-        {/* Timeline Progress */}
-        <div className="hidden lg:flex justify-between max-w-4xl mx-auto mt-6">
+      {/* Timeline Progress - starts normal, becomes fixed */}
+      <div
+        ref={timelineRef}
+        className={`transition-all duration-300 ${
+          isTimelineFixed
+            ? "fixed top-[78px] left-0 right-0 z-10 backdrop-blur-md"
+            : "relative"
+        } py-4`}
+        style={
+          isTimelineFixed
+            ? {
+                background: getTimelineGradient(),
+                boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
+              }
+            : {}
+        }
+      >
+        <div className="hidden lg:flex justify-between max-w-4xl mx-auto">
           {steps.map((_, index) => (
             <React.Fragment key={index}>
               <div className="flex flex-col items-center">
@@ -111,7 +151,7 @@ const HowItWorks: React.FC = () => {
       </div>
 
       {/* Steps Grid */}
-      <div ref={containerRef} className="mt-8 sm:mt-12 space-y-8 px-6">
+      <div ref={containerRef} className={`space-y-8 px-6 ${isTimelineFixed ? 'pt-16' : 'pt-8'}`}>
         {steps.map((step, index) => (
           <div key={step.stepNumber} className="step-card">
             <StepCard {...step} isActive={index + 1 === activeStep} />

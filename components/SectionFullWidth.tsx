@@ -34,7 +34,7 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
     <div
       className={`w-full relative z-0 overflow-hidden ${
         bgImage || fullHeight
-          ? "h-[472px] lg:h-[700px]" 
+          ? "lg:h-[700px]" 
           : "py-[1.5rem] sm:py-[3rem]"
       }`}
       style={style}
@@ -50,11 +50,11 @@ const SectionFullWidth: FC<SectionFullWidthI> = ({
           : ""
       }`}>
         {title && (
-          <h1
-            className={`font-h1-h2 text-[--color-b900-w] text-center pb-4 z-20 ${titleClass}`}
+          <h2
+            className={`font-roboto font-bold text-2xl leading-8 lg:text-[36px] lg:leading-[48px] capitalize text-[--color-b900-w] text-center pb-6 sm:pb-8 my-0 z-20 ${titleClass}`}
           >
             {t(title)}
-          </h1>
+          </h2>
         )}
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="flex-1">{children}</div>

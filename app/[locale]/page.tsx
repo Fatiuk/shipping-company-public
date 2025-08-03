@@ -16,6 +16,7 @@ import StatsItem from "@/components/StatsItem";
 const benefits = en.home.whyUs.benefits.map((_, index) => ({
   title: `home.whyUs.benefits.${index}.title`,
   description: `home.whyUs.benefits.${index}.description`,
+  icon: `home.whyUs.benefits.${index}.icon`,
 }));
 
 const achievments = en.home.whyUs.achievments.map((_, index) => ({

@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef, useState } from "react";
-import { LuMapPin, LuCalendar, LuPhone, LuCar } from "react-icons/lu";
+import { LuMapPin, LuCalendar, LuPhone, LuCar, LuMail } from "react-icons/lu";
 import { PiSmiley, PiSmileySad } from "react-icons/pi";
 import { useTranslations } from "next-intl";
 import { useFormik } from "formik";
@@ -76,6 +76,7 @@ const QuoteForm: FC = () => {
       vehicleModel: "",
       movingDate: "",
       phone: "",
+      email: "",
       acceptTerms: false,
     },
     validationSchema: Yup.object().shape({
@@ -128,6 +129,9 @@ const QuoteForm: FC = () => {
           /^[0-9]{10}$/,
           t("validation.mustBeValid", { field: t("fields.phone.name") })
         ),
+      email: Yup.string()
+        .required(t("validation.required", { field: t("fields.email.label") }))
+        .email(t("validation.mustBeValid", { field: t("fields.email.name") })),
       acceptTerms: Yup.boolean()
         .required("You must accept the terms")
         .oneOf([true], "You must accept the terms"),
@@ -165,30 +169,22 @@ const QuoteForm: FC = () => {
           id="lg:contact-us"
           className="max-w-[580px] lg:w-1/2 space-y-6"
         >
-          {" "}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[--color-b900-w]">
+          <h2 className="text-[24px] leading-[32px] sm:text-[36px] sm:leading-[48px] my-0 font-bold font-roboto capitalize text-[--color-b900-w]">
             {t("content.title")}
           </h2>
-          <p className="font-b1-b2 text-gray-800 dark:text-oblue-100">
+          <p className="text-[24px] leading-[32px] sm:text-[32px] sm:leading-[48px] font-normal font-roboto capitalize !mt-0">
             {t("content.description")}
           </p>
           {/* Trust Indicators */}
-          <div className="grid grid-cols-[auto_auto] sm:grid-cols-2 gap-2 xs:gap-4 pt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 xs:gap-4">
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
               <div className="w-12 h-12 rounded-full bg-gray-300/50 dark:bg-oblue-500/50 flex items-center justify-center">
-                <svg
-                  className="w-6 h-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                <Image
+                  src="/icons/check-circle.svg"
+                  alt="Licensed"
+                  width={24}
+                  height={24}
+                />
               </div>
               <div>
                 <div className="font-semibold">{t("content.licensed")}</div>
@@ -197,23 +193,30 @@ const QuoteForm: FC = () => {
             </div>
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
               <div className="w-12 h-12 rounded-full bg-gray-300/50 dark:bg-oblue-500/50 flex items-center justify-center">
-                <svg
-                  className="w-6 h-6 text-blue-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                  />
-                </svg>
+                <Image
+                  src="/icons/shield-lock.svg"
+                  alt="Insured"
+                  width={24}
+                  height={24}
+                />
               </div>
               <div>
                 <div className="font-semibold">{t("content.insured")}</div>
                 <div className="text-sm">{t("content.coverage")}</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+              <div className="w-12 h-12 rounded-full bg-gray-300/50 dark:bg-oblue-500/50 flex items-center justify-center">
+                <Image
+                  src="/icons/top-tier-service.svg"
+                  alt="Top-Tier Service"
+                  width={24}
+                  height={24}
+                />
+              </div>
+              <div>
+                <div className="font-semibold">{t("content.topTierService")}</div>
+                <div className="text-sm">{t("content.unbeatableValue")}</div>
               </div>
             </div>
           </div>
@@ -288,6 +291,17 @@ const QuoteForm: FC = () => {
                 {...formik.getFieldProps("phone")}
                 touched={formik.touched.phone}
                 error={formik.errors.phone}
+              />
+
+              {/* Email Input Field */}
+              <Input
+                placeholder={t("fields.email.placeholder")}
+                icon={<LuMail className="ml-3 text-gray-400" size={20} />}
+                classNamesInput="px-3 bg-transparent"
+                type="email"
+                {...formik.getFieldProps("email")}
+                touched={formik.touched.email}
+                error={formik.errors.email}
               />
 
               <Checkbox

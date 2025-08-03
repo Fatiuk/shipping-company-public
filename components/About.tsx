@@ -70,23 +70,19 @@ const About: FC = () => {
       <div className="w-full  mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-16 relative">
         <div ref={textRef} className="lg:w-1/2 space-y-6">
 
-          <h5 className="uppercase tracking-wider text-[--color-b700-b200]">
-            {t("sectionTitle")}
-          </h5>
-
-          <h3 className="font-h3-h4 text-[--color-b900-w] leading-tight">
+          <h3 className="font-roboto font-bold text-2xl lg:text-[36px] leading-8 lg:leading-[48px] capitalize text-center lg:text-left text-[--color-b900-w]">
             {t("title")}
           </h3>
 
           <div className="flex flex-col gap-4">
-            <p className="text-[--color-b700-b100]">{t("description.intro")}</p>
-            <p className="text-[--color-b700-b100]">
+            <p className="font-nunito text-base font-normal leading-6 text-[--color-b900-w]">{t("description.intro")}</p>
+            <p className="font-nunito text-base font-normal leading-6 text-[--color-b900-w]">
               {t("description.experience")}
             </p>
-            <p className="text-[--color-b700-b100]">
+            <p className="font-nunito text-base font-normal leading-6 text-[--color-b900-w]">
               {t("description.coverage")}
             </p>
-            <p className="text-[--color-b700-b100]">{t("description.trust")}</p>
+            <p className="font-nunito text-base font-normal leading-6 text-[--color-b900-w]">{t("description.trust")}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-6 pt-6">
@@ -94,7 +90,7 @@ const About: FC = () => {
               <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 5+
               </span>
-              <p className="b3 text-[--color-b900-w]/70">
+              <p className="b3 text-[--color-b900-w]/70 capitalize">
                 {t("highlights.years")}
               </p>
             </div>
@@ -102,7 +98,7 @@ const About: FC = () => {
               <span className="text-3xl font-bold bg-gradient-to-r from-oblue-300 to-oaccent-600 text-transparent bg-clip-text">
                 50
               </span>
-              <p className="b3 text-[--color-b900-w]/70">
+              <p className="b3 text-[--color-b900-w]/70 capitalize">
                 {t("highlights.states")}
               </p>
             </div>

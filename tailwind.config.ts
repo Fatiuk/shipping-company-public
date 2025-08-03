@@ -24,7 +24,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         oblue: {
           DEFAULT: "#0A3161",
-          50: "#E6EAEF",
+          50: "#E6EAEE",
           100: "#CED5DF",
           200: "#9DACBF",
           300: "#6C83A0",

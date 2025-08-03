@@ -1,10 +1,11 @@
 "use client";
 import { FC, useRef } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import FeatureI from "@/types/feature";
 import useGsapHover from "@/hooks/useGsapHover";
 
-const Feature: FC<FeatureI> = ({ title, description }) => {
+const Feature: FC<FeatureI> = ({ title, description, icon }) => {
   const t = useTranslations();
   const cardRef = useRef<HTMLDivElement | null>(null);
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -18,16 +19,23 @@ const Feature: FC<FeatureI> = ({ title, description }) => {
   return (
     <div 
       ref={cardRef}
-      className="flex flex-col p-6 bg-white rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full"
+      className="flex flex-col p-4 bg-oblue-50 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full"
     >
+      {icon && (
+          <Image 
+            src={t(icon)} 
+            alt={t(title)} 
+            width={24} 
+            height={24} 
+          />
+      )}
       <h3
         ref={titleRef}
-        className="font-h3-h4 text-[--color-b900-a900] mb-4 text-xl font-semibold"
-        data-feature-title
+        className="font-nunito font-bold text-base leading-none text-oaccent-800 my-4"
       >
         {t(title)}
       </h3>
-      <p className="md:text-lg text-oblue-700 leading-relaxed flex-grow">{t(description)}</p>
+      <p className="font-nunito font-normal text-base leading-relaxed text-oblue-700">{t(description)}</p>
     </div>
   );
 };

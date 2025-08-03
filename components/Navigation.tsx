@@ -203,15 +203,15 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
       </div>
       <div
         ref={menuMobileRef}
-        className={`fixed top-0 left-0 right-0 z-50 mt-[80px]
-			lg:hidden
-			overflow-hidden
-			shadow-mobmenu
-			border-t-1 border-gray-600
-			bg-[--color-w-b700]
-			text-[--color-black-w]
-			transition-[max-height] duration-500 ease-in-out
-			${isMenuOpen ? "max-h-[2000px]" : "max-h-0"}`}
+        className={`fixed top-0 left-0 right-0 z-50 mt-[72px]
+          lg:hidden
+          overflow-hidden
+          shadow-mobmenu
+          border-t-1 border-gray-600
+          bg-[--color-w-b700]
+          text-[--color-black-w]
+          transition-[max-height] duration-500 ease-in-out
+          ${isMenuOpen ? "max-h-[2000px]" : "max-h-0"}`}
       >
         <nav
           className={`flex lg:hidden gap-x-1.5 justify-center text-center text-lg`}

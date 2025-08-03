@@ -1,6 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
+import Image from "next/image";
 
 interface ServiceCardProps {
   icon: string;
@@ -10,12 +11,18 @@ interface ServiceCardProps {
 
 const ServiceCard: FC<ServiceCardProps> = ({ icon, title, description }) => {
   return (
-    <div className="text-center">
-      <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-oblue-100 dark:bg-oblue-800 rounded-full">
-        <span className="text-2xl">{icon}</span>
+    <div>
+      <div className="w-11 h-11 mb-4 flex items-center justify-center sm:gap-13 rounded-full bg-[#082545]">
+        <Image 
+          src={icon} 
+          alt={title} 
+          width={24} 
+          height={24} 
+          className="filter brightness-0 invert"
+        />
       </div>
-      <h3 className="text-xl font-semibold mb-4 text-[--color-b900-w]">{title}</h3>
-      <p className="text-[--color-b700-b300] leading-relaxed">{description}</p>
+      <h3 className="font-nunito text-xl font-bold leading-tight text-[--color-b900-w] mb-4">{title}</h3>
+      <p className="font-nunito text-base font-normal leading-relaxed text-[--color-b700-b300]">{description}</p>
     </div>
   );
 };
@@ -25,22 +32,22 @@ const Services: FC = () => {
   
   const services = [
     {
-      icon: "🚗",
+      icon: "/services/user.svg",
       title: t("items.0.title"),
       description: t("items.0.description"),
     },
     {
-      icon: "🚛",
+      icon: "/services/store.svg",
       title: t("items.1.title"),
       description: t("items.1.description"),
     },
     {
-      icon: "🚤",
+      icon: "/services/boat.svg",
       title: t("items.2.title"),
       description: t("items.2.description"),
     },
     {
-      icon: "🏠",
+      icon: "/services/home.svg",
       title: t("items.3.title"),
       description: t("items.3.description"),
     },

@@ -40,23 +40,25 @@
     "support24": "Support 24/7"
   },
   "footer": {
-    "companyDesc": "Notre entreprise fera un effort supplémentaire pour analyser en détail votre projet spécifique et proposer une solution commerciale adaptée à vos besoins.",
+    "companyDesc": "Notre entreprise fera un effort supplémentaire pour analyser le projet particulier en détail et proposer une solution commerciale qui répondra à vos besoins.",
     "company": "Entreprise",
-    "features": "Caractéristiques",
-    "blog": "Blog",
     "about": "À propos",
+    "reviews": "Avis",
+    "blog": "Blog",
+    "features": "Fonctionnalités",
     "faq": "FAQ",
-    "contact": "Contactez-nous",
+    "termsAndConditions": "Conditions générales",
+    "accessibilityStatement": "Déclaration d'accessibilité",
+    "orgPolicy": "Politique organisationnelle",
+    "privacyPolicy": "Politique de confidentialité",
+    "contact": "Nous contacter",
+    "email": "teamlead@diminoble.com",
+    "phone": "(561) 894-5331",
     "quote": "Obtenez votre prix",
     "quote2": "Obtenez votre devis gratuit",
     "quote3": "Obtenez un devis",
     "team": "Notre équipe",
     "testimonials": "Témoignages vidéo",
-    "reviews": "Avis",
-    "termsAndConditions": "Conditions générales",
-    "accessibilityStatement": "Déclaration d'accessibilité",
-    "orgPolicy": "Politique organisationnelle",
-    "privacyPolicy": "Politique de confidentialité",
     "rightsReserved": {
       "year": "© 2025 ",
       "clicks": "Dimi Noble Inc",
@@ -75,23 +77,27 @@
     "description": "Chez Dimi Noble Inc., nous offrons plus qu'un simple service de transport — nous livrons la confiance, la fiabilité et l'excellence. Des véhicules et bateaux aux camping-cars et maisons mobiles, notre équipe veille à ce que vos biens arrivent à destination avec précision et soin.",
     "whyUs": {
       "title": "Pourquoi nous choisir ?",
-      "description": "De nombreux éléments nous distinguent dans notre secteur. Voici pourquoi nous sommes l'entreprise de référence pour ceux qui ont besoin d'expédier leur véhicule.",
+      "description": "De nombreuses choses nous distinguent dans notre industrie. Voici les raisons pour lesquelles nous sommes l'entreprise de référence pour beaucoup de ceux qui ont besoin d'expédition de véhicules.",
       "benefits": [
         {
-          "title": "Couverture nationale",
-          "description": "Dimi Noble propose des services de relocalisation de véhicules dans les 50 États, garantissant que votre véhicule atteint sa destination efficacement, quel que soit l'endroit."
+          "title": "Couverture fiable d'un océan à l'autre",
+          "description": "De New York à la Californie, nous transportons des véhicules dans les 50 États avec précision et soin.",
+          "icon": "/features/route.svg"
         },
         {
-          "title": "Équipe expérimentée",
-          "description": "Avec plus de 5 ans d'expérience dans l'industrie de la relocalisation, nos spécialistes offrent un service exceptionnel aux entreprises, agents et particuliers, assurant une expérience fluide et professionnelle."
+          "title": "Entièrement agréés et cautionnés",
+          "description": "Nous collaborons uniquement avec des transporteurs assurés et cautionnés — votre véhicule est protégé à chaque étape.",
+          "icon": "/features/guaranteed.svg"
         },
         {
-          "title": "Partenaires entièrement assurés et cautionnés",
-          "description": "Nous collaborons avec des partenaires entièrement assurés et cautionnés, garantissant la sécurité et la protection de votre véhicule tout au long du processus de transport."
+          "title": "Plus de 5 ans d'expertise éprouvée",
+          "description": "Notre équipe possède une solide expérience dans le transport de véhicules pour entreprises, entrepreneurs et particuliers.",
+          "icon": "/features/statistic.svg"
         },
         {
-          "title": "Processus transparent",
-          "description": "Nous nous engageons à informer nos clients à chaque étape, vous assurant ainsi une compréhension claire du processus de transport pour une expérience sans souci."
+          "title": "Communication transparente",
+          "description": "Aucun doute possible : nous vous tenons informé à chaque étape du transport de votre véhicule.",
+          "icon": "/features/chat.svg"
         }
       ],
       "achievments": [
@@ -99,13 +105,13 @@
           "count": "2000",
           "suffix": "",
           "increment": "100",
-          "title": "Clients\nexpédiés"
+          "title": "Clients\nExpéditeurs"
         },
         {
           "count": "6000",
           "suffix": "",
           "increment": "100",
-          "title": "Véhicules\nexpédiés"
+          "title": "Véhicules\nExpédiés"
         },
         {
           "count": "500",
@@ -121,12 +127,12 @@
     "contactUs": "Contactez-nous",
     "about": {
       "sectionTitle": "À propos de nous",
-      "title": "Dimi Noble Inc est une entreprise de transport agréée qui collabore avec des partenaires entièrement assurés et cautionnés",
+      "title": "À propos de nous",
       "description": {
-        "intro": "Nous sommes un service national de relocalisation de véhicules, simplifiant le processus aussi bien pour les entreprises que pour les particuliers. Notre engagement est d'offrir des solutions de transport fluides et efficaces.",
-        "experience": "Avec plus de 5 ans d'expérience dans l'industrie de la relocalisation, nos spécialistes ont servi des entreprises, des entrepreneurs et des particuliers avec excellence.",
-        "coverage": "Nous opérons dans les 50 États, garantissant un transport sécurisé et fiable des véhicules grâce à nos partenaires entièrement assurés et cautionnés.",
-        "trust": "En choisissant Dimi Noble, nous privilégions la transparence en vous tenant informé à chaque étape. Notre objectif est de fournir un service de premier ordre avec une valeur inégalée."
+        "intro": "Chez Dimi Noble Inc., nous sommes spécialisés dans les services haut de gamme de relocalisation de véhicules à l'échelle nationale, conçus pour les entreprises comme pour les particuliers. En tant qu'entreprise entièrement agréée, collaborant exclusivement avec des partenaires assurés et cautionnés, nous proposons des solutions de transport sécurisées, efficaces et sans tracas dans les 50 États américains.",
+        "experience": "Forts de plus de 5 ans d'expérience dans le secteur, notre équipe dévouée a su gagner la confiance de clients professionnels, de contractants et de particuliers en dépassant systématiquement leurs attentes.",
+        "coverage": "Nous croyons en une transparence totale — de l'enlèvement à la livraison, vous êtes informé à chaque étape. Notre mission est simple : offrir un service de premier ordre, une valeur exceptionnelle et une tranquillité d'esprit absolue.",
+        "trust": "Dimi Noble Inc. — là où l'expérience rencontre l'excellence en mouvement."
       },
       "highlights": {
         "years": "Années d'expérience",
@@ -175,32 +181,34 @@
       "items": [
         {
           "title": "Transport de Véhicules Individuels",
-          "description": "Pour les propriétaires privés, collectionneurs et déménagements."
+          "description": "Pour les propriétaires privés, les collectionneurs et les déménagements."
         },
         {
           "title": "Relocalisation d'Entreprises et de Flottes",
-          "description": "Fiabilité pour les entrepreneurs, clients corporatifs et concessionnaires."
+          "description": "De confiance pour les entrepreneurs, les clients d'entreprise et les concessionnaires."
         },
         {
-          "title": "Expédition de VR, Bateaux et Remorques",
-          "description": "Plus que des voitures—nous transportons tout."
+          "title": "Transport de Camping-cars, Bateaux et Remorques",
+          "description": "Pas seulement des voitures — nous transportons tout."
         },
         {
           "title": "Livraison Porte-à-Porte",
-          "description": "Direct, sécurisé et toujours à l'heure."
+          "description": "Directe, sécurisée et toujours ponctuelle."
         }
       ]
     }
   },
   "quoteForm": {
-    "formTitle": "Obtenez votre prix",
+    "formTitle": "Prêt à expédier ?",
     "content": {
-      "title": "Obtenez votre devis gratuit dès aujourd'hui",
-      "description": "Services professionnels de transport de véhicules dans les 50 États. Rapide, fiable et entièrement assuré.",
-      "licensed": "Agréé",
-      "certified": "Entièrement certifié",
+      "title": "Prêt à expédier ?",
+      "description": "Envoyez vos infos — on s'occupe du reste.",
+      "licensed": "Certifié",
+      "certified": "Entièrement agréé",
       "insured": "Assuré",
-      "coverage": "Couverture à 100%"
+      "coverage": "Couverture 100 %",
+      "topTierService": "Service haut de gamme",
+      "unbeatableValue": "Valeur imbattable"
     },
     "fields": {
       "originZip": {
@@ -214,23 +222,28 @@
         "placeholder": "Code postal de destination"
       },
       "vehicleModel": {
-        "label": "Modèle du véhicule",
-        "name": "modèle du véhicule",
-        "placeholder": "Modèle du véhicule (ex. : Ford F-150)"
+        "label": "Modèle de véhicule",
+        "name": "modèle de véhicule",
+        "placeholder": "Modèle de véhicule (par exemple, Ford F150)"
       },
       "movingDate": {
         "name": "date",
-        "label": "Date de déménagement",
-        "placeholder": "Date de déménagement"
+        "label": "Date d'emménagement",
+        "placeholder": "Date d'emménagement"
       },
       "phone": {
         "name": "numéro de téléphone",
-        "label": "Numéro de téléphone",
-        "placeholder": "Téléphone (ex. : 1234567890)"
+        "label": "Numéro de téléphone +1",
+        "placeholder": "Numéro de téléphone +1 (1234567890)"
+      },
+      "email": {
+        "name": "adresse e-mail",
+        "label": "Adresse e-mail",
+        "placeholder": "Adresse e-mail"
       },
       "acceptTerms": {
         "name": "Conditions",
-        "label": "En cochant cette case, vous acceptez de recevoir des messages texte automatisés et personnalisés au numéro indiqué ci-dessus. Répondez STOP pour annuler. La fréquence des messages varie. Des frais de messagerie et de données peuvent s'appliquer."
+        "label": "En cochant cette case, vous acceptez de recevoir des SMS automatisés et personnalisés au numéro indiqué ci-dessus. Répondez STOP pour annuler. La fréquence des messages varie. Des frais de messagerie et de données peuvent s'appliquer."
       }
     },
     "validation": {
@@ -240,7 +253,7 @@
       "tooShort": "{field} doit contenir au moins {min} caractères",
       "tooLong": "{field} ne peut pas dépasser {max} caractères"
     },
-    "cta": "Obtenir un devis gratuit",
+    "cta": "Obtenez votre devis gratuit",
     "success": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.",
     "error": {
       "title": "Erreur",
@@ -257,9 +270,9 @@
     "goTo": "Aller à la diapositive {slideNumber}"
   },
   "reviews": {
-    "title": "Avis des Clients",
+    "title": "Avis clients",
     "description": "Découvrez ce que nos clients disent de nos services d'expédition à travers le pays. Lisez des avis authentiques de vrais clients qui ont expérimenté notre engagement envers la qualité et la fiabilité.",
-    "viewAll": "Voir Tous les Avis",
+    "viewAll": "Voir tous les avis",
     "previous": "Diapositive précédente",
     "next": "Diapositive suivante",
     "goTo": "Aller à la diapositive {slideNumber}",
