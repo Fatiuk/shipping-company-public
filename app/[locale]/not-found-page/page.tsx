@@ -5,6 +5,16 @@ import Section from "@/components/Section";
 import ActiveLink from "@/components/shared/ActiveLink";
 import PageProps from "@/types/page";
 
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "fr" },
+    { locale: "es" }
+  ];
+}
+
 export default async function NotFoundPage(props: PageProps) {
   const params = await props.params;
   const locale = params.locale;

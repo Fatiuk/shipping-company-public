@@ -6,6 +6,34 @@ import BlogItemContent from "@/components/BlogItemContent";
 import SectionFullWidth from "@/components/SectionFullWidth";
 import Section from "@/components/Section";
 
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+  const params = [];
+  const locales = ["en", "fr", "es"];
+  const slugs = [
+    "auto-transport-guide-everything-you-need-to-know-about-car-shipping-services",
+    "the-ultimate-guide-to-seasonal-vehicle-shipping-when-why-and-how",
+    "evolution-of-auto-transport-technology-how-innovation-is-reshaping-vehicle-shipping",
+    "environmental-impact-of-vehicle-shipping-sustainable-practices-in-auto-transport",
+    "cross-country-vehicle-shipping-preparation-checklist-ensuring-a-smooth-transport-experience",
+    "navigating-economic-shifts-how-market-fluctuations-impact-the-auto-transport-landscape",
+    "beyond-carbon-footprints-implementing-sustainable-practices-in-modern-vehicle-shipping"
+  ];
+
+  for (const locale of locales) {
+    for (const slug of slugs) {
+      params.push({
+        locale,
+        company: "company",
+        slug
+      });
+    }
+  }
+
+  return params;
+}
+
 export async function generateMetadata(props: PageProps) {
   const params = await props.params;
   const locale = params.locale;

@@ -1,11 +1,22 @@
-import { redirect } from "next/navigation";
-import { headers } from "next/headers";
+"use client";
 
-export default async function GlobalNotFound() {
-  const headersList = await headers();
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
-  const intlLocale = headersList.get("x-next-intl-locale") || "en";
-  // console.log("Current locale from x-next-intl-locale:", intlLocale);
+export default function GlobalNotFound() {
+  const router = useRouter();
 
-  return redirect(`/${intlLocale}/not-found-page`);
+  useEffect(() => {
+    // Default to English locale for static export
+    router.replace("/en/not-found-page");
+  }, [router]);
+
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold mb-4">Page Not Found</h1>
+        <p>Redirecting to the proper page...</p>
+      </div>
+    </div>
+  );
 }

@@ -11,6 +11,8 @@ import { routing } from "@/i18n/routing";
 import { NavigationItemI } from "@/types/navigation";
 import "../globals.css";
 
+export const dynamic = 'force-static';
+
 const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
   weight: ["700", "900"],
@@ -116,6 +118,14 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/favicon.ico" }], // fallback
   },
 };
+
+export async function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "fr" },
+    { locale: "es" }
+  ];
+}
 
 export default async function RootLayout(props: Props) {
   const { children } = props;

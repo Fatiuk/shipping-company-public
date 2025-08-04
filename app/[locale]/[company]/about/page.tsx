@@ -2,6 +2,16 @@ import { getTranslations } from "next-intl/server";
 import About from "@/components/About";
 import PageProps from "@/types/page";
 
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+  return [
+    { locale: "en", company: "company" },
+    { locale: "fr", company: "company" },
+    { locale: "es", company: "company" }
+  ];
+}
+
 export async function generateMetadata(props: PageProps) {
   const params = await props.params;
   const locale = params.locale;
