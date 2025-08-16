@@ -8,6 +8,7 @@ import LocaleSwitcherMobile from "@/components/LocaleSwitcherMobile";
 import ActiveLink from "@/components/shared/ActiveLink";
 import Logo from "@/components/shared/Logo";
 import { NavigationI } from "@/types/navigation";
+import { TrackablePhoneLink } from "@/components/TrackableComponents";
 
 const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
   const t = useTranslations("navbar");
@@ -132,12 +133,13 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                 <span className="text-xs font-medium text-white opacity-50">
                   {t("support24")}
                 </span>
-                <a 
-                  href="tel:+15618945331" 
+                <TrackablePhoneLink 
+                  phoneNumber="+15618945331"
+                  section="header_navigation"
                   className="text-sm font-bold text-[--color-b900-w] hover:text-[--color-a700-a500] transition-colors"
                 >
                   (561) 894-5331
-                </a>
+                </TrackablePhoneLink>
               </div>
             </div>
             <ActiveLink
@@ -160,12 +162,13 @@ const Navigation: FC<NavigationI> = ({ navigation }: NavigationI) => {
                 <span className="text-xs font-medium text-white opacity-50">
                   {t("support24")}
                 </span>
-                <a 
-                  href="tel:+15618945331" 
+                <TrackablePhoneLink 
+                  phoneNumber="+15618945331"
+                  section="mobile_navigation"
                   className="text-sm font-bold text-[--color-b900-w] hover:text-[--color-a700-a500] transition-colors"
                 >
                   (561) 894-5331
-                </a>
+                </TrackablePhoneLink>
               </div>
             </div>
             <div

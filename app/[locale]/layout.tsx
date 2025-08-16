@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
@@ -140,11 +141,45 @@ export default async function RootLayout(props: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head></head>
+      <head>
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GT-WRHZV6TP');`
+          }}
+        />
+        
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-L0LDPJFZQK"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-L0LDPJFZQK');
+              gtag('config', 'AW-17178712466');
+            `
+          }}
+        />
+      </head>
       <body
         className={`${robotoCondensed.variable} ${nunitoSans.variable} antialiased flex flex-col min-h-screen font-sans text-sm bg-owhite dark:bg-oblue-900`}
         suppressHydrationWarning
       >
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GT-WRHZV6TP"
+            height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe>
+        </noscript>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -153,7 +188,6 @@ export default async function RootLayout(props: Props) {
           storageKey="theme-preference"
           forcedTheme="dark"
         >
-          {/* Force dark theme only - overrides any previously saved user preferences */}
           <NextIntlClientProvider messages={messages} locale={locale}>
             <Navigation navigation={navigation} />
             <main className="w-full flex flex-wrap flex-grow mt-[64px] mx-auto px-0">

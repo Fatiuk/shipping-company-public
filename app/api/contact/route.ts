@@ -4,16 +4,26 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
   try {
-    const { originZip, destinationZip, vehicleModel, movingDate, phone } =
+    const { originZip, destinationZip, vehicleModel, movingDate, phone, email } =
       await req.json();
+
+    console.log("Received form data:", { originZip, destinationZip, vehicleModel, movingDate, phone, email });
 
     const emailUser = process.env.EMAIL_USER;
     const emailPass = process.env.EMAIL_PASS;
 
     console.log("env vars", {
-      evEmail: `Email ${process.env.EMAIL_USER}`,
-      evPass: `Pass ${process.env.EMAIL_PASS}`,
+      evEmail: emailUser ? "Email user is set" : "Email user is MISSING",
+      evPass: emailPass ? "Password is set" : "Password is MISSING",
     });
+
+    if (!emailUser || !emailPass) {
+      console.error("Missing email credentials!");
+      return NextResponse.json(
+        { error: "Email configuration is missing" },
+        { status: 500 }
+      );
+    }
 
     console.log("Email configuration:", {
       host: "smtpout.secureserver.net",
@@ -39,10 +49,10 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: emailUser,
       to: emailUser,
-      cc: "anastasia.dorfman1@gmail.com",
-      subject: "Quote Form Submission",
+      subject: "Quote Form Submission from Website",
       html: `
           <h1>Quote Form Submission</h1>
+          <p><strong>Client Email:</strong> ${email}</p>
           <p><strong>Phone:</strong> ${phone}</p>
           
           <p><strong>Moving Date:</strong> ${movingDate}</p>

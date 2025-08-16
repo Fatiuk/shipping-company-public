@@ -13,6 +13,8 @@ import DateInput from "@/components/ui/form/Date";
 import Input from "@/components/ui/form/Input";
 import PhoneInput from "@/components/ui/form/Phone";
 import Image from "next/image";
+import { trackFormEvent } from "@/lib/gtm";
+import emailjs from "@emailjs/browser";
 
 const QuoteForm: FC = () => {
   const t = useTranslations("quoteForm");
@@ -22,6 +24,22 @@ const QuoteForm: FC = () => {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submissionError, setSubmissionError] = useState(false);
+  const [formStarted, setFormStarted] = useState(false);
+
+  useEffect(() => {
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "gJvpE-Ddg2tvF5xOM");
+  }, []);
+
+  useEffect(() => {
+    trackFormEvent.view('quote_form', 'contact-us');
+  }, []);
+
+  const handleFormStart = () => {
+    if (!formStarted) {
+      setFormStarted(true);
+      trackFormEvent.start('quote_form', 'contact-us');
+    }
+  };
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -139,21 +157,45 @@ const QuoteForm: FC = () => {
     onSubmit: async (values) => {
       try {
         setLoading(true);
-        const res = await fetch("/api/contact", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(values),
-        });
+        
+        trackFormEvent.submit('quote_form', 'contact-us', 'attempt');
 
-        if (!res.ok) {
-          throw new Error("Something went wrong");
-        }
+        // Отправка через EmailJS (работает на статических сайтах)
+        const templateParams = {
+          from_name: values.email,
+          from_email: values.email,
+          phone: values.phone,
+          origin_zip: values.originZip,
+          destination_zip: values.destinationZip,
+          vehicle_model: values.vehicleModel,
+          moving_date: values.movingDate,
+          current_date: new Date().toLocaleString(),
+          message: `Quote request details:\n\nEmail: ${values.email}\nPhone: ${values.phone}\nFrom ZIP: ${values.originZip}\nTo ZIP: ${values.destinationZip}\nVehicle: ${values.vehicleModel}\nMoving Date: ${values.movingDate}`
+        };
+
+        console.log('Sending email with EmailJS...', templateParams);
+
+        await emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_m9h1b6m",
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_wnxb7b8",
+          templateParams
+        );
 
         setSubmitted(true);
         formik.resetForm();
+        
+        trackFormEvent.submit('quote_form', 'contact-us', 'success');
+        
       } catch (error) {
         console.error("form submission error", error);
         setSubmissionError(true);
+        
+        trackFormEvent.submit(
+          'quote_form', 
+          'contact-us', 
+          'error', 
+          error instanceof Error ? error.message : 'Unknown error'
+        );
       } finally {
         setLoading(false);
       }
@@ -163,7 +205,6 @@ const QuoteForm: FC = () => {
   return (
     <div className="sm:max-w-[1400px] mx-auto px-2 sm:px-8 2xl:px-20">
       <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-between gap-8">
-        {/* Content Side */}
         <div
           ref={contentRef}
           id="lg:contact-us"
@@ -175,7 +216,6 @@ const QuoteForm: FC = () => {
           <p className="text-[24px] leading-[32px] sm:text-[32px] sm:leading-[48px] font-normal font-roboto capitalize !mt-0">
             {t("content.description")}
           </p>
-          {/* Trust Indicators */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 xs:gap-4">
             <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
               <div className="w-12 h-12 rounded-full bg-gray-300/50 dark:bg-oblue-500/50 flex items-center justify-center">
@@ -231,7 +271,6 @@ const QuoteForm: FC = () => {
           </div>
         </div>
 
-        {/* Form Side */}
         <div
           id="contact-us"
           ref={formRef}
@@ -247,6 +286,7 @@ const QuoteForm: FC = () => {
                 icon={<LuMapPin className="ml-3 text-gray-400" size={20} />}
                 classNamesInput="px-3 bg-transparent"
                 {...formik.getFieldProps("originZip")}
+                onFocus={handleFormStart}
                 touched={formik.touched.originZip}
                 error={formik.errors.originZip}
               />
@@ -256,11 +296,11 @@ const QuoteForm: FC = () => {
                 icon={<LuMapPin className="ml-3 text-gray-400" size={20} />}
                 classNamesInput="px-3 bg-transparent"
                 {...formik.getFieldProps("destinationZip")}
+                onFocus={handleFormStart}
                 touched={formik.touched.destinationZip}
                 error={formik.errors.destinationZip}
               />
 
-              {/* Vehicle Model Input Field */}
               <Input
                 placeholder={
                   t("fields.vehicleModel.placeholder") ||
@@ -269,37 +309,38 @@ const QuoteForm: FC = () => {
                 icon={<LuCar className="ml-3 text-gray-400" size={20} />}
                 classNamesInput="px-3 bg-transparent"
                 {...formik.getFieldProps("vehicleModel")}
+                onFocus={handleFormStart}
                 touched={formik.touched.vehicleModel}
                 error={formik.errors.vehicleModel}
               />
 
-              {/* Use the Tailwind-styled DateInput component */}
               <DateInput
                 placeholder={t("fields.movingDate.placeholder")}
                 icon={<LuCalendar className="ml-3 text-gray-400" size={20} />}
                 classNamesInput="px-3 bg-transparent"
                 {...formik.getFieldProps("movingDate")}
+                onFocus={handleFormStart}
                 touched={formik.touched.movingDate}
                 error={formik.errors.movingDate}
               />
 
-              {/* Use the Tailwind-styled PhoneInput component */}
               <PhoneInput
                 placeholder={t("fields.phone.placeholder")}
                 icon={<LuPhone className="ml-3 text-gray-400" size={20} />}
                 classNamesInput="px-3 bg-transparent"
                 {...formik.getFieldProps("phone")}
+                onFocus={handleFormStart}
                 touched={formik.touched.phone}
                 error={formik.errors.phone}
               />
 
-              {/* Email Input Field */}
               <Input
                 placeholder={t("fields.email.placeholder")}
                 icon={<LuMail className="ml-3 text-gray-400" size={20} />}
                 classNamesInput="px-3 bg-transparent"
                 type="email"
                 {...formik.getFieldProps("email")}
+                onFocus={handleFormStart}
                 touched={formik.touched.email}
                 error={formik.errors.email}
               />
